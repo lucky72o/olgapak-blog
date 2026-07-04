@@ -1,0 +1,9 @@
+# Dependencies
+node_modules/
+
+# Remotion render outputs
+tools/remotion/out/
+
+# OS / editor cruft
+.DS_Store
+*.log

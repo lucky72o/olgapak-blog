@@ -1,0 +1,36 @@
+blog:
+  name: "Olga Pak"
+  url: https://olgapak.com
+  language: en
+  route_prefix: /
+
+modules:
+  reddit_research: true
+  x_research: true
+  product: true
+  competitors: false
+  repurpose: false
+
+research:
+  reddit_user_agent: "research:olgapak-blog:0.1 (by /u/olgapak)"
+
+images:
+  enabled: [ai-prompt, screenshot, remotion]
+  featured_default: ai-prompt
+  remotion:
+    project_dir: tools/remotion
+
+publish:
+  adapter: wordpress-rest
+  wordpress:
+    content_dir: content/blog
+    assets_dir: blog-ops/assets
+    frontmatter_template: adapters/publish/frontmatter/wordpress.md
+    base_url: https://olgapak.com
+    username: wpx_admin101
+    app_password_env: WP_APP_PASSWORD
+    default_status: draft
+
+git:
+  branch_prefix: blog/
+  base_branch: main
