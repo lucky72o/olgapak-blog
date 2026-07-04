@@ -33,48 +33,65 @@ Your last-3-months ranking data shows momentum concentrated in **note-taking** (
 ### Content-type legend
 `PILLAR` = comprehensive cornerstone · `INFO` = informational spoke (traffic/links) · `COMMERCIAL` = "best-of" affiliate round-up · `REVIEW` = single-product · `COMPARE` = X vs Y
 
+### Status legend (production pipeline)
+📋 `Planned` → ✍️ `Drafting` → 🔍 `In review` → 🗓️ `Scheduled` → ✅ `Published` · (⏸️ `On hold` when parked)
+
+Update the **Status** column in the master table below as each post moves through the pipeline — it's the single source of truth for progress. When you mark a post ✅ Published, paste its live URL into the Status cell (e.g. `✅ Published — /cornell-note-taking-method`).
+
+### Progress tracker
+_Last updated: 2026-07-04_
+
+| Status | Count | % |
+|---|---|---|
+| 📋 Planned | 36 | 100% |
+| ✍️ Drafting | 0 | 0% |
+| 🔍 In review | 0 | 0% |
+| 🗓️ Scheduled | 0 | 0% |
+| ✅ Published | 0 | 0% |
+| **Total** | **36** | **100%** |
+
 ---
 
 ## 2. Master calendar (at a glance)
 
-| # | Date | Post title | Cluster | Type | Target keyword | Amazon affiliate angle |
-|---|------|-----------|---------|------|----------------|------------------------|
-| 1 | Mon Jul 6 | Cornell Note-Taking Method: The Complete Guide (+ Template) | A | PILLAR | cornell note-taking method | Cornell-ruled notebooks, legal pads |
-| 2 | Wed Jul 8 | How to Stop Doomscrolling: 12 Science-Backed Strategies | B | INFO | how to stop doomscrolling | (links to money posts) |
-| 3 | Fri Jul 10 | How to Plan Your Week: A Simple Weekly Planning Routine | C | INFO | how to plan your week | weekly planner pads |
-| 4 | Mon Jul 13 | Note-Taking Methods Compared: Cornell vs Outline vs Mapping vs Charting | A | PILLAR/COMPARE | note-taking methods | notebooks (soft) |
-| 5 | Wed Jul 15 | 15 Best Notebooks for Note-Taking in 2026 | A | COMMERCIAL | best notebooks for note taking | Moleskine, Leuchtturm1917, Rocketbook |
-| 6 | Fri Jul 17 | Time Blocking 101: How to Time Block Your Day | C | INFO | time blocking | Time Timer, planner pads |
-| 7 | Mon Jul 20 | Mind Mapping Note-Taking Method: How to Use It | A | INFO | mind mapping note taking | large sketch pads, colored pens |
-| 8 | Wed Jul 22 | Digital Detox: A 7-Day Plan to Reset Your Screen Time | B | INFO | digital detox plan | phone lockbox, analog alarm clock |
-| 9 | Fri Jul 24 | The 12 Best Pens for Note-Taking & Writing (2026) | A | COMMERCIAL | best pens for note taking | Pilot G2, Uni-ball, Muji, Sakura |
-| 10 | Mon Jul 27 | How to Use AI to Take Better Notes (Tools & Workflow) | D | INFO | ai note taking | (links to AI note-taker roundup + tools) |
-| 11 | Wed Jul 29 | The Charting Method of Note-Taking Explained | A | INFO | charting method note taking | grid/dot notebooks |
-| 12 | Fri Jul 31 | How to Reduce Screen Time: The Complete Guide | B | PILLAR | how to reduce screen time | (links to money posts) |
-| 13 | Mon Aug 3 | Best Highlighters for Studying & Aesthetic Notes (2026) | A/E | COMMERCIAL | best highlighters for studying | Zebra Mildliner, Stabilo, Tombow |
-| 14 | Wed Aug 5 | Digital vs Paper Notes: Which Is Better for Memory? | A | COMPARE | digital vs paper notes | iPad + Apple Pencil / notebooks |
-| 15 | Fri Aug 7 | Best Blue Light Glasses for Students & Screen Time (2026) | F | COMMERCIAL | best blue light glasses | Gunnar, Felix Gray, generic sets |
-| 16 | Mon Aug 10 | How to Take Notes on an iPad: Apps, Gear & Setup | A | INFO/COMMERCIAL | how to take notes on ipad | iPad, Apple Pencil, Paperlike |
-| 17 | Wed Aug 12 | Bullet Journal for Beginners: Setup, Ideas & Supplies | A | INFO | bullet journal for beginners | dotted notebooks, pens, stencils |
-| 18 | Fri Aug 14 | 10 Best AI Study Tools for Students in 2026 | D | COMMERCIAL(soft) | ai study tools | (subscriptions; some hardware) |
-| 19 | Mon Aug 17 | 20 Best Gifts for Students & Note-Takers (2026) | E | COMMERCIAL | gifts for students | cross-category gift guide |
-| 20 | Wed Aug 19 | 50 Screen-Free Hobbies to Try This Year | B | INFO | screen-free hobbies | hobby/craft kits, books |
-| 21 | Fri Aug 21 | Best Noise-Cancelling Headphones for Studying & Focus (2026) | F | COMMERCIAL | best headphones for studying | Sony, Bose, Anker |
-| 22 | Mon Aug 24 | Rocketbook Review: Is the Reusable Notebook Worth It? | A | REVIEW | rocketbook review | Rocketbook + Pilot FriXion pens |
-| 23 | Wed Aug 26 | The Ultimate Aesthetic Stationery Haul: 25 Must-Haves | E | COMMERCIAL | aesthetic stationery | washi tape, mildliners, notebooks |
-| 24 | Fri Aug 28 | Best Daily Planners for Productivity (2026) | C | COMMERCIAL | best daily planners | Panda Planner, Full Focus, Hobonichi |
-| 25 | Mon Aug 31 | How to Take Better Notes in Meetings (Templates + Tips) | A | INFO | how to take notes in meetings | (links to AI note-takers) |
-| 26 | Wed Sep 2 | Pomodoro Technique: How It Works + Best Timers | C | INFO/COMMERCIAL | pomodoro technique | Time Timer, Pomodoro cubes |
-| 27 | Fri Sep 4 | Best Washi Tape Sets for Journaling & Notes (2026) | E | COMMERCIAL | best washi tape | washi tape multipacks |
-| 28 | Mon Sep 7 | Dopamine Detox: What It Is and How to Do It Right | B | INFO | dopamine detox | journals, analog gear |
-| 29 | Wed Sep 9 | Best Alarm Clocks to Replace Your Phone (2026) | B | COMMERCIAL | best alarm clock to replace phone | Hatch, Loftie, sunrise clocks |
-| 30 | Fri Sep 11 | How to Make Your Desk Aesthetic: Setup Ideas & Products | E | COMMERCIAL | aesthetic desk setup | desk mat, lamp, organizers |
-| 31 | Mon Sep 14 | How to Build a Productive Morning Routine | C | INFO | productive morning routine | sunrise alarm, journal, planner |
-| 32 | Wed Sep 16 | Best Focus Timers & Productivity Gadgets (2026) | F | COMMERCIAL | best focus timers | Time Timer, cube timer, TickTime |
-| 33 | Fri Sep 18 | Phone Lockbox Review: Do Kitchen Safes Curb Phone Use? | B | REVIEW | phone lockbox review | kSafe, Kitchen Safe |
-| 34 | Mon Sep 21 | The Best Desk Setup for Productivity & Focus (2026) | C | COMMERCIAL | best desk setup for productivity | monitor stand, lamp, cable mgmt |
-| 35 | Wed Sep 23 | Best Journals for Mental Health & Reflection (2026) | F | COMMERCIAL | best journals for mental health | Five Minute Journal, Papier |
-| 36 | Fri Sep 25 | How to Simplify Complex Text with AI (Free Tools) | D | INFO | simplify text with ai | (drives traffic to your AI tool) |
+| # | Status | Date | Post title | Cluster | Type | Target keyword | Amazon affiliate angle |
+|---|--------|------|-----------|---------|------|----------------|------------------------|
+| 1 | 📋 Planned | Mon Jul 6 | Cornell Note-Taking Method: The Complete Guide (+ Template) | A | PILLAR | cornell note-taking method | Cornell-ruled notebooks, legal pads |
+| 2 | 📋 Planned | Wed Jul 8 | How to Stop Doomscrolling: 12 Science-Backed Strategies | B | INFO | how to stop doomscrolling | (links to money posts) |
+| 3 | 📋 Planned | Fri Jul 10 | How to Plan Your Week: A Simple Weekly Planning Routine | C | INFO | how to plan your week | weekly planner pads |
+| 4 | 📋 Planned | Mon Jul 13 | Note-Taking Methods Compared: Cornell vs Outline vs Mapping vs Charting | A | PILLAR/COMPARE | note-taking methods | notebooks (soft) |
+| 5 | 📋 Planned | Wed Jul 15 | 15 Best Notebooks for Note-Taking in 2026 | A | COMMERCIAL | best notebooks for note taking | Moleskine, Leuchtturm1917, Rocketbook |
+| 6 | 📋 Planned | Fri Jul 17 | Time Blocking 101: How to Time Block Your Day | C | INFO | time blocking | Time Timer, planner pads |
+| 7 | 📋 Planned | Mon Jul 20 | Mind Mapping Note-Taking Method: How to Use It | A | INFO | mind mapping note taking | large sketch pads, colored pens |
+| 8 | 📋 Planned | Wed Jul 22 | Digital Detox: A 7-Day Plan to Reset Your Screen Time | B | INFO | digital detox plan | phone lockbox, analog alarm clock |
+| 9 | 📋 Planned | Fri Jul 24 | The 12 Best Pens for Note-Taking & Writing (2026) | A | COMMERCIAL | best pens for note taking | Pilot G2, Uni-ball, Muji, Sakura |
+| 10 | 📋 Planned | Mon Jul 27 | How to Use AI to Take Better Notes (Tools & Workflow) | D | INFO | ai note taking | (links to AI note-taker roundup + tools) |
+| 11 | 📋 Planned | Wed Jul 29 | The Charting Method of Note-Taking Explained | A | INFO | charting method note taking | grid/dot notebooks |
+| 12 | 📋 Planned | Fri Jul 31 | How to Reduce Screen Time: The Complete Guide | B | PILLAR | how to reduce screen time | (links to money posts) |
+| 13 | 📋 Planned | Mon Aug 3 | Best Highlighters for Studying & Aesthetic Notes (2026) | A/E | COMMERCIAL | best highlighters for studying | Zebra Mildliner, Stabilo, Tombow |
+| 14 | 📋 Planned | Wed Aug 5 | Digital vs Paper Notes: Which Is Better for Memory? | A | COMPARE | digital vs paper notes | iPad + Apple Pencil / notebooks |
+| 15 | 📋 Planned | Fri Aug 7 | Best Blue Light Glasses for Students & Screen Time (2026) | F | COMMERCIAL | best blue light glasses | Gunnar, Felix Gray, generic sets |
+| 16 | 📋 Planned | Mon Aug 10 | How to Take Notes on an iPad: Apps, Gear & Setup | A | INFO/COMMERCIAL | how to take notes on ipad | iPad, Apple Pencil, Paperlike |
+| 17 | 📋 Planned | Wed Aug 12 | Bullet Journal for Beginners: Setup, Ideas & Supplies | A | INFO | bullet journal for beginners | dotted notebooks, pens, stencils |
+| 18 | 📋 Planned | Fri Aug 14 | 10 Best AI Study Tools for Students in 2026 | D | COMMERCIAL(soft) | ai study tools | (subscriptions; some hardware) |
+| 19 | 📋 Planned | Mon Aug 17 | 20 Best Gifts for Students & Note-Takers (2026) | E | COMMERCIAL | gifts for students | cross-category gift guide |
+| 20 | 📋 Planned | Wed Aug 19 | 50 Screen-Free Hobbies to Try This Year | B | INFO | screen-free hobbies | hobby/craft kits, books |
+| 21 | 📋 Planned | Fri Aug 21 | Best Noise-Cancelling Headphones for Studying & Focus (2026) | F | COMMERCIAL | best headphones for studying | Sony, Bose, Anker |
+| 22 | 📋 Planned | Mon Aug 24 | Rocketbook Review: Is the Reusable Notebook Worth It? | A | REVIEW | rocketbook review | Rocketbook + Pilot FriXion pens |
+| 23 | 📋 Planned | Wed Aug 26 | The Ultimate Aesthetic Stationery Haul: 25 Must-Haves | E | COMMERCIAL | aesthetic stationery | washi tape, mildliners, notebooks |
+| 24 | 📋 Planned | Fri Aug 28 | Best Daily Planners for Productivity (2026) | C | COMMERCIAL | best daily planners | Panda Planner, Full Focus, Hobonichi |
+| 25 | 📋 Planned | Mon Aug 31 | How to Take Better Notes in Meetings (Templates + Tips) | A | INFO | how to take notes in meetings | (links to AI note-takers) |
+| 26 | 📋 Planned | Wed Sep 2 | Pomodoro Technique: How It Works + Best Timers | C | INFO/COMMERCIAL | pomodoro technique | Time Timer, Pomodoro cubes |
+| 27 | 📋 Planned | Fri Sep 4 | Best Washi Tape Sets for Journaling & Notes (2026) | E | COMMERCIAL | best washi tape | washi tape multipacks |
+| 28 | 📋 Planned | Mon Sep 7 | Dopamine Detox: What It Is and How to Do It Right | B | INFO | dopamine detox | journals, analog gear |
+| 29 | 📋 Planned | Wed Sep 9 | Best Alarm Clocks to Replace Your Phone (2026) | B | COMMERCIAL | best alarm clock to replace phone | Hatch, Loftie, sunrise clocks |
+| 30 | 📋 Planned | Fri Sep 11 | How to Make Your Desk Aesthetic: Setup Ideas & Products | E | COMMERCIAL | aesthetic desk setup | desk mat, lamp, organizers |
+| 31 | 📋 Planned | Mon Sep 14 | How to Build a Productive Morning Routine | C | INFO | productive morning routine | sunrise alarm, journal, planner |
+| 32 | 📋 Planned | Wed Sep 16 | Best Focus Timers & Productivity Gadgets (2026) | F | COMMERCIAL | best focus timers | Time Timer, cube timer, TickTime |
+| 33 | 📋 Planned | Fri Sep 18 | Phone Lockbox Review: Do Kitchen Safes Curb Phone Use? | B | REVIEW | phone lockbox review | kSafe, Kitchen Safe |
+| 34 | 📋 Planned | Mon Sep 21 | The Best Desk Setup for Productivity & Focus (2026) | C | COMMERCIAL | best desk setup for productivity | monitor stand, lamp, cable mgmt |
+| 35 | 📋 Planned | Wed Sep 23 | Best Journals for Mental Health & Reflection (2026) | F | COMMERCIAL | best journals for mental health | Five Minute Journal, Papier |
+| 36 | 📋 Planned | Fri Sep 25 | How to Simplify Complex Text with AI (Free Tools) | D | INFO | simplify text with ai | (drives traffic to your AI tool) |
 
 **Commercial (money) posts:** 15 of 36 (~42%) — healthy ratio; the other 58% are traffic/authority spokes that link into them.
 
