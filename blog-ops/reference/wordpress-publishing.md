@@ -87,9 +87,11 @@ REST — do NOT skip them:
 
 1. Identify each target existing post's id: `GET $WP/posts?slug=<existing-slug>&_fields=id`.
 2. Fetch its raw content: `GET $WP/posts/<id>?context=edit&_fields=content` → `.content.raw`.
-3. Insert a **root-relative** anchor `<a href="/<new-slug>/">…</a>` into a
-   contextually relevant existing paragraph (extend a sentence about the topic;
-   don't bolt on a "see also"). Keep every other block byte-identical.
+3. Insert a **root-relative, NO-trailing-slash** anchor `<a href="/<new-slug>">…</a>`
+   into a contextually relevant existing paragraph (extend a sentence about the
+   topic; don't bolt on a "see also"). Keep every other block byte-identical.
+   (This site's permalinks have no trailing slash — `/my-post`, not `/my-post/`;
+   applies to outbound links in the post too.)
 4. Update: `POST $WP/posts/<id>` with `{content:<edited raw>}` (status unchanged —
    these are already published; you're only adding a link).
 5. Verify the anchor is present and the rest of the content is unchanged.

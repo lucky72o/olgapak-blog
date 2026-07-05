@@ -35,9 +35,12 @@ Also required for every new WP post (see the recipe for exact steps):
 - **Inbound internal links** — ALWAYS point 2–4 existing related posts at the
   new one (the outline's "Inbound internal links"). Apply them to the LIVE WP
   posts via REST (the back-catalogue isn't local markdown): fetch each target's
-  raw content, insert a contextual root-relative `<a href="/<new-slug>/">` into
+  raw content, insert a contextual root-relative `<a href="/<new-slug>">` into
   a relevant paragraph, `POST /posts/<id>` with the edited content (status
   unchanged). Idempotent: skip if the link is already present.
+- **Internal link format: root-relative, NO trailing slash** — this site's
+  permalinks have no trailing slash (`/my-post`, not `/my-post/`). Applies to
+  both outbound links in the post and inbound links added to other posts.
 - **Rank Math focus keyword** — set to the post's target keyword. NOT settable
   via REST; done in the editor UI (or the blog owner does it). If leaving it to
   the owner, tell them the exact keyword to enter.
