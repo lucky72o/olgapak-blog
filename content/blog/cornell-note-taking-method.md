@@ -14,7 +14,7 @@ Ask around and you'll hear the Cornell note-taking method called two opposite th
 
 I went back to studying as an adult, pivoting out of a decade in aviation PR and into a Master's, and I had to relearn how to take notes that actually held up at exam time. So I have tested this one from the messy-notes starting line, not from behind a lecture podium.
 
-If you've read my guide to [focused note-taking](/focused-note-taking-how-to-guide/), think of this as its structured cousin: the same goal of notes you can genuinely use later, with a different shape on the page.
+If you've read my guide to [focused note-taking](/focused-note-taking-how-to-guide), think of this as its structured cousin: the same goal of notes you can genuinely use later, with a different shape on the page.
 
 This guide covers what the method really is, the exact page layout, the five steps, a filled-in example you can copy, when to use it (and when to reach for something else), whether the research actually backs it up, and a free template to grab.
 
@@ -100,7 +100,7 @@ It works best for:
 - Anything you'll be tested on, because the cue-and-recite loop is built for exactly that.
 - Meetings you have to act on later, where the cue column becomes your list of decisions and follow-ups.
 
-Where does it struggle? Very fast, equation- or diagram-heavy STEM lectures are the classic trouble spot, because splitting your attention between capturing and structuring in real time is a good way to fall behind. Freeform brainstorming is the other one: when the ideas haven't sorted themselves into a shape yet, a charting or mapping layout, or [the outline method](/outlining-note-taking-method/), often fits better than three fixed boxes.
+Where does it struggle? Very fast, equation- or diagram-heavy STEM lectures are the classic trouble spot, because splitting your attention between capturing and structuring in real time is a good way to fall behind. Freeform brainstorming is the other one: when the ideas haven't sorted themselves into a shape yet, a charting or mapping layout, or [the outline method](/outlining-note-taking-method), often fits better than three fixed boxes.
 
 Here's the honest wrinkle, though. Plenty of real STEM students swear by Cornell anyway. As one engineering student on Reddit put it, "Been using this in engineering classes for a semester now and it honestly helps way more before exams than regular notes." The trick they've figured out is timing: during a firehose lecture you mostly just Record, and you do the Reduce and summary steps *after* class, when you can think. Cornell doesn't have to happen live to work.
 
@@ -133,7 +133,7 @@ Both keep the proportions honest so you don't have to redraw the columns every t
 
 And about that summary row, the step everyone skips because it's genuinely the hardest: you don't have to draft it from a blank stare. Paste your page's notes into my free [Text Summarizer](https://olgapak.com/ai-tools) to get a rough two-to-three-sentence draft, then tighten it in your own words so the thinking stays yours. It lowers the friction on the exact step the research says matters most.
 
-Cornell isn't the only way to lay out a page, and it plays well with its siblings. If you want the pages to look good enough to reread, here's [how to make your notes look good](/how-to-make-aesthetic-notes-complete-step-by-step-guide/), and if your Cornell summaries are really meeting recaps in disguise, my guide to [writing a meeting summary](/how-to-write-a-meeting-summary/) picks up where the summary bar leaves off.
+Cornell isn't the only way to lay out a page, and it plays well with its siblings. If you want the pages to look good enough to reread, here's [how to make your notes look good](/how-to-make-aesthetic-notes-complete-step-by-step-guide), and if your Cornell summaries are really meeting recaps in disguise, my guide to [writing a meeting summary](/how-to-write-a-meeting-summary) picks up where the summary bar leaves off.
 
 ## Try the free tools that draft your summary for you
 
