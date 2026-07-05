@@ -27,6 +27,21 @@ background-poll. (Password: env `WP_APP_PASSWORD` in `~/.zshrc`; user
 After any REST update to an open post, the user's editor shows a stale
 "Restore the backup" banner — tell them to dismiss/reload, NOT restore.
 
+Also required for every new WP post (see the recipe for exact steps):
+
+- **Category** — never leave a post on `Uncategorized`. Set `categories` in the
+  create request, matching the cluster's sibling posts (note-taking/study
+  guides → Productivity + EdTech `[12, 9]`; general productivity → `[12]`).
+- **Inbound internal links** — ALWAYS point 2–4 existing related posts at the
+  new one (the outline's "Inbound internal links"). Apply them to the LIVE WP
+  posts via REST (the back-catalogue isn't local markdown): fetch each target's
+  raw content, insert a contextual root-relative `<a href="/<new-slug>/">` into
+  a relevant paragraph, `POST /posts/<id>` with the edited content (status
+  unchanged). Idempotent: skip if the link is already present.
+- **Rank Math focus keyword** — set to the post's target keyword. NOT settable
+  via REST; done in the editor UI (or the blog owner does it). If leaving it to
+  the owner, tell them the exact keyword to enter.
+
 ## Conventions
 
 - Posts are created as WordPress **drafts** only; the human clicks Publish.
