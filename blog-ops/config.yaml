@@ -3,6 +3,7 @@ blog:
   url: https://olgapak.com
   language: en
   route_prefix: /
+  trailing_slash: false   # olgapak.com permalinks have NO trailing slash (e.g. /my-post)
 
 modules:
   reddit_research: true
@@ -13,6 +14,7 @@ modules:
 
 research:
   reddit_user_agent: "research:olgapak-blog:0.1 (by /u/olgapak)"
+  reddit_transport: chrome   # logged-in browser fetch of Reddit .json as PRIMARY
 
 images:
   enabled: [ai-prompt, screenshot, remotion]
@@ -30,6 +32,7 @@ publish:
     username: wpx_admin101
     app_password_env: WP_APP_PASSWORD
     default_status: draft
+    apply_inbound_links_live: true   # apply planned inbound links to LIVE posts via REST once this post is published (matches prior manual practice; set false to leave them as hand-apply action items)
 
 git:
   branch_prefix: blog/
