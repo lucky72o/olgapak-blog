@@ -45,6 +45,21 @@ Also required for every new WP post (see the recipe for exact steps):
   via REST; done in the editor UI (or the blog owner does it). If leaving it to
   the owner, tell them the exact keyword to enter.
 
+## Post PR must be a complete, reproducible record
+
+The blogsmith staging commits only the post + rendered image PNGs. Two things
+it omits — add them to the post's PR so the repo is self-contained:
+
+- **Remotion diagram sources.** When a post uses `remotion` images, the diagram
+  `.tsx` compositions in `tools/remotion/src/` + the `Root.tsx` registration are
+  what *produce* the PNGs. Commit them with the post — the PNGs alone aren't
+  editable/reproducible.
+- **Research + draft archive.** `blog-ops/drafts/<slug>/` (brief, research,
+  facts, plan, outline, draft, review, images.md, action-items) is committed to
+  the PR at Gate 2 **finalize** (archived to `blog-ops/drafts/_archive/<slug>/`).
+  If a post is published outside the workflow (e.g. straight from WP admin
+  without running `approve`), commit that archive to the PR manually.
+
 ## Conventions
 
 - Posts are created as WordPress **drafts** only; the human clicks Publish.
