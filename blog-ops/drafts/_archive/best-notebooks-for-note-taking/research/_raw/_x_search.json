@@ -1,0 +1,38 @@
+{
+  "query": "best notebook for note taking",
+  "searchUrl": "https://x.com/search?q=best%20notebook%20for%20note%20taking&f=top",
+  "tab": "top",
+  "searchedAt": "2026-07-08T09:37:16.842Z",
+  "results": [
+    {
+      "rank": 3,
+      "url": "https://x.com/DeRonin_/status/2048823420977119727",
+      "author": "Ronin",
+      "handle": "DeRonin_",
+      "text": "The Most Comprehensive Codex tutorial on the internet right now\n\neven OpenAI's own team said it's one of the best\n\nin under 2 hours you'll learn how to use Codex + GPT-5.5 (imo the strongest combo available right now)\n\nfrom skill and plugin setup, to automated workflow building,",
+      "replies": 45,
+      "reposts": 286,
+      "likes": 24
+    },
+    {
+      "rank": 5,
+      "url": "https://x.com/DeRonin_/status/2045420155434320270",
+      "author": "Ronin",
+      "handle": "DeRonin_",
+      "text": "10 GitHub repos to spend 60-90% less tokens in Claude Code:\n\n1. RTK (Rust Token Killer)\n\nCLI proxy that filters terminal output before it hits your context\n\n- 60-90% reduction on common dev commands\n- one binary, zero dependencies\n- works with Claude Code, Cursor, Copilot\n\nRepo:",
+      "replies": 106,
+      "reposts": 371,
+      "likes": 29
+    },
+    {
+      "rank": 6,
+      "url": "https://x.com/gregisenberg/status/2054261832718889216",
+      "author": "GREG ISENBERG",
+      "handle": "gregisenberg",
+      "text": "I'm giving away a FULL course on how to build a managed AI agent business solo using Hermes Agent, Orgo, Obsidian, Codex, Claude Code etc. \n\nHere's everything (47 minutes):\n\n1. The offer: unlimited agents, unlimited usage, all infrastructure and security included. The customer",
+      "replies": 127,
+      "reposts": 213,
+      "likes": 19
+    }
+  ]
+}
