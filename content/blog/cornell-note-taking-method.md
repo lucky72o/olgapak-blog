@@ -120,7 +120,7 @@ One claim worth handling carefully: you'll often hear that writing notes by hand
 
 Paper or screen? This is the other question readers keep asking, and the research doesn't crown a clear winner. Studies here tend to run on small samples and land on ["no clear difference"](https://pmc.ncbi.nlm.nih.gov/articles/PMC9247713/). So the real answer is boringly practical: use whichever one you'll actually stick with.
 
-On paper, a plain page with a hand-drawn line works fine, and a Cornell-ruled notebook or a legal pad saves you the ruling step if you take a lot of notes.
+On paper, a plain page with a hand-drawn line works fine, and a Cornell-ruled notebook or a legal pad saves you the ruling step if you take a lot of notes. If you're still choosing one, [the best notebooks for note-taking](/best-notebooks-for-note-taking) breaks down the options by use case.
 
 [AFFILIATE_PLACEHOLDER: Cornell-ruled notebooks — add Amazon Associates links + disclosure once approved]
 

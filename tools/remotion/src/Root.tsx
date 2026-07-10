@@ -5,6 +5,7 @@ import { SampleDiagram } from "./SampleDiagram";
 import { CornellLayoutDiagram } from "./CornellLayoutDiagram";
 import { Cornell5RsProcess } from "./Cornell5RsProcess";
 import { CornellWorkedExampleBiology } from "./CornellWorkedExampleBiology";
+import { PaperProblemsDiagram } from "./PaperProblemsDiagram";
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -15,6 +16,8 @@ export const RemotionRoot: React.FC = () => (
     <Still id="Cornell5RsProcess" component={Cornell5RsProcess}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="CornellWorkedExampleBiology" component={CornellWorkedExampleBiology}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="PaperProblemsDiagram" component={PaperProblemsDiagram}
       width={CANVAS.width} height={CANVAS.height} />
   </>
 );
