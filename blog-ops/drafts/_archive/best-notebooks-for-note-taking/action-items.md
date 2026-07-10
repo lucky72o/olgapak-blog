@@ -45,16 +45,14 @@ Spec: `images.md` (also copied to the asset folder as `README.md` at finalize).
 
 Point 2–4 existing posts AT `/best-notebooks-for-note-taking`. Root-relative, NO trailing slash.
 
-- [x] **cornell-note-taking-method** (LOCAL): inbound link applied to `content/blog/cornell-note-taking-method.md` in the repo (ships in this PR). **Also hand-apply to the LIVE WP cornell post** in wp-admin (v1 can't auto-sync existing posts unless `apply_inbound_links_live` fires at publish). Anchor: "the best notebooks for note-taking".
-- [ ] **focused-note-taking-how-to-guide** (LIVE-ONLY, not local markdown): hand-apply in wp-admin. Fetch → insert anchor "the right notebook" → PATCH:
-  ```bash
-  WP_USER="wpx_admin101"; WP_BASE="https://olgapak.com"
-  curl -sf -u "$WP_USER:${WP_APP_PASSWORD}" "$WP_BASE/wp-json/wp/v2/posts?slug=focused-note-taking-how-to-guide&context=edit&_fields=id,content"
-  # insert <a href="https://olgapak.com/best-notebooks-for-note-taking">the right notebook</a> in the tools/supplies context, then:
-  curl -sf -u "$WP_USER:${WP_APP_PASSWORD}" -X POST -H 'Content-Type: application/json' "$WP_BASE/wp-json/wp/v2/posts/<id>" -d @<(jq -n --arg c "<edited content.raw>" '{content:$c}')
-  ```
-- [ ] **outlining-note-taking-method** (LIVE-ONLY): same procedure, anchor "a good note-taking notebook".
-- [ ] **how-to-make-aesthetic-notes-complete-step-by-step-guide** (LIVE-ONLY): same procedure, anchor "the best notebooks for note-taking" (a current top-8 ranker — high-value link source).
+All 4 inbound links have been **applied automatically via REST to the live posts** (2026-07-10):
+
+- [x] **cornell-note-taking-method** (live post **2075**): inbound link applied via REST, anchor "the best notebooks for note-taking". (Also applied to the repo copy `content/blog/cornell-note-taking-method.md`, ships in PR #4.)
+- [x] **focused-note-taking-how-to-guide** (live post **639**): applied via REST, anchor "the right notebook".
+- [x] **outlining-note-taking-method** (live post **416**): applied via REST, anchor "a good note-taking notebook".
+- [x] **how-to-make-aesthetic-notes-complete-step-by-step-guide** (live post **606**): applied via REST, anchor "the best notebooks for note-taking".
+
+Note: these links point at `https://olgapak.com/best-notebooks-for-note-taking`, which is a 404 until you Publish the draft (2092). They resolve the moment the post goes live.
 
 ## 5. Final manual read
 
@@ -70,8 +68,7 @@ Point 2–4 existing posts AT `/best-notebooks-for-note-taking`. Root-relative, 
 - [ ] Read once more in WP admin (title, excerpt, featured image, category already synced by the workflow).
 - [ ] **Focus keyword (Rank Math, manual — NOT settable via REST):** in the post's Rank Math panel, set the focus keyword to exactly: **best notebooks for note taking**.
 - [ ] **Category:** confirm the post is in **Productivity + EdTech** (term ids [12, 9]) — set by the workflow; verify it's not Uncategorized.
-- [ ] **⚠️ AFFILIATE LINKS (15) — HELD until the Amazon Associates program is live.** The post contains 15 `[AFFILIATE-LINK-PENDING: <product>]` plain-text placeholders (one per notebook). Before publishing, EITHER (a) if the Associates program is live: replace each with a real affiliate link + add the "As an Amazon Associate I earn from qualifying purchases…" disclosure above the fold; OR (b) if not live yet: remove/neutralize the placeholders so readers don't see them (e.g. delete the placeholder text, leaving the product name), and publish WITHOUT the affiliate disclosure. Do NOT publish live affiliate links or the disclosure until the program is approved. Placeholder locations (draft line → product):
-  - L77 Leuchtturm1917 · L81 Apica Premium CD · L85 Moleskine Classic · L95 Mead Five Star · L99 Maruman Mnemosyne N194A · L103 Muji · L111 Rhodia dotPad · L115 Levenger Circa · L123 Paperage · L127 Oxford · L137 Rocketbook Core · L141 reMarkable Paper Pro · L151 Midori MD · L155 Life Noble Note B6 · L159 Field Notes 3-Pack
+- [x] **Product links — DONE (real non-affiliate links).** All 15 placeholders were replaced with real, working product links (a "Check the price on Amazon →" / "See it at Levenger →" CTA per pick): 14 clean Amazon `/dp/<ASIN>` URLs + 1 Levenger brand page (Circa). No affiliate tags, no "As an Amazon Associate…" disclosure (program not live). **Later:** swap each `/dp/<ASIN>` link for its affiliate version (just add your Associates tag) once approved. ASINs used: Leuchtturm B0095FFUM4 · Apica B006ZSQWP8 · Moleskine 8883701127 · Five Star B0CWS28VK1 · Maruman B00SWVXZ5G · Muji B00GMJM2E0 · Rhodia B003UCL77U · Levenger (brand page) · Paperage B07L4JCG7T · Oxford B00D3OR58A · Rocketbook B0DP3HLY4J · reMarkable B0DGBDR2PM · Midori B003CT47ZU · Life Noble B003YU2S8A · Field Notes B071Y41YY3.
 - [ ] Click **Publish** in WP admin (the workflow never publishes; it only creates the draft).
 - [ ] After publishing, verify per §8.
 - [ ] **"Restore the backup" banner:** if WP shows it after a REST re-sync, RELOAD/dismiss — do NOT click Restore (it reverts the synced draft).
@@ -104,7 +101,7 @@ ls blog-ops/drafts/_archive/best-notebooks-for-note-taking/ # should exist
 [EXTERNAL_LINK_NEEDED:], 0 hits
 [INTERNAL_LINK_NEEDED:], 0 hits
 [IMAGE:]               , 5 hits (== 5 in-post images.md entries; +1 featured = 6 total)
-[AFFILIATE-LINK-PENDING:], 15 hits (held; see §7)
+[AFFILIATE-LINK-PENDING:], 0 hits (all 15 replaced with real product links 2026-07-10; see §7)
 ```
 
 Grep command:
