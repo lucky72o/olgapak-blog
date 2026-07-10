@@ -30,13 +30,39 @@ personally tested; this blog does not publish generic SEO listicle filler.
 
 ## Tag taxonomy
 
-- Productivity
-- Artificial Intelligence
-- Blogging
-- Focus
-- Planning
-- Digital Wellbeing
-- Content Creation
+These are the ACTUAL live WordPress tags (verified 2026-07-10 via
+`GET /wp-json/wp/v2/tags`). Pick 2-4 existing tags per post from this list, do
+NOT invent new generic ones (the writer previously emitted "Productivity /
+Planning / Focus", which are categories or don't exist as tags, forcing a
+remap at staging). Names are the exact WP term names (lowercase as stored).
+
+- productivity  (most-used)
+- note-taking
+- note-taking app
+- note-taking method
+- focused note-taking
+- outlining note-taking method
+- outline note-taking method
+- aesthetic notes
+- students
+- education
+- time management
+- planning tips and tricks
+- daily planner
+- digital tools for productivity
+- ai
+- ai tools
+- ai assistant
+- ai assistants
+- ai scheduling assistants
+- blogging
+- note taking meme
+- note taking humor
+- meeting minutes meme
+
+Re-run the tag inspection when the live taxonomy changes. If a genuinely new
+tag is needed, create it deliberately rather than as a side effect of a
+frontmatter guess.
 
 ## Primary CTA
 
