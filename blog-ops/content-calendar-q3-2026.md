@@ -39,16 +39,18 @@ Your last-3-months ranking data shows momentum concentrated in **note-taking** (
 Update the **Status** column in the master table below as each post moves through the pipeline — it's the single source of truth for progress. When you mark a post ✅ Published, paste its live URL into the Status cell (e.g. `✅ Published — /cornell-note-taking-method`).
 
 ### Progress tracker
-_Last updated: 2026-07-04_
+_Last updated: 2026-07-08_
 
 | Status | Count | % |
 |---|---|---|
-| 📋 Planned | 36 | 100% |
+| 📋 Planned | 35 | 97% |
 | ✍️ Drafting | 0 | 0% |
-| 🔍 In review | 0 | 0% |
+| 🔍 In review | 1 | 3% |
 | 🗓️ Scheduled | 0 | 0% |
 | ✅ Published | 0 | 0% |
 | **Total** | **36** | **100%** |
+
+_Note: #5 "15 Best Notebooks for Note-Taking" — full post + all 6 images done; PR [#4](https://github.com/lucky72o/olgapak-blog/pull/4) open for review (`blog/best-notebooks-for-note-taking`). WordPress draft creation is BLOCKED on a 401 auth error (app-password/IP-lockout) — re-run WP staging once the credential/limiter is cleared. Before publish: Rank Math focus keyword + resolve the 15 held affiliate placeholders + 3 live-only inbound links (see action-items.md)._
 
 ---
 
@@ -60,7 +62,7 @@ _Last updated: 2026-07-04_
 | 2 | 📋 Planned | Wed Jul 8 | How to Stop Doomscrolling: 12 Science-Backed Strategies | B | INFO | how to stop doomscrolling | (links to money posts) |
 | 3 | 📋 Planned | Fri Jul 10 | How to Plan Your Week: A Simple Weekly Planning Routine | C | INFO | how to plan your week | weekly planner pads |
 | 4 | 📋 Planned | Mon Jul 13 | Note-Taking Methods Compared: Cornell vs Outline vs Mapping vs Charting | A | PILLAR/COMPARE | note-taking methods | notebooks (soft) |
-| 5 | 📋 Planned | Wed Jul 15 | 15 Best Notebooks for Note-Taking in 2026 | A | COMMERCIAL | best notebooks for note taking | Moleskine, Leuchtturm1917, Rocketbook |
+| 5 | 🔍 In review | Wed Jul 15 | 15 Best Notebooks for Note-Taking in 2026 | A | COMMERCIAL | best notebooks for note taking | Moleskine, Leuchtturm1917, Rocketbook |
 | 6 | 📋 Planned | Fri Jul 17 | Time Blocking 101: How to Time Block Your Day | C | INFO | time blocking | Time Timer, planner pads |
 | 7 | 📋 Planned | Mon Jul 20 | Mind Mapping Note-Taking Method: How to Use It | A | INFO | mind mapping note taking | large sketch pads, colored pens |
 | 8 | 📋 Planned | Wed Jul 22 | Digital Detox: A 7-Day Plan to Reset Your Screen Time | B | INFO | digital detox plan | phone lockbox, analog alarm clock |

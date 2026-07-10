@@ -7,3 +7,6 @@ tools/remotion/out/
 # OS / editor cruft
 .DS_Store
 *.log
+
+# blogsmith staging worktrees (nested PR worktrees, not tracked)
+.worktrees/

@@ -59,9 +59,20 @@ new posts stay consistent with the existing library.
   A recurring female character (Olga stand-in) plus topic props appears. Mood:
   energetic, optimistic, approachable.
 - **One illustration per H2 section**: same flat-vector + lettered-title look
-  as the hero but titled with the subheading, on softer pastel backgrounds.
-  The drawing is concept-literal (depicts the heading's idea). This is the
-  highest-volume image type — plan one per major section for list/how-to posts.
+  as the hero but titled with the subheading. The drawing is concept-literal
+  (depicts the heading's idea). This is the highest-volume image type, plan one
+  per major section for list/how-to posts.
+
+**Illustration palette (important, learned 2026-07-10):** section illustrations
+must NOT be monochrome brand-blue. Brand blue `#2B6CB0` is an ACCENT and link
+color, never the background or the dominant fill of a scene. Vary the background
+hue across a post's sections and favor WARM, inviting scenes (natural wood tones,
+cream paper, warm light, a little greenery), with brand blue and teal used only
+as accent details. Reference look to match: the warm, wood-toned
+`finished-notebooks-shelf` style. Avoid the too-cold, too-blue feel of
+`student-desk-spiral` and `rocketbook-workflow` (too many blue objects, no
+warmth). The featured hero is the one exception, it may keep a single bright
+saturated background.
 - **Real photos** used sparingly for lifestyle moments (e.g. meditation).
 - **Annotated screenshots** (red callout boxes + arrows) for how-to /
   side-by-side comparisons; plain full-page screenshots for tool roundups.
