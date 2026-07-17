@@ -59,7 +59,7 @@ If Outline sounds like your default, it is worth doing it deliberately rather th
 
 A mind map is a visual, non-linear way of taking notes: you put the main topic in the center of the page and draw branches out to related ideas, then sub-branches off those. Instead of a top-to-bottom list, you get a web that shows how everything connects.
 
-> **Image pending:** Hand-drawn mind map with a central topic and four branches fanning to sub-ideas (Type: ai-prompt). Create this asset per action-items, then replace this line with the image embed.
+![Mind map with a central topic and four labeled branches fanning to sub-ideas](../../blog-ops/assets/note-taking-methods/mind-map-example.png)
 
 This is the method to reach for when relationships matter more than sequence. Brainstorming a project, mapping how the causes of an event feed into each other, or getting the big picture of a messy topic all suit mapping well. There is a nice side benefit, too: the act of rearranging linear notes into a non-linear map helps commit those ideas to long-term memory, because you have to actually think about how the pieces fit rather than just copy them down.
 
@@ -69,7 +69,7 @@ Mapping has a clear weak spot. It is poor for dense factual detail delivered fas
 
 The Charting Method is a table you build before the information arrives. You draw columns for the categories you expect, then fill in rows across them as you go. Think of comparing three economic theories across the same four attributes, or five battles across date, cause, outcome, and significance.
 
-> **Image pending:** Filled charting-method table comparing a few items across four labeled columns (Type: ai-prompt). Create this asset per action-items, then replace this line with the image embed.
+![Filled charting-method table comparing four items across labeled columns](../../blog-ops/assets/note-taking-methods/charting-example.png)
 
 Charting shines exactly where the others strain: comparing facts across categories, especially when the content is both fact-heavy and relationship-heavy and delivered fast. If you know a test will focus on both the facts and how they relate, and the material is dense and quick, a pre-drawn chart lets you drop each detail into the right cell without pausing to structure anything. The structure is already there.
 

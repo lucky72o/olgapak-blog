@@ -133,11 +133,14 @@ Each image below corresponds to an `[IMAGE: ...]` placeholder in `draft-v1.md`. 
 
 ### Image 2, after H2 "The Mapping (Mind Mapping) Method" + 1 paragraph
 
-- **Draft placeholder (verbatim):** `[IMAGE: Simple hand-drawn-style mind map with a central topic bubble and three or four labeled branches fanning out to sub-ideas. Type: ai-prompt. Suggested filename: mind-map-example.png]`
-- **Type:** `ai-prompt`
-- **Concept:** A friendly hand-drawn-style mind map: one central topic bubble with three or four thick branches fanning out to sub-idea bubbles, each branch a different soft brand color, on a light paper-like background.
+- **Draft placeholder (verbatim):** `[IMAGE: Simple mind map with a central topic bubble and four labeled branches fanning out to sub-ideas. Type: remotion. Suggested filename: mind-map-example.png]`
+- **Type:** `remotion` (switched from ai-prompt per human request — crisp labeled nodes, consistent with the post's other remotion diagrams)
+- **Composition MethodMindMap ID:** `MethodMindMap`
+- **Canvas:** 1800x1200 (theme CANVAS), in-post layout (NO title/subtitle)
+- **Concept:** A clean flat-vector mind map: one central rounded node labeled "Topic" in the middle, four thick curved branches fanning out to labeled sub-idea nodes (e.g. "Key idea", "Example", "Cause", "Effect"), each branch a different theme color (primary blue, accent teal, muted, warn used once), with one or two thin twigs off each branch to small dots. Real short labels (remotion renders text cleanly). Watermark present.
+- **Render command:** `npx remotion still MethodMindMap --output=blog-ops/assets/note-taking-methods/mind-map-example.png --scale=2` (run from tools/remotion via the adapter's REPO-derived invocation)
 - **Suggested filename:** `mind-map-example.png`
-- **Alt text:** `Hand-drawn mind map with a central topic and four branches fanning to sub-ideas`
+- **Alt text:** `Mind map with a central topic and four labeled branches fanning to sub-ideas`
 
 #### Production spec
 
@@ -176,11 +179,14 @@ Each image below corresponds to an `[IMAGE: ...]` placeholder in `draft-v1.md`. 
 
 ### Image 3, after H2 "The Charting Method" + 1 paragraph
 
-- **Draft placeholder (verbatim):** `[IMAGE: Small filled charting-table example with three or four labeled columns and a few completed rows, showing categories compared side by side. Type: ai-prompt. Suggested filename: charting-example.png]`
-- **Type:** `ai-prompt`
-- **Concept:** A small, tidy filled comparison table (charting method): three or four labeled column headers and a few completed rows, drawn as a clean flat-illustration grid on a light background, showing items compared side by side across categories.
+- **Draft placeholder (verbatim):** `[IMAGE: Small filled charting-table example with four labeled columns and a few completed rows, showing categories compared side by side. Type: remotion. Suggested filename: charting-example.png]`
+- **Type:** `remotion` (switched from ai-prompt per human request — a legible grid is the ai-prompt weak spot; remotion renders real, crisp cell text)
+- **Composition ChartingExample ID:** `ChartingExample`
+- **Canvas:** 1800x1200 (theme CANVAS), in-post layout (NO title/subtitle)
+- **Concept:** A clean flat comparison table (the charting method): a shaded header row (primary blue fill, white header text) with a leftmost label column + three category columns, then three or four body rows with real short cell text. Illustrative content (no facts.md figure is load-bearing) — e.g. three economic theories across Focus / Key thinker / View on markets, OR five battles across Date / Cause / Outcome. Thin border gridlines, rounded outer corners, subtle shadow (card design language). Watermark present.
+- **Render command:** `npx remotion still ChartingExample --output=blog-ops/assets/note-taking-methods/charting-example.png --scale=2`
 - **Suggested filename:** `charting-example.png`
-- **Alt text:** `Filled charting-method table comparing a few items across four labeled columns`
+- **Alt text:** `Filled charting-method table comparing four items across labeled columns`
 
 #### Production spec
 
