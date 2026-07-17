@@ -3,9 +3,9 @@ slug: note-taking-methods
 target_keyword: note-taking methods
 created: 2026-07-08 10:23
 last_updated: 2026-07-08 10:23
-current_stage: action_items
+current_stage: complete
 current_owner: blog-post-workflow
-status: active
+status: complete
 gate_pending: none
 # status values: active | paused | complete | abandoned
 # current_stage values: intake | chrome_fetch | serp_select | serp_deep_fetch | reddit_fetch | reddit_select | reddit_deep_fetch | x_fetch | x_select | x_deep_fetch | competitor_check | analyze_research | synthesize_plan | plan_review | outline | draft | review | humanize | resolve_markers | images | generate_images | action_items | preview | finalize | repurpose | complete
@@ -122,10 +122,11 @@ Machine-readable state in the frontmatter above. Human-readable progress below. 
 
 ## Stage 4c: Gate 2 + Finalize
 
-- [ ] Gate 2 presented (banner format)
-- [ ] Human approved
-- [ ] draft published to content/blog/note-taking-methods.md (WordPress equivalent)
-- [ ] asset folder created at blog-ops/assets/note-taking-methods/
+- [x] action-items.md written (Stage 4b)
+- [x] Stage 4b.5 staging complete: repo markdown finalized, WP draft created (post 2102), media uploaded (2099/2100/2101), inbound link applied to cornell (in PR), worktree + branch blog/note-taking-methods + PR #6 opened, pr-monitor.json written, main tree cleaned
+- [ ] Gate 2 presented (banner + PR monitor cron)
+- [ ] Human approved (PR approve / WP publish / console approve)
+- [ ] finalize: archive-in-PR + mv drafts→_archive + worktree removed
 - [ ] blog-ops/drafts/note-taking-methods/ archived to _archive/
 
 ---
@@ -134,6 +135,7 @@ Machine-readable state in the frontmatter above. Human-readable progress below. 
 
 - Plan review opened: 2026-07-09
 - Plan review verdict: approve (all 7 rubric criteria pass; length 2400-2800 + no-SERP-link discipline both confirmed), 2026-07-09
+- Gate 2 opened (PR path, async): 2026-07-17, PR #6 + WP draft 2102
 - outline completed: 2026-07-09, auto-progressing to Stage 3a (no human gate)
 - Stage 3a (draft) started: 2026-07-09
 - Stage 3a (draft) completed: 2026-07-09, draft-v1.md, ~2330 body words
@@ -145,14 +147,23 @@ Machine-readable state in the frontmatter above. Human-readable progress below. 
 - Stage 4a (image plan) completed: 2026-07-09, 5 images (1 featured ai-prompt + 4 in-post: 2 remotion, 2 ai-prompt)
 - Stage 4a.5 (generate images) PARTIAL: 2026-07-09 — rendered 2 remotion (cornell-layout-diagram.png, method-decision-flow.png); prompt_pending: featured.png, mind-map-example.png, charting-example.png. PAUSED at Step 13.5.6 featured-slot completion gate.
 - Stage 4a.5 (generate images) COMPLETED: 2026-07-17 — human created featured.png (teal bg, title baked in with "One" red accent, olgapak.com wordmark; verified on disk 1536x1024, title + wordmark spelled correctly). Featured-slot gate cleared. Remaining prompt_pending (non-blocking, ship as action items): mind-map-example.png, charting-example.png.
+- Stage 4b (action items) completed: 2026-07-17, action-items.md written
+- Stage 4b.5 (staging) completed: 2026-07-17. WP draft post 2102 (status draft, cat [9,12], tags [39,40,15], featured_media 2099). Media 2099/2100/2101. Fixed a drift issue: MethodDecisionFlow Root.tsx registration had been lost when the working tree moved to main + PR #5 merged between Jul 9 and Jul 17; re-added it in the worktree so the PR ships a consistent remotion project. PR #6 opened: https://github.com/lucky72o/olgapak-blog/pull/6
+- Gate 2 opened: 2026-07-17 (PR path, async)
+- Post-staging update (review-loop edit): 2026-07-17 — switched mind-map + charting images from ai-prompt to remotion per human request. Authored MethodMindMap + ChartingExample compositions, rendered, embedded in post, uploaded to WP (media 2104/2105), re-synced WP draft 2102, pushed to PR #6 (commit 7f71855). All 5 images now done (4 remotion + 1 ai-prompt featured); zero pending. Main tree re-cleaned.
 
 ## Stage 3d marker outcome log
 - [EXTERNAL_LINK_NEEDED: Mueller & Oppenheimer 2014] → RESOLVED. Cite: https://pubmed.ncbi.nlm.nih.gov/24760141/ (NIH/PubMed record; abstract confirms "laptop note-takers performed worse on conceptual questions than longhand"). Linked to PubMed rather than SAGE publisher (SAGE 403s automated checkers; PubMed authoritative + 200). facts.md mirrored.
 - Frontiers/NTNU handwriting link (already in draft, not a marker) → verified accurate at Stage 3d; claim scoped correctly (theta-range activity tied to memory/encoding), no overclaim.
 - [VERIFY:] markers: 0 (none written).
 
+## Live inbound-link application (APPLIED, per wordpress-rest §On Gate 2 approval — apply_inbound_links_live: true, post published 2026-07-17)
+- live inbound link APPLIED: cornell-note-taking-method (wp id 2075) -> /note-taking-methods, anchor "compare Cornell with the other note-taking methods", appended to the "other methods" paragraph (after "...three fixed boxes."). Verified present.
+- live inbound link APPLIED: outlining-note-taking-method (wp id 416) -> /note-taking-methods, anchor "see how outlining compares to the other note-taking methods", appended to the intro para (after "...beginners and professionals alike."). Verified present.
+- live inbound link APPLIED: focused-note-taking-how-to-guide (wp id 639) -> /note-taking-methods, anchor "main note-taking methods compared", appended to the Note-taking Methods section intro (after "...essence of a lesson."). Verified present.
+
 ## Inbound link records (write-ahead, per adapter §Staging step 6c)
-- inbound link applied by workflow: content/blog/cornell-note-taking-method.md (anchor "compare Cornell with the other note-taking methods" -> /note-taking-methods, extended the line-103 other-methods sentence)
+- inbound link applied by workflow: content/blog/cornell-note-taking-method.md (anchor "compare Cornell with the other note-taking methods" -> /note-taking-methods, extended the line-103 other-methods sentence). SHIPPED in PR #6 (worktree copy committed); main-tree copy reverted at step 7h (link-only diff re-verified). NOTE: repo edit does NOT sync to live WP — hand-apply to the live cornell post remains an action item (§4b).
 
 ## Stage 4a image plan notes
 - 5 images: featured (ai-prompt, illustrated hero per blog convention — matches published Cornell post), + 4 in-post: cornell-layout-diagram (remotion, CornellLayoutDiagram — ALREADY EXISTS+registered, reuse), mind-map-example (ai-prompt, manual), charting-example (ai-prompt, manual), method-decision-flow (remotion, MethodDecisionFlow — NET-NEW, needs .tsx authoring).

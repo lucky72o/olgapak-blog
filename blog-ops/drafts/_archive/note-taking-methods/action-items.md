@@ -25,21 +25,21 @@ Read by: the human operator before publishing.
 Image spec: `blog-ops/assets/note-taking-methods/README.md` (= images.md). Estimated time: ~15 minutes (2 pending in-post images).
 
 - [x] Featured image: `featured.png`, type: `ai-prompt` — DONE (human-created: teal bg, title baked in with "One" red accent, olgapak.com wordmark; verified on disk).
-- [x] Image 1: `cornell-layout-diagram.png`, type: `remotion` — DONE (rendered by image-builder; verified).
-- [ ] Image 2: `mind-map-example.png`, type: `ai-prompt` — PENDING. Paste the prompt in images.md §"### Image 2" into your image tool; save to `blog-ops/assets/note-taking-methods/mind-map-example.png`. Ships in preview as a build-safe "Image pending" note until created.
-- [ ] Image 3: `charting-example.png`, type: `ai-prompt` — PENDING. Same as above; save to `blog-ops/assets/note-taking-methods/charting-example.png`. (Planner flagged: a text grid is the ai-prompt weak spot — a `remotion` override renders crisper cells if you want it.)
+- [x] Image 1: `cornell-layout-diagram.png`, type: `remotion` — DONE (rendered; verified).
+- [x] Image 2: `mind-map-example.png`, type: `remotion` — DONE (switched from ai-prompt per request; MethodMindMap composition; rendered + verified; embedded + synced to WP).
+- [x] Image 3: `charting-example.png`, type: `remotion` — DONE (switched from ai-prompt; ChartingExample composition, crisp legible cells; rendered + verified; embedded + synced to WP).
 - [x] Image 4: `method-decision-flow.png`, type: `remotion` — DONE (rendered; verified).
 
-**Remotion slots** (2 total): both already built, registered, and exported.
-- [x] Remotion: `CornellLayoutDiagram` → `cornell-layout-diagram.png` (reused from the Cornell post; registered in tools/remotion/src/Root.tsx)
-- [x] Remotion: `MethodDecisionFlow` → `method-decision-flow.png` (net-new; authored + registered this run)
+**Remotion slots** (4 total): all built, registered, and exported.
+- [x] Remotion: `CornellLayoutDiagram` → `cornell-layout-diagram.png` (reused from the Cornell post)
+- [x] Remotion: `MethodDecisionFlow` → `method-decision-flow.png` (net-new this run)
+- [x] Remotion: `MethodMindMap` → `mind-map-example.png` (net-new; switched from ai-prompt)
+- [x] Remotion: `ChartingExample` → `charting-example.png` (net-new; switched from ai-prompt)
 
-**AI-generated slots** (3 total, `ai-prompt`):
+**AI-generated slots** (1 total, `ai-prompt`):
 - [x] AI: `featured.png` (human-created this run)
-- [ ] AI: `mind-map-example.png` (pending — prompt in images.md)
-- [ ] AI: `charting-example.png` (pending — prompt in images.md)
 
-Save all to: `blog-ops/assets/note-taking-methods/`
+All images DONE — nothing left to create. (All 5 embedded in the post + uploaded to WP draft 2102 + committed to PR #6.)
 
 ## 2. `[VERIFY:]` markers — auto-resolved at Stage 3d
 
