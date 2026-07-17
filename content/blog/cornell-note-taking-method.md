@@ -100,7 +100,7 @@ It works best for:
 - Anything you'll be tested on, because the cue-and-recite loop is built for exactly that.
 - Meetings you have to act on later, where the cue column becomes your list of decisions and follow-ups.
 
-Where does it struggle? Very fast, equation- or diagram-heavy STEM lectures are the classic trouble spot, because splitting your attention between capturing and structuring in real time is a good way to fall behind. Freeform brainstorming is the other one: when the ideas haven't sorted themselves into a shape yet, a charting or mapping layout, or [the outline method](/outlining-note-taking-method), often fits better than three fixed boxes.
+Where does it struggle? Very fast, equation- or diagram-heavy STEM lectures are the classic trouble spot, because splitting your attention between capturing and structuring in real time is a good way to fall behind. Freeform brainstorming is the other one: when the ideas haven't sorted themselves into a shape yet, a charting or mapping layout, or [the outline method](/outlining-note-taking-method), often fits better than three fixed boxes. If you are still weighing your options, here is how to [compare Cornell with the other note-taking methods](/note-taking-methods).
 
 Here's the honest wrinkle, though. Plenty of real STEM students swear by Cornell anyway. As one engineering student on Reddit put it, "Been using this in engineering classes for a semester now and it honestly helps way more before exams than regular notes." The trick they've figured out is timing: during a firehose lecture you mostly just Record, and you do the Reduce and summary steps *after* class, when you can think. Cornell doesn't have to happen live to work.
 

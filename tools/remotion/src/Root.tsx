@@ -6,6 +6,9 @@ import { CornellLayoutDiagram } from "./CornellLayoutDiagram";
 import { Cornell5RsProcess } from "./Cornell5RsProcess";
 import { CornellWorkedExampleBiology } from "./CornellWorkedExampleBiology";
 import { PaperProblemsDiagram } from "./PaperProblemsDiagram";
+import { MethodDecisionFlow } from "./MethodDecisionFlow";
+import { MethodMindMap } from "./MethodMindMap";
+import { ChartingExample } from "./ChartingExample";
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -18,6 +21,12 @@ export const RemotionRoot: React.FC = () => (
     <Still id="CornellWorkedExampleBiology" component={CornellWorkedExampleBiology}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="PaperProblemsDiagram" component={PaperProblemsDiagram}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="MethodDecisionFlow" component={MethodDecisionFlow}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="MethodMindMap" component={MethodMindMap}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="ChartingExample" component={ChartingExample}
       width={CANVAS.width} height={CANVAS.height} />
   </>
 );
