@@ -2,11 +2,11 @@
 slug: mind-mapping-note-taking-method
 target_keyword: mind mapping note taking
 created: 2026-07-18 12:38
-last_updated: 2026-07-18 14:50
-current_stage: preview
+last_updated: 2026-07-18 15:10
+current_stage: complete
 current_owner: blog-post-workflow
-status: active
 gate_pending: none
+status: complete
 # status values: active | paused | complete | abandoned
 # current_stage values: intake | chrome_fetch | serp_select | serp_deep_fetch | reddit_fetch | reddit_select | reddit_deep_fetch | x_fetch | x_select | x_deep_fetch | competitor_check | analyze_research | synthesize_plan | plan_review | outline | draft | review | humanize | resolve_markers | images | generate_images | action_items | preview | finalize | repurpose | complete
 # current_owner values: human | blog-post-workflow | blog-researcher | blog-writer | blog-reviewer | blog-humanizer | image-planner | image-builder | plan-reviewer
@@ -113,18 +113,20 @@ Note: featured type OVERRIDDEN ai-prompt→remotion for this run (autonomous pub
 Note: [INTERNAL_LINK_NEEDED:] resolved at Stage 4b → /best-notebooks-for-note-taking (verified live). Draft now has ONLY 3 [IMAGE:] markers left (replaced at staging).
 
 ## Stage 4b.5: Stage + open PR + WP draft
-- [ ] post staged to content/blog/mind-mapping-note-taking-method.md
-- [ ] images resolved, cover set
-- [ ] WP draft created (auth probe once)
-- [ ] committed + pushed on blog/mind-mapping-note-taking-method, PR opened
-- [ ] pr-monitor.json written
+- [x] post staged to content/blog/mind-mapping-note-taking-method.md (3 [IMAGE:] → embeds, draft:true stripped)
+- [x] images resolved, featured set via WP featured_media (2110)
+- [x] WP draft created (auth probe once = 200; lockout cleared). Post 2114, cats [9,12], tags [14,27,15,30], author 1
+- [x] committed + pushed on blog/mind-mapping-note-taking-method, PR #8 opened
+- [x] pr-monitor.json written (mode: pr; wp_post_id 2114; wp_media_ids 2110-2113; wp_upload ok)
+- [x] inbound link applied to repo copy note-taking-methods.md (shipped in PR; live application at finalize)
 
 ## Stage 4c: Gate 2 + Finalize + PUBLISH
-- [ ] Gate 2 presented
-- [ ] approved (operator pre-authorized)
-- [ ] finalize/archive
-- [ ] WP status set to `publish` (operator instruction — overrides draft-only default)
-- [ ] content calendar #7 status updated
+- [x] Gate 2 presented (operator pre-authorized publish; finalized synchronously)
+- [x] approved (operator instruction: "update the post's status to published")
+- [x] WP status set to `publish` (post 2114 → https://olgapak.com/mind-mapping-note-taking-method)
+- [x] live inbound link applied to note-taking-methods WP post (id 2102) via REST
+- [x] finalize/archive (drafts → _archive, worktree removed, PR archive push)
+- [x] content calendar #7 status updated
 
 ---
 
@@ -133,6 +135,9 @@ Note: [INTERNAL_LINK_NEEDED:] resolved at Stage 4b → /best-notebooks-for-note-
 - Plan review opened: 2026-07-18 13:10
 - Plan review verdict: request_revisions (v1), 3 minor fixes (open-questions carry-forward, external-link note, paper-vs-digital facts anchor), 2026-07-18 13:15
 - Plan review verdict: approve (v2), 2026-07-18 13:20
+- Gate 2 approved (operator pre-authorization): 2026-07-18 15:12
+- WP post 2114 published: 2026-07-18 15:12 (https://olgapak.com/mind-mapping-note-taking-method)
+- Live inbound link applied to note-taking-methods (id 2102): 2026-07-18 15:13
 
 ## Stage transition log
 
@@ -158,6 +163,8 @@ Note: [INTERNAL_LINK_NEEDED:] resolved at Stage 4b → /best-notebooks-for-note-
 
 **Inbound link (write-ahead, Stage 4b.5):** inbound link applied by workflow: content/blog/note-taking-methods.md → /mind-mapping-note-taking-method (anchor "mind mapping note-taking method", end of "## The Mapping (Mind Mapping) Method" section). Repo copy edited + shipped in PR; LIVE WP application deferred to Gate 2 finalize (apply_inbound_links_live: true, post will be published).
 
+**Live inbound link (write-ahead, Gate 2 finalize):** live inbound link planned: note-taking-methods (wp id 2102) -> this post (2114). Insert `<a href="https://olgapak.com/mind-mapping-note-taking-method">mind mapping note-taking method</a>` at end of the Mapping-method paragraph.
+
 **Writer handoff (Stage 3a):** draft-v1.md, ~1,999 body words (target 1,800–2,200). Markers: 3 [IMAGE:] (§1 map-vs-web, §4 worked-example, §7 good-vs-bad node), 2 [EXTERNAL_LINK_NEEDED:] (Buzan origin §4, dual-coding §2), 1 [INTERNAL_LINK_NEEDED:] (paper gear §5), 0 [VERIFY:]. Internal links: note-taking-methods (intro+§3), outlining-note-taking-method (§1), focused-note-taking-how-to-guide (§3), how-to-make-aesthetic-notes... (§6), root-relative no trailing slash. No SERP competitors linked. Featured image is frontmatter-only (WP adapter, no inline marker) = correct. Writer rendered H3 "Step N:" instead of outline's "Step N —" to keep 0 em-dashes. 0 forbidden-phrase spot-check hits.
 - Stage 3a completed: 2026-07-18 13:45, word count ~1,999, draft-v1.md written
 - Stage 3b review iteration 1 started: 2026-07-18 13:45 (owner: blog-reviewer)
@@ -172,3 +179,5 @@ Note: [INTERNAL_LINK_NEEDED:] resolved at Stage 4b → /best-notebooks-for-note-
 - Stage 4b started: 2026-07-18 14:40 (owner: blog-post-workflow)
 - Stage 4b completed: 2026-07-18 14:50, action-items.md written
 - Stage 4b.5 staging started: 2026-07-18 14:50 (owner: blog-post-workflow)
+- Stage 4b.5 completed: 2026-07-18 15:10, PR #8 opened (https://github.com/lucky72o/olgapak-blog/pull/8), WP draft post 2114 created
+- Gate 2 opened: 2026-07-18 15:10 (operator pre-authorized publish; finalizing synchronously, no async monitor cron)
