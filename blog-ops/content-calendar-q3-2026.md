@@ -39,18 +39,18 @@ Your last-3-months ranking data shows momentum concentrated in **note-taking** (
 Update the **Status** column in the master table below as each post moves through the pipeline — it's the single source of truth for progress. When you mark a post ✅ Published, paste its live URL into the Status cell (e.g. `✅ Published — /cornell-note-taking-method`).
 
 ### Progress tracker
-_Last updated: 2026-07-08_
+_Last updated: 2026-07-18_
 
 | Status | Count | % |
 |---|---|---|
-| 📋 Planned | 35 | 97% |
+| 📋 Planned | 33 | 92% |
 | ✍️ Drafting | 0 | 0% |
-| 🔍 In review | 1 | 3% |
+| 🔍 In review | 0 | 0% |
 | 🗓️ Scheduled | 0 | 0% |
-| ✅ Published | 0 | 0% |
+| ✅ Published | 3 | 8% |
 | **Total** | **36** | **100%** |
 
-_Note: #5 "15 Best Notebooks for Note-Taking" — full post + all 6 images done; PR [#4](https://github.com/lucky72o/olgapak-blog/pull/4) open for review (`blog/best-notebooks-for-note-taking`). WordPress draft creation is BLOCKED on a 401 auth error (app-password/IP-lockout) — re-run WP staging once the credential/limiter is cleared. Before publish: Rank Math focus keyword + resolve the 15 held affiliate placeholders + 3 live-only inbound links (see action-items.md)._
+_Published so far (3): #1 Cornell (`/cornell-note-taking-method`), #4 Note-Taking Methods (`/note-taking-methods`), #5 15 Best Notebooks (`/best-notebooks-for-note-taking`) — all verified live (HTTP 200, real content) on 2026-07-18. The earlier WP 401 auth block on #5 is cleared; its post is live (WP post #2092). All three PRs (#1, #4, #6 methods, #4 notebooks) are merged to `main`._
 
 ---
 
@@ -58,11 +58,11 @@ _Note: #5 "15 Best Notebooks for Note-Taking" — full post + all 6 images done;
 
 | # | Status | Date | Post title | Cluster | Type | Target keyword | Amazon affiliate angle |
 |---|--------|------|-----------|---------|------|----------------|------------------------|
-| 1 | 📋 Planned | Mon Jul 6 | Cornell Note-Taking Method: The Complete Guide (+ Template) | A | PILLAR | cornell note-taking method | Cornell-ruled notebooks, legal pads |
+| 1 | ✅ Published — /cornell-note-taking-method | Mon Jul 6 | Cornell Note-Taking Method: The Complete Guide (+ Template) | A | PILLAR | cornell note-taking method | Cornell-ruled notebooks, legal pads |
 | 2 | 📋 Planned | Wed Jul 8 | How to Stop Doomscrolling: 12 Science-Backed Strategies | B | INFO | how to stop doomscrolling | (links to money posts) |
 | 3 | 📋 Planned | Fri Jul 10 | How to Plan Your Week: A Simple Weekly Planning Routine | C | INFO | how to plan your week | weekly planner pads |
-| 4 | 📋 Planned | Mon Jul 13 | Note-Taking Methods Compared: Cornell vs Outline vs Mapping vs Charting | A | PILLAR/COMPARE | note-taking methods | notebooks (soft) |
-| 5 | 🔍 In review | Wed Jul 15 | 15 Best Notebooks for Note-Taking in 2026 | A | COMMERCIAL | best notebooks for note taking | Moleskine, Leuchtturm1917, Rocketbook |
+| 4 | ✅ Published — /note-taking-methods | Mon Jul 13 | Note-Taking Methods Compared: Cornell vs Outline vs Mapping vs Charting | A | PILLAR/COMPARE | note-taking methods | notebooks (soft) |
+| 5 | ✅ Published — /best-notebooks-for-note-taking | Wed Jul 15 | 15 Best Notebooks for Note-Taking in 2026 | A | COMMERCIAL | best notebooks for note taking | Moleskine, Leuchtturm1917, Rocketbook |
 | 6 | 📋 Planned | Fri Jul 17 | Time Blocking 101: How to Time Block Your Day | C | INFO | time blocking | Time Timer, planner pads |
 | 7 | 📋 Planned | Mon Jul 20 | Mind Mapping Note-Taking Method: How to Use It | A | INFO | mind mapping note taking | large sketch pads, colored pens |
 | 8 | 📋 Planned | Wed Jul 22 | Digital Detox: A 7-Day Plan to Reset Your Screen Time | B | INFO | digital detox plan | phone lockbox, analog alarm clock |
@@ -310,4 +310,7 @@ Existing ranking posts referenced for internal links (slugs):
 - **Refresh, don't just add:** #18 is a re-target of your existing `best-ai-tools-for-students`; also plan quarterly title-year bumps on the 2026 money posts.
 - **Track per post:** target-keyword ranking position, impressions/clicks (Search Console), and Amazon affiliate clicks + conversions per post. After ~8 weeks, double down on whichever *new* cluster (E or F) converts best and prune the weaker.
 
-**Next 3 to write first (highest leverage):** #1 Cornell (completes the method set + strong pillar), #5 Best Notebooks (evergreen money post the whole cluster links into), #2 How to Stop Doomscrolling (rides your strongest existing wellbeing ranker).
+**Next 3 to write first (highest leverage):** ~~#1 Cornell~~, ~~#5 Best Notebooks~~, ~~#4 Note-Taking Methods~~ — ✅ all published (Cluster A foundation: 2 pillars + 1 money post live). Updated next 3 (as of 2026-07-18):
+- **#9 The 12 Best Pens for Note-Taking & Writing** — next Cluster A money post; cashes in the live authority (Notebooks links sideways to it, both pillars + Cornell feed it), back-to-school aligned.
+- **#7 Mind Mapping Note-Taking Method** — write alongside #9 as its supporting spoke (spokes ship ~1–2 wks before the money post); links up into #5 and #9.
+- **#2 How to Stop Doomscrolling** — opens Cluster B (proven ranker, still zero posts) via the existing top-8 ranker `things-to-do-instead-of-being-on-your-phone`; seeds the runway to the August wellness-gear money posts.
