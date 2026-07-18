@@ -51,6 +51,20 @@ handling, Rank Math focus-keyword action item, PR completeness) lives in the
   qualifying purchases…") until the Associates program is live — the current
   links are plain and non-affiliate, so no disclosure is required yet.
 
+## AI image generation
+
+- **Generate `ai-prompt` image slots with the `generate-blog-image` skill (codex / gpt-image).**
+  When a post's `images.md` has an `ai-prompt` slot that needs a real file (the featured
+  hero or an in-post concept illustration), invoke the project skill
+  `.claude/skills/generate-blog-image/SKILL.md` — it hands the images.md `Prompt:` block to
+  codex's built-in image model and saves the PNG into `blog-ops/assets/<slug>/`. No
+  `OPENAI_API_KEY` needed (codex authenticates itself); no pasting prompts into a web UI.
+  Loop it once per `ai-prompt` slot. `remotion` slots still render from their React
+  composition; `screenshot` slots are still captured by hand.
+- This automates image *creation* only. It does NOT change the go-live rule: publishing is
+  always a human step (see [[blog-never-autopublish]] / the memory note). The featured slot
+  stays `ai-prompt` per `config.yaml` + `image-style.md`; do not force it to `remotion`.
+
 ## Inbound internal links
 
 - **Apply inbound links yourself, automatically — never ask.** When a post plans
