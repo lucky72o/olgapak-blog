@@ -9,6 +9,33 @@ conversion, category resolution, auth probe-once, inbound links, trailing-slash
 handling, Rank Math focus-keyword action item, PR completeness) lives in the
 `wordpress-rest` adapter or `site-conventions.md` — do not restate it here.
 
+## Publishing & review (do NOT auto-publish)
+
+- **Never publish a post automatically.** Run the workflow only up to the Gate 2
+  preview and STOP for my review. Going live (setting the WordPress post
+  `status: publish`) is always my manual action in wp-admin, taken after I have
+  reviewed the rendered post — never something the workflow does on its own.
+- **"Mark / update the post status to published" means the content calendar
+  Status column** (`blog-ops/content-calendar-q3-2026.md`), NOT the WordPress
+  post status. The WP post stays `draft`. An ambiguous instruction never
+  authorizes a live publish, and launch/invocation args never count as Gate 2
+  approval. When in doubt about publishing or merging, ask.
+- **Set the Rank Math focus keyword BEFORE publishing.** It is not settable via
+  REST (`site-conventions.md` §SEO plugin), so publishing is necessarily a
+  human wp-admin step: set the focus keyword to the target keyword, then click
+  Publish. The workflow leaves the post `draft` and never REST-publishes.
+
+## Image style
+
+- **Featured image is always `ai-prompt`** (the hand-lettered hero over a
+  flat-vector illustration, per `image-style.md` and `images.featured_default`
+  in config). Do NOT override the featured slot to `remotion`/anything else to
+  "auto-render for publishing" — a manual `ai-prompt` featured image is
+  expected, because publishing is a human step regardless.
+- **In-post images pick type by content:** `remotion` only for genuine
+  diagrams/charts; `ai-prompt` for scenes, heroes, and conceptual visuals
+  (optional per content). Never blanket-convert every slot to one type.
+
 ## Content policy
 
 - **Product links: ship real, working NON-affiliate links now (updated 2026-07-10).**
