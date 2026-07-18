@@ -43,12 +43,14 @@ _Last updated: 2026-07-18_
 
 | Status | Count | % |
 |---|---|---|
-| 📋 Planned | 33 | 92% |
+| 📋 Planned | 32 | 89% |
 | ✍️ Drafting | 0 | 0% |
-| 🔍 In review | 0 | 0% |
+| 🔍 In review | 1 | 3% |
 | 🗓️ Scheduled | 0 | 0% |
 | ✅ Published | 3 | 8% |
 | **Total** | **36** | **100%** |
+
+_#2 How to Stop Doomscrolling: staged as WordPress DRAFT (post 2122) + PR #9, awaiting Gate 2 review + human publish. Not live yet, so not marked ✅ Published._
 
 _Published so far (3): #1 Cornell (`/cornell-note-taking-method`), #4 Note-Taking Methods (`/note-taking-methods`), #5 15 Best Notebooks (`/best-notebooks-for-note-taking`) — all verified live (HTTP 200, real content) on 2026-07-18. The earlier WP 401 auth block on #5 is cleared; its post is live (WP post #2092). All three PRs (#1, #4, #6 methods, #4 notebooks) are merged to `main`._
 
@@ -59,7 +61,7 @@ _Published so far (3): #1 Cornell (`/cornell-note-taking-method`), #4 Note-Takin
 | # | Status | Date | Post title | Cluster | Type | Target keyword | Amazon affiliate angle |
 |---|--------|------|-----------|---------|------|----------------|------------------------|
 | 1 | ✅ Published — /cornell-note-taking-method | Mon Jul 6 | Cornell Note-Taking Method: The Complete Guide (+ Template) | A | PILLAR | cornell note-taking method | Cornell-ruled notebooks, legal pads |
-| 2 | 📋 Planned | Wed Jul 8 | How to Stop Doomscrolling: 12 Science-Backed Strategies | B | INFO | how to stop doomscrolling | (links to money posts) |
+| 2 | 🔍 In review — WP draft #2122, PR #9 | Wed Jul 8 | How to Stop Doomscrolling: 12 Science-Backed Strategies | B | INFO | how to stop doomscrolling | (links to money posts) |
 | 3 | 📋 Planned | Fri Jul 10 | How to Plan Your Week: A Simple Weekly Planning Routine | C | INFO | how to plan your week | weekly planner pads |
 | 4 | ✅ Published — /note-taking-methods | Mon Jul 13 | Note-Taking Methods Compared: Cornell vs Outline vs Mapping vs Charting | A | PILLAR/COMPARE | note-taking methods | notebooks (soft) |
 | 5 | ✅ Published — /best-notebooks-for-note-taking | Wed Jul 15 | 15 Best Notebooks for Note-Taking in 2026 | A | COMMERCIAL | best notebooks for note taking | Moleskine, Leuchtturm1917, Rocketbook |
