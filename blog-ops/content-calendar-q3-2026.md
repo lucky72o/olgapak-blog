@@ -64,7 +64,7 @@ _Published so far (3): #1 Cornell (`/cornell-note-taking-method`), #4 Note-Takin
 | 4 | ✅ Published — /note-taking-methods | Mon Jul 13 | Note-Taking Methods Compared: Cornell vs Outline vs Mapping vs Charting | A | PILLAR/COMPARE | note-taking methods | notebooks (soft) |
 | 5 | ✅ Published — /best-notebooks-for-note-taking | Wed Jul 15 | 15 Best Notebooks for Note-Taking in 2026 | A | COMMERCIAL | best notebooks for note taking | Moleskine, Leuchtturm1917, Rocketbook |
 | 6 | 📋 Planned | Fri Jul 17 | Time Blocking 101: How to Time Block Your Day | C | INFO | time blocking | Time Timer, planner pads |
-| 7 | 📋 Planned | Mon Jul 20 | Mind Mapping Note-Taking Method: How to Use It | A | INFO | mind mapping note taking | large sketch pads, colored pens |
+| 7 | ✅ Published — /mind-mapping-note-taking-method | Mon Jul 20 | Mind Mapping Note-Taking Method: How to Use It | A | INFO | mind mapping note taking | large sketch pads, colored pens |
 | 8 | 📋 Planned | Wed Jul 22 | Digital Detox: A 7-Day Plan to Reset Your Screen Time | B | INFO | digital detox plan | phone lockbox, analog alarm clock |
 | 9 | 📋 Planned | Fri Jul 24 | The 12 Best Pens for Note-Taking & Writing (2026) | A | COMMERCIAL | best pens for note taking | Pilot G2, Uni-ball, Muji, Sakura |
 | 10 | 📋 Planned | Mon Jul 27 | How to Use AI to Take Better Notes (Tools & Workflow) | D | INFO | ai note taking | (links to AI note-taker roundup + tools) |
