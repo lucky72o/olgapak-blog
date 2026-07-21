@@ -10,6 +10,10 @@ import { MethodDecisionFlow } from "./MethodDecisionFlow";
 import { MethodMindMap } from "./MethodMindMap";
 import { ChartingExample } from "./ChartingExample";
 import { DoomscrollLoopDiagram } from "./DoomscrollLoopDiagram";
+import { MindMapFeatured } from "./MindMapFeatured";
+import { MindMapVsWebContrast } from "./MindMapVsWebContrast";
+import { HeartMindMap } from "./HeartMindMap";
+import { MindMapNodeGoodVsBad } from "./MindMapNodeGoodVsBad";
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -30,6 +34,14 @@ export const RemotionRoot: React.FC = () => (
     <Still id="MethodMindMap" component={MethodMindMap}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="ChartingExample" component={ChartingExample}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="MindMapFeatured" component={MindMapFeatured}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="MindMapVsWebContrast" component={MindMapVsWebContrast}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="HeartMindMap" component={HeartMindMap}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="MindMapNodeGoodVsBad" component={MindMapNodeGoodVsBad}
       width={CANVAS.width} height={CANVAS.height} />
   </>
 );

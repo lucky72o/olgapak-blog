@@ -63,7 +63,7 @@ A mind map is a visual, non-linear way of taking notes: you put the main topic i
 
 This is the method to reach for when relationships matter more than sequence. Brainstorming a project, mapping how the causes of an event feed into each other, or getting the big picture of a messy topic all suit mapping well. There is a nice side benefit, too: the act of rearranging linear notes into a non-linear map helps commit those ideas to long-term memory, because you have to actually think about how the pieces fit rather than just copy them down.
 
-Mapping has a clear weak spot. It is poor for dense factual detail delivered fast, like a lecture rattling off dates, formulas, or definitions. There is no clean place to park a wall of facts on a branching diagram, and drawing while listening at speed is hard. Use it to think, not to transcribe.
+Mapping has a clear weak spot. It is poor for dense factual detail delivered fast, like a lecture rattling off dates, formulas, or definitions. There is no clean place to park a wall of facts on a branching diagram, and drawing while listening at speed is hard. Use it to think, not to transcribe. For a step-by-step walkthrough, see our full guide to the [mind mapping note-taking method](/mind-mapping-note-taking-method).
 
 ## The Charting Method
 
