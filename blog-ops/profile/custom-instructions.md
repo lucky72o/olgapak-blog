@@ -25,6 +25,23 @@ handling, Rank Math focus-keyword action item, PR completeness) lives in the
   human wp-admin step: set the focus keyword to the target keyword, then click
   Publish. The workflow leaves the post `draft` and never REST-publishes.
 
+This never-auto-publish rule is now also structurally guaranteed, not just
+documented: the console never sends `status: publish`, and Gate 2 approval
+requires a durable `approval.json` file that only the operator's browser
+Approve action can write.
+
+## Autopilot
+
+- **When this blog runs headlessly under the operator console**
+  (`CONSOLE_RUN_STATE` set), the park-don't-ask policy table in the plugin's
+  `blog-post-workflow` `## Autopilot` section supersedes any "when in doubt,
+  ask" instinct elsewhere in this file — the substitute for asking is parking,
+  not stopping.
+- **The publishing rules above are unchanged by autopilot:** never auto-publish,
+  going live is still a manual wp-admin action, and Gate 2 approval
+  (`approval.json`) is now also structurally enforced by the plugin, not just
+  this doc.
+
 ## Image style
 
 - **Featured image is always `ai-prompt`** (the hand-lettered hero over a
@@ -53,14 +70,12 @@ handling, Rank Math focus-keyword action item, PR completeness) lives in the
 
 ## AI image generation
 
-- **Generate `ai-prompt` image slots with the `generate-blog-image` skill (codex / gpt-image).**
-  When a post's `images.md` has an `ai-prompt` slot that needs a real file (the featured
-  hero or an in-post concept illustration), invoke the project skill
-  `.claude/skills/generate-blog-image/SKILL.md` — it hands the images.md `Prompt:` block to
+- **`ai-prompt` image slots are generated natively by the plugin's codex path** — the
+  `generate-image-codex` skill, invoked by the image-builder agent / `generate-images` at
+  Stage 4a.5. No repo-local skill is involved. It hands the images.md `Prompt:` block to
   codex's built-in image model and saves the PNG into `blog-ops/assets/<slug>/`. No
-  `OPENAI_API_KEY` needed (codex authenticates itself); no pasting prompts into a web UI.
-  Loop it once per `ai-prompt` slot. `remotion` slots still render from their React
-  composition; `screenshot` slots are still captured by hand.
+  `OPENAI_API_KEY` needed (codex authenticates itself). `remotion` slots still render from
+  their React composition; `screenshot` slots are still captured by hand.
 - This automates image *creation* only. It does NOT change the go-live rule: publishing is
   always a human step (see [[blog-never-autopublish]] / the memory note). The featured slot
   stays `ai-prompt` per `config.yaml` + `image-style.md`; do not force it to `remotion`.
