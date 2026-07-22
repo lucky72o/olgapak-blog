@@ -39,18 +39,18 @@ Your last-3-months ranking data shows momentum concentrated in **note-taking** (
 Update the **Status** column in the master table below as each post moves through the pipeline — it's the single source of truth for progress. When you mark a post ✅ Published, paste its live URL into the Status cell (e.g. `✅ Published — /cornell-note-taking-method`).
 
 ### Progress tracker
-_Last updated: 2026-07-18_
+_Last updated: 2026-07-21_
 
 | Status | Count | % |
 |---|---|---|
-| 📋 Planned | 33 | 92% |
+| 📋 Planned | 31 | 86% |
 | ✍️ Drafting | 0 | 0% |
 | 🔍 In review | 0 | 0% |
 | 🗓️ Scheduled | 0 | 0% |
-| ✅ Published | 3 | 8% |
+| ✅ Published | 5 | 14% |
 | **Total** | **36** | **100%** |
 
-_Published so far (3): #1 Cornell (`/cornell-note-taking-method`), #4 Note-Taking Methods (`/note-taking-methods`), #5 15 Best Notebooks (`/best-notebooks-for-note-taking`) — all verified live (HTTP 200, real content) on 2026-07-18. The earlier WP 401 auth block on #5 is cleared; its post is live (WP post #2092). All three PRs (#1, #4, #6 methods, #4 notebooks) are merged to `main`._
+_Published so far (5): #1 Cornell (`/cornell-note-taking-method`), #4 Note-Taking Methods (`/note-taking-methods`), #5 15 Best Notebooks (`/best-notebooks-for-note-taking`), #7 Mind Mapping (`/mind-mapping-note-taking-method`), #2 How to Stop Doomscrolling (`/how-to-stop-doomscrolling`, WP post 2122; live 2026-07-21, inbound links applied from `/things-to-do-instead-of-being-on-your-phone` + `/productive-things-to-do-on-your-phone-instead-of-scrolling`)._
 
 ---
 
@@ -59,7 +59,7 @@ _Published so far (3): #1 Cornell (`/cornell-note-taking-method`), #4 Note-Takin
 | # | Status | Date | Post title | Cluster | Type | Target keyword | Amazon affiliate angle |
 |---|--------|------|-----------|---------|------|----------------|------------------------|
 | 1 | ✅ Published — /cornell-note-taking-method | Mon Jul 6 | Cornell Note-Taking Method: The Complete Guide (+ Template) | A | PILLAR | cornell note-taking method | Cornell-ruled notebooks, legal pads |
-| 2 | 📋 Planned | Wed Jul 8 | How to Stop Doomscrolling: 12 Science-Backed Strategies | B | INFO | how to stop doomscrolling | (links to money posts) |
+| 2 | ✅ Published — /how-to-stop-doomscrolling | Wed Jul 8 | How to Stop Doomscrolling: 12 Science-Backed Strategies | B | INFO | how to stop doomscrolling | (links to money posts) |
 | 3 | 📋 Planned | Fri Jul 10 | How to Plan Your Week: A Simple Weekly Planning Routine | C | INFO | how to plan your week | weekly planner pads |
 | 4 | ✅ Published — /note-taking-methods | Mon Jul 13 | Note-Taking Methods Compared: Cornell vs Outline vs Mapping vs Charting | A | PILLAR/COMPARE | note-taking methods | notebooks (soft) |
 | 5 | ✅ Published — /best-notebooks-for-note-taking | Wed Jul 15 | 15 Best Notebooks for Note-Taking in 2026 | A | COMMERCIAL | best notebooks for note taking | Moleskine, Leuchtturm1917, Rocketbook |

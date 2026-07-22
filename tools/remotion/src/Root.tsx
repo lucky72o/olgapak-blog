@@ -9,6 +9,7 @@ import { PaperProblemsDiagram } from "./PaperProblemsDiagram";
 import { MethodDecisionFlow } from "./MethodDecisionFlow";
 import { MethodMindMap } from "./MethodMindMap";
 import { ChartingExample } from "./ChartingExample";
+import { DoomscrollLoopDiagram } from "./DoomscrollLoopDiagram";
 import { MindMapFeatured } from "./MindMapFeatured";
 import { MindMapVsWebContrast } from "./MindMapVsWebContrast";
 import { HeartMindMap } from "./HeartMindMap";
@@ -16,6 +17,8 @@ import { MindMapNodeGoodVsBad } from "./MindMapNodeGoodVsBad";
 
 export const RemotionRoot: React.FC = () => (
   <>
+    <Still id="DoomscrollLoopDiagram" component={DoomscrollLoopDiagram}
+      width={CANVAS.width} height={CANVAS.height} />
     <Still id="SampleDiagram" component={SampleDiagram}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="CornellLayoutDiagram" component={CornellLayoutDiagram}

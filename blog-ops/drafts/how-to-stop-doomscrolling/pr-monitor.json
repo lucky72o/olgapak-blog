@@ -1,0 +1,28 @@
+{
+  "slug": "how-to-stop-doomscrolling",
+  "repo": "lucky72o/olgapak-blog",
+  "pr_number": 9,
+  "pr_url": "https://github.com/lucky72o/olgapak-blog/pull/9",
+  "branch": "blog/how-to-stop-doomscrolling",
+  "base": "main",
+  "worktree": ".claude/worktrees/how-to-stop-doomscrolling",
+  "staging_url": "https://olgapak.com/?p=2122&preview=true",
+  "status": "open",
+  "mode": "pr",
+  "handled_comment_ids": {
+    "issue": [],
+    "inline": [],
+    "review": []
+  },
+  "created_at": "2026-07-18T17:10:00Z",
+  "last_poll": "",
+  "wp_post_id": 2122,
+  "wp_media_ids": [
+    2118,
+    2119,
+    2120,
+    2121
+  ],
+  "wp_preview_url": "https://olgapak.com/?p=2122&preview=true",
+  "wp_upload": "ok"
+}
