@@ -15,7 +15,7 @@ You sit down on a Sunday, coffee in hand, and map out a tidy week. By Tuesday it
 
 I write about productivity systems, and I lean on timeboxing (giving each task a set slot on my calendar) to stop work from swallowing my whole day. So this is a routine I actually run, not a theory I'm pitching.
 
-I've shared [planning tips that actually stick](/planning-tips-to-maximize-productivity) before, but here I want to zoom in on one thing: a repeatable weekly routine you can set up this Sunday and still be using in March.
+I've shared [planning tips that actually stick](/planning-tips-to-maximize-productivity) before, but here I want to zoom in on one thing: a repeatable weekly routine you can set up once and still be running months from now.
 
 This guide covers why most weekly plans collapse, a simple five-step routine to build one that holds, and the part almost every guide skips: exactly what to do when the week goes sideways by Wednesday.
 
