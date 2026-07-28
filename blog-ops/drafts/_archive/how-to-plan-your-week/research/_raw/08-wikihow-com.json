@@ -1,0 +1,8 @@
+{
+  "rank": 8,
+  "url": "https://www.wikihow.com/Plan-Your-Week",
+  "title": "How to Plan Your Week: 11 Steps (with Pictures)",
+  "fetchStatus": "failed",
+  "error": "ERR_TIMED_OUT - www.wikihow.com did not respond. Two attempts (2026-07-22T18:26:59Z and 2026-07-22T18:28Z), both landed on Chrome's 'This site can't be reached / took too long to respond' interstitial rather than the article. Not a captcha, paywall, or bot-block page; the origin was simply unreachable from this browser session. Skipped per SKILL.md Step 4.5 (continue on single-URL failure, do not abort). 1 of 7 selected URLs failed = 14%, under the 50% abort threshold.",
+  "fetchedAt": "2026-07-22T18:28:00Z"
+}
