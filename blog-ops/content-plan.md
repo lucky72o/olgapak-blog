@@ -11,7 +11,7 @@
 |---|------|-----------------|-------|--------|----------|--------|
 | 1 | cornell-note-taking-method | cornell note-taking method | PILLAR guide: Cornell Note-Taking Method (+ template) | | | published |
 | 2 | how-to-stop-doomscrolling | how to stop doomscrolling | INFO guide: How to Stop Doomscrolling (12 strategies) | | | published |
-| 3 | how-to-plan-your-week | how to plan your week | INFO guide: How to Plan Your Week (weekly planning routine) | | | planned |
+| 3 | how-to-plan-your-week | how to plan your week | INFO guide: How to Plan Your Week (weekly planning routine) | | | published |
 | 4 | note-taking-methods | note-taking methods | PILLAR/COMPARE: Note-Taking Methods Compared (Cornell vs Outline vs Mapping vs Charting) | | | published |
 | 5 | best-notebooks-for-note-taking | best notebooks for note taking | COMMERCIAL roundup: 15 Best Notebooks for Note-Taking in 2026 | | | published |
 | 6 | time-blocking | time blocking | INFO guide: Time Blocking 101 (how to time block your day) | | | planned |
