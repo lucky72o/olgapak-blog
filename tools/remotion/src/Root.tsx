@@ -15,6 +15,7 @@ import { MindMapVsWebContrast } from "./MindMapVsWebContrast";
 import { HeartMindMap } from "./HeartMindMap";
 import { MindMapNodeGoodVsBad } from "./MindMapNodeGoodVsBad";
 import { WeekGridTimeboxing } from "./WeekGridTimeboxing";
+import { PackedVsBufferedDay } from "./PackedVsBufferedDay";
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -45,6 +46,8 @@ export const RemotionRoot: React.FC = () => (
     <Still id="MindMapNodeGoodVsBad" component={MindMapNodeGoodVsBad}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="WeekGridTimeboxing" component={WeekGridTimeboxing}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="PackedVsBufferedDay" component={PackedVsBufferedDay}
       width={CANVAS.width} height={CANVAS.height} />
   </>
 );
