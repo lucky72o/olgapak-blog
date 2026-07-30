@@ -1,0 +1,47 @@
+{
+  "query": "time blocking",
+  "searchUrl": "https://x.com/search?q=time%20blocking&f=top",
+  "searchedAt": "2026-07-29T18:41:58.885Z",
+  "results": [
+    {
+      "rank": 1,
+      "url": "https://x.com/coreyhainesco/status/2067948267925873144",
+      "author": "Corey Haines",
+      "handle": "coreyhainesco",
+      "text": "I just found out that \n@vercel\n has been blocking AI crawlers by default all this time\n\nWHYYYYYYY \n\nIt's ON by default so I switched to LOG to monitor crawling requests.",
+      "replies": 11,
+      "reposts": 2,
+      "likes": 101
+    },
+    {
+      "rank": 2,
+      "url": "https://x.com/yohanology/status/2082425670349832474",
+      "author": "Yohan",
+      "handle": "yohanology",
+      "text": "first prototype of my screen time app:\n\ni created the design with claude design, so i guess that's why it looks so familiar with claude... i build it to my iphone so i'm already using it daily, that's cool!\n\ni don't know yet how to differentiate myself from other screen time",
+      "replies": 1,
+      "reposts": 0,
+      "likes": 1
+    },
+    {
+      "rank": 3,
+      "url": "https://x.com/eliana_jordan/status/2000187128752525486",
+      "author": "Eliana",
+      "handle": "eliana_jordan",
+      "text": "First time blocking someone on X in almost a year.\n\nIf you DM pretending to want product/advice and then pivot to flirting → that’s creepy.\n\nBut sure, tell me again how easy it is to be a woman on X.",
+      "replies": 73,
+      "reposts": 1,
+      "likes": 117
+    },
+    {
+      "rank": 4,
+      "url": "https://x.com/EXM7777/status/2082193966024601731",
+      "author": "Machina",
+      "handle": "EXM7777",
+      "text": "Netflix paid $587 million in cash for Ben Affleck's AI startup...\n\ni rebuilt my own version from scratch inside Claude Code, here's how you can start yours for free:\n\n> wired every video, image and music model into one single agent\n> extracted a style contract from real cinema: a",
+      "replies": 26,
+      "reposts": 27,
+      "likes": 237
+    }
+  ]
+}

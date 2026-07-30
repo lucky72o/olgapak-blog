@@ -64,7 +64,7 @@ Now give each rock a home. Timeboxing means blocking a specific chunk of time on
 
 ![Week grid with a few timeboxed rock blocks and deliberate empty slack between them](../../blog-ops/assets/how-to-plan-your-week/week-grid-timeboxing.png)
 
-I lean on this because of a stubborn little rule I kept bumping into: work expands to fill the time available for it. That's [Parkinson's Law](https://www.britannica.com/topic/Parkinsons-Law-or-The-Pursuit-of-Progress) in plain terms, and it's why an essay that could take ninety minutes will happily swallow a whole free afternoon. Give the task a box, and it tends to fit the box. If you want the deeper version, I've written a full breakdown of [how timeboxing works](/what-is-timeboxing).
+I lean on this because of a stubborn little rule I kept bumping into: work expands to fill the time available for it. That's [Parkinson's Law](https://www.britannica.com/topic/Parkinsons-Law-or-The-Pursuit-of-Progress) in plain terms, and it's why an essay that could take ninety minutes will happily swallow a whole free afternoon. Give the task a box, and it tends to fit the box. If you want the deeper version, I've written a full breakdown of [how timeboxing works](/what-is-timeboxing), and if the weekly plan is where you stall on the daily detail, here's how I go about [time blocking your days](/time-blocking).
 
 ### Step 4: Leave slack on purpose
 
