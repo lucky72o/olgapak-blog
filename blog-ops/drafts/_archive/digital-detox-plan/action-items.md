@@ -83,7 +83,9 @@ All five external URLs were re-checked live at Stage 3d and return HTTP 200:
 
 The outline planned three. **One was applied automatically at Stage 4b.5; two cannot be, because those posts exist only on WordPress and have no markdown file in this repo.**
 
-- [x] `content/blog/how-to-stop-doomscrolling.md` — anchor "digital detox plan" → `/digital-detox-plan`, added to the closing sentence of "### 12. Be kind when you slip (relapse is designed in)". Applied by the workflow (recorded in checklist Notes, link-only diff verified). **Ships in this post's commit — confirm it rendered in the Gate 2 preview.** Then hand-apply the same edit to the live WP post in wp-admin (auto-sync of prior posts is out of v1 scope):
+**UPDATE (Gate 2 finalize, 2026-08-03):** all three are now DONE on the live site. `publish.wordpress.apply_inbound_links_live: true` and this post reached `status: publish`, so the adapter's live inbound-link pass ran at finalize and applied all three via REST (HTTP 200 each; before/after spans recorded in `checklist.md` §Gate 2 finalize). Nothing is left to hand-apply in wp-admin.
+
+- [x] `content/blog/how-to-stop-doomscrolling.md` — anchor "digital detox plan" → `/digital-detox-plan`, added to the closing sentence of "### 12. Be kind when you slip (relapse is designed in)". Applied by the workflow (recorded in checklist Notes, link-only diff verified). **Ships in this post's commit — confirm it rendered in the Gate 2 preview.** The matching live-WP edit was applied automatically at finalize (wp id 2122, HTTP 200), so the manual curl recipe below is kept only as a record of what was done:
 
 ```bash
 # 1) fetch the target post's raw content
@@ -98,8 +100,8 @@ curl -sf -u "$WP_USER:${!WP_APP_PASSWORD_ENV}" -X POST \
   -d @<(jq -n --arg c "<edited content.raw>" '{content:$c}')
 ```
 
-- [ ] `things-to-do-instead-of-being-on-your-phone` — **WordPress-only post, no repo file.** Hand-apply in wp-admin: add anchor "7-day digital detox plan" → `https://olgapak.com/digital-detox-plan` near the framing paragraph about why having alternatives matters. Same three curl steps as above with `slug=things-to-do-instead-of-being-on-your-phone`.
-- [ ] `productive-things-to-do-on-your-phone-instead-of-scrolling` — **WordPress-only post, no repo file.** Hand-apply in wp-admin: add anchor "digital detox plan" → `https://olgapak.com/digital-detox-plan` where the post acknowledges the phone has to stay in hand for some readers. Same three curl steps with that slug.
+- [x] `things-to-do-instead-of-being-on-your-phone` — APPLIED LIVE at finalize (wp id 968). **WordPress-only post, no repo file.** Hand-apply in wp-admin: add anchor "7-day digital detox plan" → `https://olgapak.com/digital-detox-plan` near the framing paragraph about why having alternatives matters. Same three curl steps as above with `slug=things-to-do-instead-of-being-on-your-phone`.
+- [x] `productive-things-to-do-on-your-phone-instead-of-scrolling` — APPLIED LIVE at finalize (wp id 1321). **WordPress-only post, no repo file.** Hand-apply in wp-admin: add anchor "digital detox plan" → `https://olgapak.com/digital-detox-plan` where the post acknowledges the phone has to stay in hand for some readers. Same three curl steps with that slug.
 
 ## 5. Final manual read
 
@@ -119,18 +121,18 @@ WordPress has no author-map file to reconcile (unlike the Astro adapter's option
 - [ ] Read it once more in the WP admin preview (title, excerpt, featured image are all synced by the adapter).
 - [ ] **Focus keyword.** `blog-ops/profile/site-conventions.md` §SEO plugin names **Rank Math**, and records that the focus keyword is **not settable via standard REST**. Set it by hand in the WP editor's Rank Math panel to exactly: `digital detox plan` (verbatim — not the title, not a paraphrase) before publishing.
 - [ ] **Category check.** The post ships as **Productivity**. `site-conventions.md` still marks the "Digital wellbeing / beating phone distraction" pillar row "human to confirm" — if you'd rather this cluster had its own category, change it here before publishing.
-- [ ] Click **Publish** in WP admin. This workflow never does that step for you.
+- [x] Click **Publish** in WP admin. This workflow never does that step for you. (Done by the author 2026-08-03 16:56; WP 2152 is `publish`.)
 - [ ] After publishing, verify the live post per §8.
 
 ## 8. Post-publish (within 24 hours)
 
-- [ ] Verify the live URL: `https://olgapak.com/digital-detox-plan` (no trailing slash — `blog.trailing_slash: false`)
+- [x] Verify the live URL: `https://olgapak.com/digital-detox-plan` (HTTP 200 at finalize) (no trailing slash — `blog.trailing_slash: false`)
 - [ ] Submit URL to Google Search Console → URL Inspection → Request Indexing
 - [ ] Submit URL to Bing IndexNow (via Bing Webmaster Tools or the CLI)
 - [ ] Check the featured image Open Graph preview: `https://www.opengraph.xyz/?url=https%3A%2F%2Folgapak.com%2Fdigital-detox-plan`
 - [ ] Check mobile rendering at a narrow viewport (the seven-day ramp diagram is the slot most likely to suffer — it is a wide 3:2 diagram with seven labelled steps)
 - [ ] FAQ schema: N/A — the WordPress frontmatter template emits no JSON-LD; FAQPage markup is a WP-plugin concern on this blog
-- [ ] Once live, hand-apply the two WordPress-only inbound links from §4b
+- [x] Once live, hand-apply the two WordPress-only inbound links from §4b — done automatically by the finalize live inbound-link pass (both HTTP 200)
 
 ## 9. Trigger Phase 5 repurpose (when ready)
 
