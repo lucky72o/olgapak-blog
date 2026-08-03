@@ -2,11 +2,11 @@
 slug: digital-detox-plan
 target_keyword: digital detox plan
 created: 2026-08-03 09:54
-last_updated: 2026-08-03 12:25
-current_stage: preview
-current_owner: blog-post-workflow
+last_updated: 2026-08-03 13:30
+current_stage: finalize
+current_owner: human
 status: active
-gate_pending: none
+gate_pending: gate_2_final
 # status values: active | paused | complete | abandoned
 # current_stage values: intake | chrome_fetch | serp_select | serp_deep_fetch | reddit_fetch | reddit_select | reddit_deep_fetch | x_fetch | x_select | x_deep_fetch | competitor_check | analyze_research | synthesize_plan | plan_review | outline | draft | review | humanize | resolve_markers | images | generate_images | action_items | preview | finalize | repurpose | complete
 # current_owner values: human | blog-post-workflow | blog-researcher | blog-writer | blog-reviewer | blog-humanizer | image-planner | image-builder | plan-reviewer
@@ -187,8 +187,14 @@ Mechanical grep of draft markers + fill action-items template. One checkbox per 
 - [x] post staged to `content/blog/digital-detox-plan.md` with `[IMAGE:]` placeholders resolved + cover set
 - [x] inbound internal links applied to existing posts (1 of 3 in-repo; 2 are WordPress-only posts, hand-apply items)
 - [x] staging file layout committed + pushed on `blog/digital-detox-plan` (212ab69)
+- [x] WordPress auth probe passed (once, no retries) — `GET /users/me` → id 1, `wpx_admin101`
+- [x] markdown converted to native Gutenberg blocks with the Kadence TOC block (`digital-detox-plan.html`)
+- [x] 5 media uploaded to WordPress (ids 2147–2151), in-post embeds repointed to their `source_url`s
+- [x] WordPress draft created — post **2152**, `status: draft`, category Productivity (12), tags 15/34/32, `featured_media` 2147
+- [x] review PR opened — [#14](https://github.com/lucky72o/olgapak-blog/pull/14)
+- [x] `pr-monitor.json` written (`mode: pr`, `status: open`, `wp_upload: ok`)
 
-**Artifacts:** `content/blog/digital-detox-plan.md`, worktree branch commit
+**Artifacts:** `content/blog/digital-detox-plan.md`, `digital-detox-plan.html`, `pr-monitor.json`, worktree branch commit, PR #14, WP draft 2152
 
 ## Stage 4c: Gate 2 + Finalize (owner: blog-post-workflow skill)
 
@@ -248,6 +254,9 @@ Console-gated (autopilot): approval is the console operator's browser Approve ac
 - Stage 4b.5 file layout completed: 2026-08-03 12:25, commit 212ab69 pushed to origin/blog/digital-detox-plan; 4 [IMAGE:] placeholders resolved to embeds (all 4 files exist on disk), slug collision check against origin/main clear
 - Stage 4b.5 SIDE EFFECTS DEFERRED (CONSOLE_VERIFICATION=on): no PR opened, no WordPress draft created, no pr-monitor.json written. autopilot-cont performs these after the console verifies this branch.
 - ready_for_verification emitted: 2026-08-03 12:25 (terminal event for this run)
+- Console verification PASSED (`verification-result.json`: `{"ok":true}`); console spawned `autopilot-cont`.
+- Stage 4b.5 SIDE EFFECTS completed (autopilot-cont): 2026-08-03 13:30 — auth probe OK, Gutenberg conversion (60 paragraph / 20 heading / 26 list / 4 image blocks + Kadence TOC), 5 media uploaded (2147–2151), WP draft **2152** created as `draft`, PR **#14** opened, `pr-monitor.json` written.
+- pr_opened emitted: 2026-08-03 13:30 (PR #14). Gate 2 now open, awaiting the console operator's Approve.
 
 ## Notes
 
@@ -255,6 +264,15 @@ Console-gated (autopilot): approval is the console operator's browser Approve ac
   Gate 2 mode: **console-gated** (per `references/console-contract.md` §Gate 2 under the console).
   Staging side effects (WP draft create, `pr-monitor.json`) are deferred to `autopilot-cont`.
 - Every intake judgment call is recorded in `brief.md` §Autopilot assumptions.
+- **Live inbound-link pass is pending, not skipped.** `publish.wordpress.apply_inbound_links_live: true`,
+  but the adapter's §On Gate 2 approval step 2 runs it only once THIS post's WP status is `publish` —
+  correctly so: pointing live posts at `/digital-detox-plan` while it is still a draft would send
+  readers to a 404. All 3 planned rows (the 1 in-repo + the 2 WP-only legacy posts) get applied
+  automatically at finalize, after the human clicks Publish. Nothing here is a hand-apply item.
+- The stale `wp-auth-failed.json` marker in the console state dir (2026-07-30, HTTP 401) is NOT current:
+  this run's probe succeeded. `WP_APP_PASSWORD` is absent from the console-spawned run environment
+  (it is exported in `~/.zshrc`, which a non-login shell does not read) and had to be sourced from a
+  login shell. Worth fixing in the console spawn env so the probe doesn't depend on that.
 - Cluster note: `how-to-reduce-screen-time` is the planned pillar for this cluster and is not
   written yet; this post stays plan-shaped so the two don't cannibalize each other.
 
