@@ -2,11 +2,11 @@
 slug: digital-detox-plan
 target_keyword: digital detox plan
 created: 2026-08-03 09:54
-last_updated: 2026-08-03 13:30
-current_stage: finalize
+last_updated: 2026-08-03 19:04
+current_stage: complete
 current_owner: human
-status: active
-gate_pending: gate_2_final
+status: complete
+gate_pending: none
 # status values: active | paused | complete | abandoned
 # current_stage values: intake | chrome_fetch | serp_select | serp_deep_fetch | reddit_fetch | reddit_select | reddit_deep_fetch | x_fetch | x_select | x_deep_fetch | competitor_check | analyze_research | synthesize_plan | plan_review | outline | draft | review | humanize | resolve_markers | images | generate_images | action_items | preview | finalize | repurpose | complete
 # current_owner values: human | blog-post-workflow | blog-researcher | blog-writer | blog-reviewer | blog-humanizer | image-planner | image-builder | plan-reviewer
@@ -200,11 +200,11 @@ Mechanical grep of draft markers + fill action-items template. One checkbox per 
 
 Console-gated (autopilot): approval is the console operator's browser Approve action, which writes `approval.json`. The run never blocks on typed input and never publishes.
 
-- [ ] Gate 2 presented (console dashboard)
-- [ ] Operator approved (`approval.json` present)
-- [ ] post published per the adapter (human wp-admin action; never the workflow)
-- [ ] asset folder created at `blog-ops/assets/digital-detox-plan/` (with images.md as README.md)
-- [ ] `blog-ops/drafts/digital-detox-plan/` archived to `blog-ops/drafts/_archive/digital-detox-plan/`
+- [x] Gate 2 presented (console dashboard)
+- [x] Operator approved (`approval.json` present, 2026-08-03T16:54:26Z, mode `now`)
+- [x] post published per the adapter (human wp-admin action; WP 2152 `status: publish`, live at https://olgapak.com/digital-detox-plan)
+- [x] asset folder created at `blog-ops/assets/digital-detox-plan/` (with images.md as README.md, sentinel removed)
+- [x] `blog-ops/drafts/digital-detox-plan/` archived to `blog-ops/drafts/_archive/digital-detox-plan/`
 
 **End state:** `status=complete`, `current_stage=complete`.
 
@@ -257,6 +257,8 @@ Console-gated (autopilot): approval is the console operator's browser Approve ac
 - Console verification PASSED (`verification-result.json`: `{"ok":true}`); console spawned `autopilot-cont`.
 - Stage 4b.5 SIDE EFFECTS completed (autopilot-cont): 2026-08-03 13:30 — auth probe OK, Gutenberg conversion (60 paragraph / 20 heading / 26 list / 4 image blocks + Kadence TOC), 5 media uploaded (2147–2151), WP draft **2152** created as `draft`, PR **#14** opened, `pr-monitor.json` written.
 - pr_opened emitted: 2026-08-03 13:30 (PR #14). Gate 2 now open, awaiting the console operator's Approve.
+- Gate 2 approved: 2026-08-03 16:54 (console operator, `approval.json`, mode `now`); PR #14 merged on origin 2026-08-03 16:54; WP 2152 published in wp-admin 2026-08-03 16:56
+- Finalize completed: 2026-08-03 19:04 (console-merge path, `resume digital-detox-plan`) — final WP content sync SKIPPED (post already `publish`, live copy authoritative), 3/3 live inbound links applied via REST, archive shipped, worktree removed
 
 ## Notes
 
@@ -357,3 +359,45 @@ What `autopilot-cont` still has to do (adapter §Staging steps 2-5 and 7):
 
 The post stays `draft` in WordPress. Publishing is a human wp-admin action, after setting the Rank
 Math focus keyword to `digital detox plan` by hand.
+
+### Gate 2 finalize (console-merge path)
+
+PR #14 was merged on origin at 2026-08-03T16:54:29Z and `approval.json` is present (operator, mode
+`now`, 2026-08-03T16:54:26Z), so this resume runs finalize bookkeeping only — no merge, no monitor
+cron (none was ever created under console-gated mode).
+
+WordPress post 2152 returns `status: publish` (live at https://olgapak.com/digital-detox-plan), so
+per the `wordpress-rest` adapter §On Gate 2 approval step 1 the **final content sync is SKIPPED** —
+the live post is authoritative and re-pushing the staged markdown would discard any in-admin edits.
+
+#### Live inbound-link pass (write-ahead, `apply_inbound_links_live: true`)
+
+Both conditions hold (flag true + post is `publish`), so all three planned inbound links are applied
+to the LIVE WordPress posts. All three targets resolved, all `publish`, none already carrying a link
+to `/digital-detox-plan` (boundary-anchored check against `content.raw`):
+
+- live inbound link **applied**: `how-to-stop-doomscrolling` (wp id 2122) -> this post, anchor
+  "digital detox plan" in "### 12. Be kind when you slip (relapse is designed in)" (HTTP 200).
+  before: `...keeps you from rage-quitting the whole effort after one bad night.</p>`
+  after: `...after one bad night. If you would rather roll these changes out one at a time instead of
+  all at once, my <a href="https://olgapak.com/digital-detox-plan">digital detox plan</a> spreads them
+  across a week and tells you exactly what to do on the day you slip.</p>` — this is the SAME sentence
+  the repo markdown already carries at `content/blog/how-to-stop-doomscrolling.md`, so repo and live
+  are now in sync.
+- live inbound link **applied**: `things-to-do-instead-of-being-on-your-phone` (wp id 968) -> this
+  post, anchor "7-day digital detox plan" in the intro framing paragraph (HTTP 200).
+  before: `...Are you spending too much time on your phone? Small changes can lead to big growth.</span>`
+  after: `...Small changes can lead to big growth. If you want a structured way to make them, my
+  <a href="https://olgapak.com/digital-detox-plan">7-day digital detox plan</a> walks you through one
+  week of exactly that.</span>`
+- live inbound link **applied**: `productive-things-to-do-on-your-phone-instead-of-scrolling` (wp id
+  1321) -> this post, anchor "digital detox plan" in the intro paragraph that frames keeping the phone
+  in hand (HTTP 200).
+  before: `...Shift your relationship with your device to serve rather than subvert your aims. Recast
+  your phone...`
+  after: `...subvert your aims. And if your phone has to stay in your hand, a
+  <a href="https://olgapak.com/digital-detox-plan">digital detox plan</a> bends around that instead of
+  asking you to give the device up. Recast your phone...`
+
+The two WP-only legacy targets are therefore no longer hand-apply action items: the live pass covered
+all three rows, so §Action-items §4b's hand-apply fallback does not apply to this post.

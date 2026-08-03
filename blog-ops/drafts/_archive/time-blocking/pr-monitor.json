@@ -1,0 +1,63 @@
+{
+  "slug": "time-blocking",
+  "repo": "lucky72o/olgapak-blog",
+  "pr_number": 13,
+  "pr_url": "https://github.com/lucky72o/olgapak-blog/pull/13",
+  "branch": "blog/time-blocking",
+  "base": "main",
+  "worktree": ".worktrees/blog-time-blocking",
+  "staging_url": "",
+  "status": "done",
+  "mode": "pr",
+  "handled_comment_ids": {
+    "issue": [],
+    "inline": [],
+    "review": []
+  },
+  "created_at": "2026-07-30T09:29:38Z",
+  "last_poll": "",
+  "poll_interval_minutes": 15,
+  "idle_polls": 0,
+  "wp_post_id": 2144,
+  "wp_media_ids": [
+    {
+      "file": "eleven-am-derail.png",
+      "id": 2139,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/07/eleven-am-derail.png",
+      "sha256": "6bde3785ec06b15d27628f95533f864da44e099b0c32b5200b585c49f87bbe17"
+    },
+    {
+      "file": "energy-tagged-tasks.png",
+      "id": 2140,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/07/energy-tagged-tasks.png",
+      "sha256": "b468eca002dad39082eaae84f13ca6ebeb5408c0b74fac563b466b2c973db202"
+    },
+    {
+      "file": "featured.png",
+      "id": 2141,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/07/featured-6.png",
+      "sha256": "ccf6133036edb677efbd1d48afb38c1e0794905d5ce299a09b81b4209e48e603"
+    },
+    {
+      "file": "list-versus-calendar.png",
+      "id": 2142,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/07/list-versus-calendar.png",
+      "sha256": "f1a33893ef5f8be85b60f70d330e3b29aa4f06a5c456126c1115bba4a07ae8fe"
+    },
+    {
+      "file": "packed-vs-buffered-day.png",
+      "id": 2143,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/07/packed-vs-buffered-day.png",
+      "sha256": "8fb0a65f74a58e73de5a6db9164e28b12613e4e2c476de5567544739f0f3fa6b"
+    }
+  ],
+  "wp_preview_url": "https://olgapak.com/wp-admin/post.php?post=2144&action=edit",
+  "wp_upload": "ok",
+  "wp_category_id": 12,
+  "wp_tag_ids": [
+    15,
+    34,
+    36,
+    33
+  ]
+}

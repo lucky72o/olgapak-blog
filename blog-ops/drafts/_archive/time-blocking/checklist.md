@@ -2,10 +2,10 @@
 slug: time-blocking
 target_keyword: time blocking
 created: 2026-07-29 23:35
-last_updated: 2026-07-30 10:40
-current_stage: preview
+last_updated: 2026-08-03 18:05
+current_stage: complete
 current_owner: blog-post-workflow
-status: active
+status: complete
 gate_pending: none
 # status values: active | paused | complete | abandoned
 # current_stage values: intake | chrome_fetch | serp_select | serp_deep_fetch | reddit_fetch | reddit_select | reddit_deep_fetch | x_fetch | x_select | x_deep_fetch | competitor_check | analyze_research | synthesize_plan | plan_review | outline | draft | review | humanize | resolve_markers | images | generate_images | action_items | preview | finalize | repurpose | complete
@@ -210,18 +210,22 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 - Plan review opened: 2026-07-29 23:58
 - Plan review verdict (iteration 1): request_revisions, 4 issues (title keyword, over-sectioned, timeboxing overlap in the collapse section, unsourced tools claim), 2026-07-30 00:09
 - Plan review verdict (iteration 2): approve, all 4 fixes verified; 2 non-blocking residuals logged, 2026-07-30 00:09
-- Gate 2 opened: ...
+- Gate 2 opened: 2026-07-30 14:33 (console-gated; the console owns the approval banner and writes approval.json. No CronCreate monitor started, per the console contract.)
+- Gate 2 approved: 2026-07-30 09:51 (console operator, approval.json; PR #13 merged on origin at 09:51:16Z)
 
 ## Stage transition log
 
 <append one line per stage transition>
 
+- Finalize completed: 2026-08-03 18:05 (console-merge path: WP 2144 already `publish` so the content sync was skipped; 2 live inbound links applied + 1 already present; archive committed to `main`; worktree removed)
 - intake completed: 2026-07-29 23:35 (owner: blog-post-workflow, autopilot file-intake from content-plan.md row 6)
 - Stage 3c completed: 2026-07-30 10:15 (preservation PASSED, 1 polish edit)
 - Stage 3d completed: 2026-07-30 10:15 (no-op, 0 markers to resolve)
 - Stage 4a completed: 2026-07-30 10:21 (5 slots: 1 featured ai-prompt + 4 in-post; archetype negative-space, ledger row appended)
 - Stage 4a.5 completed: 2026-07-30 10:34 (5 rendered, 0 prompt-pending, 0 screenshot-pending, 0 failed)
 - Stage 4b completed: 2026-07-30 10:36 (0 human marker TODOs; 5 image verifications + 3 hand-apply inbound links + Rank Math focus keyword)
+- Stage 4b.5 completed: 2026-07-30 14:33 (autopilot-cont side effects: auth probe OK, Gutenberg convert w/ Kadence TOC, 5 media uploaded, WP draft 2144 created, PR #13 opened, pr-monitor.json written)
+- Stage 4b.5 side effects started: 2026-07-30 14:27 (autopilot-cont, after verification PASS)
 - Stage 4b.5 file layout completed: 2026-07-30 10:40 (post staged, 4 embeds resolved, 1 of 3 inbound links applied in repo, branch committed + pushed); side effects DEFERRED to autopilot-cont per CONSOLE_VERIFICATION=on
 - Stage 4b.5 staging started: 2026-07-30 10:36
 - Stage 4b started: 2026-07-30 10:34
@@ -230,6 +234,31 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 - Stage 3c retry started: 2026-07-30 10:12 (autopilot resume after the 529-Overloaded park; state verified clean, no stale backup)
 
 ## Notes
+
+### Stage 4b.5 side effects (autopilot-cont) - 2026-07-30 14:33
+
+Verification PASSED (`verification-result.json` = `{"ok":true}`; build check PASS, vision skipped because no WP draft
+existed yet at verify time). This run performed ONLY the deferred side effects; it added no commits, so the PR points at
+the exact commit `0aead13` the console verified.
+
+- **Auth probe:** ran ONCE (`GET /wp-json/wp/v2/users/me` -> `{"id":1,"slug":"wpx_admin101"}`). `WP_APP_PASSWORD` is
+  defined in `~/.zshrc`, which a non-interactive shell does not source; resolved via a login shell so the secret never
+  touched disk, a command line, or any log. No retry was needed, so the lockout rule was never in play.
+- **Gutenberg convert:** `md-to-gutenberg.py` with `--extra-blocks` carrying this blog's Kadence TOC (recorded in
+  `site-conventions.md` §Table of contents, position `after-intro`). Native blocks only - 52 paragraph, 17 heading,
+  4 image, 4 list + 10 list-item, 1 table, 1 kadence/tableofcontents. The classic-block fallback was NOT used. The
+  script's defensive frontmatter-strip warning fired as expected (the adapter documents this as normal).
+- **Media:** all 5 uploaded, each recorded to `pr-monitor.json` immediately after its own upload (never batched), with
+  `sha256` for the skip-before-upload check. IDs captured from each upload RESPONSE, never re-derived by slug lookup -
+  which mattered here: WordPress uniquified `featured.png` to `featured-6.png` on disk, so a `slug=featured` lookup
+  would have returned a DIFFERENT post's image (the 2026-07-18 cross-post collision). `featured_media` is 2141, verified
+  on the stored post.
+- **Draft:** lookup-before-create returned empty AND no stored `wp_post_id`, so exactly one draft was created: post
+  **2144**, `status: draft`. Category resolved to **Productivity** (term 12, not "Uncategorized"); tags resolved to
+  existing terms 15/34/36/33 - none created. Verified via `context=edit`: all blocks intact, TOC present, 0 local-path
+  leaks, all 4 in-post `<img src>` pointing at uploaded `source_url`s.
+- **PR #13** opened against `main` (https://github.com/lucky72o/olgapak-blog/pull/13). No commits added by this run.
+- **`status` stays `draft`.** Nothing in this invocation authorizes a publish or a merge; Gate 2 is the console's.
 
 ### Stage 4b.5 staging decisions - 2026-07-30 10:40
 
@@ -404,3 +433,42 @@ Remaining after humanize: Stage 3d (marker auto-resolution, expected to be a no-
 `[VERIFY:]`/`[EXTERNAL_LINK_NEEDED:]` markers), Stage 4a image plan, 4a.5 image generation, 4b action items, and
 4b.5 staging (which under `CONSOLE_VERIFICATION=on` stops at file layout + commit/push and emits
 `ready_for_verification`).
+### Stage 4c live inbound-link records (finalize, `apply_inbound_links_live: true`) - 2026-08-03
+
+WordPress post 2144 is `status: publish` (live at https://olgapak.com/time-blocking), so the adapter's opt-in live
+inbound-link pass ran against the three planned rows.
+
+Write-ahead (recorded BEFORE the REST edit, per `wordpress-rest.md` §Live inbound-link application step 3):
+
+- live inbound link planned: `what-is-timeboxing` (wp id 938) -> this post
+- live inbound link planned: `how-to-plan-your-week` (wp id 2132) -> this post
+- `planning-tips-to-maximize-productivity` (wp id 1258): ALREADY PRESENT, skipped (idempotent no-op) -
+  `<a href="https://olgapak.com/time-blocking">Time Blocking</a>` already in its tools/methods list.
+
+Applied (after-state, per step 5 of that section):
+
+- live inbound link applied: `what-is-timeboxing` (wp id 938) -> this post, anchor "time blocking" in the
+  "Timeboxing vs time blocking" H2's closing paragraph. HTTP 200, modified 2026-08-03T18:03:41.
+  before: `...allocating your day into zones for deep work, meetings, email checks, and other projects.</p>`
+  after:  `...email checks, and other projects. If that's closer to how you want to run your day, I've written a
+  full walkthrough of <a href="https://olgapak.com/time-blocking">time blocking</a>.</p>`
+- live inbound link applied: `how-to-plan-your-week` (wp id 2132) -> this post, anchor "time blocking your days"
+  in Step 3 (timeboxing), Parkinson's Law paragraph. HTTP 200, modified 2026-08-03T18:03:42. This brings the LIVE
+  post in line with the repo markdown, which already carried the same clause from Stage 4b.5.
+  before: `...I've written a full breakdown of <a href="/what-is-timeboxing">how timeboxing works</a>.</p>`
+  after:  `...how timeboxing works</a>, and if the weekly plan is where you stall on the daily detail, here's how I
+  go about <a href="https://olgapak.com/time-blocking">time blocking your days</a>.</p>`
+- `planning-tips-to-maximize-productivity` (wp id 1258): already present, skipped (no write issued).
+
+Verified after the pass: all three live pages render exactly one `/time-blocking` link
+(`what-is-timeboxing`, `how-to-plan-your-week`, `planning-tips-to-maximize-productivity`). Action-items §4b's
+hand-apply fallback is therefore moot for all three rows.
+
+### Gate 2 finalize (console-merge path) - 2026-08-03
+
+PR #13 was merged on origin at 2026-07-30T09:51:16Z by the console, with `approval.json` on disk as the durable
+proof-of-approval. WordPress post 2144 was already `status: publish` when this finalize ran, so the adapter's
+step 1 final content sync was SKIPPED (the live post is authoritative; re-pushing the staged markdown snapshot
+would have discarded any in-admin edits). No monitor cron existed to delete (console-gated mode never creates one).
+The branch archive push is moot because the PR is already merged and `main` has advanced past it, so the terminal
+archive was committed directly to `main` instead.

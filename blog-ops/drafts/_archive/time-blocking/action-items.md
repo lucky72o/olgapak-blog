@@ -151,7 +151,7 @@ curl -sf -u "$WP_USER:${!WP_APP_PASSWORD_ENV}" -X POST \
 
 ## 7. Publish
 
-- [ ] Open the WordPress draft preview: `<wp_preview_url — filled in at Stage 4b.5 / autopilot-cont, recorded in pr-monitor.json>`.
+- [ ] Open the WordPress draft preview: https://olgapak.com/wp-admin/post.php?post=2144&action=edit (WP post 2144, PR #13).
 - [ ] Read it once more in the WP admin preview (title, excerpt, featured image already synced by the adapter).
 - [ ] **Set the Rank Math focus keyword.** `site-conventions.md` §SEO plugin records **Rank Math**, and records it as **not settable via standard REST** (not exposed on the `wp/v2/posts` schema). So this is a manual step: in the WP editor's Rank Math panel, set the focus keyword to exactly `time blocking` (verbatim — not a paraphrase, not the title). The workflow never attempts this write via REST.
 - [ ] Click **Publish** in WP admin. **This workflow never does that step for you** — going live is always your manual action, per `custom-instructions.md` §Publishing & review.
