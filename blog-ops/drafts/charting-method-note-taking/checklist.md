@@ -2,7 +2,7 @@
 slug: charting-method-note-taking
 target_keyword: charting method note taking
 created: 2026-08-03 18:14
-last_updated: 2026-08-03 20:22
+last_updated: 2026-08-03 22:43
 current_stage: preview
 current_owner: blog-post-workflow
 status: active
@@ -246,6 +246,16 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 - Stage 4b.5 staging FILE LAYOUT completed: 2026-08-03 20:22. Post staged to content/blog/charting-method-note-taking.md, all 4 [IMAGE:] placeholders resolved to real embeds (every target file verified on disk first, so no build-safe pending note was needed), 3 inbound links applied and link-only-diff verified, committed as d27beab and pushed to origin/blog/charting-method-note-taking.
   **Side effects deliberately NOT performed** (CONSOLE_VERIFICATION=on handshake): no WordPress draft created, no media uploaded, no auth probe run, no pr-monitor.json written. Those are `autopilot-cont`'s job after the console verifies. Emitted `ready_for_verification` as the terminal event; deliberately did NOT emit `done` (a trailing `done` would make the console skip verification and never open the WP draft).
   `current_stage` left at `preview` so a resume re-enters Step 14.5 idempotently.
+- Console verification PASSED: 2026-08-03 20:14 (build check PASS; vision skipped — no `pr-monitor.json` yet, expected under the handshake). Console spawned `autopilot-cont`.
+- **Stage 4b.5 side effects PARKED (`wp_auth_failed`): 2026-08-03 20:16.** The adapter's §Staging step 2 auth probe failed — `curl` exit **56** (transport recv failure / connection reset) on `GET https://olgapak.com/wp-json/wp/v2/users/me` as `wpx_admin101`. This is NOT an HTTP 401/403 (`curl -f` would have exited 22). Unauthenticated diagnostics in the same second all succeeded — homepage 200, `/wp-json/` 200, public `/wp/v2/posts` 200 — so the site and its REST API are up and the failure is specific to the authenticated request (most likely a WAF / security-plugin reset, or a login limiter already tripped).
+  Probe **NOT retried** (probe-once lockout rule: a retry can extend a limiter keyed to IP + username). Nothing WordPress-side happened: **no auth retry, no media uploaded, no draft created, no `pr-monitor.json` written.** Staging FILE LAYOUT from the prior run is untouched and still pushed (commit `d27beab`).
+  `current_stage` stays `preview` with no `pr-monitor.json`, which is exactly the Step 2 resume route back into Step 14.5 — every WP-facing step there is idempotent (lookup-before-create, per-file media skip), so re-running `autopilot-cont <slug>` once the credential/limiter is cleared picks up cleanly with no duplicate draft or orphaned media.
+- **Re-spawned `autopilot` run after the `wp_auth_failed` park: 2026-08-03 22:43.** Console spawned a fresh `autopilot` (not `autopilot-cont`) under `CONSOLE_VERIFICATION=on`. Resumed per Step 2's `preview` + no-`pr-monitor.json` route into Step 14.5, which is idempotent. Re-verified the staging FILE LAYOUT rather than redoing it — all of it was already complete and pushed:
+  - `content/blog/charting-method-note-taking.md` present, 0 raw `[VERIFY:]`/`[EXTERNAL_LINK_NEEDED:]`/`[INTERNAL_LINK_NEEDED:]`/`[IMAGE:]` markers, 0 em-dashes, all 4 image embeds resolve to files that exist on disk, `featured.png` present (no featured-missing halt).
+  - All 3 planned inbound links present in their target posts (`note-taking-methods`, `cornell-note-taking-method`, `mind-mapping-note-taking-method`), matching the write-ahead ownership record below.
+  - Branch `blog/charting-method-note-taking` at `081ab92`, identical to `origin/blog/charting-method-note-taking` — nothing to re-commit or re-push beyond this checklist entry.
+  **No auth probe run in this run** — the probe belongs to the adapter's §Staging step 2, which is `autopilot-cont`'s deferred side-effect half under the verification handshake; this shell never probes the WordPress credential itself, so the probe-once lockout is not touched here. Still no `pr-monitor.json`, no WordPress draft, no media uploaded.
+  Emitted `ready_for_verification` as the terminal event (again deliberately NOT `done`). The console re-verifies and re-spawns `autopilot-cont`, whose single fresh probe is the documented "re-run once, by hand, when ready" recovery for the earlier curl-56 reset.
 
 ## Notes
 
