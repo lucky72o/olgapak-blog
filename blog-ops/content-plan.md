@@ -16,7 +16,7 @@
 | 5 | best-notebooks-for-note-taking | best notebooks for note taking | COMMERCIAL roundup: 15 Best Notebooks for Note-Taking in 2026 | | | published |
 | 6 | time-blocking | time blocking | INFO guide: Time Blocking 101 (how to time block your day) | | | published |
 | 7 | mind-mapping-note-taking-method | mind mapping note taking | INFO guide: Mind Mapping Note-Taking Method | | | published |
-| 8 | digital-detox-plan | digital detox plan | INFO guide: Digital Detox (7-day screen-time reset plan) | | | planned |
+| 8 | digital-detox-plan | digital detox plan | INFO guide: Digital Detox (7-day screen-time reset plan) | | | published |
 | 9 | best-pens-for-note-taking | best pens for note taking | COMMERCIAL roundup: 12 best pens (Pilot G2, Uni-ball, Muji, Sakura) | | | planned |
 | 10 | ai-note-taking | ai note taking | INFO guide: How to Use AI to Take Better Notes (tools & workflow) | | | planned |
 | 11 | charting-method-note-taking | charting method note taking | INFO guide: The Charting Method of Note-Taking Explained | | | planned |
