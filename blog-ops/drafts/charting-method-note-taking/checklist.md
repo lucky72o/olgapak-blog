@@ -2,9 +2,9 @@
 slug: charting-method-note-taking
 target_keyword: charting method note taking
 created: 2026-08-03 18:14
-last_updated: 2026-08-03 20:00
-current_stage: generate_images
-current_owner: image-builder
+last_updated: 2026-08-03 20:22
+current_stage: preview
+current_owner: blog-post-workflow
 status: active
 gate_pending: none
 # status values: active | paused | complete | abandoned
@@ -241,6 +241,11 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 - Stage 3d completed: 2026-08-03 19:52, resolved 2, kept-general 1, deleted 0, competitor-routed 0
 - Stage 4a completed: 2026-08-03 20:00, 5 images (1 featured ai-prompt + 4 in-post: 2 remotion, 2 ai-prompt); in-post entries 4 == draft [IMAGE:] 4, no delta
 - Stage 4a.5 started: 2026-08-03 20:00
+- Stage 4a.5 completed: 2026-08-03 20:10, 5 rendered, 0 prompt-pending, 0 screenshot-pending, 0 failed
+- Stage 4b completed: 2026-08-03 20:15, action-items.md written (0 VERIFY / 0 EXTERNAL / 0 INTERNAL / 4 IMAGE markers; all 4 IMAGE resolved at 4b.5)
+- Stage 4b.5 staging FILE LAYOUT completed: 2026-08-03 20:22. Post staged to content/blog/charting-method-note-taking.md, all 4 [IMAGE:] placeholders resolved to real embeds (every target file verified on disk first, so no build-safe pending note was needed), 3 inbound links applied and link-only-diff verified, committed as d27beab and pushed to origin/blog/charting-method-note-taking.
+  **Side effects deliberately NOT performed** (CONSOLE_VERIFICATION=on handshake): no WordPress draft created, no media uploaded, no auth probe run, no pr-monitor.json written. Those are `autopilot-cont`'s job after the console verifies. Emitted `ready_for_verification` as the terminal event; deliberately did NOT emit `done` (a trailing `done` would make the console skip verification and never open the WP draft).
+  `current_stage` left at `preview` so a resume re-enters Step 14.5 idempotently.
 
 ## Notes
 
