@@ -7,3 +7,4 @@ The image-planner reads the last 2 rows to pick a different archetype next time.
 |---|---|---|---|
 | 2026-07-23 | how-to-plan-your-week | scene-vignette | woman planning her week over coffee, open weekly planner |
 | 2026-07-30 | time-blocking | negative-space | slim day column, three blocks, mostly empty canvas |
+| 2026-08-03 | charting-method-note-taking | object-metaphor | oversized notebook page ruled into bold labeled columns |

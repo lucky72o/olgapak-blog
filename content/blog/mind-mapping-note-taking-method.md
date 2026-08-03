@@ -29,7 +29,7 @@ You might already know it as a concept map or a spider diagram. Same idea, diffe
 
 Here's the part beginners get wrong. A mind map is a hierarchy, not a web. One central topic sits in the middle, and you work outward, adding the points that flow from and connect to it. Each branch can grow child branches, but the flow runs parent to child, not everything-to-everything.
 
-As one person on r/PKMS put it, they wanted "a mind map like structure instead of a web of interconnections," not the tangled graph view you get in an app like Obsidian where every note links to every other note. If linear notes run straight down the page and [the outline method](/outlining-note-taking-method) is a tidy nested list, a mind map is the opposite shape: it grows outward from the middle.
+As one person on r/PKMS put it, they wanted "a mind map like structure instead of a web of interconnections," not the tangled graph view you get in an app like Obsidian where every note links to every other note. If linear notes run straight down the page, [the outline method](/outlining-note-taking-method) is a tidy nested list, and [the charting method](/charting-method-note-taking) is a grid of labeled columns, a mind map is the opposite shape: it grows outward from the middle.
 
 ## Why Mind Mapping Works for Notes
 

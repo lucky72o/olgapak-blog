@@ -9,6 +9,8 @@ import { PaperProblemsDiagram } from "./PaperProblemsDiagram";
 import { MethodDecisionFlow } from "./MethodDecisionFlow";
 import { MethodMindMap } from "./MethodMindMap";
 import { ChartingExample } from "./ChartingExample";
+import { ChartingAnatomy } from "./ChartingAnatomy";
+import { ChartingFiveSteps } from "./ChartingFiveSteps";
 import { DoomscrollLoopDiagram } from "./DoomscrollLoopDiagram";
 import { MindMapFeatured } from "./MindMapFeatured";
 import { MindMapVsWebContrast } from "./MindMapVsWebContrast";
@@ -36,6 +38,10 @@ export const RemotionRoot: React.FC = () => (
     <Still id="MethodMindMap" component={MethodMindMap}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="ChartingExample" component={ChartingExample}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="ChartingAnatomy" component={ChartingAnatomy}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="ChartingFiveSteps" component={ChartingFiveSteps}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="MindMapFeatured" component={MindMapFeatured}
       width={CANVAS.width} height={CANVAS.height} />
