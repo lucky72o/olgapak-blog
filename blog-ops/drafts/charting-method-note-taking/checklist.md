@@ -2,11 +2,11 @@
 slug: charting-method-note-taking
 target_keyword: charting method note taking
 created: 2026-08-03 18:14
-last_updated: 2026-08-03 22:43
-current_stage: preview
+last_updated: 2026-08-03 21:52
+current_stage: finalize
 current_owner: blog-post-workflow
 status: active
-gate_pending: none
+gate_pending: gate_2_final
 # status values: active | paused | complete | abandoned
 # current_stage values: intake | chrome_fetch | serp_select | serp_deep_fetch | reddit_fetch | reddit_select | reddit_deep_fetch | x_fetch | x_select | x_deep_fetch | competitor_check | analyze_research | synthesize_plan | plan_review | outline | draft | review | humanize | resolve_markers | images | generate_images | action_items | preview | finalize | repurpose | complete
 # current_owner values: human | blog-post-workflow | blog-researcher | blog-writer | blog-reviewer | blog-humanizer | image-planner | image-builder | plan-reviewer
@@ -256,6 +256,17 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
   - Branch `blog/charting-method-note-taking` at `081ab92`, identical to `origin/blog/charting-method-note-taking` — nothing to re-commit or re-push beyond this checklist entry.
   **No auth probe run in this run** — the probe belongs to the adapter's §Staging step 2, which is `autopilot-cont`'s deferred side-effect half under the verification handshake; this shell never probes the WordPress credential itself, so the probe-once lockout is not touched here. Still no `pr-monitor.json`, no WordPress draft, no media uploaded.
   Emitted `ready_for_verification` as the terminal event (again deliberately NOT `done`). The console re-verifies and re-spawns `autopilot-cont`, whose single fresh probe is the documented "re-run once, by hand, when ready" recovery for the earlier curl-56 reset.
+- **Stage 4b.5 SIDE EFFECTS completed (`autopilot-cont`): 2026-08-03 21:52.** Console verification PASSED (build check PASS; vision skipped, no `pr-monitor.json` yet) and the console spawned `autopilot-cont`. The deferred WordPress half of staging ran end to end:
+  - **Auth probe (adapter §Staging step 2) PASSED on its single allowed attempt** — `GET /wp-json/wp/v2/users/me` returned `{"id":1,"name":"Olga Pak","slug":"wpx_admin101"}`. The earlier `wp_auth_failed` park (curl 56) did not reproduce; no limiter was in effect. Probe run exactly once, never retried.
+  - **Shell-quoting hazard found and avoided (worth carrying into the adapter doc).** The adapter's documented `${!WP_APP_PASSWORD_ENV}` indirect expansion is **bash-only** — this environment's shell is zsh, where it raises `bad substitution` and the command never executes (so it costs no probe attempt, but it also silently blocks staging if mistaken for a network failure). Every authenticated call in this run was therefore wrapped in `bash -c '...'`. Separately, a WordPress application password **contains spaces**, so an unquoted `AUTH="-u $WP_USER:${!WP_APP_PASSWORD_ENV}"` variable word-splits: curl reads the password fragments as extra URLs (a burst of `HTTP 000` lines) and sends the real request **unauthenticated**, which comes back as a misleading `rest_forbidden_status` 400 rather than a 401. Always pass `-u "$USER:$PASS"` inline and quoted. Caught on a read-only category/tag lookup; the probe, the uploads, and the create call were all correctly quoted.
+  - **Gutenberg conversion (step 3, PRIMARY path — no classic-block fallback):** `md-to-gutenberg.py` emitted 53 `wp:paragraph`, 20 `wp:heading`, 3 `wp:list` + 14 `wp:list-item`, 4 `wp:image`, 2 `wp:table`, plus the blog's Kadence TOC via `--extra-blocks` (`position: after-intro`, extracted from `site-conventions.md` §Table of contents with `jq --rawfile`). The expected frontmatter-strip stderr warning fired and is benign. TOC verified to land after the 4-paragraph intro and before the first H2.
+  - **Media upload (step 4):** all 5 files uploaded, IDs captured from each upload RESPONSE (never re-derived by slug lookup) and written to `pr-monitor.json` per file: `featured.png` → 2159, `charting-anatomy.png` → 2160, `charting-five-steps.png` → 2161, `overstuffed-chart.png` → 2162, `paper-vs-digital-chart.png` → 2163. **The featured upload landed at `source_url` `.../featured-1.png`** — WordPress uniquified the duplicate `featured` attachment slug, exactly the case the adapter's 2026-07-18 cross-post-collision warning covers; taking the ID from the response is what kept it correct. All 4 in-post local paths substituted to their uploaded `source_url`s; 0 local paths remain in the body.
+  - **Draft create (step 5):** lookup-before-create returned `[]` for both a draft-only and an any-status `context=edit` query, and no `wp_post_id` was stored, so a single create ran → **HTTP 201, post id 2164, `status: draft`**. Categories resolved by name to `[12, 9]` (Productivity + EdTech, matching the brief and every prior note-taking post — not "Uncategorized"); tags resolved by exact name match to `[14, 27, 15, 30]` (note-taking, note-taking method, productivity, students); `featured_media: 2159`; `author: 1`.
+  - **Round-trip verified:** re-fetched `posts/2164?context=edit` — `content.raw` is byte-identical to what was sent (23,821 bytes), all block types intact, Kadence TOC present, all 4 image `src`s on `olgapak.com/wp-content/uploads/`, and 0 raw `[VERIFY:]`/`[EXTERNAL_LINK_NEEDED:]`/`[INTERNAL_LINK_NEEDED:]`/`[IMAGE:]` markers.
+  - **Step 6 (inbound links) not re-run:** the repo-markdown edits were already applied and pushed during the file-layout run (see the write-ahead ownership record below). The **live** WordPress inbound-link pass correctly did NOT run: adapter §On Gate 2 approval step 2 gates it on `apply_inbound_links_live: true` **AND** the post being `status: publish`, and this post is `draft`.
+  - **Step 7 (state):** `pr-monitor.json` written with `mode: local` (Gate 2 mode is console-gated — `CONSOLE_RUN_STATE` is set, so no PR and no CronCreate monitor), `wp_post_id: 2164`, all 5 `wp_media_ids[]` entries with sha256, `wp_preview_url: https://olgapak.com/wp-admin/post.php?post=2164&action=edit`, `wp_upload: ok`.
+  - **Nothing was published.** `status` stayed `draft` throughout; no `status=publish` was ever sent. Gate 2 remains the operator's console Approve action (which writes `approval.json`), and the Rank Math focus keyword (`charting method note taking`) is still a manual wp-admin step before Publish, per action-items §7.
+  Emitted `pr_opened` (`pr: 0`, `url` = the WP preview URL, per the console contract's no-PR-path form) then `done`.
 
 ## Notes
 
