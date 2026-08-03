@@ -2,7 +2,7 @@
 slug: digital-detox-plan
 target_keyword: digital detox plan
 created: 2026-08-03 09:54
-last_updated: 2026-08-03 12:20
+last_updated: 2026-08-03 12:25
 current_stage: preview
 current_owner: blog-post-workflow
 status: active
@@ -186,7 +186,7 @@ Mechanical grep of draft markers + fill action-items template. One checkbox per 
 
 - [x] post staged to `content/blog/digital-detox-plan.md` with `[IMAGE:]` placeholders resolved + cover set
 - [x] inbound internal links applied to existing posts (1 of 3 in-repo; 2 are WordPress-only posts, hand-apply items)
-- [ ] staging file layout committed + pushed on `blog/digital-detox-plan`
+- [x] staging file layout committed + pushed on `blog/digital-detox-plan` (212ab69)
 
 **Artifacts:** `content/blog/digital-detox-plan.md`, worktree branch commit
 
@@ -245,6 +245,9 @@ Console-gated (autopilot): approval is the console operator's browser Approve ac
 - Stage 4b started: 2026-08-03 12:05
 - Stage 4b completed: 2026-08-03 12:15, 0 marker TODOs; the only human to-dos are the Rank Math focus keyword and 2 wp-admin inbound links
 - Stage 4b.5 staging started: 2026-08-03 12:15
+- Stage 4b.5 file layout completed: 2026-08-03 12:25, commit 212ab69 pushed to origin/blog/digital-detox-plan; 4 [IMAGE:] placeholders resolved to embeds (all 4 files exist on disk), slug collision check against origin/main clear
+- Stage 4b.5 SIDE EFFECTS DEFERRED (CONSOLE_VERIFICATION=on): no PR opened, no WordPress draft created, no pr-monitor.json written. autopilot-cont performs these after the console verifies this branch.
+- ready_for_verification emitted: 2026-08-03 12:25 (terminal event for this run)
 
 ## Notes
 
@@ -312,3 +315,27 @@ are legacy posts that live only on WordPress (no file under `content/blog/`), so
   "digital detox plan" -> /digital-detox-plan, in "### 12. Be kind when you slip")
 - NOT applicable, no repo file: `things-to-do-instead-of-being-on-your-phone` (WP-only legacy post)
 - NOT applicable, no repo file: `productive-things-to-do-on-your-phone-instead-of-scrolling` (WP-only legacy post)
+
+### Handoff to `autopilot-cont`
+
+This run stopped at the verification handshake. What is on disk and pushed:
+
+- `content/blog/digital-detox-plan.md` — the canonical post, `[IMAGE:]` embeds resolved, frontmatter
+  complete (title / excerpt / 3 tags / author / `draft: true`).
+- `blog-ops/assets/digital-detox-plan/` — 5 rendered PNGs + the `.staged-by-blog-workflow` sentinel.
+- `content/blog/how-to-stop-doomscrolling.md` — one inbound link added.
+- `tools/remotion/src/SevenDayRampDiagram.tsx` + its `Root.tsx` registration.
+
+What `autopilot-cont` still has to do (adapter §Staging steps 2-5 and 7):
+
+1. **Auth probe** — `WP_APP_PASSWORD` was NOT set in this run's environment. It was never needed
+   here (no WordPress call was made), but the WP draft create cannot run without it. If the probe
+   fails, park `wp_auth_failed` immediately: zero retries, per the lockout rule.
+2. Convert the markdown to Gutenberg blocks (`site-conventions.md` §Table of contents has a real
+   Kadence TOC block, so the `--extra-blocks` path applies).
+3. Upload the 5 media files, create the draft (`status: draft`), resolve the **Productivity**
+   category and the 3 tags by name, set `featured_media` from `featured.png`.
+4. Write `pr-monitor.json` with `wp_post_id` / `wp_media_ids[]` / `wp_preview_url`, and open the PR.
+
+The post stays `draft` in WordPress. Publishing is a human wp-admin action, after setting the Rank
+Math focus keyword to `digital detox plan` by hand.
