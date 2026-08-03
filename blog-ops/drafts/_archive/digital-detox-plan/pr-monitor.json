@@ -1,0 +1,56 @@
+{
+  "slug": "digital-detox-plan",
+  "repo": "lucky72o/olgapak-blog",
+  "pr_number": 14,
+  "pr_url": "https://github.com/lucky72o/olgapak-blog/pull/14",
+  "branch": "blog/digital-detox-plan",
+  "base": "main",
+  "worktree": ".worktrees/blog-digital-detox-plan",
+  "staging_url": "",
+  "status": "done",
+  "mode": "pr",
+  "handled_comment_ids": {
+    "issue": [],
+    "inline": [],
+    "review": []
+  },
+  "created_at": "2026-08-03T10:29:09Z",
+  "last_poll": "",
+  "poll_interval_minutes": 15,
+  "idle_polls": 0,
+  "wp_post_id": 2152,
+  "wp_media_ids": [
+    {
+      "file": "featured.png",
+      "id": 2147,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/featured.png",
+      "sha256": "67b748c6ecefe38b2e5c37ae428ef4d147801bd9ce96b1cb822662f9e38eacf3"
+    },
+    {
+      "file": "no-phone-day-maintenance.png",
+      "id": 2148,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/no-phone-day-maintenance.png",
+      "sha256": "fc655eb0b16b3be546a45e34c010313fc1d7ae9dbe10b6c60e1eae6fef144422"
+    },
+    {
+      "file": "phone-free-block-scene.png",
+      "id": 2149,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/phone-free-block-scene.png",
+      "sha256": "19469219edee6495b90331445a9c16996b410715005ce1231a36f6a92cfd74d8"
+    },
+    {
+      "file": "seven-day-ramp-diagram.png",
+      "id": 2150,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/seven-day-ramp-diagram.png",
+      "sha256": "f6ad1f5b219e7ab89e5f042f87e55e6939ea850dc2e32bf97fff54e0e7e5489a"
+    },
+    {
+      "file": "slip-recovery-moment.png",
+      "id": 2151,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/slip-recovery-moment.png",
+      "sha256": "984fc4462fc1b0a01e7215df6582081e5f6689cc60b2e0bd5ba7700bec3d8b03"
+    }
+  ],
+  "wp_preview_url": "https://olgapak.com/wp-admin/post.php?post=2152&action=edit",
+  "wp_upload": "ok"
+}
