@@ -2,10 +2,10 @@
 slug: how-to-plan-your-week
 target_keyword: how to plan your week
 created: 2026-07-22 18:19
-last_updated: 2026-07-23 11:05
-current_stage: preview
+last_updated: 2026-07-28T08:21:25Z
+current_stage: complete
 current_owner: blog-post-workflow
-status: active
+status: complete
 gate_pending: none
 # status values: active | paused | complete | abandoned
 # current_stage values: intake | chrome_fetch | serp_select | serp_deep_fetch | reddit_fetch | reddit_select | reddit_deep_fetch | x_fetch | x_select | x_deep_fetch | competitor_check | analyze_research | synthesize_plan | plan_review | outline | draft | review | humanize | resolve_markers | images | generate_images | action_items | preview | finalize | repurpose | complete
@@ -188,7 +188,7 @@ Editor presents Gate 2 banner (the only human gate; plan approval is an automate
 
 - [ ] Gate 2 presented (console)
 - [ ] Human approved (`approval.json` present)
-- [ ] post staged to `content/blog/how-to-plan-your-week.md` + WordPress draft created
+- [x] post staged to `content/blog/how-to-plan-your-week.md` + WordPress draft created (autopilot-cont: WP draft post id 2132; PR #12 opened)
 - [ ] asset folder created at `blog-ops/assets/how-to-plan-your-week/` (with images.md as README.md)
 - [ ] `blog-ops/drafts/how-to-plan-your-week/` archived to `blog-ops/drafts/_archive/how-to-plan-your-week/`
 
@@ -244,6 +244,8 @@ Editor presents Gate 2 banner (the only human gate; plan approval is an automate
 - Stage 4b completed: 2026-07-23T11:05:00Z, action-items.md written (10 sections). Markers: 0 VERIFY / 0 EXTERNAL_LINK_NEEDED / 0 INTERNAL_LINK_NEEDED / 2 IMAGE. §4b: 3 inbound targets, all WP-only (no repo copies) → hand-apply-to-live-WP (post is draft, apply_inbound_links_live only fires when published). §7 Rank Math focus keyword = "how to plan your week" (manual, not REST-settable).
 - Stage 4b.5 (staging) started: 2026-07-23T11:05:00Z (owner: blog-post-workflow). Gate 2 mode = PR (recorded Step 0), but CONSOLE_VERIFICATION=on → FILE LAYOUT only (commit+push), NO side effects (no WP draft, no PR, no pr-monitor.json); emit ready_for_verification and exit.
 - Stage 4b.5 FILE LAYOUT completed: 2026-07-23T11:12:00Z. content/blog/how-to-plan-your-week.md staged (draft: stripped, no cover field per WP frontmatter contract, 2 [IMAGE:] → embeds pointing to existing asset files, 0 residual markers). Inbound links: none applied (all 3 targets WP-only, no repo copies). Committed on branch blog/how-to-plan-your-week + pushed: canonical post + 3 asset PNGs (sentinel excluded) + _archive snapshot + featured-log.md + Remotion sources (WeekGridTimeboxing.tsx, Root.tsx). SIDE EFFECTS DEFERRED to autopilot-cont: WP-draft-create, PR-open, pr-monitor.json. current_stage stays `preview` for autopilot-cont resume at Step 14.5. Emitting ready_for_verification.
+- autopilot-cont resumed (side effects): 2026-07-23T11:13:26Z. Verification PASS (build+vision) confirmed via verification-report.md. WP auth probe OK (users/me 200, once). md→gutenberg conversion clean (native wp:paragraph/heading/list/image + Kadence TOC as after-intro extra-block). 3 media uploaded (featured.png→id 2129 source featured-5.png [WP-uniqued, captured from upload response not slug lookup]; week-grid-timeboxing.png→2130; midweek-reset-scene.png→2131); both in-post [IMAGE:] embeds rewritten to WP source_urls (0 residual local refs). WP draft created: post id 2132, status=draft, featured_media 2129, categories [12 Productivity], tags [15,34,36,33], author 1. Inbound links: skipped live application (post is draft; apply_inbound_links_live only fires on publish) — 3 targets remain §4b hand-apply action items.
+- Stage 4b.5 side effects completed: 2026-07-23T11:13:26Z, PR #12 opened (https://github.com/lucky72o/olgapak-blog/pull/12); pr-monitor.json written (mode: pr, status: open, wp_post_id 2132, wp_preview_url wp-admin post 2132). current_stage→finalize, gate_pending=gate_2_final. Console-gated Gate 2: NO CronCreate monitor started (console owns approval via approval.json). Emitting pr_opened + done.
 
 ## Notes
 
@@ -256,3 +258,25 @@ Editor presents Gate 2 banner (the only human gate; plan approval is an automate
 **Config-derived paths:** `{ops_dir}`=`blog-ops`, `{profile_dir}`=`blog-ops/profile`, `{drafts_dir}`=`blog-ops/drafts`, `{content_dir}`=`content/blog`, `{assets_dir}`=`blog-ops/assets`, `{remotion_dir}`=`tools/remotion`, `{route_prefix}`=`/`, `{templates}`→ plugin defaults (no `blog-ops/templates/` override dir exists).
 
 **Modules:** reddit_research on, x_research on, product on, competitors OFF, repurpose OFF.
+
+**autopilot-cont post-revise side-effect sync (2026-07-23T17:19:08Z):** the revise (17:12) re-staged FILE LAYOUT only and deferred the WP-draft content sync. This `autopilot-cont` performed the deferred side effect idempotently: auth probe OK (users/me 200, once); re-converted the revised `content/blog/how-to-plan-your-week.md` → Gutenberg (Kadence TOC extra-block after-intro); all 3 media sha256 matched `wp_media_ids[]` → skip-before-upload, reused recorded source_urls (no new attachments); rewrote the 2 in-post `[IMAGE:]` src to WP source_urls (0 residual local refs). UPDATED existing WP draft **post 2132** via `POST /posts/2132` (HTTP 200, status=draft, featured_media 2129, categories [12], tags [15,34,36,33], author 1) — the revised intro line ("set up once and still be running months from now") confirmed present in the WP content, old "this Sunday…still…in March" line absent. NO second create. PR #12 already reflects the revised push (d00a056, branch==origin). `pr-monitor.json` already current (mode: pr, status: open, wp_post_id 2132) — no rewrite needed. Console-gated Gate 2: NO CronCreate monitor started (console owns approval via approval.json). Emitted `pr_opened` + `done`. current_stage→finalize, gate_pending=gate_2_final.
+
+**autopilot-revise (2026-07-23 17:12):** applied operator feedback.md — replaced the intro line "a repeatable weekly routine you can set up this Sunday and still be using in March" with "…you can set up once and still be running months from now" (dropped the ad-like Sunday/March specifics, kept the durability point, removed the echo of the intro's opening "Sunday"). Produced `draft-v2.md`; mirrored the identical one-line change into the staged `content/blog/how-to-plan-your-week.md` and the `how-to-plan-your-week.html` preview. Floor checks pass (0 em-dashes, 0 unresolved markers). No new claims/markers, no image or link deltas → no re-humanize/marker-resolution/image-plan pass needed. Re-staged file layout (re-commit + push branch); `CONSOLE_VERIFICATION=on` → emitting `ready_for_verification`, holding the WP-draft side-effect for `autopilot-cont`.
+
+**Gate 2 finalize (console-merge entry, 2026-07-28):** resumed via `resume how-to-plan-your-week` with no `CONSOLE_RUN_STATE` (interactive Stage 4c bookkeeping, not an autopilot run). Route: `current_stage=finalize` + `gate_pending=gate_2_final`, `pr-monitor.json` `mode: pr` + `status: open` (non-terminal), PR #12 **MERGED** on origin (2026-07-28T08:04:12Z), `approval.json` present (operator, gate 2, ts 2026-07-28T08:04:08.783Z) → SKILL Step 2 console-merge route → Step 15.3 finalize directly. NO monitor, NO cron (CronList empty; console-gated mode never created one — step 1 CronDelete is a documented no-op).
+
+**WordPress external-publish detected:** `GET /posts/2132?_fields=status` (routine authenticated read by the stored ID, not a probe) returns `status: publish`, live at https://olgapak.com/how-to-plan-your-week. Per `adapters/publish/wordpress-rest.md` §On Gate 2 approval step 1, the live post is authoritative → the final content sync is SKIPPED entirely (no §Staging 3-4 re-run, no update call), so the operator's in-admin edits are not overwritten. This workflow did NOT publish the post; the operator did.
+
+**Live inbound-link pass (opt-in, `publish.wordpress.apply_inbound_links_live: true` AND post is `publish` → runs).** Idempotency check `href="(https://olgapak\.com)?/how-to-plan-your-week/?"` (ERE, quote-anchored, dots escaped) found 0 matches in all 3 targets. Target URL `https://olgapak.com/how-to-plan-your-week` (no trailing slash, per `blog.trailing_slash: false`). Write-ahead:
+- live inbound link planned: `what-is-timeboxing` (wp id 938) -> this post
+- live inbound link planned: `planning-tips-to-maximize-productivity` (wp id 1258) -> this post
+- live inbound link planned: `benefits-of-planning-ahead-for-peak-productivity` (wp id 1184) -> this post
+
+**Live inbound links APPLIED (2026-07-28, all HTTP 200, target posts remained `status: publish` — no publish action taken by this workflow):**
+- live inbound link applied: `what-is-timeboxing` (wp id 938) -> this post, anchor "how to plan your week" in §Setting Up Your Timebox (closing paragraph); before: `...and amplifies your focus time, leading to a more productive rhythm in your work life.</p>`; after: `...rhythm in your work life. Timeboxed blocks work best inside a bigger container, so it helps to know <a href="https://olgapak.com/how-to-plan-your-week">how to plan your week</a> before you start dropping tasks into slots.</p>`
+- live inbound link applied: `planning-tips-to-maximize-productivity` (wp id 1258) -> this post, anchor "a repeatable weekly planning routine" in §11 End your week with a reflection (opening paragraph); before: `...Set aside time each week to review your plans and overall progress. This reflection fuels growth in several ways:</p>`; after: `...overall progress, ideally as part of <a href="https://olgapak.com/how-to-plan-your-week">a repeatable weekly planning routine</a> rather than a one-off. This reflection fuels growth...`
+- live inbound link applied: `benefits-of-planning-ahead-for-peak-productivity` (wp id 1184) -> this post, anchor "how to plan your week step by step" in §Final Thoughts; before: `...leverage <a href="https://olgapak.com/productivity-hacks-101">productivity hacks</a> to accomplish your goals.</p>`; after: `...to accomplish your goals. For the practical next step, here is <a href="https://olgapak.com/how-to-plan-your-week">how to plan your week step by step</a>.</p>`
+
+Post-write verification re-fetched each target: exactly 1 occurrence of the boundary-anchored link pattern per post (no duplicate insertions). Each edit added only the anchor sentence; no other content was touched. `action-items.md` §4b's three hand-apply checkboxes are now satisfied automatically and need no manual work.
+
+**Gate 2 approved:** 2026-07-28T08:04:08Z (operator, console browser Approve → `approval.json`). **Finalize completed:** 2026-07-28T08:21:25Z.

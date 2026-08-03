@@ -64,11 +64,11 @@ Note: the optional VoucherCloud "under 3 focused hours/day" stat was intentional
 
 ## 4b. Add inbound links from existing posts to this one
 
-From the outline's "Inbound internal links" section. `publish.wordpress.apply_inbound_links_live: true`, BUT this post is still a **draft** (never auto-published), so the live-REST application does NOT run automatically this cycle. None of the three target posts has a repo copy in `content/blog/` (they're WordPress-only), so there was nothing to edit in the repo at staging either. **Action: hand-apply each to the live WP post in wp-admin** (or, once this post is published, they will be applied live via REST per the adapter). New post URL to link to: `https://olgapak.com/how-to-plan-your-week` (no trailing slash).
+From the outline's "Inbound internal links" section. `publish.wordpress.apply_inbound_links_live: true` AND the post reached `status: publish`, so the live-REST application **ran automatically at Gate 2 finalize (2026-07-28)** — all three are DONE, no manual work left. None of the three target posts has a repo copy in `content/blog/` (they're WordPress-only), so there was nothing to edit in the repo at staging either. New post URL linked to: `https://olgapak.com/how-to-plan-your-week` (no trailing slash).
 
-- [ ] `what-is-timeboxing` (WP-only) — add anchor "how to plan your week" where that post explains applying timeboxing to a real schedule.
-- [ ] `planning-tips-to-maximize-productivity` (WP-only) — add anchor "a repeatable weekly planning routine" in its intro or a "put it into a routine" tip.
-- [ ] `benefits-of-planning-ahead-for-peak-productivity` (WP-only) — add anchor "how to plan your week step by step" where it moves from why planning helps to how to do it.
+- [x] `what-is-timeboxing` (wp id 938, applied live via REST at finalize, HTTP 200, verified 1 occurrence) — add anchor "how to plan your week" where that post explains applying timeboxing to a real schedule.
+- [x] `planning-tips-to-maximize-productivity` (wp id 1258, applied live via REST at finalize, HTTP 200, verified 1 occurrence) — add anchor "a repeatable weekly planning routine" in its intro or a "put it into a routine" tip.
+- [x] `benefits-of-planning-ahead-for-peak-productivity` (wp id 1184, applied live via REST at finalize, HTTP 200, verified 1 occurrence) — add anchor "how to plan your week step by step" where it moves from why planning helps to how to do it.
 
 Paste-and-run per WP post (fill `<existing-slug>`, `<id>`, `<anchor>`, `<section/context>`):
 ```bash

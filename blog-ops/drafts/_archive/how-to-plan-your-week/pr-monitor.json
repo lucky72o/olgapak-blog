@@ -1,0 +1,44 @@
+{
+  "slug": "how-to-plan-your-week",
+  "repo": "lucky72o/olgapak-blog",
+  "pr_number": 12,
+  "pr_url": "https://github.com/lucky72o/olgapak-blog/pull/12",
+  "branch": "blog/how-to-plan-your-week",
+  "base": "main",
+  "worktree": ".worktrees/blog-how-to-plan-your-week",
+  "staging_url": "",
+  "status": "done",
+  "mode": "pr",
+  "handled_comment_ids": {
+    "issue": [],
+    "inline": [],
+    "review": []
+  },
+  "created_at": "2026-07-23T11:13:04Z",
+  "last_poll": "",
+  "poll_interval_minutes": 15,
+  "idle_polls": 0,
+  "wp_post_id": 2132,
+  "wp_media_ids": [
+    {
+      "file": "featured.png",
+      "id": 2129,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/07/featured-5.png",
+      "sha256": "a9bff6e3734876291d204b487b5a62765683d8797928bc5793ab95ec2fa5ddd5"
+    },
+    {
+      "file": "week-grid-timeboxing.png",
+      "id": 2130,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/07/week-grid-timeboxing.png",
+      "sha256": "33e2325ad125357927dcdc05172ff7b574775b8729ed0a9f3517dbac15720d98"
+    },
+    {
+      "file": "midweek-reset-scene.png",
+      "id": 2131,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/07/midweek-reset-scene.png",
+      "sha256": "ac6cf1135dba571804e487fe674a29155135d35790e803a6a90456b23dc364b7"
+    }
+  ],
+  "wp_preview_url": "https://olgapak.com/wp-admin/post.php?post=2132&action=edit",
+  "wp_upload": "ok"
+}

@@ -1,0 +1,1 @@
+a repeatable weekly routine you can set up this Sunday and still be using in March" — this statement is a bit weird, can we change it?
