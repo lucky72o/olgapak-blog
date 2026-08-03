@@ -94,7 +94,7 @@ If your scroll is really a civic-duty spiral through the news, this one is for y
 
 ### 12. Be kind when you slip (relapse is designed in)
 
-You will slip. The apps are built to make sure of it, so treat a lapse as data, not failure. Notice what set it off, then restart with the next tactic. One reader captured the shift better than any study: "at least I stopped thinking it's a personal flaw." Self-compassion is not the soft option here. It is what keeps you from rage-quitting the whole effort after one bad night.
+You will slip. The apps are built to make sure of it, so treat a lapse as data, not failure. Notice what set it off, then restart with the next tactic. One reader captured the shift better than any study: "at least I stopped thinking it's a personal flaw." Self-compassion is not the soft option here. It is what keeps you from rage-quitting the whole effort after one bad night. If you would rather roll these changes out one at a time instead of all at once, my [digital detox plan](/digital-detox-plan) spreads them across a week and tells you exactly what to do on the day you slip.
 
 ## Reclaim the hours, then spend them on purpose
 

@@ -1,0 +1,547 @@
+{
+  "rank": 3,
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11871965/",
+  "title": "Digital Detox Strategies and Mental Health: A Comprehensive Scoping Review of Why, Where, and How - PMC",
+  "metaDescription": "Excessive use of social media (SM) platforms and digital technology (DT), often driven by habitual scrolling due to adaptive feed experiences, has been linked to anxiety, sleep disturbances, and obsessive-compulsive behaviors while also exacerbating ...",
+  "h1": "Digital Detox Strategies and Mental Health: A Comprehensive Scoping Review of Why, Where, and How",
+  "h2s": [
+    "PERMALINK",
+    "Abstract",
+    "Introduction and background",
+    "Review",
+    "Conclusions",
+    "Disclosures",
+    "Author Contributions",
+    "References",
+    "ACTIONS",
+    "PERMALINK",
+    "RESOURCES",
+    "ON THIS PAGE",
+    "",
+    ""
+  ],
+  "h3s": [
+    "Sajita Setia",
+    "Frank Gilbert",
+    "Michelle L Tichy",
+    "Julia Redpath",
+    "Neha Shahzad",
+    "Marisa E Marraccini",
+    "Table 1. Eligibility criteria for data extraction.",
+    "Figure 1. PRISMA flowchart.",
+    "Table 2. Summary of eligible citations in this review.",
+    "Figure 2. Digital detox strategies for everyday life.",
+    "Figure 3. Charting the pathways: how does mindful digital downtime lead to a reduction in depression?",
+    "Similar articles",
+    "Cited by other articles",
+    "Links to NCBI Databases"
+  ],
+  "wordCount": 9926,
+  "bodyText": "Skip to main content\n\nAn official website of the United States government\n\nHere's how you know\nSearch\nLog in\n\nPrimary site navigation\n\nSearch PMC Full-Text Archive\nSearch in PMC\nJournal List \nUser Guide\nAs a library, NLM provides access to scientific literature. Inclusion in an NLM database does not imply endorsement of, or agreement with, the contents by NLM or the National Institutes of Health.\nLearn more: PMC Disclaimer | PMC Copyright Notice\nCureus. 2025 Jan 30;17(1):e78250. doi: 10.7759/cureus.78250\nDigital Detox Strategies and Mental Health: A Comprehensive Scoping Review of Why, Where, and How\nSajita Setia 1,2,✉, Frank Gilbert 3,2, Michelle L Tichy 4,2, Julia Redpath 4, Neha Shahzad 4, Marisa E Marraccini 5\nEditors: Alexander Muacevic, John R Adler\nAuthor information\nArticle notes\nCopyright and License information\nPMCID: PMC11871965  PMID: 40026988\nAbstract\n\nExcessive use of social media (SM) platforms and digital technology (DT), often driven by habitual scrolling due to adaptive feed experiences, has been linked to anxiety, sleep disturbances, and obsessive-compulsive behaviors while also exacerbating mental health concerns. Yet, the role of \"digital detox\", defined as a voluntary reduction or temporary cessation of device use, remains only partially understood as both a clinical and lifestyle intervention. This comprehensive scoping review was conducted to consolidate existing research on digital detox interventions and evaluate contextual factors that may influence their effectiveness for mental health and well-being.\n\nA targeted keyword search for \"digital detox\" was conducted in the PubMed database on December 12, 2024, yielding 34 initial results. This review followed the approach recommended by the Preferred Reporting Items for Systematic Reviews and Meta-Analyses Extension for Scoping Reviews (PRISMA-ScR) to identify, screen, and extract evidence from relevant studies as per pre-specified inclusion criteria. A total of 14 studies were found eligible, and data from these studies and their relevant references (totaling 640 citations) were extracted and synthesized. Our findings suggest that digital detox interventions may alleviate depression and problematic internet use, and individuals with higher baseline symptom severity appear to derive higher benefits. However, the impact on broader outcomes such as life satisfaction and overall well-being remains variable. Divergent intervention approaches, ranging from short-term SM abstinence to sustained, moderate device restrictions and individual differences in baseline severity of symptoms, coping styles, environmental pressures, and support systems, may contribute to different outcomes across various studies and systematic reviews. Overall, age, gender, baseline mental health, and range and duration of DT usage prior to detox are the key variables that may determine the effectiveness of digital detox interventions. Tailored DT usage in moderation, aligned with each individual's age, developmental stage, and academic needs, has greater benefits among younger populations, particularly adolescents and young adults, while mindful and regulated SM use is especially advantageous for female populations. However, other populations could also benefit, provided interventions address self-regulation challenges specific to adult lifestyles.\n\nGiven the growing global prevalence of problematic smartphone use (PSU) and its documented comorbidity with psychiatric disorders, digital detox strategies have the potential to be integrated into clinical recommendations and policy initiatives. However, a framework for assessing intervention quality and long-term outcomes is essential.\n\nKeywords: digital dementia, digital detox, digital downtime, digital technology, mental health, phubbing, problematic smartphone use, problematic social media use, scoping review, social media\n\nIntroduction and background\n\nIn today's digital era, social media (SM) platforms and digital technology (DT) have become an integral part of our lives; these serve as primary avenues for communication, self-expression, academics, and work [1-3]. However, these platforms are often engineered to exploit human desires through features such as adaptive feed experiences, which refer to personalized, algorithm-driven content [3]. While this can create a highly engaging, customized experience, it also encourages habitual scrolling and unregulated prolonged device use by continuously presenting content that the user finds appealing or challenging to ignore [4].\n\nProblematic smartphone use (PSU), defined as excessive or uncontrolled smartphone behavior that may lead to harm or impair daily functioning, often affects younger populations [5]. A systematic review and meta-analysis of 109 studies from 2012 to 2022 covering a total of 97,748 individuals estimated the global pooled prevalence of PSU at 37.1% (95% confidence interval (CI): 33.5%-40.8%), showing a steady rise over time despite regional and measurement variations [6]. PSU and unregulated SM use are linked with a range of adverse outcomes, including body image concerns and diminished self-esteem, mental health challenges, obsessive-compulsive behaviors, poor sleep quality, reduced school performance, and lower productivity [7-11]. Extensive research supports this concerning trend, with meta-analyses showing significant correlations between problematic SM use and increased levels of depression, anxiety, and stress [12,13], as well as a link between PSU and a decline in academic achievement [14].\n\nA key factor contributing to these problems is technostress, which arises from the excessive or misuse of technology [15]. Technostress manifests as negative emotional and physiological responses, including anxiety, irritability, frustration, and exhaustion, and is driven in large part by the \"fear of missing out\" (FOMO). FOMO compels individuals to remain continuously connected with SM or DT in order to avoid missing important information or social interactions [15]. This drive is further reinforced by immediate gratification through the rewarding effect of browsing, e.g., likes and comments and continuous streams of novel content on SM, which stimulates the dopaminergic system, reinforcing prolonged engagement and addictive behaviors [16,17].\n\nDT serves as a primary means of communication for young people, who heavily rely on images to express themselves. The rise of DT and SM has intensified the appearance culture, promoting idealized models and fostering unregulated behavior and excessive social and body image comparison [18,19]. This digital environment exploits the vulnerabilities of adolescents, stimulating desires for experimentation and reinforcing cultural beliefs that can lead to deviant or pathological behaviors related to self-esteem and mental health [18]. For instance, a secondary analysis of the Adolescent Brain Cognitive Development (ABCD) Study found that mobile phone ownership and frequent SM use among pre-teens were associated with increased risks of substance use, including alcohol, nicotine/tobacco, and cannabis, over an 18-month period [20]. Additionally, excessive smartphone use is associated with poor sleep quality and bedtime and academic procrastination [21]. Research involving school and university students from several countries has revealed that excessive SM and DT use is significantly associated with poor sleep quality, intermittent/anxious sleep patterns, and daily function [19,21-24].\n\nDespite these concerns, SM remains an integral part of our daily lives, offering benefits such as enhanced social connections, reduced loneliness, and safe spaces for marginalized groups such as LGBTQ+ individuals [25]. In response to rising mental health issues linked to digital use [26,27], many experts advocate for bans and severe restrictions on SM and DT [28,29]. In Australia, children under 16 will be prohibited from using various SM platforms by 2025 following the federal parliament's legislation through the Online Safety Amendment (SM Minimum Age) Bill 2024, which aims to enhance protections during critical developmental stages [30]. However, a recent study from South Australia has indicated that such restrictions may have limited short-term benefits and do not address the underlying psychological mechanisms driving problematic phone use [31]. Instead of merely enforcing bans, experts suggest leveraging targeted emotion regulation strategies to help adolescents navigate the digital social environment effectively [25,31-34]. Additionally, escalating mental distress is not limited to those under 16; a meta-analysis assessing the global prevalence of depression and anxiety symptoms among college students found high rates, with 33.6% experiencing depression and 39% reporting anxiety symptoms [35]. These findings necessitate the need for intervention programs that focus on enhancing self-regulation skills to reduce smartphone addiction and improve sleep quality and overall physical and mental well-being among all youth populations, including adolescents and young adults [36]. Addressing these challenges through targeted personalized digital detox strategies and emotional regulation, rather than exclusive restrictive measures, may offer a more practical approach to mitigating the mental health impacts of DT use [36].\n\nThe concept of digital detox, which refers to disconnecting DT and SM use, has recently emerged as a possible way to address these issues [15,37]. However, its definition varies among experts and citations, and usually, terms such as break, abstinence, disconnection, timeout, detox, or unplugging are used [38]. The clinical application of digital detox, which implies temporarily and voluntarily reducing or eliminating DT and SM use, has recently been proposed, but mainly for the working population [15]. Although initial findings and anecdotal reports suggest that digital detox practices may improve mental well-being, the evidence is still fragmented. Many concepts are not fully understood, such as preferred strategies, support systems, and the populations that could benefit the most [15,39]. As of December 2024, there was no Medical Subject Heading (MeSH) on PubMed for digital detox [40]. This comprehensive scoping review seeks to consolidate and clarify what is currently known, identify key gaps in the research, and guide the development of future systematic reviews, practical takeaways, and strategies to promote mental health in our increasingly connected world.\n\nThe key objectives of this review are to (i) examine the range of mental health and well-being indicators influenced by digital detox and (ii) determine the contextual factors that may modulate the priority or impact of digital detox strategies and interventions. We hypothesize that digital detox interventions employ a variety of methodological approaches and outcome measures to evaluate their effects on mental health and well-being. Additionally, we anticipate that specific characteristics of these interventions, such as type, duration, modality, and support mechanisms, along with contextual factors such as demographic characteristics, baseline technology use, baseline well-being, and cultural context, influence their effectiveness.\n\nA previous systematic review found that only about 30% of the eligible studies related to digital detox keywords across multiple databases were of high quality [38]. Given the emerging nature of the digital detox concept and the absence of a dedicated MeSH term for \"digital detox\" in PubMed as of December 2024, we utilized a focused keyword search using all fields for the keyword \"digital detox\" within the PubMed database to capture a comprehensive list of relevant and high-quality peer-reviewed medical literature.\n\nReview\n\nA literature search conducted using the keyword \"digital detox\" on the PubMed database without any filters on December 12, 2024, yielded 34 results. Table 1 details the eligibility criteria for screening these 34 citations for data extraction.\n\nTable 1. Eligibility criteria for data extraction.\n\nThe search included articles on PubMed published from inception until December 12, 2024.\n\nInclusion criteria\tExclusion criteria\nPublication type\nOriginal research (quantitative, qualitative, mixed-methods) and review articles (systematic, scoping, or narrative)\tCommentary, opinion pieces, editorials, letters, news, and conference abstracts\nFocus\nStudies or reviews that include any characteristics and implementation components of digital detox strategies to improve mental health or well-being\tStudies or reviews focusing solely on individual digital detox apps or only including context related to forced digital overuse (e.g., due to lockdowns or isolation during the pandemic)\nOutcomes\nStudies or reviews, including at least one measure assessing the impact of digital detox on mental health or well-being (e.g., anxiety, depression, stress, digital dementia, cognitive burden, life satisfaction, and subjective well-being)\tStudies or reviews that do not include the impact of digital detox on any mental health or well-being outcomes (e.g., focusing solely on reduction in screen time, productivity, educational performance, or physical health)\nOpen in a new tab\n\nThis review followed a structured approach to identify, screen, and extract evidence from relevant studies in accordance with the Preferred Reporting Items for Systematic Reviews and Meta-Analyses Extension for Scoping Reviews (PRISMA-ScR) [41]. Two independent reviewers conducted the initial Phase 1 (title/abstract) and subsequent Phase 2 (full-text) screening. Two reviewers then completed data extraction, and two additional reviewers performed quality checks to ensure accuracy and consistency. Any discrepancies were resolved through discussion or consulting a third reviewer when necessary.\n\nA total of 16 citations were excluded from Phase 1 screening (review of abstract) due to their lack of focus related to the aims or objectives of this scoping review. Specifically, 10 citations did not include any characteristics and implementation components of digital detox strategies to enhance well-being or mental health [42-51]. Additionally, one study was excluded as it focused solely on an individual digital detox app [52]. Some articles addressed forced digital overuse, such as that experienced during lockdowns or isolation periods during the pandemic [53-55], and a few of them also included outcomes unrelated to well-being or mental health [56,57]. Two review articles were excluded from Phase 2 screening as the non-inclusion of any characteristics and implementation components of digital detox strategies to enhance well-being or mental health was only reflected in full-text review [58,59]. Two additional studies were excluded from Phase 2 screening of full texts as the digital detox interventions were studied only for screen time reduction and not for effect on mental health or well-being measures [60,61].\n\nA total of 14 citations met the eligibility criteria and were deemed eligible by two independent reviewers [62-75]. Two additional reviewers subsequently extracted data to formulate the narrative for this review, with quality checks conducted by a third reviewer. One of the included original quantitative studies, \"Digital detox: the effect of smartphone abstinence on mood, anxiety, and craving\", which was published in 2019 [74], issued a corrigendum in 2020 [75]. Data were extracted from the original articles and verified with the corrigendum to ensure accuracy and completeness. Figure 1 illustrates the PRISMA flowchart for the overall results of both Phase 1 and Phase 2 screenings.\n\nFigure 1. PRISMA flowchart.\n\nOpen in a new tab\n\nPRISMA: Preferred Reporting Items for Systematic Reviews and Meta-Analyses\n\nImage credit: Dr. Sajita Setia (corresponding author)\n\nThe narrative of this scoping review (along with practical interpretations and strategies for implementing digital detox to enhance well-being and mental health) was developed using the key findings and interpretations of all 14 eligible studies [62-75] and their associated references, yielding a total of 640 citations considered for this review.\n\nTable 2 provides a concise overview of each included study, outlining their article types, study objectives, methodologies, and relevance to the current scoping review.\n\nTable 2. Summary of eligible citations in this review.\n\nDT: digital technology, SM: social media, PRISMA: Preferred Reporting Items for Systematic Reviews and Meta-Analyses\n\nStudy title/publication\tArticle type\tStudy objectives and methodology\tRelevance in medicine and research\nUnderstanding digital dementia and cognitive impact in the current era of the internet: a review [62]\tNarrative review\tReviewed 78 high-quality studies to provide a detailed overview of the research on digital dementia and cognitive impacts due to DT\tHighlights the need for digital detox strategies to mitigate cognitive decline associated with DT use, emphasizing the importance of reducing screen time and enhancing cognitive awareness\nPartner phubbing and sleep quality: serial mediation models with relationship satisfaction and perceived stress [63]\tOriginal research (quantitative)\tExamined how relationship satisfaction and stress mediate the impact of partner phubbing on sleep quality among adults in long-term relationships\tSupports the clinical importance of digital detox in improving relationship dynamics and sleep quality, underscoring the necessity for interventions that address interpersonal digital behavior\nDigital detox and well-being [64]\tNarrative review\tSummarized the latest findings on the impact of digital detox on well-being, drawing from a broad range of recent studies\tDemonstrates the effectiveness of digital detox interventions in enhancing well-being, calling for more precise measures and standardized tools in future research\nImpacts of digital social media detox for mental health: a systematic review and meta-analysis [65]\tSystematic review\tSynthesized findings from several studies precisely using PRISMA guidelines to assess the impacts of digital detox on mental health variables such as stress and life satisfaction\tIndicates the mixed effects of digital detox on various mental health outcomes and suggests the necessity for long-term studies to define effective strategies\nTwitter discussions on #digitaldementia: content and sentiment analysis [66]\tOriginal research (quantitative)\tAnalyzed public perceptions and concerns about digital dementia through a contextual analysis of Twitter discussions\tProvides insight into public concerns about digital overuse and its cognitive effects, highlighting the societal call for effective digital detox measures\nA literature review on holistic well-being and dopamine fasting: an integrated approach [67]\tNarrative review\tReviewed literature on the broad impacts of digital overuse on holistic well-being to provide an overarching synthesis of the field\tCalls for a balanced digital lifestyle and the incorporation of detox strategies to mitigate the adverse impacts of digital overuse on overall health\nA comprehensive review on digital detox: a newer health and wellness trend in the current era [68]\tSystematic review\tExplored the breadth of digital detox research, focusing on its cognitive and emotional benefits through an extensive review process\tDiscusses the varied applications of digital detox and its potential benefits, stressing the need for integrated approaches in mental health interventions\nTaking a break: the effects of partaking in a two-week social media digital detox on problematic smartphone and social media use, and other health-related outcomes among young adults [69]\tOriginal research (mixed-methods)\tInvestigated the immediate psychological impacts of engaging in a digital detox through a mixed-methods approach\tHighlights the immediate benefits of digital detox for mental health and",
+  "externalLinks": [
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/",
+      "text": "",
+      "rel": ""
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/myncbi/",
+      "text": "Dashboard",
+      "rel": ""
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/myncbi/collections/bibliography/",
+      "text": "Publications",
+      "rel": ""
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/account/settings/",
+      "text": "Account settings",
+      "rel": ""
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/myncbi/",
+      "text": "Dashboard",
+      "rel": ""
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/myncbi/collections/bibliography/",
+      "text": "Publications",
+      "rel": ""
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/account/settings/",
+      "text": "Account settings",
+      "rel": ""
+    },
+    {
+      "href": "https://doi.org/10.7759/cureus.78250",
+      "text": "",
+      "rel": "noreferrer noopener"
+    },
+    {
+      "href": "https://doi.org/10.7759/cureus.78250",
+      "text": "10.7759/cureus.78250",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/?term=%22Cureus%22[jour]",
+      "text": "Search in PubMed",
+      "rel": ""
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/nlmcatalog?term=%22Cureus%22[Title%20Abbreviation]",
+      "text": "View in NLM Catalog",
+      "rel": ""
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/?term=%22Setia%20S%22[Author]",
+      "text": "Sajita Setia",
+      "rel": ""
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/?term=%22Setia%20S%22[Author]",
+      "text": "Sajita Setia",
+      "rel": ""
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/?term=%22Gilbert%20F%22[Author]",
+      "text": "Frank Gilbert",
+      "rel": ""
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/?term=%22Gilbert%20F%22[Author]",
+      "text": "Frank Gilbert",
+      "rel": ""
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/?term=%22Tichy%20ML%22[Author]",
+      "text": "Michelle L Tichy",
+      "rel": ""
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/?term=%22Tichy%20ML%22[Author]",
+      "text": "Michelle L Tichy",
+      "rel": ""
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/?term=%22Redpath%20J%22[Author]",
+      "text": "Julia Redpath",
+      "rel": ""
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/?term=%22Redpath%20J%22[Author]",
+      "text": "Julia Redpath",
+      "rel": ""
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/?term=%22Shahzad%20N%22[Author]",
+      "text": "Neha Shahzad",
+      "rel": ""
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/?term=%22Shahzad%20N%22[Author]",
+      "text": "Neha Shahzad",
+      "rel": ""
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/?term=%22Marraccini%20ME%22[Author]",
+      "text": "Marisa E Marraccini",
+      "rel": ""
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/?term=%22Marraccini%20ME%22[Author]",
+      "text": "Marisa E Marraccini",
+      "rel": ""
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/40026988/",
+      "text": "40026988",
+      "rel": ""
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&p=PMC3&id=11871965_cureus-0017-00000078250-i01.jpg",
+      "text": "",
+      "rel": ""
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&p=PMC3&id=11871965_cureus-0017-00000078250-i02.jpg",
+      "text": "",
+      "rel": ""
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&p=PMC3&id=11871965_cureus-0017-00000078250-i03.jpg",
+      "text": "",
+      "rel": ""
+    },
+    {
+      "href": "https://doi.org/10.1371/journal.pone.0286795",
+      "text": "DOI",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/38568953/",
+      "text": "PubMed",
+      "rel": ""
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?journal=PLoS%20One&title=The%20persistent%20educational%20digital%20divide%20and%20its%20impact%20on%20societal%20inequality&volume=19&publication_year=2024&pages=0&pmid=38568953&doi=10.1371/journal.pone.0286795&",
+      "text": "Google Scholar",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://doi.org/10.1371/journal.pdig.0000554",
+      "text": "DOI",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/39078844/",
+      "text": "PubMed",
+      "rel": ""
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?journal=PLOS%20Digit%20Health&title=Work-related%20smartphone%20use%20during%20off-job%20hours%20and%20work-life%20conflict:%20a%20scoping%20review&volume=3&publication_year=2024&pages=0&pmid=39078844&doi=10.1371/journal.pdig.0000554&",
+      "text": "Google Scholar",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://doi.org/10.7759/cureus.72499",
+      "text": "DOI",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/39600781/",
+      "text": "PubMed",
+      "rel": ""
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?journal=Cureus&title=Understanding%20social%20media%20addiction:%20a%20deep%20dive&volume=16&publication_year=2024&pages=0&pmid=39600781&doi=10.7759/cureus.72499&",
+      "text": "Google Scholar",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://doi.org/10.1186/s13034-024-00805-0",
+      "text": "DOI",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/39217325/",
+      "text": "PubMed",
+      "rel": ""
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?journal=Child%20Adolesc%20Psychiatry%20Ment%20Health&title=Scrolling%20through%20adolescence:%20unveiling%20the%20relationship%20of%20the%20use%20of%20social%20networks%20and%20its%20addictive%20behavior%20with%20psychosocial%20health&volume=18&publication_year=2024&pages=107&pmid=39217325&doi=10.1186/s13034-024-00805-0&",
+      "text": "Google Scholar",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?journal=Behav%20Inf%20Technol&title=An%20exploration%20of%20motives%20that%20influence%20problematic%20smartphone%20use%20in%20young%20adults&publication_year=2024&",
+      "text": "Google Scholar",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://doi.org/10.1089/cyber.2023.0548",
+      "text": "DOI",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/38979617/",
+      "text": "PubMed",
+      "rel": ""
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?journal=Cyberpsychol%20Behav%20Soc%20Netw&title=Trends%20and%20influencing%20factors%20in%20problematic%20smartphone%20use%20prevalence%20(2012-2022):%20a%20systematic%20review%20and%20meta-analysis&volume=27&publication_year=2024&pages=616-634&pmid=38979617&doi=10.1089/cyber.2023.0548&",
+      "text": "Google Scholar",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://doi.org/10.1093/eurpub/ckae029",
+      "text": "DOI",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/38402522/",
+      "text": "PubMed",
+      "rel": ""
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?journal=Eur%20J%20Public%20Health&title=Social%20media%20as%20a%20determinant%20of%20health&volume=34&publication_year=2024&pages=425-426&pmid=38402522&doi=10.1093/eurpub/ckae029&",
+      "text": "Google Scholar",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?journal=Media%20Psychol&title=A%20meta-analysis%20of%20the%20effects%20of%20social%20media%20exposure%20to%20upward%20comparison%20targets%20on%20self-evaluations%20and%20emotions&volume=26&publication_year=2023&pages=612-635&",
+      "text": "Google Scholar",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://doi.org/10.1007/s10567-022-00404-5",
+      "text": "DOI",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/35841501/",
+      "text": "PubMed",
+      "rel": ""
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?journal=Clin%20Child%20Fam%20Psychol%20Rev&title=The%20perfect%20storm:%20a%20developmental-sociocultural%20framework%20for%20the%20role%20of%20social%20media%20in%20adolescent%20girls%E2%80%99%20body%20image%20concerns%20and%20mental%20health&volume=25&publication_year=2022&pages=681-701&pmid=35841501&doi=10.1007/s10567-022-00404-5&",
+      "text": "Google Scholar",
+      "rel": "noopener noreferrer"
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/",
+      "text": "",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/journals/",
+      "text": "Journal List",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/about/userguide/",
+      "text": "User Guide",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/about/disclaimer/",
+      "text": "PMC Disclaimer",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/about/copyright/",
+      "text": "PMC Copyright Notice",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/about/copyright/",
+      "text": "PMC Copyright notice",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10990165/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11288435/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11594359/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11365153/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11161142/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9287711/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11293406/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11654946/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9052033/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11220804/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9096894/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11538009/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11568622/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12147921/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10375684/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11431134/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11554337/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11490205/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11737419/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8842945/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10127168/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11502440/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10357372/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10039726/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6256718/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9141969/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4926056/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8834974/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8964389/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8663477/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8455170/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9301932/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10156026/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8728564/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10006589/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11499077/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11422191/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11392003/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11289583/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11223451/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11109987/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10740995/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10631628/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9446377/",
+      "text": "PMC free article",
+      "rel": ""
+    }
+  ],
+  "fetchedAt": "2026-08-03T08:58:08.935Z",
+  "fetchStatus": "ok"
+}
