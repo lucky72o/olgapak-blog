@@ -157,7 +157,7 @@ Yes. A printable PDF, a Notion template, or a note-taking app all work, because 
 
 ### What is the Cornell method NOT good for?
 
-It struggles with very fast, equation- or diagram-heavy lectures where you can't split your attention in real time, and with freeform brainstorming before your ideas have a shape. In those cases, charting or mapping can fit better, or you can still use Cornell but do the cues and summary after class instead of during it.
+It struggles with very fast, equation- or diagram-heavy lectures where you can't split your attention in real time, and with freeform brainstorming before your ideas have a shape. In those cases, [charting method note-taking](/charting-method-note-taking) or mapping can fit better, or you can still use Cornell but do the cues and summary after class instead of during it.
 
 ### Do I really need the summary section?
 

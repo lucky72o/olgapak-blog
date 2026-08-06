@@ -1,0 +1,56 @@
+{
+  "slug": "charting-method-note-taking",
+  "repo": "lucky72o/olgapak-blog",
+  "pr_number": 0,
+  "pr_url": "",
+  "branch": "blog/charting-method-note-taking",
+  "base": "main",
+  "worktree": ".worktrees/blog-charting-method-note-taking",
+  "staging_url": "",
+  "status": "done",
+  "mode": "local",
+  "handled_comment_ids": {
+    "issue": [],
+    "inline": [],
+    "review": []
+  },
+  "created_at": "2026-08-03T21:47:47Z",
+  "last_poll": "",
+  "poll_interval_minutes": 15,
+  "idle_polls": 0,
+  "wp_post_id": 2164,
+  "wp_media_ids": [
+    {
+      "file": "featured.png",
+      "id": 2159,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/featured-1.png",
+      "sha256": "5a57f4d0cccd6375044d4026bf2d716396707d221724dbb185b420674706f127"
+    },
+    {
+      "file": "charting-anatomy.png",
+      "id": 2160,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/charting-anatomy.png",
+      "sha256": "72655d5cb6f324e949caa836563ed0b92ac832c37317a046d6ca60523eeb754c"
+    },
+    {
+      "file": "charting-five-steps.png",
+      "id": 2161,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/charting-five-steps.png",
+      "sha256": "b78453b189bc24098c0a2195b37faf325927b49a8123cf80c897db0dbb0565b3"
+    },
+    {
+      "file": "overstuffed-chart.png",
+      "id": 2162,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/overstuffed-chart.png",
+      "sha256": "a30e58e3cc1daf24b57a6dd4163dbd436309114ff3a0506e8231731fb5c7eaac"
+    },
+    {
+      "file": "paper-vs-digital-chart.png",
+      "id": 2163,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/paper-vs-digital-chart.png",
+      "sha256": "d565c15012dab727772862dcb96c60fe59cef2947895921deae5186af8f9f3db"
+    }
+  ],
+  "wp_preview_url": "https://olgapak.com/wp-admin/post.php?post=2164&action=edit",
+  "wp_upload": "ok"
+}

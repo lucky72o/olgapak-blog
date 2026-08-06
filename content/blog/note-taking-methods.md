@@ -73,7 +73,7 @@ The Charting Method is a table you build before the information arrives. You dra
 
 Charting shines exactly where the others strain: comparing facts across categories, especially when the content is both fact-heavy and relationship-heavy and delivered fast. If you know a test will focus on both the facts and how they relate, and the material is dense and quick, a pre-drawn chart lets you drop each detail into the right cell without pausing to structure anything. The structure is already there.
 
-The catch is that you have to know your categories in advance. Charting is a poor fit for unstructured or discussion-style content, where the shape of the material is not clear until it is over. Build the wrong columns and you are stuck redrawing mid-lecture. It also takes the most upfront setup of the four, since you are laying out the grid before class even starts.
+The catch is that you have to know your categories in advance. Charting is a poor fit for unstructured or discussion-style content, where the shape of the material is not clear until it is over. Build the wrong columns and you are stuck redrawing mid-lecture. It also takes the most upfront setup of the four, since you are laying out the grid before class even starts. If this is the one you want to try, here is [the charting method of note-taking](/charting-method-note-taking) walked through step by step.
 
 ## Which Method Fits Which Situation
 
