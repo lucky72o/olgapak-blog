@@ -110,6 +110,8 @@ And do not overthink the container. Paper or an app both work. If you love the f
 
 You do not need the perfect system. You need to pick the method that fits your next lecture, meeting, or reading, and then actually do the condensing afterward. That is the whole game.
 
+The method also quietly decides your kit. Fast linear notes and a tightly ruled chart ask completely different things of a tip, so it's worth knowing [which pens work best for note taking](/best-pens-for-note-taking) before your next lecture.
+
 Once your notes are down, let a tool handle the tedious part. [Try my free AI tools](/ai-tools), starting with the Text Summarizer, to condense your readings and notes so what you learned actually sticks. Automate the mundane, and keep your energy for the learning itself.
 
 ## FAQ
