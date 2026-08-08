@@ -2,11 +2,11 @@
 slug: best-pens-for-note-taking
 target_keyword: best pens for note taking
 created: 2026-08-08 13:41
-last_updated: 2026-08-08 15:40
-current_stage: preview
+last_updated: 2026-08-08 16:37
+current_stage: finalize
 current_owner: blog-post-workflow
 status: active
-gate_pending: none
+gate_pending: gate_2_final
 # status values: active | paused | complete | abandoned
 # current_stage values: intake | chrome_fetch | serp_select | serp_deep_fetch | reddit_fetch | reddit_select | reddit_deep_fetch | x_fetch | x_select | x_deep_fetch | competitor_check | analyze_research | synthesize_plan | plan_review | outline | draft | review | humanize | resolve_markers | images | generate_images | action_items | preview | finalize | repurpose | complete
 # current_owner values: human | blog-post-workflow | blog-researcher | blog-writer | blog-reviewer | blog-humanizer | image-planner | image-builder | plan-reviewer
@@ -242,7 +242,21 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 - Stage 4b started: 2026-08-08 15:35
 - Stage 4b completed: 2026-08-08 15:40, action-items.md written, 0 residual VERIFY/EXTERNAL/INTERNAL markers, 4 IMAGE placeholders to resolve at staging
 - Stage 4b.5 staging started: 2026-08-08 15:40
+- Stage 4b.5 FILE LAYOUT completed: 2026-08-08 15:52, committed f4b5862 and pushed branch blog/best-pens-for-note-taking. Slug-collision check passed (0 hits for the slug on origin/main after fetch).
+- Stage 4b.5 SIDE EFFECTS DEFERRED per the console verification handshake (`CONSOLE_VERIFICATION=on`): no WordPress draft created, no auth probe run, no `pr-monitor.json` written, no PR opened. `autopilot-cont` performs those after a verification PASS.
+- Gate 2 opened: 2026-08-08 15:52, mode CONSOLE-GATED. No CronCreate monitor started, no blocking on typed input. Approval is the console-written `approval.json`; no launch arg or standing instruction substitutes for it, and the WP post stays `draft`.
 - Stage 3d completed: 2026-08-08 15:20, resolved 14, kept-general 0, deleted 1, competitor-routed 0 (module off). Residual [VERIFY:]/[EXTERNAL_LINK_NEEDED:] = 0; 4 [IMAGE:] remain by design.
+- **Stage 4b.5 SIDE EFFECTS completed (`autopilot-cont`): 2026-08-08 16:37.** Console verification PASSED (build check PASS, vision PASS — report notes vision skipped because no `pr-monitor.json` existed yet) and the console spawned `autopilot-cont`. The deferred WordPress half of staging ran end to end:
+  - **Auth probe (adapter §Staging step 2) PASSED on its single allowed attempt** — `GET /wp-json/wp/v2/users/me` returned `{"id":1,"name":"Olga Pak","slug":"wpx_admin101"}`. Probe run exactly once, never retried. Every authenticated call used inline-quoted `-u "$USER:$PASS"` (the app password contains spaces) and read `$WP_APP_PASSWORD` directly rather than the bash-only `${!VAR}` indirect expansion, which is a `bad substitution` under this environment's zsh.
+  - **Gutenberg conversion (step 3, PRIMARY path — no classic-block fallback):** `md-to-gutenberg.py` emitted 86 `wp:paragraph`, 24 `wp:heading`, 14 `wp:list`, 4 `wp:image`, 2 `wp:table`, plus the blog's Kadence TOC via `--extra-blocks` (`position: after-intro`, extracted from `site-conventions.md` §Table of contents with `jq --rawfile`). The expected frontmatter-strip stderr warning fired and is benign. TOC verified to land after the 4-paragraph intro (line 17) and before the first `wp:heading` (line 20).
+  - **Media upload (step 4):** all 5 files uploaded, IDs captured from each upload RESPONSE (never re-derived by slug lookup) and written to `pr-monitor.json` per file: `dead-pens-study-desk.png` → 2169, `featured.png` → 2170, `ink-families-tradeoff.png` → 2171, `ink-types-writing-sample.png` → 2172, `paper-feathering-bleeding-ghosting.png` → 2173. **The featured upload landed at `source_url` `.../featured-2.png`** — WordPress uniquified the duplicate `featured` attachment slug again (the 2026-07-18 cross-post-collision case); taking the ID from the response is what kept it correct. All 4 in-post local paths substituted to their uploaded `source_url`s; 0 local paths remain in the body.
+  - **Draft create (step 5):** lookup-before-create returned `[]` for both a draft-only and an any-status `context=edit` query, and no `wp_post_id` was stored, so a single create ran → **HTTP 201, post id 2174, `status: draft`**. Categories resolved by name to `[12, 9]` (Productivity + EdTech, per the brief's Category field — not "Uncategorized"); tags resolved by exact name match to `[14, 30, 15]` (note-taking, students, productivity); `featured_media: 2170`; `author: 1`.
+  - **Round-trip verified:** re-fetched `posts/2174?context=edit` — `content.raw` is byte-identical to what was sent (31,300 bytes), all block types intact, Kadence TOC present, all 4 image `src`s on `olgapak.com/wp-content/uploads/`, 0 raw `[VERIFY:]`/`[EXTERNAL_LINK_NEEDED:]`/`[INTERNAL_LINK_NEEDED:]`/`[IMAGE:]` markers, 0 `tag=op01e-20` affiliate params, 0 em-dashes.
+  - **Step 6 (inbound links) not re-run:** the repo-markdown edits were already applied and pushed during the file-layout run (see the write-ahead ownership record in Notes); all 3 target posts re-verified as carrying exactly 1 occurrence each. The **live** WordPress inbound-link pass correctly did NOT run: adapter §On Gate 2 approval step 2 gates it on `apply_inbound_links_live: true` **AND** the post being `status: publish`, and this post is `draft`.
+  - **Step 7 (state):** `pr-monitor.json` written with `mode: local` (Gate 2 mode is console-gated — `CONSOLE_RUN_STATE` is set, so no PR and no CronCreate monitor), `wp_post_id: 2174`, all 5 `wp_media_ids[]` entries with sha256, `wp_preview_url: https://olgapak.com/wp-admin/post.php?post=2174&action=edit`, `wp_upload: ok`.
+  - **Nothing was published.** `status` stayed `draft` throughout; no `status=publish` was ever sent. Gate 2 remains the operator's console Approve action (which writes `approval.json`), and the Rank Math focus keyword (`best pens for note taking`) is still a manual wp-admin step before Publish, per action-items §7.
+  - Branch `blog/best-pens-for-note-taking` at `f4b5862`, identical to origin — no post/asset changes in this run beyond this checklist entry and the new `pr-monitor.json`.
+  Emitted `pr_opened` (`pr: 0`, `url` = the WP preview URL, per the console contract's no-PR-path form) then `done`.
 
 ## Notes
 
@@ -267,4 +281,5 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
   - `content/blog/cornell-note-taking-method.md` -> anchor "the right pen for note taking" -> `/best-pens-for-note-taking`
   - `content/blog/note-taking-methods.md` -> anchor "which pens work best for note taking" -> `/best-pens-for-note-taking`
   Pre-edit state verified 2026-08-08 15:45: all three files clean in git and containing zero occurrences of `best-pens-for-note-taking`.
+  APPLIED and verified 2026-08-08 15:50: each of the three diffs is a pure link-only insertion (2/1/2 added lines, no other edits), all three shipped in commit f4b5862.
 - Competitors module is OFF in config, so Stage 1.5c is skipped by its own guard and brief.md carries no competitor table.
