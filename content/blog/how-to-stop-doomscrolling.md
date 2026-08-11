@@ -98,7 +98,7 @@ You will slip. The apps are built to make sure of it, so treat a lapse as data, 
 
 ## Reclaim the hours, then spend them on purpose
 
-Here is the quiet payoff: the hours you stop feeding to the feed do not vanish, they come back to you. You did not fail at the internet, you were up against a system designed to win, and changing that system is how you take the time back. The real win is not a smaller screen-time number, it is what you do with the attention you reclaim.
+Here is the quiet payoff: the hours you stop feeding to the feed do not vanish, they come back to you. You did not fail at the internet, you were up against a system designed to win, and changing that system is how you take the time back. The real win is not a smaller screen-time number, it is what you do with the attention you reclaim. Doomscrolling is one leak out of several, so if you want the whole picture rather than this one behavior, start with [how to reduce screen time](/how-to-reduce-screen-time).
 
 So point it at something that matters. When you do have reading or writing to get through, [try my free AI tools](/ai-tools) to automate the mundane. The Text Summarizer turns a long article into a short, scannable version, so your reclaimed time goes to living instead of loading one more feed.
 
