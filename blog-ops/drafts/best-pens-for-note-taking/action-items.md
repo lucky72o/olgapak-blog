@@ -68,17 +68,17 @@ Resolved automatically at Stage 3d. **Nothing to do.** Current draft has **0** r
 
 | # | Line | Claim | Outcome | Source / note |
 |---|---|---|---|---|
-| 1 | `draft-v2.md:71` | product link, Uni-ball Jetstream RT | `resolved` | https://www.amazon.com/dp/B001HA59VC (untagged) |
-| 2 | `draft-v2.md:83` | product link, Pentel EnerGel RTX | `resolved` | https://www.amazon.com/dp/B001S2RDRM (untagged) |
-| 3 | `draft-v2.md:95` | product link, Pilot G2 | `resolved` | https://www.amazon.com/dp/B00OCPFPK4 (untagged) |
-| 4 | `draft-v2.md:107` | product link, Uni-ball Signo DX 0.38 | `resolved` | https://www.amazon.com/dp/B005HNZ5SW (untagged) — the US-market equivalent, uniball 207 0.38 mm Ultra Micro Point. No dependable genuine US listing exists for the UM-151 "Signo DX"; the draft now says so in prose and tells readers to buy on tip size, not name. |
-| 5 | `draft-v2.md:119` | product link, Zebra Sarasa Dry | `resolved` | https://www.amazon.com/dp/B001BZ4ROI (untagged) |
-| 6 | `draft-v2.md:131` | product link, Pilot Acroball | `resolved` | https://www.amazon.com/dp/B00FACLOCQ (untagged) |
-| 7 | `draft-v2.md:143` | product link, Sharpie S-Gel | `resolved` | https://www.amazon.com/dp/B082PN4X5J (untagged) |
-| 8 | `draft-v2.md:155` | product link, Pilot Precise V5 | `resolved` | https://www.amazon.com/dp/B001E6A9M8 (untagged) |
-| 9 | `draft-v2.md:167` | product link, Sakura Pigma Micron | `resolved` | https://www.amazon.com/dp/B07J356J4Y (untagged) |
+| 1 | `draft-v2.md:71` | product link, Uni-ball Jetstream RT | `resolved` | https://www.amazon.com/dp/B001HA59VC?tag=op01e-20 (affiliate-tagged) |
+| 2 | `draft-v2.md:83` | product link, Pentel EnerGel RTX | `resolved` | https://www.amazon.com/dp/B001S2RDRM?tag=op01e-20 (affiliate-tagged) |
+| 3 | `draft-v2.md:95` | product link, Pilot G2 | `resolved` | https://www.amazon.com/dp/B00OCPFPK4?tag=op01e-20 (affiliate-tagged) |
+| 4 | `draft-v2.md:107` | product link, Uni-ball Signo DX 0.38 | `resolved` | https://www.amazon.com/dp/B005HNZ5SW?tag=op01e-20 (affiliate-tagged) — the US-market equivalent, uniball 207 0.38 mm Ultra Micro Point. No dependable genuine US listing exists for the UM-151 "Signo DX"; the draft now says so in prose and tells readers to buy on tip size, not name. |
+| 5 | `draft-v2.md:119` | product link, Zebra Sarasa Dry | `resolved` | https://www.amazon.com/dp/B001BZ4ROI?tag=op01e-20 (affiliate-tagged) |
+| 6 | `draft-v2.md:131` | product link, Pilot Acroball | `resolved` | https://www.amazon.com/dp/B00FACLOCQ?tag=op01e-20 (affiliate-tagged) |
+| 7 | `draft-v2.md:143` | product link, Sharpie S-Gel | `resolved` | https://www.amazon.com/dp/B082PN4X5J?tag=op01e-20 (affiliate-tagged) |
+| 8 | `draft-v2.md:155` | product link, Pilot Precise V5 | `resolved` | https://www.amazon.com/dp/B001E6A9M8?tag=op01e-20 (affiliate-tagged) |
+| 9 | `draft-v2.md:167` | product link, Sakura Pigma Micron | `resolved` | https://www.amazon.com/dp/B07J356J4Y?tag=op01e-20 (affiliate-tagged) |
 | 10 | `draft-v2.md:181` | product link, Muji Gel Ink Ballpoint | `resolved` | https://www.muji.us/products/gel-ink-cap-type-ballpoint-pen-set-10-pieces-set-9a63 — brand page, since Amazon doesn't carry the genuine item reliably |
-| 11 | `draft-v2.md:193` | product link, Pilot FriXion | `resolved` | https://www.amazon.com/dp/B07D9Z7GYL (untagged) |
+| 11 | `draft-v2.md:193` | product link, Pilot FriXion | `resolved` | https://www.amazon.com/dp/B07D9Z7GYL?tag=op01e-20 (affiliate-tagged) |
 | 12 | `draft-v2.md:171` | "archival pigment ink made for drawing and craft work" (Sakura source) | `resolved, with a scope correction` | https://www.sakuraofamerica.com/product/pigma-micron/ — Sakura's own page lists **archival journals and record keeping alongside illustration**, so the planned "made for drawing and craft work" anchor was an overclaim inherited from a competitor's summary. The prose now cites what the page actually says, and the tip-wear caveat rests solely on the Reddit photo evidence, which is where it always belonged. |
 
 **One claim was DELETED (not resolved)** — logged here because nothing should disappear without a trail:
@@ -87,7 +87,7 @@ Resolved automatically at Stage 3d. **Nothing to do.** Current draft has **0** r
 |---|---|---|
 | `draft-v2.md:75` (Jetstream section) | "Uni-ball says the ink is formulated to resist fading and forgery, which is a nice side effect for anything you sign." | The planned source `http://uniball.com.au/uni-super-ink/` 301s to a bare video-post page whose text does not contain the claim, and no page on uniball.com carries it either. Per the Stage 3d fallback the sentence was cut rather than cited to a page that doesn't support it. Replaced with a defensible general clause about the hybrid ink. |
 
-**Affiliate status:** every product link is a clean, **untagged** URL (0 occurrences of `tag=` in the draft), per `custom-instructions.md` §Content policy. **No affiliate disclosure is present, and none should be added** until the Associates program is live. When it is, these become affiliate links by appending the tag.
+**Affiliate status (updated 2026-08-11 by `autopilot-revise`, per operator feedback):** every Amazon product link now carries the US Associates tag `?tag=op01e-20` (10 of 10 Amazon links; the 2 non-Amazon brand pages — Muji, Sakura — stay untagged, the tag is Amazon-only). The standing **affiliate disclosure IS present**, as an italic paragraph at the end of the intro, immediately before the first `##`, matching the live `best-notebooks-for-note-taking` post: *"Some links in this guide are affiliate links. As an Amazon Associate, I earn from qualifying purchases, at no extra cost to you."* `custom-instructions.md` §Content policy and `site-conventions.md` §Disclosure blocks were updated in the same pass so future posts do this by default.
 
 ## 4. Fill `[INTERNAL_LINK_NEEDED:]` markers
 

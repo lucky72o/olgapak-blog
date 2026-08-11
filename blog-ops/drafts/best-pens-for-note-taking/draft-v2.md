@@ -19,6 +19,8 @@ Which pen suits you also depends on [the note-taking method you use](/note-takin
 
 This guide covers how the ink types actually differ, the 11 pens I'd pick and what each one is bad at, which pen suits which kind of note-taking, and why your paper matters as much as your pen.
 
+*Some links in this guide are affiliate links. As an Amazon Associate, I earn from qualifying purchases, at no extra cost to you.*
+
 ## What are the best pens for note taking?
 
 If you want one answer and no shopping, take the Uni-ball Jetstream RT. It was the most-recommended pen in everything I read for this post, named in four of the seven guides I studied and again and again by people on Reddit who write all day, and its fast-drying hybrid ink, a ballpoint-gel cross, is the safest choice if you're left-handed.
@@ -68,7 +70,7 @@ Every pick below follows the same shape: what it's best at, why it earns the spo
 
 ### Uni-ball Jetstream RT, best overall
 
-[Uni-ball Jetstream RT](https://www.amazon.com/dp/B001HA59VC)
+[Uni-ball Jetstream RT](https://www.amazon.com/dp/B001HA59VC?tag=op01e-20)
 
 **Best for:** everyday note-taking at speed, and the safest pick if you're left-handed.
 
@@ -80,7 +82,7 @@ No other pen in my research came close on sheer weight of recommendation, from t
 
 ### Pentel EnerGel RTX, best smudge-resistant gel
 
-[Pentel EnerGel RTX](https://www.amazon.com/dp/B001S2RDRM)
+[Pentel EnerGel RTX](https://www.amazon.com/dp/B001S2RDRM?tag=op01e-20)
 
 **Best for:** gel feel without the wet-page problem.
 
@@ -92,7 +94,7 @@ Pen Addict ranks it above the Pilot G2, which is not a small thing given the G2'
 
 ### Pilot G2, best gel you can actually find anywhere
 
-[Pilot G2](https://www.amazon.com/dp/B00OCPFPK4)
+[Pilot G2](https://www.amazon.com/dp/B00OCPFPK4?tag=op01e-20)
 
 **Best for:** the pen you can replace in any supermarket, mid-semester, without planning ahead.
 
@@ -104,7 +106,7 @@ Ubiquity is the honest reason it's here, not superiority. Pen Addict devotes spa
 
 ### Uni-ball Signo DX 0.38, best ultra-fine tip
 
-[Uni-ball Signo DX 0.38](https://www.amazon.com/dp/B005HNZ5SW)
+[Uni-ball Signo DX 0.38](https://www.amazon.com/dp/B005HNZ5SW?tag=op01e-20)
 
 **Best for:** small handwriting, cramped margins, and annotating between printed lines.
 
@@ -116,7 +118,7 @@ Pen Addict calls the Signo DX 0.38 "the micro gel ink pen I compare all others t
 
 ### Zebra Sarasa Dry, best fast-drying gel
 
-[Zebra Sarasa Dry](https://www.amazon.com/dp/B001BZ4ROI)
+[Zebra Sarasa Dry](https://www.amazon.com/dp/B001BZ4ROI?tag=op01e-20)
 
 **Best for:** writing quickly and dragging your hand straight across the line you just wrote.
 
@@ -128,7 +130,7 @@ It shows up in two of the roundups I studied, and the Reddit student threads rec
 
 ### Pilot Acroball, best budget ballpoint
 
-[Pilot Acroball](https://www.amazon.com/dp/B00FACLOCQ)
+[Pilot Acroball](https://www.amazon.com/dp/B00FACLOCQ?tag=op01e-20)
 
 **Best for:** buying a multipack and not thinking about pens again this term. It's also the safe pick under a highlighter.
 
@@ -140,7 +142,7 @@ It's a low-viscosity ballpoint, which is a technical way of saying the ink is ru
 
 ### Sharpie S-Gel, best grip for long sessions
 
-[Sharpie S-Gel](https://www.amazon.com/dp/B082PN4X5J)
+[Sharpie S-Gel](https://www.amazon.com/dp/B082PN4X5J?tag=op01e-20)
 
 **Best for:** three-hour lectures, exam revision, anything where your hand gives out before your notes do.
 
@@ -152,7 +154,7 @@ When a university student asked r/pens for something comfortable and affordable 
 
 ### Pilot Precise V5, best rollerball for fine lettering
 
-[Pilot Precise V5](https://www.amazon.com/dp/B001E6A9M8)
+[Pilot Precise V5](https://www.amazon.com/dp/B001E6A9M8?tag=op01e-20)
 
 **Best for:** crisp, consistent fine lines when you want your notes to look deliberate rather than fast.
 
@@ -164,7 +166,7 @@ It's Wirecutter's pick for fine lettering, and liquid ink is genuinely different
 
 ### Sakura Pigma Micron, best for annotating and keeping
 
-[Sakura Pigma Micron](https://www.amazon.com/dp/B07J356J4Y)
+[Sakura Pigma Micron](https://www.amazon.com/dp/B07J356J4Y?tag=op01e-20)
 
 **Best for:** margins, textbook annotation, and notes you want to still be legible years from now.
 
@@ -190,7 +192,7 @@ Muji's appeal here is what it leaves out: a plain barrel, a line that doesn't ge
 
 ### Pilot FriXion, best erasable pen for planners
 
-[Pilot FriXion](https://www.amazon.com/dp/B07D9Z7GYL)
+[Pilot FriXion](https://www.amazon.com/dp/B07D9Z7GYL?tag=op01e-20)
 
 **Best for:** planners, colour-coding, and anything you fully expect to change your mind about.
 

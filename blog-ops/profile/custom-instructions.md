@@ -55,18 +55,21 @@ Approve action can write.
 
 ## Content policy
 
-- **Product links: ship real, working NON-affiliate links now (updated 2026-07-10).**
-  Do NOT use `[AFFILIATE-LINK-PENDING:]` placeholders. In "best X" / commercial
-  roundups, give every product a real link now: a clean Amazon product URL
-  (`https://www.amazon.com/dp/<ASIN>`, no affiliate tag) is preferred because it's
-  trivially affiliate-ized later (just add the tag); use a non-Amazon
-  brand/retailer product page where Amazon doesn't carry the genuine item. The
-  owner swaps these for affiliate versions later. Amazon blocks curl/WebSearch —
-  find the `/dp/<ASIN>` via the logged-in `open-claude-in-chrome` browser
-  (search Amazon, take the top genuine result / Amazon's Choice).
-- **Still HOLD the affiliate disclosure** ("As an Amazon Associate I earn from
-  qualifying purchases…") until the Associates program is live — the current
-  links are plain and non-affiliate, so no disclosure is required yet.
+- **Product links: ship real, working AFFILIATE links now (updated 2026-08-11).**
+  Do NOT use `[AFFILIATE-LINK-PENDING:]` placeholders, and do NOT ship untagged
+  Amazon URLs. In "best X" / commercial roundups, give every product a real link
+  now: an Amazon product URL carrying the owner's US Associates tag —
+  `https://www.amazon.com/dp/<ASIN>?tag=op01e-20` — is preferred; use a non-Amazon
+  brand/retailer product page (no tag; the tag is Amazon-only) where Amazon doesn't
+  carry the genuine item. Amazon blocks curl/WebSearch — find the `/dp/<ASIN>` via
+  the logged-in `open-claude-in-chrome` browser (search Amazon, take the top
+  genuine result / Amazon's Choice).
+- **Emit the affiliate disclosure** whenever a post carries at least one tagged
+  Amazon link. Exact wording and placement (matching the live
+  `best-notebooks-for-note-taking` post): an italic paragraph as the LAST
+  paragraph of the intro, immediately before the first `##` heading —
+  `*Some links in this guide are affiliate links. As an Amazon Associate, I earn
+  from qualifying purchases, at no extra cost to you.*`
 
 ## AI image generation
 

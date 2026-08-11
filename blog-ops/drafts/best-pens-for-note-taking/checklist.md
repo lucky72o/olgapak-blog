@@ -2,7 +2,7 @@
 slug: best-pens-for-note-taking
 target_keyword: best pens for note taking
 created: 2026-08-08 13:41
-last_updated: 2026-08-08 16:37
+last_updated: 2026-08-11 19:17
 current_stage: finalize
 current_owner: blog-post-workflow
 status: active
@@ -257,6 +257,19 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
   - **Nothing was published.** `status` stayed `draft` throughout; no `status=publish` was ever sent. Gate 2 remains the operator's console Approve action (which writes `approval.json`), and the Rank Math focus keyword (`best pens for note taking`) is still a manual wp-admin step before Publish, per action-items §7.
   - Branch `blog/best-pens-for-note-taking` at `f4b5862`, identical to origin — no post/asset changes in this run beyond this checklist entry and the new `pr-monitor.json`.
   Emitted `pr_opened` (`pr: 0`, `url` = the WP preview URL, per the console contract's no-PR-path form) then `done`.
+
+### Revise pass, 2026-08-11 (`autopilot-revise`, operator feedback)
+
+`feedback.md`: *"the post look great, but we have to use my affiliate tag similar to the post with notebooks"*
+
+- **Classified as a trivial inline edit** (per SKILL.md §Autopilot `autopilot-revise` classify-then-route table): link-attribute + one boilerplate paragraph, no prose rewrite. No specialist subagent spawned; no re-humanize, no marker re-resolution, no image-plan delta (the draft's argument, structure, section prose and all 4 `[IMAGE:]` slots are byte-identical).
+- **Precedence note:** this REVERSES the standing `custom-instructions.md` §Content policy rule ("ship untagged links, HOLD the disclosure"). The operator's live instruction outranks `custom-instructions.md` (SKILL.md Step 0.5 precedence), and the referenced live `best-notebooks-for-note-taking` post is the format of record: `?tag=op01e-20` + an italic disclosure at the end of the intro. Both profile docs were updated in this pass so no future post repeats the miss.
+- Applied to `draft-v2.md` AND the staged `content/blog/best-pens-for-note-taking.md`:
+  - 10/10 Amazon `/dp/<ASIN>` URLs now carry `?tag=op01e-20`. The 2 non-Amazon brand pages (Muji ×2 product/refill, Sakura) stay untagged — the tag is Amazon-only.
+  - Disclosure added as the last intro paragraph, immediately before the first `##`, wording copied verbatim from the live notebooks post: *Some links in this guide are affiliate links. As an Amazon Associate, I earn from qualifying purchases, at no extra cost to you.*
+- Profile docs updated: `blog-ops/profile/custom-instructions.md` §Content policy (ship tagged links + emit the disclosure), `blog-ops/profile/site-conventions.md` §Disclosure blocks (affiliate links are LIVE, tag `op01e-20`). `action-items.md` §3 link table + Affiliate status rewritten to match.
+- Re-lint on the revised `draft-v2.md`: em-dashes **0**, `[VERIFY:]` **0**, `[EXTERNAL_LINK_NEEDED:]` **0**, `[INTERNAL_LINK_NEEDED:]` **0**, `[IMAGE:]` **4** (unchanged). Staged content: 0 markers of any kind. Word count 3,568 (+22, the disclosure sentence).
+- **Nothing published, no WP write.** `CONSOLE_VERIFICATION=on`, so this pass re-staged FILE LAYOUT only (commit + push `blog/best-pens-for-note-taking`) and emitted `ready_for_verification`. The WP draft 2174 still holds the PRE-revise body; syncing it is the deferred side effect `autopilot-cont` performs after verification PASSes.
 
 ## Notes
 
