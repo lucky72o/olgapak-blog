@@ -2,7 +2,7 @@
 slug: how-to-reduce-screen-time
 target_keyword: how to reduce screen time
 created: 2026-08-08 22:19
-last_updated: 2026-08-11 18:10
+last_updated: 2026-08-11 18:31
 current_stage: preview
 current_owner: blog-post-workflow
 status: active
@@ -169,9 +169,9 @@ Max 2 revise iterations, draft-v3 is the ceiling.
 
 ## Stage 4b.5: Stage the post (owner: blog-post-workflow skill, wordpress-rest adapter)
 
-- [ ] post staged to `content/blog/how-to-reduce-screen-time.md` ([IMAGE:] resolved, cover set)
-- [ ] inbound internal links applied
-- [ ] worktree branch committed + pushed
+- [x] post staged to `content/blog/how-to-reduce-screen-time.md` (`draft: true` stripped, 3 of 4 `[IMAGE:]` resolved to embeds, 1 left as a build-safe "Image pending" note for the `screenshot` slot; no cover frontmatter field — the WP adapter attaches the featured image as `featured_media` at draft-create, and `featured.png` is on disk)
+- [x] inbound internal links applied to all 3 planned targets (write-ahead ownership records in Notes, all 3 passed Link-only diff verification: single hunk, extended-sentence edit)
+- [x] worktree branch committed + pushed (`blog/how-to-reduce-screen-time` @ 510eb7a, based on `origin/main` 6b2d666, 0 divergent commits so no rebase was needed)
 - [ ] staging side effects (WP draft / PR) — deferred to `autopilot-cont` under `CONSOLE_VERIFICATION=on`
 
 ## Stage 4c: Gate 2 + Finalize (owner: blog-post-workflow skill)
@@ -235,6 +235,10 @@ Console-gated. Approval is `approval.json`, written only by the operator's brows
 - Stage 4b started: 2026-08-11T18:21Z (owner: blog-post-workflow)
 - Stage 4b completed: 2026-08-11T18:24Z, action-items.md written; markers 0 VERIFY / 0 EXTERNAL / 0 INTERNAL / 4 IMAGE; 1 outstanding human build TODO (the screenshot slot)
 - Stage 4b.5 staging started: 2026-08-11T18:24Z (owner: blog-post-workflow, wordpress-rest adapter)
+- Stage 4b.5 FILE LAYOUT completed: 2026-08-11T18:33Z, branch `blog/how-to-reduce-screen-time` committed (510eb7a) + pushed. Commit carries: the staged post, 4 asset files + README.md (images.md copy), the archive snapshot (non-terminal, incl. research/_raw in full), this post's featured-log rotation entry + the legacy table, the 3 inbound-link edits, and the Remotion sources (`TwoPilesOfScreenTime.tsx` + `Root.tsx` registration). The `.staged-by-blog-workflow` sentinel was deliberately kept on disk but excluded from the commit, so it never ships while the ownership guard survives.
+- Stage 4b.5 SIDE EFFECTS deferred: 2026-08-11T18:33Z. Under `CONSOLE_VERIFICATION=on` the WP-draft create, media upload, and `pr-monitor.json` write belong to the later `autopilot-cont` run (console-contract.md §Verification handshake). The WP auth probe was therefore NOT run this session — it fires exactly once, inside that run's adapter §Staging step 2.
+- autopilot-fix round 1: 2026-08-11T18:29Z. Verification build check FAILED with `image referenced in images.md not found: screen-time-dashboard.png` — the console's wordpress-rest build check requires EVERY `**Suggested filename:**` in images.md to exist non-empty on disk, which a `screenshot` slot never does (the workflow's own design ships those as a build-safe "Image pending" note instead; the two rules contradict each other, see retro). No automated path can capture a real phone dashboard in a headless run, so the slot was DROPPED rather than faked: removed the `[IMAGE:]` placeholder from `draft-v2.md` and the "Image pending" blockquote from the staged post, marked images.md §Image 2 dropped (its `Suggested filename` field retired so the build check no longer demands the file; the full capture spec kept for a later post-publish add), updated the images.md summary/tree/tools counts (5 → 4, screenshots 1 → 0), re-synced `blog-ops/assets/how-to-reduce-screen-time/README.md` and the `_archive` PR snapshot, and rewrote action-items §1/§7/§8 + the final image checkbox. Post now ships 4 images (featured + 3 in-post) and carries no placeholder text.
+- Terminal event emitted: `ready_for_verification` (no `done` — the two are mutually exclusive)
 
 ## Notes
 

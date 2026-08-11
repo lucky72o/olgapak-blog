@@ -8,11 +8,11 @@ Read by: human (creates the actual assets and saves them under `blog-ops/assets/
 
 ## Summary
 
-- Total image count: `5` (1 featured + 4 in-post)
+- Total image count: `4` (1 featured + 3 in-post)
 - Breakdown by type:
   - Remotion compositions: `1`
   - AI-generated (`ai-prompt`): `3`
-  - Screenshots: `1`
+  - Screenshots: `0` (Image 2 was planned as a screenshot and is **dropped from this post**, see its entry below)
 - File destination: `blog-ops/assets/how-to-reduce-screen-time/`
 
 ## Featured image
@@ -179,12 +179,16 @@ Each image below corresponds to an `[IMAGE: ...]` placeholder in `draft-v2.md`. 
 
 ---
 
-### Image 2, after H2 "Step 1: Get your real number before you change anything" + 1 paragraph
+### Image 2 — DROPPED (not shipped in this post)
 
-- **Draft placeholder (verbatim):** `[IMAGE: A real phone screen-time dashboard, weekly view, showing the total, the daily bars, and the per-app breakdown underneath. Type: screenshot. Suggested filename: screen-time-dashboard.png]` (draft-v2.md line 42)
+> **Status: dropped.** This slot is a `screenshot` of a real phone's Screen Time / Digital Wellbeing dashboard, which only a human holding a phone can capture — no automated path produces it. Shipping the post with a visible "Image pending" note in its place would be worse than shipping without it, and the section already sends the reader to that exact screen in prose with both platform links, so the placeholder was removed from `draft-v2.md` and from the staged post. The full spec below is kept verbatim so the shot can be captured and dropped in later as a post-publish enhancement (see `action-items.md` §8). It has no `Suggested filename` field any more, deliberately: that field is what the console's build check reads as "this file must exist on disk."
+>
+> Planned filename if it is ever captured: `screen-time-dashboard.png`.
+
+- **Draft placeholder (originally, now removed):** `[IMAGE: A real phone screen-time dashboard, weekly view, showing the total, the daily bars, and the per-app breakdown underneath. Type: screenshot. Suggested filename: screen-time-dashboard.png]` (was draft-v2.md line 42)
 - **Type:** `screenshot` (as tagged in the draft and the outline, kept deliberately: this is an external surface, the phone OS's own settings screen, and the section's entire job is to send the reader to that literal screen and have them recognize it. A Remotion mockup would render a screen that does not exist on anyone's phone, which is the one thing this slot must not do.)
 - **Concept:** A real weekly Screen Time / Digital Wellbeing dashboard showing the weekly total, the seven daily bars, and a category-level breakdown underneath, with nothing personally identifying in frame.
-- **Suggested filename:** `screen-time-dashboard.png`
+- **Filename if captured later:** `screen-time-dashboard.png` (intentionally NOT a `Suggested filename` field while this slot is dropped)
 - **Alt text:** `Weekly phone screen time dashboard showing the total, seven daily bars, and category breakdown`
 
 #### Production spec
@@ -210,7 +214,7 @@ Each image below corresponds to an `[IMAGE: ...]` placeholder in `draft-v2.md`. 
 - **Annotations required** (if any): **none required.** The surrounding prose already names the three things to look at, and an un-annotated capture reads as the screen the reader will actually see. If a reviewer decides a highlight helps, add at most one: a rounded rectangle around the breakdown list (not around the big total, which the prose explicitly calls the least useful thing on the screen).
 - **Annotation style** (only if the optional annotation above is used): color `#0E9F8E` (`palette.accent` per `blog-ops/profile/image-style.md` §Annotation conventions); stroke 3 px; rounded 6 px corners; no label text. Per `${CLAUDE_PLUGIN_ROOT}/adapters/images/screenshot.md`, any annotation overlay is composited as a `remotion` layer over the raw capture, never drawn freehand.
 - **Watermark:** external screenshot, so add the `olgapak.com` wordmark bottom-left at 55–80% opacity after capture, on the padded 3:2 canvas.
-- **Disposition note:** this slot is manual by design. `generate-images` records it as `screenshot_pending`, and if nobody captures it the post ships with a build-safe "Image pending" note in its place. That is expected and does not block staging, because the featured slot is file-producing.
+- **Disposition note:** this slot is manual by design; `generate-images` recorded it as `screenshot_pending`. Nobody could capture it during the headless run, and the console's build check treats every `Suggested filename` in this file as a file that must exist, so the slot was dropped from the post rather than shipped as a visible "Image pending" note. To restore it: capture per the spec above, save as `blog-ops/assets/how-to-reduce-screen-time/screen-time-dashboard.png`, and add the embed back under the "Step 1" H2's first paragraph in the live post.
 
 ---
 
@@ -343,7 +347,6 @@ Each image below corresponds to an `[IMAGE: ...]` placeholder in `draft-v2.md`. 
 blog-ops/assets/how-to-reduce-screen-time/
 ├── featured.png
 ├── two-piles-of-screen-time.png
-├── screen-time-dashboard.png
 ├── phone-charging-across-the-room.png
 └── past-the-limit-then-friction.png
 ```
@@ -354,7 +357,7 @@ Asset folder is created automatically by the Phase 4 finalize step (Gate 2 appro
 
 1. **Remotion compositions:** project at `tools/remotion/`. Adapter: `${CLAUDE_PLUGIN_ROOT}/adapters/images/remotion.md`. Studio: `npx remotion studio --port=3003`. Register the `<Still>` in `src/Root.tsx`, write the component in `src/TwoPilesOfScreenTime.tsx`, iterate via `npx remotion still` into `out/` (throwaway), final export at `--scale=2` into `blog-ops/assets/how-to-reduce-screen-time/`. Use `<BlogWatermark />` and the tokens in `src/theme.ts`. One slot here (Image 1).
 2. **AI-generated (`ai-prompt`, automated via codex — no API key):** adapter `${CLAUDE_PLUGIN_ROOT}/adapters/images/ai-prompt.md` (+ `codex.md` for dispatch). Three slots here (featured + Images 3, 4).
-3. **Screenshots:** one slot here (Image 2), manual. Native phone screenshot, then crop, blur any app names, pad onto a 3:2 `#F7F7F7` canvas, and add the wordmark. Record the capture date. Output PNG.
+3. **Screenshots:** none shipped. One slot was planned (Image 2) and is dropped; its spec is kept for a possible post-publish capture. Native phone screenshot, then crop, blur any app names, pad onto a 3:2 `#F7F7F7` canvas, and add the wordmark. Record the capture date. Output PNG.
 4. **Watermark + polish:** `<BlogWatermark />` for the Remotion slot; the wordmark is requested in-prompt for the `ai-prompt` slots (add post-hoc if a render drops it); applied post-capture at 55–80% opacity for the external screenshot. Output format: PNG for every slot.
 
 ## Naming conventions (from `${CLAUDE_PLUGIN_ROOT}/standards/blog-craft.md`)

@@ -38,8 +38,6 @@ So the question isn't how much you're on your phone. It's this: how much of it w
 
 You can't cut what you've never measured, and the number is already sitting on your phone waiting for you to look at it.
 
-> **Image pending:** Weekly phone screen time dashboard showing the total, seven daily bars, and category breakdown (Type: screenshot). Create this asset per action-items, then replace this line with the image embed.
-
 On an iPhone, open Settings and tap Screen Time, where you can [find your usage in Screen Time on an iPhone](https://support.apple.com/en-gb/guide/iphone/iphbfa595995/ios) broken down by day, by week, and by app. On Android, the same picture lives in [Digital Wellbeing on Android](https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing), usually under Settings, then Digital Wellbeing and parental controls.
 
 Then look past the big total, because the total is the least useful thing on that screen. Three things underneath it tell you far more:

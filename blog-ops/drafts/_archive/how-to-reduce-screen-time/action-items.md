@@ -11,7 +11,7 @@ Compiled by: blog-post-workflow skill (editor role) at Stage 4b, from a grep of 
 
 Read by: the human operator before publishing.
 
-**Purpose:** the single page the human works through after Gate 2. Every item here is required before publish. Estimated total time: `25` minutes (one screenshot to capture, one read-through, the Rank Math focus keyword, then Publish).
+**Purpose:** the single page the human works through after Gate 2. Every item here is required before publish. Estimated total time: `15` minutes (one read-through, the Rank Math focus keyword, then Publish). The one screenshot slot was dropped from the post, see §1.
 
 ## 0. Pre-flight
 
@@ -25,13 +25,13 @@ Paths shown below are pre-finalize. After Gate 2, swap `blog-ops/drafts/how-to-r
 - Author: `Olga Pak`
 - Category: `Productivity`
 
-## 1. Create images (`5` total)
+## 1. Create images (`4` total, all done)
 
-Image spec (post-finalize): `blog-ops/drafts/_archive/how-to-reduce-screen-time/images.md` (also copied to `blog-ops/assets/how-to-reduce-screen-time/README.md` by the finalize step). Pre-finalize: `blog-ops/drafts/how-to-reduce-screen-time/images.md`. Estimated time: `10` minutes (only the screenshot is left to capture).
+Image spec (post-finalize): `blog-ops/drafts/_archive/how-to-reduce-screen-time/images.md` (also copied to `blog-ops/assets/how-to-reduce-screen-time/README.md` by the finalize step). Pre-finalize: `blog-ops/drafts/how-to-reduce-screen-time/images.md`. Estimated time: `0` minutes (every shipped slot was rendered at Stage 4a.5; the one manual screenshot slot was dropped, see below).
 
 - [x] Featured image: `featured.png`, see images.md §Featured image, type: `ai-prompt` — **rendered at Stage 4a.5**, verify the render
 - [x] Image 1: `two-piles-of-screen-time.png`, see images.md §Image 1, type: `remotion` — **rendered at Stage 4a.5**, verify the render
-- [ ] Image 2: `screen-time-dashboard.png`, see images.md §Image 2, type: `screenshot` — **MANUAL, still outstanding.** Capture per the spec in images.md §Image 2: your own phone's weekly Screen Time / Digital Wellbeing view showing the weekly total, the daily bars, and the per-app breakdown. Redact nothing that matters; crop to the screen only.
+- [x] Image 2: `screen-time-dashboard.png`, type: `screenshot` — **DROPPED from this post, nothing to do.** Only a human with a phone can capture it, and a visible "Image pending" note reads worse in a live post than no image at all, so the placeholder was removed from `draft-v2.md` and from the staged markdown. The section still walks the reader to that exact screen in prose, with both platform links. The full capture spec is kept in images.md §Image 2 if you ever want to add it, see §8.
 - [x] Image 3: `phone-charging-across-the-room.png`, see images.md §Image 3, type: `ai-prompt` — **rendered at Stage 4a.5**, verify the render
 - [x] Image 4: `past-the-limit-then-friction.png`, see images.md §Image 4, type: `ai-prompt` — **rendered at Stage 4a.5**, verify the render
 
@@ -124,7 +124,7 @@ curl -sf -u "wpx_admin101:$WP_APP_PASSWORD" -X POST \
 - [ ] Open the WordPress draft preview: `<wp_preview_url — filled by the autopilot-cont run that creates the WP draft>`.
 - [ ] Read it once more in the WP admin preview (title, excerpt, featured image already synced by the adapter).
 - [ ] **Focus keyword.** Set the focus keyword in **Rank Math** to exactly: `how to reduce screen time`. Rank Math's focus keyword is **not** exposed on the standard `wp/v2/posts` REST schema, so this is a manual step — set it yourself in the WP editor's Rank Math meta box before publishing. The workflow never attempts that write via REST.
-- [ ] Confirm the **screenshot image** (`screen-time-dashboard.png`, §1 Image 2) is captured and in place — until it is, that slot renders as an "Image pending" note rather than an image.
+- [ ] Confirm the post reads fine without the dropped screenshot slot (§1 Image 2) — the "Step 1" section is prose-only by design now, with no placeholder note left behind.
 - [ ] Confirm the post's category is **Productivity**.
 - [ ] Click **Publish** in WP admin. This workflow never does that step for you.
 - [ ] After publishing, verify the live post per action-items §8.
@@ -138,6 +138,7 @@ curl -sf -u "wpx_admin101:$WP_APP_PASSWORD" -X POST \
 - [ ] Check mobile rendering at a narrow viewport
 - [ ] Apply the three §4b inbound links to the LIVE target posts (automatic on Gate 2 approval per `apply_inbound_links_live: true`; verify they rendered)
 - [ ] If the frontmatter template emits a JSON-LD FAQ schema: validate at `https://search.google.com/test/rich-results?url=https%3A%2F%2Folgapak.com%2Fhow-to-reduce-screen-time`
+- [ ] *Optional, not required:* add the dropped screenshot (§1 Image 2). Capture your own weekly Screen Time / Digital Wellbeing view per the full spec in images.md §Image 2 (Categories view, no app names, padded to 3:2, wordmark), then insert it in the live post under the first paragraph of "Step 1: Get your real number before you change anything".
 
 ## 9. Trigger Phase 5 repurpose (when ready)
 
@@ -185,4 +186,4 @@ Expected output: zero hits. Every marker must be resolved in the live post befor
 ![<alt text>](<path into blog-ops/assets/how-to-reduce-screen-time/<filename>>)
 ```
 
-- [ ] All `[IMAGE:]` placeholders replaced with real Markdown image syntax and the path points to a file that exists in the asset folder. Three of four resolve to real embeds at Stage 4b.5; `screen-time-dashboard.png` renders as a build-safe "Image pending" note until the screenshot in §1 is captured.
+- [ ] All `[IMAGE:]` placeholders replaced with real Markdown image syntax and the path points to a file that exists in the asset folder. All three shipped in-post slots resolve to real embeds at Stage 4b.5; the fourth (`screen-time-dashboard.png`, screenshot) was dropped and leaves no placeholder in the post.
