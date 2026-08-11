@@ -2,7 +2,7 @@
 slug: best-pens-for-note-taking
 target_keyword: best pens for note taking
 created: 2026-08-08 13:41
-last_updated: 2026-08-11 19:17
+last_updated: 2026-08-11 19:23
 current_stage: finalize
 current_owner: blog-post-workflow
 status: active
@@ -270,6 +270,20 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 - Profile docs updated: `blog-ops/profile/custom-instructions.md` §Content policy (ship tagged links + emit the disclosure), `blog-ops/profile/site-conventions.md` §Disclosure blocks (affiliate links are LIVE, tag `op01e-20`). `action-items.md` §3 link table + Affiliate status rewritten to match.
 - Re-lint on the revised `draft-v2.md`: em-dashes **0**, `[VERIFY:]` **0**, `[EXTERNAL_LINK_NEEDED:]` **0**, `[INTERNAL_LINK_NEEDED:]` **0**, `[IMAGE:]` **4** (unchanged). Staged content: 0 markers of any kind. Word count 3,568 (+22, the disclosure sentence).
 - **Nothing published, no WP write.** `CONSOLE_VERIFICATION=on`, so this pass re-staged FILE LAYOUT only (commit + push `blog/best-pens-for-note-taking`) and emitted `ready_for_verification`. The WP draft 2174 still holds the PRE-revise body; syncing it is the deferred side effect `autopilot-cont` performs after verification PASSes.
+
+### Post-revise side effects, 2026-08-11 (`autopilot-cont`)
+
+Console verification of the revised staging PASSED (`verification-result.json` `{"ok":true}`; build check PASS, vision PASS with 3 `warn`-severity notes recorded in `vision-findings.json` — none blocking). The console then spawned `autopilot-cont`, which re-ran the deferred WordPress half of staging against the affiliate-tagged content. **No second create — the existing draft 2174 was updated by its stored `wp_post_id`, per adapter §On review-loop edit step 2.**
+
+- **Auth probe (adapter §Staging step 2) PASSED on its single allowed attempt** — `GET /wp-json/wp/v2/users/me` → `{"id":1,"name":"Olga Pak","slug":"wpx_admin101"}`. Run exactly once, never retried. Credential read as `$WP_APP_PASSWORD` directly (the `${!VAR}` indirect form is a `bad substitution` under this environment's zsh) and inline-quoted because the app password contains spaces.
+- **Gutenberg re-conversion (step 3, PRIMARY path — no classic-block fallback):** 87 `wp:paragraph` (+1 vs the pre-revise body: the disclosure), 24 `wp:heading`, 3 `wp:list` + 11 `wp:list-item`, 4 `wp:image`, 2 `wp:table`, plus the Kadence TOC via `--extra-blocks` (`position: after-intro`). The expected frontmatter-strip stderr warning fired and is benign.
+- **Media (step 4): 0 uploads.** All 5 files' on-disk sha256 still match their `wp_media_ids[]` entries, so the hash-aware skip-before-upload check reused every recorded ID; no new attachments were minted and `featured_media` stays 2170 (`.../featured-2.png`). All 4 in-post local paths substituted to their recorded `source_url`s; 0 local paths remain in the body.
+- **Update (step 5 → §On review-loop edit step 2): HTTP 200** on `POST /posts/2174`. Body carried the same shape as the original create: `status: draft`, `featured_media: 2170`, `categories: [12, 9]`, `tags: [14, 15, 30]`, `author: 1`, title/excerpt from the staged frontmatter. Built with `jq --rawfile`, never a hand-quoted string.
+- **Round-trip verified:** re-fetched `posts/2174?context=edit` — `content.raw` is byte-identical to what was sent (31,621 bytes), 10 `tag=op01e-20` affiliate params present, 1 affiliate disclosure paragraph, Kadence TOC present, 4 image `src`s all on `olgapak.com/wp-content/uploads/`, 0 local paths, 0 raw `[VERIFY:]`/`[EXTERNAL_LINK_NEEDED:]`/`[INTERNAL_LINK_NEEDED:]`/`[IMAGE:]` markers, 0 em-dashes.
+- **Step 6 (inbound links) not re-run:** the three repo-markdown edits were applied and pushed in the file-layout run (write-ahead ownership record in Notes below); nothing about them changed in the revise pass. The **live** WordPress inbound-link pass correctly did NOT run — adapter §On Gate 2 approval step 2 gates it on `apply_inbound_links_live: true` **AND** the post being `status: publish`, and this post is `draft`.
+- **Step 7 (state):** `pr-monitor.json` needed no change — same `wp_post_id: 2174`, same 5 `wp_media_ids[]` entries (hashes unchanged), same `wp_preview_url`, `wp_upload: ok`, `mode: local`.
+- **Nothing was published.** `status` stayed `draft` throughout; no `status=publish` was ever sent. Gate 2 remains the operator's console Approve action (which writes `approval.json`), and the Rank Math focus keyword (`best pens for note taking`) is still a manual wp-admin step before Publish, per action-items §7.
+- Emitted `pr_opened` (`pr: 0`, `url` = the WP preview URL, per the console contract's no-PR-path form) then `done`.
 
 ## Notes
 
