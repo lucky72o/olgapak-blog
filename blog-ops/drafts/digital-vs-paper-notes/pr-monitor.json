@@ -1,12 +1,12 @@
 {
   "slug": "digital-vs-paper-notes",
   "repo": "lucky72o/olgapak-blog",
-  "pr_number": 0,
-  "pr_url": "",
+  "pr_number": 16,
+  "pr_url": "https://github.com/lucky72o/olgapak-blog/pull/16",
   "branch": "blog/digital-vs-paper-notes",
   "base": "main",
   "worktree": ".worktrees/blog-digital-vs-paper-notes",
-  "staging_url": "",
+  "staging_url": "https://olgapak.com/wp-admin/post.php?post=2187&action=edit",
   "status": "open",
   "mode": "pr",
   "handled_comment_ids": {
