@@ -127,7 +127,7 @@ Sometimes the best notebook is the one you don't care about. An [Oxford spiral](
 
 ## Best reusable and digital notebooks
 
-Now the eco and digital options, honestly. Plenty of people swear that one analog notebook beats any app, and I get it; the whole appeal of paper is that it doesn't ping you. So I'll keep this honest rather than hype the gadgets. But if you already digitize everything, or you're weighing a tablet against a stack of notebooks, these two are worth knowing. If your real goal is capturing meetings automatically, though, that's more the job of [AI note-taker apps](/best-ai-note-taker-apps) than a notebook.
+Now the eco and digital options, honestly. Plenty of people swear that one analog notebook beats any app, and I get it; the whole appeal of paper is that it doesn't ping you. So I'll keep this honest rather than hype the gadgets. But if you already digitize everything, or you're weighing a tablet against a stack of notebooks, these two are worth knowing. And if you're still on the fence about the medium itself, my [digital vs paper notes](/digital-vs-paper-notes) breakdown covers what the research actually says. If your real goal is capturing meetings automatically, though, that's more the job of [AI note-taker apps](/best-ai-note-taker-apps) than a notebook.
 
 ![Three-step reusable notebook workflow: write on the page, scan with a phone, wipe it clean](../../blog-ops/assets/best-notebooks-for-note-taking/rocketbook-workflow.png)
 

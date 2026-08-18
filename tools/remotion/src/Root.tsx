@@ -19,6 +19,9 @@ import { MindMapNodeGoodVsBad } from "./MindMapNodeGoodVsBad";
 import { WeekGridTimeboxing } from "./WeekGridTimeboxing";
 import { PackedVsBufferedDay } from "./PackedVsBufferedDay";
 import { SevenDayRampDiagram } from "./SevenDayRampDiagram";
+import { WhatTheStudyMeasured } from "./WhatTheStudyMeasured";
+import { HybridWorkflowFlow } from "./HybridWorkflowFlow";
+import { NotesDecisionRule } from "./NotesDecisionRule";
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -57,6 +60,12 @@ export const RemotionRoot: React.FC = () => (
     <Still id="PackedVsBufferedDay" component={PackedVsBufferedDay}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="SevenDayRampDiagram" component={SevenDayRampDiagram}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="WhatTheStudyMeasured" component={WhatTheStudyMeasured}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="HybridWorkflowFlow" component={HybridWorkflowFlow}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="NotesDecisionRule" component={NotesDecisionRule}
       width={CANVAS.width} height={CANVAS.height} />
   </>
 );
