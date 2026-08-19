@@ -2,11 +2,11 @@
 slug: how-to-take-notes-on-ipad
 target_keyword: how to take notes on ipad
 created: 2026-08-19 03:03
-last_updated: 2026-08-19 04:44
-current_stage: preview
+last_updated: 2026-08-19 04:33
+current_stage: finalize
 current_owner: blog-post-workflow
 status: active
-gate_pending: none
+gate_pending: gate_2_final
 # status values: active | paused | complete | abandoned
 # current_stage values: intake | chrome_fetch | serp_select | serp_deep_fetch | reddit_fetch | reddit_select | reddit_deep_fetch | x_fetch | x_select | x_deep_fetch | competitor_check | analyze_research | synthesize_plan | plan_review | outline | draft | review | humanize | resolve_markers | images | generate_images | action_items | preview | finalize | repurpose | complete
 # current_owner values: human | blog-post-workflow | blog-researcher | blog-writer | blog-reviewer | blog-humanizer | image-planner | image-builder | plan-reviewer
@@ -179,9 +179,9 @@ Mechanical grep of draft markers + fill action-items template. One checkbox per 
 
 Editor presents Gate 2 banner (the only human gate; plan approval is an automated Stage 1c.5 review). On approve, runs the finalize sequence (adapter-specific, per `adapters/publish/<adapter>.md`): moves/publishes the draft to `{content_dir}/<slug>.md` (or the WordPress equivalent); creates the asset folder; archives `{drafts_dir}/<slug>/` → `{drafts_dir}/_archive/<slug>/`.
 
-- [ ] Gate 2 presented (banner format)
+- [x] Gate 2 presented — console-gated: the console dashboard IS the banner surface (PR #17 diff + WP draft preview https://olgapak.com/wp-admin/post.php?post=2193&action=edit). No CronCreate monitor was created and no typed-input block was taken, per console-contract.md §Gate 2 under the console.
 - [ ] Human approved
-- [ ] draft moved/published to `{content_dir}/<slug>.md` (or the WordPress equivalent)
+- [x] draft staged to `content/blog/how-to-take-notes-on-ipad.md` (commit ec0aca2) AND to its WordPress equivalent, draft post 2193 — `status: draft`, never published by the workflow
 - [ ] asset folder created at `{assets_dir}/<slug>/` (with images.md as README.md)
 - [ ] `{drafts_dir}/<slug>/` archived to `{drafts_dir}/_archive/<slug>/`
 
@@ -210,7 +210,7 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 - Plan review opened: 2026-08-19 03:24
 - Plan review verdict: request_revisions (iteration 1), external-link count 7->5 + body H2s 8->7, 2026-08-19 03:29
 - Plan review verdict: approve (iteration 2, ceiling), all fixes confirmed landed, 2026-08-19 03:31
-- Gate 2 opened: ...
+- Gate 2 opened: 2026-08-19 04:33 (console-gated; awaiting operator approval via the console dashboard, which writes approval.json)
 
 ## Stage transition log
 
@@ -246,10 +246,14 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 - Stage 4b.5 staging started: 2026-08-19 04:32
 - Stage 4b.5 staging FILE LAYOUT completed: 2026-08-19 04:44, committed as ec0aca2 and pushed to origin/blog/how-to-take-notes-on-ipad. Side effects (PR open, WordPress draft create, pr-monitor.json) deliberately NOT performed: CONSOLE_VERIFICATION=on, so they belong to the autopilot-cont run after the console verifies this staging (console-contract.md section Verification handshake).
 - current_stage deliberately left at `preview`: staging is not complete until the side effects run, and `preview` + no pr-monitor.json is exactly the state that routes a resume back into Step 14.5.
+- Stage 4b.5 staging SIDE EFFECTS completed (autopilot-cont): 2026-08-19 04:33. WordPress auth probe passed on its single attempt. 5 media uploaded (ids 2188-2192; `featured.png` landed as `featured-5.png`, WordPress's own duplicate-slug renaming, recorded by id + sha256, never re-derived from a slug lookup). Gutenberg draft created via the PRIMARY `md-to-gutenberg.py` path with the Kadence TOC block after the intro (no classic-block fallback): WP post id **2193**, `status: draft`, categories [12, 9] (Productivity + EdTech), tags [14, 26, 15, 30], `featured_media` 2188. PR **#17** opened: https://github.com/lucky72o/olgapak-blog/pull/17. `pr-monitor.json` written with `mode: pr`, `status: open`.
+- Gate 2 opened: 2026-08-19 04:33 (console-gated; no CronCreate monitor, no typed-input block, approval requires the console's `approval.json`).
 
 ## Notes
 
 - Autopilot run (console-gated). `CONSOLE_VERIFICATION=on`: staging file layout only, no PR/WP-draft side effects in this run.
+- `autopilot-cont` run (2026-08-19, after the console's verification PASS) performed the deferred side effects only: WP draft create + media upload + `pr-monitor.json` + `gh pr create`. No prose, image, or markdown change was made in that run — the branch content is byte-identical to the verified staging at ec0aca2 plus this bookkeeping commit.
+- The three planned inbound links are applied to the REPO copies only (commit ec0aca2). `publish.wordpress.apply_inbound_links_live: true` is set, but that live-REST pass runs at Gate 2 approval AND only once this post's WP status is `publish` (wordpress-rest.md §On Gate 2 approval step 2) — neither holds yet, so action-items §4b's hand-apply fallback stands for now.
 - Stage 1c.5 carry-forward for Stage 3b (from plan-review.md, non-blocking): confirm the Scribble fact (handwriting converts to typed text on-device, facts.md §Apple feature facts) lands somewhere sensible in the draft, H2 4 being the natural home, or is dropped deliberately.
 - Editor pre-verified every external source by loading the page during Stage 1a; see research/_raw/_editor_source_checks.md. Stage 3d should have little or nothing left to resolve.
 
