@@ -1,0 +1,50 @@
+{
+  "slug": "how-to-reduce-screen-time",
+  "repo": "lucky72o/olgapak-blog",
+  "pr_number": 15,
+  "pr_url": "https://github.com/lucky72o/olgapak-blog/pull/15",
+  "branch": "blog/how-to-reduce-screen-time",
+  "base": "main",
+  "worktree": ".worktrees/blog-how-to-reduce-screen-time",
+  "staging_url": "",
+  "status": "open",
+  "mode": "pr",
+  "handled_comment_ids": {
+    "issue": [],
+    "inline": [],
+    "review": []
+  },
+  "created_at": "2026-08-11T18:36:07Z",
+  "last_poll": "",
+  "poll_interval_minutes": 15,
+  "idle_polls": 0,
+  "wp_post_id": 2181,
+  "wp_media_ids": [
+    {
+      "file": "featured.png",
+      "id": 2177,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/featured-3.png",
+      "sha256": "9d6a8fd47ad5736066da268f37368560d3c9227c2a0eda5b792779b544f711e6"
+    },
+    {
+      "file": "past-the-limit-then-friction.png",
+      "id": 2178,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/past-the-limit-then-friction.png",
+      "sha256": "27370715896f372a284460e45b5a863e8faa5ae5c661c9c0482ca0e2a5760540"
+    },
+    {
+      "file": "phone-charging-across-the-room.png",
+      "id": 2179,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/phone-charging-across-the-room.png",
+      "sha256": "d6af6c08951d057e429748f3ae115fe8d4121c3d5a5f7e0a144715d65cec3080"
+    },
+    {
+      "file": "two-piles-of-screen-time.png",
+      "id": 2180,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/two-piles-of-screen-time.png",
+      "sha256": "d9356baa809207863144627c9ff6182b7c18a88ef245e1ba1039aa232b80a238"
+    }
+  ],
+  "wp_preview_url": "https://olgapak.com/wp-admin/post.php?post=2181&action=edit",
+  "wp_upload": "ok"
+}

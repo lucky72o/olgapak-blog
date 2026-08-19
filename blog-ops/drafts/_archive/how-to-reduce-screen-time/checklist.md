@@ -2,10 +2,10 @@
 slug: how-to-reduce-screen-time
 target_keyword: how to reduce screen time
 created: 2026-08-08 22:19
-last_updated: 2026-08-11 18:31
-current_stage: preview
-current_owner: blog-post-workflow
-status: active
+last_updated: 2026-08-11 18:40
+current_stage: complete
+current_owner: human
+status: complete
 gate_pending: none
 # status values: active | paused | complete | abandoned
 # current_stage values: intake | chrome_fetch | serp_select | serp_deep_fetch | reddit_fetch | reddit_select | reddit_deep_fetch | x_fetch | x_select | x_deep_fetch | competitor_check | analyze_research | synthesize_plan | plan_review | outline | draft | review | humanize | resolve_markers | images | generate_images | action_items | preview | finalize | repurpose | complete
@@ -172,13 +172,13 @@ Max 2 revise iterations, draft-v3 is the ceiling.
 - [x] post staged to `content/blog/how-to-reduce-screen-time.md` (`draft: true` stripped, 3 of 4 `[IMAGE:]` resolved to embeds, 1 left as a build-safe "Image pending" note for the `screenshot` slot; no cover frontmatter field — the WP adapter attaches the featured image as `featured_media` at draft-create, and `featured.png` is on disk)
 - [x] inbound internal links applied to all 3 planned targets (write-ahead ownership records in Notes, all 3 passed Link-only diff verification: single hunk, extended-sentence edit)
 - [x] worktree branch committed + pushed (`blog/how-to-reduce-screen-time` @ 510eb7a, based on `origin/main` 6b2d666, 0 divergent commits so no rebase was needed)
-- [ ] staging side effects (WP draft / PR) — deferred to `autopilot-cont` under `CONSOLE_VERIFICATION=on`
+- [x] staging side effects (WP draft / PR) — performed by `autopilot-cont`: WP auth probe (once, OK), Gutenberg conversion with the Kadence TOC block, 4 media uploaded, WP draft 2181 created (`status: draft`, category Productivity/12, 4 tags, `featured_media: 2177`), PR #15 opened, `pr-monitor.json` written
 
 ## Stage 4c: Gate 2 + Finalize (owner: blog-post-workflow skill)
 
 Console-gated. Approval is `approval.json`, written only by the operator's browser Approve action. No cron monitor, no typed input, no auto-publish.
 
-- [ ] Gate 2 opened (console)
+- [x] Gate 2 opened (console)
 - [ ] `approval.json` present
 - [ ] draft published/staged to `content/blog/how-to-reduce-screen-time.md`
 - [ ] asset folder created at `blog-ops/assets/how-to-reduce-screen-time/` (with images.md as README.md)
@@ -239,6 +239,17 @@ Console-gated. Approval is `approval.json`, written only by the operator's brows
 - Stage 4b.5 SIDE EFFECTS deferred: 2026-08-11T18:33Z. Under `CONSOLE_VERIFICATION=on` the WP-draft create, media upload, and `pr-monitor.json` write belong to the later `autopilot-cont` run (console-contract.md §Verification handshake). The WP auth probe was therefore NOT run this session — it fires exactly once, inside that run's adapter §Staging step 2.
 - autopilot-fix round 1: 2026-08-11T18:29Z. Verification build check FAILED with `image referenced in images.md not found: screen-time-dashboard.png` — the console's wordpress-rest build check requires EVERY `**Suggested filename:**` in images.md to exist non-empty on disk, which a `screenshot` slot never does (the workflow's own design ships those as a build-safe "Image pending" note instead; the two rules contradict each other, see retro). No automated path can capture a real phone dashboard in a headless run, so the slot was DROPPED rather than faked: removed the `[IMAGE:]` placeholder from `draft-v2.md` and the "Image pending" blockquote from the staged post, marked images.md §Image 2 dropped (its `Suggested filename` field retired so the build check no longer demands the file; the full capture spec kept for a later post-publish add), updated the images.md summary/tree/tools counts (5 → 4, screenshots 1 → 0), re-synced `blog-ops/assets/how-to-reduce-screen-time/README.md` and the `_archive` PR snapshot, and rewrote action-items §1/§7/§8 + the final image checkbox. Post now ships 4 images (featured + 3 in-post) and carries no placeholder text.
 - Terminal event emitted: `ready_for_verification` (no `done` — the two are mutually exclusive)
+- Verification PASS: 2026-08-11T18:33Z (`verification-result.json` `{"ok":true}`; build check PASS, vision skipped — no `pr-monitor.json` existed yet, so no preview was reachable)
+- Stage 4b.5 SIDE EFFECTS completed by `autopilot-cont`: 2026-08-11T18:40Z.
+  1. WP auth probe ran exactly once (`GET /wp/v2/users/me` → 200, user 1). Not retried, not polled.
+  2. Gutenberg conversion via `md-to-gutenberg.py` with `--extra-blocks` carrying this blog's Kadence dynamic TOC block (`site-conventions.md` §Table of contents, `position: after-intro`). 28 `wp:heading` blocks, 3 `wp:image`, 1 TOC. The script's "input starts with frontmatter" stderr warning is expected here (the adapter never pre-strips) and was ignored.
+  3. Media: all 4 files uploaded fresh (no prior `wp_media_ids[]` entries), each recorded into `pr-monitor.json` immediately after its own upload, with sha256 — `featured.png` → 2177 (WP uniquified the attachment slug to `featured-3.png`; the recorded ID comes from the upload RESPONSE, never a `slug=` re-lookup), `past-the-limit-then-friction.png` → 2178, `phone-charging-across-the-room.png` → 2179, `two-piles-of-screen-time.png` → 2180. All 3 in-post `../../blog-ops/assets/...` refs rewritten to their `source_url`; 0 local paths survive in the posted body.
+  4. Draft created (lookup-before-create: `?slug=how-to-reduce-screen-time` returned `[]` AND no stored `wp_post_id`) → **post 2181, `status: draft`**. Category resolved to the existing `Productivity` term (id 12) — not left Uncategorized. Tags resolved to existing terms, none created: productivity 15, time management 34, digital tools for productivity 32, students 30. `featured_media: 2177`. Author = the authenticated user (v1 default).
+  5. PR **#15** opened: https://github.com/lucky72o/olgapak-blog/pull/15 (base `main`, head `blog/how-to-reduce-screen-time`). Collision guard re-run after `git fetch`: no `content/blog/how-to-reduce-screen-time.md` on `origin/main`. Branch was already current, so the commit/push were no-ops.
+  6. `pr-monitor.json` written with `mode: pr`, `pr_number: 15`, `wp_post_id: 2181`, `wp_preview_url`, `wp_upload: ok`.
+  7. Step 7h main-tree cleanup: nothing to do — the console pre-created the worktree and all staging happened inside it, so the main checkout at `/Users/slav/work/olgapak-blog` never held a staged copy (verified clean).
+  8. Post-create verification against `?context=edit`: status `draft`, slug, title, excerpt, `featured_media` 2177, categories `[12]`, tags all four; body 27,102 chars, 0 unresolved `[VERIFY:]`/`[EXTERNAL_LINK_NEEDED:]`/`[INTERNAL_LINK_NEEDED:]`/`[IMAGE:]` markers, 0 local asset paths, 3 uploaded image srcs.
+- Gate 2 opened (console-gated): 2026-08-11T18:40Z. No CronCreate monitor started (console-gated per `console-contract.md` §Gate 2 under the console); approval must arrive as `approval.json` from the operator's browser Approve action. Terminal events emitted: `pr_opened`, then `done`.
 
 ## Notes
 
