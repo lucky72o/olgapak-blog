@@ -19,6 +19,7 @@ import { MindMapNodeGoodVsBad } from "./MindMapNodeGoodVsBad";
 import { WeekGridTimeboxing } from "./WeekGridTimeboxing";
 import { PackedVsBufferedDay } from "./PackedVsBufferedDay";
 import { SevenDayRampDiagram } from "./SevenDayRampDiagram";
+import { HandwriteOrTypeDecision } from "./HandwriteOrTypeDecision";
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -57,6 +58,8 @@ export const RemotionRoot: React.FC = () => (
     <Still id="PackedVsBufferedDay" component={PackedVsBufferedDay}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="SevenDayRampDiagram" component={SevenDayRampDiagram}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="HandwriteOrTypeDecision" component={HandwriteOrTypeDecision}
       width={CANVAS.width} height={CANVAS.height} />
   </>
 );

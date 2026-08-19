@@ -124,7 +124,7 @@ On paper, a plain page with a hand-drawn line works fine, and a Cornell-ruled no
 
 [AFFILIATE_PLACEHOLDER: Cornell-ruled notebooks — add Amazon Associates links + disclosure once approved]
 
-On screen, a template does the same job. So grab the free Cornell template that comes with this guide:
+On screen, a template does the same job, and if the screen in question is a tablet, here is how to [set it up on an iPad](/how-to-take-notes-on-ipad) properly. So grab the free Cornell template that comes with this guide:
 
 - A **printable PDF** you can run off in a stack and keep in a binder.
 - A **Notion version** you can duplicate for every class or project, with the three zones already set up.

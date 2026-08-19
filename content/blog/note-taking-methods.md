@@ -104,7 +104,7 @@ There is a trap on the other side, too. Plenty of people build elaborate systems
 
 When you have got pages of notes or a long reading to distill, a free tool like the [Text Summarizer](/ai-tools/ai-text-summarizer) can speed up that condense step, turning a wall of text into a short, scannable version you can actually review. Match the tool to the task, the same way you match the method.
 
-And do not overthink the container. Paper or an app both work. If you love the feel of a physical notebook, a good one is worth it, and I will share my favorites in a dedicated round-up soon.
+And do not overthink the container. Paper or an app both work. If you love the feel of a physical notebook, a good one is worth it, and I will share my favorites in a dedicated round-up soon. If your container is a tablet, here is [how to take notes on an iPad](/how-to-take-notes-on-ipad) without the setup falling apart by November.
 
 ## Pick One and Try It This Week
 
