@@ -2,7 +2,7 @@
 slug: how-to-take-notes-on-ipad
 target_keyword: how to take notes on ipad
 created: 2026-08-19 03:03
-last_updated: 2026-08-19 04:32
+last_updated: 2026-08-19 04:44
 current_stage: preview
 current_owner: blog-post-workflow
 status: active
@@ -244,6 +244,8 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 - Stage 4b started: 2026-08-19 04:26
 - Stage 4b completed: 2026-08-19 04:32, 0 VERIFY / 0 EXTERNAL_LINK_NEEDED / 0 INTERNAL_LINK_NEEDED / 4 IMAGE; the only genuine human TODOs are the final read, the Rank Math focus keyword, Publish, and hand-applying the 3 inbound links to the live WP posts
 - Stage 4b.5 staging started: 2026-08-19 04:32
+- Stage 4b.5 staging FILE LAYOUT completed: 2026-08-19 04:44, committed as ec0aca2 and pushed to origin/blog/how-to-take-notes-on-ipad. Side effects (PR open, WordPress draft create, pr-monitor.json) deliberately NOT performed: CONSOLE_VERIFICATION=on, so they belong to the autopilot-cont run after the console verifies this staging (console-contract.md section Verification handshake).
+- current_stage deliberately left at `preview`: staging is not complete until the side effects run, and `preview` + no pr-monitor.json is exactly the state that routes a resume back into Step 14.5.
 
 ## Notes
 
@@ -259,7 +261,20 @@ Written BEFORE the edits, per `astro-git-pr.md` §Staging step 5c. These three f
 - inbound link applied by workflow: content/blog/best-notebooks-for-note-taking.md
 - inbound link applied by workflow: content/blog/cornell-note-taking-method.md
 
-All three passed the ownership check (no pre-existing `(/how-to-take-notes-on-ipad)` link) and the dirty-file guard (`git status --porcelain` clean) before being edited.
+All three passed the ownership check (no pre-existing `(/how-to-take-notes-on-ipad)` link) and the dirty-file guard (`git status --porcelain` clean) before being edited. After editing, all three passed the Link-only diff verification: one removed line and the same line with the link added, one hunk per file, nothing else. All three were therefore admitted to `<edited inbound posts>` and ship in commit ec0aca2.
+
+Anchors, as applied:
+
+- `content/blog/note-taking-methods.md` -> "how to take notes on an iPad", extending the existing "do not overthink the container" line.
+- `content/blog/best-notebooks-for-note-taking.md` -> "taking notes on an iPad", parenthetical after the reMarkable entry's "weighing 'notebook or iPad?'" sentence.
+- `content/blog/cornell-note-taking-method.md` -> "set it up on an iPad", extending the "On screen, a template does the same job" line.
+
+### Stage 4b.5 staging decisions worth recording
+
+- **`draft: true` was KEPT in the staged post's frontmatter, not stripped.** For `wordpress-rest` the line is documentation-only (`adapters/publish/frontmatter/wordpress.md`: WordPress has no build step to exclude from, and the real gate is the WP post's `status` field, which this adapter never sets beyond `draft`). This blog's three most recent published posts (`time-blocking`, `charting-method-note-taking`, `digital-detox-plan`, all post-adapter-migration) all keep the line; the six older ones that lack it predate the migration. Following the current corpus, not the older one.
+- **No cover/hero frontmatter field was injected.** The WordPress frontmatter template defines none by design; the featured image ships as a media upload attached via `featured_media` at the WP-draft-create step, which this run deliberately did not reach. `featured.png` is present on disk and committed.
+- **The `.staged-by-blog-workflow` sentinel was kept on disk but excluded from the commit** (the image files were added by name rather than by directory). Step 6d wants the sentinel never to ship, which is satisfied; deleting it outright would have removed the image-builder's ownership guard while the run is still live.
+- **This run works directly in the worktree** (the console sets cwd to it), so steps 6b/6c's main-tree-to-worktree copy is a no-op and step 6h's main-tree cleanup does not apply: there is no second copy to clean.
 
 ### Stage 3d marker log (no-op)
 
