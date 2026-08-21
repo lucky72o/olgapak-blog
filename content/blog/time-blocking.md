@@ -139,7 +139,7 @@ Two groups in particular find the standard version doesn't fit:
 - People in reactive, interrupt-driven roles, where the day is built almost entirely out of other people's requests.
 - People whose available energy swings from one day to the next, so a plan made on Monday is fiction by Thursday.
 
-Neither means giving up on structure. Both mean changing what you're structuring.
+Neither means giving up on structure. Both mean changing what you're structuring. And when blocks keep collapsing for a third reason, the phone rather than the job, the fix sits outside the calendar: [cut the screen time that eats your blocks](/how-to-reduce-screen-time) first.
 
 Cal Newport's counter-move is worth knowing even so: "periods of open-ended reactivity can be blocked off like any other type of obligation." You're not scheduling the interruptions. You're admitting they exist and reserving room for them.
 

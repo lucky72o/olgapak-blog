@@ -20,6 +20,7 @@ import { WeekGridTimeboxing } from "./WeekGridTimeboxing";
 import { PackedVsBufferedDay } from "./PackedVsBufferedDay";
 import { SevenDayRampDiagram } from "./SevenDayRampDiagram";
 import { HandwriteOrTypeDecision } from "./HandwriteOrTypeDecision";
+import { TwoPilesOfScreenTime } from "./TwoPilesOfScreenTime";
 import { InkFamiliesTradeoff } from "./InkFamiliesTradeoff";
 
 export const RemotionRoot: React.FC = () => (
@@ -61,6 +62,7 @@ export const RemotionRoot: React.FC = () => (
     <Still id="SevenDayRampDiagram" component={SevenDayRampDiagram}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="HandwriteOrTypeDecision" component={HandwriteOrTypeDecision}
+    <Still id="TwoPilesOfScreenTime" component={TwoPilesOfScreenTime}
     <Still id="InkFamiliesTradeoff" component={InkFamiliesTradeoff}
       width={CANVAS.width} height={CANVAS.height} />
   </>
