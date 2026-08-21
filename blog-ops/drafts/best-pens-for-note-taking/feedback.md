@@ -1,0 +1,1 @@
+the post look great, but we have to use my affiliate tag similar to the post with notebooks

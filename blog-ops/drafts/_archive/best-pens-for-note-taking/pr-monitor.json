@@ -1,0 +1,56 @@
+{
+  "slug": "best-pens-for-note-taking",
+  "repo": "lucky72o/olgapak-blog",
+  "pr_number": 0,
+  "pr_url": "",
+  "branch": "blog/best-pens-for-note-taking",
+  "base": "main",
+  "worktree": ".worktrees/blog-best-pens-for-note-taking",
+  "staging_url": "",
+  "status": "open",
+  "mode": "local",
+  "handled_comment_ids": {
+    "issue": [],
+    "inline": [],
+    "review": []
+  },
+  "created_at": "2026-08-08T14:36:06Z",
+  "last_poll": "",
+  "poll_interval_minutes": 15,
+  "idle_polls": 0,
+  "wp_post_id": 2174,
+  "wp_media_ids": [
+    {
+      "file": "dead-pens-study-desk.png",
+      "id": 2169,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/dead-pens-study-desk.png",
+      "sha256": "0b30f27089c3f4ed2adfc972ba7acbda1832a150ac5021898e40567e3174b775"
+    },
+    {
+      "file": "featured.png",
+      "id": 2170,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/featured-2.png",
+      "sha256": "bf2b6105b6f985963197d1837a912bf6442df465549d535403a643192b8fa8bc"
+    },
+    {
+      "file": "ink-families-tradeoff.png",
+      "id": 2171,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/ink-families-tradeoff.png",
+      "sha256": "6c7de438ebc91e6ea4df15fcdca3c36795843afad10a6edbf20ada9be0449ede"
+    },
+    {
+      "file": "ink-types-writing-sample.png",
+      "id": 2172,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/ink-types-writing-sample.png",
+      "sha256": "246149dc7dae68a36eea224f762be0d4b05e95bc5d7028c5fc900644d6b4b4ea"
+    },
+    {
+      "file": "paper-feathering-bleeding-ghosting.png",
+      "id": 2173,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/paper-feathering-bleeding-ghosting.png",
+      "sha256": "e20ef80b4e17422430734e96926acf8572975aee6f14a663b5d6766d6e14546c"
+    }
+  ],
+  "wp_preview_url": "https://olgapak.com/wp-admin/post.php?post=2174&action=edit",
+  "wp_upload": "ok"
+}

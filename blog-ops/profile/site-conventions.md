@@ -81,12 +81,15 @@ trailing slash.
 - **Related posts:** the workflow curates inbound internal links explicitly
   (2–4 existing related posts pointed at each new post); any theme "related
   posts" widget is separate. Confirm via inspection.
-- **Disclosure blocks:** **Amazon affiliate links are HELD** until the Associates
-  program is live — posts leave a marked placeholder, NO live affiliate links
-  (see `custom-instructions.md`). No standing disclosure line is emitted yet.
+- **Disclosure blocks:** Amazon affiliate links are **LIVE** (US Associates tag
+  `op01e-20`; updated 2026-08-11). Any post carrying a tagged Amazon link emits
+  the standing disclosure as an italic paragraph at the end of the intro, right
+  before the first `##` — `*Some links in this guide are affiliate links. As an
+  Amazon Associate, I earn from qualifying purchases, at no extra cost to you.*`
+  (see `custom-instructions.md` §Content policy).
 - **Should generated content include any of the above?** Author box / related
-  widget: no (theme-automatic, pending confirmation). Affiliate disclosure: not
-  until affiliate links go live.
+  widget: no (theme-automatic, pending confirmation). Affiliate disclosure: yes,
+  in every post with a tagged Amazon link.
 
 ## Notes
 
