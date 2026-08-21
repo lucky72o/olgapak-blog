@@ -63,6 +63,8 @@ Which ink problems? There are three, and knowing [the difference between feather
 - **Bleeding:** ink soaks all the way through to the other side of the page.
 - **Ghosting (show-through):** you can faintly see your writing on the reverse. Mild ghosting is normal; heavy ghosting is annoying.
 
+Worth saying plainly: all three of these are a pairing problem, not a paper problem. The same notebook behaves completely differently depending on what you write with, so it's worth picking [the best pens for note taking](/best-pens-for-note-taking) alongside the paper rather than after it.
+
 After paper, the rest is quick. Ruling is personal: most classroom notebooks use roughly 7 mm college ruling, and beyond that you're choosing between lined, dot grid, graph, and blank. Binding matters more than people expect. A notebook that lies flat is a joy; one that fights you shut is not. And size is a portability call: A5 is the do-everything default, B5 gives you more room for class notes, and pocket sizes go everywhere. Then it's just price tier.
 
 ## Best all-purpose notebooks for everyday note-taking
