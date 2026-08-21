@@ -1,0 +1,11 @@
+# Generated, append-only registries: every blog post appends a uniquely-named
+# entry, so two concurrent post PRs only ever *both add* distinct lines at the
+# same anchor. `merge=union` makes git keep both sides instead of flagging a
+# conflict, which is what lets the console auto-resolve post-PR merges
+# (console/src/merge-resolve.ts `resolveConflictOnBranch`). It also fixes plain
+# local/human merges and rebases of the same file.
+#
+# Scope this narrowly. Prose files must NEVER be union-merged: keeping both
+# sides of two edits to the same paragraph silently publishes a mangled
+# sentence. Only generated registries belong here.
+tools/remotion/src/Root.tsx merge=union
