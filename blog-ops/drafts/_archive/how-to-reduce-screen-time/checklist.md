@@ -2,7 +2,7 @@
 slug: how-to-reduce-screen-time
 target_keyword: how to reduce screen time
 created: 2026-08-08 22:19
-last_updated: 2026-08-11 18:40
+last_updated: 2026-08-21 12:20
 current_stage: complete
 current_owner: human
 status: complete
@@ -262,6 +262,45 @@ Written BEFORE the edit, per `adapters/publish/astro-git-pr.md` §Staging step 6
 - inbound link applied by workflow: `content/blog/time-blocking.md`
 
 All three were verified clean at admission time: link absent, `git status --porcelain` empty, no prior record.
+
+### Stage 4c live inbound-link records (write-ahead)
+
+Written BEFORE the live edit, per `adapters/publish/wordpress-rest.md` §Live inbound-link application step 3.
+Triggered because `publish.wordpress.apply_inbound_links_live: true` AND this post's WP status is `publish`
+(external-publish detected at finalize step 1: post 2181 is live at https://olgapak.com/how-to-reduce-screen-time).
+Idempotency check ran first on each target's `content.raw` — none carried the link in any form.
+
+- live inbound link applied: `how-to-stop-doomscrolling` (wp id 2122) -> this post, anchor "how to reduce screen time" in `## Reclaim the hours, then spend them on purpose` (closing section); HTTP 200, +204 bytes, single hunk (extended an existing closing sentence).
+  - before: "...in is not a smaller screen-time number, it is what you do with the attention you reclaim.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragra..."
+  - after:  "...in is not a smaller screen-time number, it is what you do with the attention you reclaim. Doomscrolling is one leak out of several, so if you want the whole picture rather than this one behavior, start with <a href="https://olgapak.com/how-to-reduce-screen-time">how to reduce screen time</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragra..."
+- live inbound link applied: `digital-detox-plan` (wp id 2152) -> this post, anchor "reduce your screen time for good" in `## Day 8 and beyond: the rules that keep it`; HTTP 200, +220 bytes, single hunk (extended an existing closing sentence).
+  - before: "...where most detoxes quietly come undone, because no one designed them to survive the plan ending.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {..."
+  - after:  "...where most detoxes quietly come undone, because no one designed them to survive the plan ending. If you want the slower version of the same job, the one built to outlast the reset week, I've written separately about how to <a href="https://olgapak.com/how-to-reduce-screen-time">reduce your screen time for good</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {..."
+- live inbound link applied: `time-blocking` (wp id 2144) -> this post, anchor "cut the screen time that eats your blocks" in closing of `## Who time blocking doesn't suit (and what to do instead)`; HTTP 200, +227 bytes, single hunk (extended an existing closing sentence).
+  - before: "...p>Neither means giving up on structure. Both mean changing what you're structuring.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragra..."
+  - after:  "...p>Neither means giving up on structure. Both mean changing what you're structuring. And when blocks keep collapsing for a third reason, the phone rather than the job, the fix sits outside the calendar: <a href="https://olgapak.com/how-to-reduce-screen-time">cut the screen time that eats your blocks</a> first.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragra..."
+
+All three verified post-write against `?context=edit`: the canonical absolute anchor is present exactly once
+per post and each target is still `status: publish`. The repo copies under `content/blog/` already carried the
+root-relative form from Stage 4b.5 and are unchanged by this pass.
 
 ### Stage 3d marker auto-resolution log
 
