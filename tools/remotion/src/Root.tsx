@@ -19,6 +19,7 @@ import { MindMapNodeGoodVsBad } from "./MindMapNodeGoodVsBad";
 import { WeekGridTimeboxing } from "./WeekGridTimeboxing";
 import { PackedVsBufferedDay } from "./PackedVsBufferedDay";
 import { SevenDayRampDiagram } from "./SevenDayRampDiagram";
+import { TwoPilesOfScreenTime } from "./TwoPilesOfScreenTime";
 import { InkFamiliesTradeoff } from "./InkFamiliesTradeoff";
 
 export const RemotionRoot: React.FC = () => (
@@ -59,6 +60,7 @@ export const RemotionRoot: React.FC = () => (
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="SevenDayRampDiagram" component={SevenDayRampDiagram}
       width={CANVAS.width} height={CANVAS.height} />
+    <Still id="TwoPilesOfScreenTime" component={TwoPilesOfScreenTime}
     <Still id="InkFamiliesTradeoff" component={InkFamiliesTradeoff}
       width={CANVAS.width} height={CANVAS.height} />
   </>

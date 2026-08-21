@@ -143,7 +143,7 @@ And if the phone has to stay in your hand for work or caregiving, subtraction is
 
 ## Day 8 and beyond: the rules that keep it
 
-The week is the easy part. Day 8 is where most detoxes quietly come undone, because no one designed them to survive the plan ending.
+The week is the easy part. Day 8 is where most detoxes quietly come undone, because no one designed them to survive the plan ending. If you want the slower version of the same job, the one built to outlast the reset week, I've written separately about how to [reduce your screen time for good](/how-to-reduce-screen-time).
 
 ![Two people sharing a slow breakfast with a book and coffee and no screens in sight](../../blog-ops/assets/digital-detox-plan/no-phone-day-maintenance.png)
 
