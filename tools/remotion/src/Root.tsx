@@ -22,6 +22,7 @@ import { SevenDayRampDiagram } from "./SevenDayRampDiagram";
 import { WhatTheStudyMeasured } from "./WhatTheStudyMeasured";
 import { HybridWorkflowFlow } from "./HybridWorkflowFlow";
 import { NotesDecisionRule } from "./NotesDecisionRule";
+import { InkFamiliesTradeoff } from "./InkFamiliesTradeoff";
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -66,6 +67,7 @@ export const RemotionRoot: React.FC = () => (
     <Still id="HybridWorkflowFlow" component={HybridWorkflowFlow}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="NotesDecisionRule" component={NotesDecisionRule}
+    <Still id="InkFamiliesTradeoff" component={InkFamiliesTradeoff}
       width={CANVAS.width} height={CANVAS.height} />
   </>
 );
