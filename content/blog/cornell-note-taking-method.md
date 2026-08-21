@@ -47,6 +47,7 @@ A few setup notes that save headaches:
 - Keep the cue column empty during class. You fill it in afterward, when you actually have a spare thought to think.
 - Don't crowd the summary bar with more lines. Two inches is enough, and a tight box keeps the summary honest.
 - One topic per page where you can manage it, so the header and summary stay meaningful.
+- A fine tip earns its keep in the cue column, where the space is deliberately tight. If you colour-code your cues, it's worth choosing [the right pen for note taking](/best-pens-for-note-taking) rather than whatever is in the bag.
 
 ## How to take Cornell notes: the 5 R's
 
