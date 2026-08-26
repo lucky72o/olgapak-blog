@@ -90,7 +90,7 @@ Here's the step most people skip. Come back to the map and quiz yourself from it
 
 ## Paper vs. Digital Mind Maps
 
-People always ask which is better, paper or an app. Honestly, I use both, for different reasons.
+People always ask which is better, paper or an app. Honestly, I use both, for different reasons. The same question comes up for notes in general, and I worked through [whether to go digital or stay on paper](/digital-vs-paper-notes) separately.
 
 When I'm thinking something through for the first time, I reach for paper. A big unlined sheet or a landscape page gives you room to sprawl, and nothing interrupts the flow while you're drawing. A [roomy unlined notebook](/best-notebooks-for-note-taking) helps here more than any app does.
 

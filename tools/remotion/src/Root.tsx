@@ -20,6 +20,9 @@ import { WeekGridTimeboxing } from "./WeekGridTimeboxing";
 import { PackedVsBufferedDay } from "./PackedVsBufferedDay";
 import { SevenDayRampDiagram } from "./SevenDayRampDiagram";
 import { HandwriteOrTypeDecision } from "./HandwriteOrTypeDecision";
+import { WhatTheStudyMeasured } from "./WhatTheStudyMeasured";
+import { HybridWorkflowFlow } from "./HybridWorkflowFlow";
+import { NotesDecisionRule } from "./NotesDecisionRule";
 import { TwoPilesOfScreenTime } from "./TwoPilesOfScreenTime";
 import { InkFamiliesTradeoff } from "./InkFamiliesTradeoff";
 
@@ -62,6 +65,11 @@ export const RemotionRoot: React.FC = () => (
     <Still id="SevenDayRampDiagram" component={SevenDayRampDiagram}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="HandwriteOrTypeDecision" component={HandwriteOrTypeDecision}
+    <Still id="WhatTheStudyMeasured" component={WhatTheStudyMeasured}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="HybridWorkflowFlow" component={HybridWorkflowFlow}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="NotesDecisionRule" component={NotesDecisionRule}
     <Still id="TwoPilesOfScreenTime" component={TwoPilesOfScreenTime}
     <Still id="InkFamiliesTradeoff" component={InkFamiliesTradeoff}
       width={CANVAS.width} height={CANVAS.height} />

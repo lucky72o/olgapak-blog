@@ -1,0 +1,56 @@
+{
+  "slug": "digital-vs-paper-notes",
+  "repo": "lucky72o/olgapak-blog",
+  "pr_number": 16,
+  "pr_url": "https://github.com/lucky72o/olgapak-blog/pull/16",
+  "branch": "blog/digital-vs-paper-notes",
+  "base": "main",
+  "worktree": ".worktrees/blog-digital-vs-paper-notes",
+  "staging_url": "https://olgapak.com/wp-admin/post.php?post=2187&action=edit",
+  "status": "done",
+  "mode": "pr",
+  "handled_comment_ids": {
+    "issue": [],
+    "inline": [],
+    "review": []
+  },
+  "created_at": "2026-08-18T21:52:29.832206+00:00",
+  "last_poll": "",
+  "poll_interval_minutes": 15,
+  "idle_polls": 0,
+  "wp_post_id": 2187,
+  "wp_media_ids": [
+    {
+      "file": "featured.png",
+      "id": 2182,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/featured-4.png",
+      "sha256": "39d4e237d85a29f701eb11661fb271a9fccaf5e76db06f90053e4aa5bc519807"
+    },
+    {
+      "file": "hybrid-workflow-flow.png",
+      "id": 2183,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/hybrid-workflow-flow.png",
+      "sha256": "6d65d9177511bc91e3e6c5a2566da42794c78717098de34d5e2bcccdb5db3d3c"
+    },
+    {
+      "file": "motion-not-material.png",
+      "id": 2184,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/motion-not-material.png",
+      "sha256": "d05acbb508f0db952f0c7a99e9c9f6417908cdd93e3c80f9c61c0f668d6effaa"
+    },
+    {
+      "file": "notes-decision-rule.png",
+      "id": 2185,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/notes-decision-rule.png",
+      "sha256": "64fafb33c4cd4ff54e62895c212658466148469b598a0e06093286d6b69498f0"
+    },
+    {
+      "file": "what-the-study-measured.png",
+      "id": 2186,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/what-the-study-measured.png",
+      "sha256": "273c658b512cabe84a111c3347bbbf198af5f2c9b7756cdb07f15a83c197a1f9"
+    }
+  ],
+  "wp_preview_url": "https://olgapak.com/wp-admin/post.php?post=2187&action=edit",
+  "wp_upload": "ok"
+}
