@@ -2,8 +2,8 @@
 slug: bullet-journal-for-beginners
 target_keyword: bullet journal for beginners
 created: 2026-08-26 12:30
-last_updated: 2026-08-26 14:18
-current_stage: action_items
+last_updated: 2026-08-26 14:26
+current_stage: preview
 current_owner: blog-post-workflow
 status: active
 gate_pending: none
@@ -169,9 +169,9 @@ Editor spawns the `image-planner` subagent. Agent reads outline + draft `[IMAGE:
 
 Mechanical grep of draft markers + fill action-items template. One checkbox per [VERIFY:], [EXTERNAL_LINK_NEEDED:], [INTERNAL_LINK_NEEDED:], [IMAGE:] marker, plus pre-filled publish steps.
 
-- [ ] action-items.md written with every section filled
-- [ ] Marker checkbox counts match grep output
-- [ ] Authors-map status confirmed per the publish adapter (`adapters/publish/<adapter>.md` §Action-items sections; e.g. the astro adapter's `authors_map_check` file, if configured)
+- [x] action-items.md written with every section filled
+- [x] Marker checkbox counts match grep output
+- [x] Authors-map status confirmed per the publish adapter (`adapters/publish/<adapter>.md` §Action-items sections; e.g. the astro adapter's `authors_map_check` file, if configured)
 
 **Artifacts:** `action-items.md`
 
@@ -216,6 +216,9 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 
 - intake completed: 2026-08-26 12:30 (autopilot file-intake from content-plan.md row 17)
 - Stage 1b research analysis completed: 2026-08-26 12:48 (serp + reddit + x)
+- Stage 4b.5 staging FILE LAYOUT completed: 2026-08-26 14:26, branch blog/bullet-journal-for-beginners pushed (commit 6054124). Side effects (PR open, WP draft create, pr-monitor.json) DEFERRED to autopilot-cont per the console verification handshake (CONSOLE_VERIFICATION=on)
+- Stage 4b.5 staging started: 2026-08-26 14:20 (owner: blog-post-workflow)
+- Stage 4b completed: 2026-08-26 14:20, 0 VERIFY / 0 EXTERNAL_LINK_NEEDED / 0 INTERNAL_LINK_NEEDED / 4 IMAGE markers; almost every action item is a record rather than a TODO
 - Stage 4b started: 2026-08-26 14:18 (owner: blog-post-workflow)
 - Stage 4a.5 completed: 2026-08-26 14:16, 5 rendered, 0 prompt-pending, 0 screenshot-pending, 0 failed
 - Stage 4a.5 started: 2026-08-26 14:05 (owner: image-builder)
@@ -242,6 +245,34 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 
 ## Notes
 
+### Stage 4b.5 staging result (2026-08-26 14:26)
+
+**File layout done; side effects deliberately NOT done.** `CONSOLE_VERIFICATION=on`, so per
+`references/console-contract.md` §Verification handshake this run performs the staging file layout
+(copy to `content_dir`, resolve `[IMAGE:]`, inbound links, worktree commit + push) and stops. The
+PR-open, the WordPress draft create and the `pr-monitor.json` write are `autopilot-cont`'s job
+after verification passes. Terminal event emitted: `ready_for_verification`, and NOT `done`.
+
+- Collision guard: `content/blog/bullet-journal-for-beginners.md` does not exist on `origin/main`. Clear.
+- Branch rebase (MANDATORY per adapter step 6b2): the console-created branch had zero commits of
+  its own but trailed `origin/main` by 3 commits, which is exactly the defect that step exists to
+  catch. Fast-forwarded onto `origin/main` before staging anything. Checked first that none of the
+  3 incoming commits touched a dirty file in this tree; they did not.
+- 4 `[IMAGE:]` placeholders resolved to real embeds, every path confirmed to point at a file that
+  exists. Zero build-safe "Image pending" notes were needed.
+- `draft: true` KEPT in frontmatter. For `wordpress-rest` it is documentation-only, not a build
+  exclusion: the WP `status` field does the real gating, and the frontmatter template's own quality
+  gate requires the line to be present.
+- No cover/hero frontmatter field, correct for this adapter. The featured image attaches as
+  `featured_media` at the WP-draft-create step, which is deferred.
+- Visual backstop (adapter step 3b): all 5 rendered images inspected directly. Featured lettering
+  correct character for character including the `4`; the Remotion diagram's labels match the post's
+  own terminology and both migration arrows are right; the daily-log image gets all five pen marks
+  right; nothing overlaps, clips, or garbles. The featured/Image-1 collision the reviewer caught at
+  Stage 3b is genuinely resolved: a typographic "4 pages" hero versus a phone-scrolling scene.
+- Commit 6054124 also carries the `tools/remotion/src/Root.tsx` repair. Flagged in the commit body
+  and in action-items §1, because it is a fix to shared infrastructure, not to this post.
+
 ### Stage 4b.5 inbound-link write-ahead record (2026-08-26 14:22)
 
 Written BEFORE the edits, per the adapter's write-ahead rule. These three paths are the durable
@@ -252,7 +283,11 @@ authority for "the workflow inserted this link", not link-presence on disk.
 - inbound link applied by workflow: content/blog/digital-vs-paper-notes.md
 
 All three passed the ownership grep (link not yet present) and the dirty-file guard
-(`git status --porcelain` empty) before any edit was made.
+(`git status --porcelain` empty) before any edit was made, and all three then passed the
+Link-only diff verification at admission: exactly one hunk each, one removed line plus the same
+line with the link added (the extended-sentence pattern the adapter recognises as attributable),
+the link present in the added line, and no em-dashes introduced. All three admitted to
+`<edited inbound posts>` and committed.
 
 ### Stage 3d per-marker outcome log (2026-08-26 13:56)
 
