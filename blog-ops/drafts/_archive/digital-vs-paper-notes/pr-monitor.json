@@ -7,7 +7,7 @@
   "base": "main",
   "worktree": ".worktrees/blog-digital-vs-paper-notes",
   "staging_url": "https://olgapak.com/wp-admin/post.php?post=2187&action=edit",
-  "status": "open",
+  "status": "done",
   "mode": "pr",
   "handled_comment_ids": {
     "issue": [],
