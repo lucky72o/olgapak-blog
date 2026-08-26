@@ -2,10 +2,10 @@
 slug: digital-vs-paper-notes
 target_keyword: digital vs paper notes
 created: 2026-08-05 13:37
-last_updated: 2026-08-18 22:49
-current_stage: preview
+last_updated: 2026-08-18 22:53
+current_stage: complete
 current_owner: blog-post-workflow
-status: active
+status: complete
 gate_pending: none
 # status values: active | paused | complete | abandoned
 # current_stage values: intake | chrome_fetch | serp_select | serp_deep_fetch | reddit_fetch | reddit_select | reddit_deep_fetch | x_fetch | x_select | x_deep_fetch | competitor_check | analyze_research | synthesize_plan | plan_review | outline | draft | review | humanize | resolve_markers | images | generate_images | action_items | preview | finalize | repurpose | complete
@@ -238,6 +238,7 @@ Console-gated (autopilot). Approval is data: the console writes `approval.json`;
 - Stage 4b.5 re-entered: 2026-08-18 22:49 (autopilot resume; prior run died after file layout, before commit/push — nothing was committed and only 2 of 4 recorded inbound links had landed)
 - Branch re-based onto origin/main: 2026-08-18 22:49. charting-method-note-taking published in the interim and its commits touched the same files this staging edits, so instead of a conflict-prone rebase: `git reset --hard origin/main` (branch had 0 commits; untracked staging artifacts unaffected), then deterministic re-apply of all 4 inbound links (per the write-ahead ownership records + outline rows), the featured-log row, and the 3 Root.tsx Still registrations. All 4 inbound-link diffs re-verified link-only (+1/-1 each) before admission.
 - Staging visual backstop (astro-git-pr §Staging step 3b): 2026-08-18 22:49, 5/5 rendered images inspected, no overlaps/clipping/contrast defects
+- Stage 4b.5 file layout committed (e979c96, 48 files) + pushed to origin/blog/digital-vs-paper-notes: 2026-08-18 22:50. `ready_for_verification` emitted; WP-facing side effects (auth probe, Gutenberg convert, media upload, draft create, pr-monitor.json) deferred to autopilot-cont per the verification handshake.
 
 ## Notes
 
@@ -296,3 +297,4 @@ Console-gated (autopilot). Approval is data: the console writes `approval.json`;
   memory research. Stage 3d must scope every study claim to exactly what the
   source supports and prefer primary sources (journal/university/.gov) over the
   pop-science secondary coverage that dominates this SERP.
+- Stage 4b.5 WordPress side effects completed: 2026-08-18 22:53 — 5 media uploaded (2182-2186), WP draft 2187 created (status draft), pr-monitor.json written
