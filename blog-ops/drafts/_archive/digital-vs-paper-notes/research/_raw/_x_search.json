@@ -1,0 +1,72 @@
+{
+  "query": "digital vs paper notes",
+  "searchedAt": "2026-08-05T12:50:00.000Z",
+  "note": "Hand-written by the editor from the observed captures of three separate X searches. The automated blob-download was discarded because x.com's SPA client-side routing returned a stale in-memory result set that did not match the query it was labelled with; this file records what was actually observed on each page instead. No post met the selection bar, so no deep fetches were performed and Stage 1.5b produced no x-NN-*.json files.",
+  "queriesAttempted": [
+    {
+      "q": "digital vs paper notes",
+      "tab": "top",
+      "url": "https://x.com/search?q=digital%20vs%20paper%20notes&f=top",
+      "resultCount": 2,
+      "verdict": "off-topic",
+      "detail": "Both results were Obsidian/AI-workflow promotional threads from the same account (@KanikaBK, 81 and 137 likes). Neither discusses paper vs digital note-taking or memory; both are app-setup promotion."
+    },
+    {
+      "q": "digital vs paper notes",
+      "tab": "live",
+      "url": "https://x.com/search?q=digital%20vs%20paper%20notes&f=live",
+      "resultCount": 5,
+      "verdict": "off-topic",
+      "detail": "Four near-duplicate business/mining newsletter posts from related accounts (@mediamanoz, @MediaManGroup, @mediamanint; 0-5 likes) plus one Central Europe e-commerce white paper (@TAMPICTG87). The phrase matched incidentally inside long link-dump posts. Zero relevance to note-taking."
+    },
+    {
+      "q": "handwritten notes vs typing",
+      "tab": "top",
+      "url": "https://x.com/search?q=handwritten%20notes%20vs%20typing&f=top",
+      "resultCount": 2,
+      "verdict": "one marginally on-topic post, below the engagement bar",
+      "detail": "A semantically closer query, tried because the literal keyword returned noise. Returned one crypto/AI promo post (@irongiantXBT, 20 likes, all-caps hype) and one genuinely on-topic post (@Luisduque, 0 likes, 0 replies) claiming handwriting runs ~13 words per minute against typing at 40-60. That post fails the selection criteria (likes > 50 OR meaningful reply count) and its speed figures are an unsourced claim from a zero-engagement account; treating it as evidence would be exactly the over-claiming risk the brief flags."
+    }
+  ],
+  "results": [
+    {
+      "rank": 3,
+      "url": "https://x.com/KanikaBK",
+      "author": "",
+      "handle": "KanikaBK",
+      "text": "I almost scrolled past this post and I am genuinely glad I did not because it is the most practical Obsidian setup... I have read from someone who has actually used it in real academic work for five [truncated]",
+      "replies": 0,
+      "reposts": 0,
+      "likes": 81,
+      "queryTab": "digital vs paper notes / top",
+      "selected": false,
+      "skipReason": "Obsidian app promotion, not a paper-vs-digital take"
+    },
+    {
+      "rank": 4,
+      "url": "https://x.com/KanikaBK",
+      "author": "",
+      "handle": "KanikaBK",
+      "text": "Omg.. this is wild!! YOUR OBSIDIAN VAULT is a GOLDMINE never now. I had research papers scattered across three apps, PDFs in a folder I never opened, and notes referencing papers I could not find a [truncated]",
+      "replies": 0,
+      "reposts": 0,
+      "likes": 137,
+      "queryTab": "digital vs paper notes / top",
+      "selected": false,
+      "skipReason": "Same account, same promotional thread; self-promotion per selection criteria"
+    },
+    {
+      "rank": 5,
+      "url": "https://x.com/Luisduque",
+      "author": "",
+      "handle": "Luisduque",
+      "text": "Handwriting tops out around 13 words a minute. Typing runs 40 to 60. The gap between them is doing more for your thinking [truncated]",
+      "replies": 0,
+      "reposts": 0,
+      "likes": 0,
+      "queryTab": "handwritten notes vs typing / top",
+      "selected": false,
+      "skipReason": "On-topic and the only relevant post found, but 0 likes / 0 replies fails the engagement bar, and its words-per-minute figures are unsourced. Recorded here only so the claim is traceable if it resurfaces elsewhere; it must NOT be cited from X."
+    }
+  ]
+}
