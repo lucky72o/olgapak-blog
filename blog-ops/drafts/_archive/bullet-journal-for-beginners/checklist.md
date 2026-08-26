@@ -2,11 +2,11 @@
 slug: bullet-journal-for-beginners
 target_keyword: bullet journal for beginners
 created: 2026-08-26 12:30
-last_updated: 2026-08-26 14:26
-current_stage: preview
+last_updated: 2026-08-26 14:35
+current_stage: finalize
 current_owner: blog-post-workflow
 status: active
-gate_pending: none
+gate_pending: gate_2_final
 # status values: active | paused | complete | abandoned
 # current_stage values: intake | chrome_fetch | serp_select | serp_deep_fetch | reddit_fetch | reddit_select | reddit_deep_fetch | x_fetch | x_select | x_deep_fetch | competitor_check | analyze_research | synthesize_plan | plan_review | outline | draft | review | humanize | resolve_markers | images | generate_images | action_items | preview | finalize | repurpose | complete
 # current_owner values: human | blog-post-workflow | blog-researcher | blog-writer | blog-reviewer | blog-humanizer | image-planner | image-builder | plan-reviewer
@@ -216,6 +216,7 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 
 - intake completed: 2026-08-26 12:30 (autopilot file-intake from content-plan.md row 17)
 - Stage 1b research analysis completed: 2026-08-26 12:48 (serp + reddit + x)
+- Stage 4b.5 SIDE EFFECTS completed: 2026-08-26 14:35 (autopilot-cont, after verification PASS). PR #19 opened (https://github.com/lucky72o/olgapak-blog/pull/19); WordPress draft 2208 created with 5 media uploaded, featured_media 2204, category Productivity (12), tags 15/36/33/30; pr-monitor.json written. Gate 2 is console-gated: no CronCreate monitor started.
 - Stage 4b.5 staging FILE LAYOUT completed: 2026-08-26 14:26, branch blog/bullet-journal-for-beginners pushed (commit 6054124). Side effects (PR open, WP draft create, pr-monitor.json) DEFERRED to autopilot-cont per the console verification handshake (CONSOLE_VERIFICATION=on)
 - Stage 4b.5 staging started: 2026-08-26 14:20 (owner: blog-post-workflow)
 - Stage 4b completed: 2026-08-26 14:20, 0 VERIFY / 0 EXTERNAL_LINK_NEEDED / 0 INTERNAL_LINK_NEEDED / 4 IMAGE markers; almost every action item is a record rather than a TODO
@@ -244,6 +245,21 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 - Stage 1a SERP fetch completed: 2026-08-26 12:35, 6 selected, 0 failed (page 1 held only 7 organic results; 1 Reddit result deferred to Stage 1.5a, 1 YouTube result skipped)
 
 ## Notes
+
+### Stage 4b.5 side effects (autopilot-cont, 2026-08-26 14:35)
+
+The deferred half of Stage 4b.5, run after the console's verification PASS. File layout was already
+done by the fresh run; this pass did only the side effects.
+
+- **PR #19 opened**: https://github.com/lucky72o/olgapak-blog/pull/19 (`blog/bullet-journal-for-beginners` -> `main`, 2 commits). No PR existed for the branch beforehand and the branch was already in sync with origin, so nothing had to be re-pushed.
+- **Auth probe run exactly once** and passed (user id 1, Olga Pak). Not retried, not polled, per the lockout rule.
+- **Gutenberg conversion, native path** (not the classic-block fallback): 64 paragraph, 25 list, 18 heading, 4 image, 1 table blocks, plus the Kadence dynamic TOC block injected `after-intro` from `site-conventions.md` §Table of contents. The converter's "stripping frontmatter defensively" warning is the expected one for this adapter, not a problem.
+- **5 media uploaded**, ids captured from each upload RESPONSE and written to `pr-monitor.json` after every single upload rather than batched. Worth noting: WordPress uniquified `featured.png` to `featured-6.png` (attachment 2204) because earlier posts already hold the `featured` slug. That is exactly the case the adapter warns about, and the id came from the upload response, so no cross-post collision is possible here.
+- **All 4 in-post image refs rewritten** from local relative paths to their uploaded `source_url`. Verified against the live post's `content.raw`: zero local path leaks remain.
+- **Draft 2208 created** after the double check (no stored `wp_post_id` AND an empty slug lookup on both `status=draft` and `status=any`). `featured_media` 2204, category Productivity (12) so it never ships Uncategorized, all 4 frontmatter tags resolved to existing terms (15, 36, 33, 30, none needed creating), author 1 per the v1 authenticated-user rule.
+- **Status is `draft`.** Publishing stays a human action in WP admin; nothing here publishes.
+- **Rank Math focus keyword is still unset** and cannot be set over standard REST (`site-conventions.md` §SEO plugin). It remains action-items §7, mandatory before publish.
+- Gate 2 is console-gated, so no CronCreate PR monitor was started and this run does not block on input.
 
 ### Stage 4b.5 staging result (2026-08-26 14:26)
 
