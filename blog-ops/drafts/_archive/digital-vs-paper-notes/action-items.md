@@ -89,10 +89,10 @@ Internal links where the outline's existing-posts table didn't offer a fit. Pick
 
 From the outline's "Inbound internal links" section. **These are applied automatically at Stage 4b.5, not by you.** Per `custom-instructions.md` §Inbound internal links plus `publish.wordpress.apply_inbound_links_live: true`, each is applied to the repo copy at staging and to the LIVE WordPress post via REST once this post is published.
 
-- [ ] `content/blog/cornell-note-taking-method.md`, anchor "digital vs paper notes" → `/digital-vs-paper-notes`, in its `## Paper vs digital, plus a free Cornell template` section — applied to the repo copy at Stage 4b.5; hand-apply or let the post-publish live application handle the WP copy
-- [ ] `content/blog/mind-mapping-note-taking-method.md`, anchor "whether to go digital or stay on paper" → `/digital-vs-paper-notes`, in its `## Paper vs. Digital Mind Maps` section — same
-- [ ] `content/blog/note-taking-methods.md`, anchor "choosing between digital and paper notes" → `/digital-vs-paper-notes`, in its `## Which Method Fits Which Situation` section — same
-- [ ] `content/blog/best-notebooks-for-note-taking.md`, anchor "digital vs paper notes" → `/digital-vs-paper-notes`, in its `## Best reusable and digital notebooks` section — same
+- [x] `content/blog/cornell-note-taking-method.md`, anchor "digital vs paper notes" → `/digital-vs-paper-notes`, in its `## Paper vs digital, plus a free Cornell template` section — applied to the repo copy at Stage 4b.5; hand-apply or let the post-publish live application handle the WP copy
+- [x] `content/blog/mind-mapping-note-taking-method.md`, anchor "whether to go digital or stay on paper" → `/digital-vs-paper-notes`, in its `## Paper vs. Digital Mind Maps` section — same
+- [x] `content/blog/note-taking-methods.md`, anchor "choosing between digital and paper notes" → `/digital-vs-paper-notes`, in its `## Which Method Fits Which Situation` section — same
+- [x] `content/blog/best-notebooks-for-note-taking.md`, anchor "digital vs paper notes" → `/digital-vs-paper-notes`, in its `## Best reusable and digital notebooks` section — same
 
 Confirm all four rendered correctly in the Gate 2 preview. The exact before/after for each is recorded in the archived `checklist.md` Notes.
 
@@ -128,7 +128,7 @@ WordPress has no author-map file to reconcile (unlike the Astro adapter's option
 - [ ] Open the WordPress draft preview: `<wp_preview_url — filled at Stage 4b.5 staging; this run defers the WP-draft create to the console's autopilot-cont step under CONSOLE_VERIFICATION=on>`.
 - [ ] Read it once more in the WP admin preview (title, excerpt, featured image already synced by this adapter).
 - [ ] **Focus keyword.** Set the focus keyword in **Rank Math** to exactly: `digital vs paper notes`. Per `blog-ops/profile/site-conventions.md` §SEO plugin this is **not** settable via standard REST, so it is a manual step in the WP editor's Rank Math meta box. The workflow never attempts that write.
-- [ ] Click **Publish** in WP admin. This workflow never does that step for you.
+- [x] Click **Publish** in WP admin. This workflow never does that step for you. — already done by the author before finalize ran (post 2187 was `status: publish`); finalize detected the external publish and skipped the content re-sync so nothing you edited in admin was overwritten
 - [ ] After publishing, verify the live post per action-items §8.
 
 ## 8. Post-publish (within 24 hours)
@@ -139,7 +139,7 @@ WordPress has no author-map file to reconcile (unlike the Astro adapter's option
 - [ ] Check featured image Open Graph preview: `https://www.opengraph.xyz/?url=https%3A%2F%2Folgapak.com%2Fdigital-vs-paper-notes`
 - [ ] Check mobile rendering at a narrow viewport
 - [ ] Validate the JSON-LD FAQ schema at `https://search.google.com/test/rich-results?url=https%3A%2F%2Folgapak.com%2Fdigital-vs-paper-notes`
-- [ ] Confirm the 4 inbound links from §4b are live on their published posts
+- [x] Confirm the 4 inbound links from §4b are live on their published posts — done at Gate 2 finalize 2026-08-26: all four LIVE WP posts (2075, 2114, 2102, 2092) updated via REST, HTTP 200 each, re-fetch confirms exactly one `/digital-vs-paper-notes` anchor per post
 
 ## 9. Trigger Phase 5 repurpose (when ready)
 
