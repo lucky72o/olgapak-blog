@@ -2,7 +2,7 @@
 slug: digital-vs-paper-notes
 target_keyword: digital vs paper notes
 created: 2026-08-05 13:37
-last_updated: 2026-08-18 22:53
+last_updated: 2026-08-26 12:40
 current_stage: complete
 current_owner: blog-post-workflow
 status: complete
@@ -298,3 +298,40 @@ Console-gated (autopilot). Approval is data: the console writes `approval.json`;
   source supports and prefer primary sources (journal/university/.gov) over the
   pop-science secondary coverage that dominates this SERP.
 - Stage 4b.5 WordPress side effects completed: 2026-08-18 22:53 — 5 media uploaded (2182-2186), WP draft 2187 created (status draft), pr-monitor.json written
+- Gate 2 finalize entered: 2026-08-26 (console-merge path — PR #16 already MERGED on origin at
+  2026-08-26T11:28:14Z, `approval.json` present, no monitor cron ever created so step 1's
+  `CronDelete` is a no-op). Adapter §On Gate 2 approval step 1: `GET posts/2187?_fields=status`
+  returned `publish` — **external-publish detected**, the human published from wp-admin before
+  finalize ran. Per the adapter this SKIPS the final content re-sync entirely; the live post is
+  authoritative and must not be overwritten with the staged markdown snapshot.
+- **Live inbound links, write-ahead ownership records (adapter §Live inbound-link application,
+  `publish.wordpress.apply_inbound_links_live: true` AND post is `publish` → the pass runs).**
+  All four outline rows resolved to live WP posts and all four failed the idempotency check
+  (0 existing `href="(https://olgapak.com)?/digital-vs-paper-notes/?"` matches), so all four
+  are planned inserts. Root-relative, no trailing slash, per this blog's permalink convention:
+  - live inbound link planned: `cornell-note-taking-method` (wp id 2075) -> this post
+  - live inbound link planned: `mind-mapping-note-taking-method` (wp id 2114) -> this post
+  - live inbound link planned: `note-taking-methods` (wp id 2102) -> this post
+  - live inbound link planned: `best-notebooks-for-note-taking` (wp id 2092) -> this post
+- **Live inbound links, applied + verified: 2026-08-26.** All four POSTs returned HTTP 200 and a
+  re-fetch confirms exactly one `/digital-vs-paper-notes` anchor each, `status` still `publish`.
+  Every diff was link-only (single-occurrence anchor span, byte delta == inserted sentence):
+  - live inbound link applied: `cornell-note-taking-method` (wp id 2075) -> this post, anchor
+    "digital vs paper notes" in its `Paper or screen?` paragraph (+140 bytes);
+    before: `...boringly practical: use whichever one you'll actually stick with.</p>`;
+    after: `...actually stick with. If you want the longer version, I dug into what the studies on <a href="/digital-vs-paper-notes">digital vs paper notes</a> actually found.</p>`
+  - live inbound link applied: `mind-mapping-note-taking-method` (wp id 2114) -> this post, anchor
+    "whether to go digital or stay on paper" in its `Paper vs. Digital Mind Maps` paragraph (+159 bytes);
+    before: `...paper or an app. Honestly, I use both, for different reasons.</p>`;
+    after: `...for different reasons. The same question comes up for notes in general, and I worked through <a href="/digital-vs-paper-notes">whether to go digital or stay on paper</a> separately.</p>`
+  - live inbound link applied: `note-taking-methods` (wp id 2102) -> this post, anchor
+    "choosing between digital and paper notes" in its handwriting-or-typing paragraph (+151 bytes);
+    before: `...handwrite for anything you need to truly understand.</p>`;
+    after: `...truly understand. If you're weighing the two more seriously, I wrote a full breakdown of <a href="/digital-vs-paper-notes">choosing between digital and paper notes</a>.</p>`
+  - live inbound link applied: `best-notebooks-for-note-taking` (wp id 2092) -> this post, anchor
+    "digital vs paper notes" in its `Best reusable and digital notebooks` paragraph (+172 bytes);
+    before: `...these two are worth knowing. If your real goal is capturing meetings automatically,`;
+    after: `...these two are worth knowing. And if you're still on the fence about the medium itself, my <a href="/digital-vs-paper-notes">digital vs paper notes</a> breakdown covers what the research actually says. If your real goal is capturing meetings automatically,`
+  These mirror the same four links already applied to the local markdown at Stage 4b.5; the live
+  back-catalogue needed them separately because it is not sourced from `content/blog/`.
+- Gate 2 approved: 2026-08-26 11:28 (console operator, `approval.json`), Finalize completed: 2026-08-26 12:40
