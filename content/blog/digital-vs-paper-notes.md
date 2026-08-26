@@ -122,7 +122,7 @@ A page also can't show you a notification. If you take notes on a laptop or a ta
 
 That semester of switching taught me the same thing without the citation. My typed lecture notes were fuller than my handwritten ones and I remembered less of what was in them, partly because a browser tab is always one keystroke away and no lecture is ever quite as gripping as whatever is inside it.
 
-Paper also can't autocomplete, sync-conflict, run out of battery, or need an app update ten minutes before a seminar. It just opens.
+Paper also can't autocomplete, sync-conflict, run out of battery, or need an app update ten minutes before a seminar. It just opens. That's also why [a paper planning system like a bullet journal](/bullet-journal-for-beginners) survives a week that goes sideways: there's nothing to re-sync, only a page to turn.
 
 What does paper still do better?
 
