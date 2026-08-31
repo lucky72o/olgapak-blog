@@ -1,0 +1,97 @@
+{
+  "query": "ipad note taking",
+  "searchUrl": "https://x.com/search?q=ipad%20note%20taking&f=top",
+  "searchedAt": "2026-08-19T02:09:36.136Z",
+  "results": [
+    {
+      "rank": 1,
+      "url": "https://x.com/jamescoder12/status/2087549656813486538",
+      "author": "James",
+      "handle": "jamescoder12",
+      "text": "85% of iPad owners use it for 3 things: YouTube, Netflix, and casual browsing.\n\nThat's a $450-1,300 device with window tiling that runs 4 apps simultaneously, a document\nscanner built into the Files app, Apple Pencil handwriting that converts to typed text in real\ntime, a",
+      "replies": 29,
+      "reposts": 40,
+      "likes": 87
+    },
+    {
+      "rank": 2,
+      "url": "https://x.com/googlegemma/status/2089732037393657863",
+      "author": "Google Gemma",
+      "handle": "googlegemma",
+      "text": "What if your notebook could write back \n\nCheck out this interactive journal running locally on an iPad. Powered by Gemma and Apple MLX, it features real-time text, dynamic visuals, and audio, all processed at the edge.",
+      "replies": 12,
+      "reposts": 18,
+      "likes": 328
+    },
+    {
+      "rank": 3,
+      "url": "https://x.com/andres_vidoza/status/1972300779114611060",
+      "author": "Andres Vidoza",
+      "handle": "andres_vidoza",
+      "text": "iPad for Note-Taking in 2025 (Ex-Engineering Student)",
+      "replies": 63,
+      "reposts": 284,
+      "likes": 38
+    },
+    {
+      "rank": 4,
+      "url": "https://x.com/KyleMorgenstein/status/1830668590938472749",
+      "author": "Kyle",
+      "handle": "KyleMorgenstein",
+      "text": "Anyways, if anyone has iPad note taking app recommendations let me have ‘em. I don’t mind paying for a good product, but only once. None of this subscription BS.",
+      "replies": 7,
+      "reposts": 0,
+      "likes": 15
+    },
+    {
+      "rank": 5,
+      "url": "https://x.com/manthanguptaa/status/1778019825283215672",
+      "author": "Manthan Gupta",
+      "handle": "manthanguptaa",
+      "text": "You buy an iPad for better note-taking ability but then you get disappointed with your handwriting because it doesn't match the aesthetics you had in your head. So now your iPad is in some corner collecting dust",
+      "replies": 54,
+      "reposts": 49,
+      "likes": 718
+    },
+    {
+      "rank": 6,
+      "url": "https://x.com/arvidvanheymann/status/1972667579052261618",
+      "author": "Arvid",
+      "handle": "arvidvanheymann",
+      "text": "Using an iPad for note taking was one of the best decisions I ever made in med school",
+      "replies": 3,
+      "reposts": 19,
+      "likes": 58
+    },
+    {
+      "rank": 7,
+      "url": "https://x.com/antlerposter/status/2089730464873369611",
+      "author": "",
+      "handle": "antlerposter",
+      "text": "for some reason, my professor for my met instruments class banned the use of tablets to take notes. i didn't realize this and used my ipad for notes yesterday, and at the end of class he pointed it out to me and said it was because \"a past student spent too long making their",
+      "replies": 0,
+      "reposts": 0,
+      "likes": 12
+    },
+    {
+      "rank": 8,
+      "url": "https://x.com/ImranWebsites/status/2088627039368524015",
+      "author": "Imran Siddiq - YouTube | Websites | Web Squadron",
+      "handle": "ImranWebsites",
+      "text": "Just checked my 'Devices-to-take-list' for #WordCampUS - and it's a lot!\n\n1 x Extendable Tripod\n1 x iPhone 17 Pro with the Blackmagic Camera App\n1 x iPhone 17 Moment Variable ND Filter\n1 x iPad with the Blackmagic Camera App (for remote control)\n1 x iPad Keyboard \n1 x Remarkable",
+      "replies": 2,
+      "reposts": 0,
+      "likes": 5
+    },
+    {
+      "rank": 9,
+      "url": "https://x.com/theaaron/status/2088685793451892798",
+      "author": "Aaron Makelky",
+      "handle": "theaaron",
+      "text": "another reason to not let your SaaS app own your data:\n\n\n@WisprFlow\n has an amazing notetaker but you can’t access your meeting notes on mobile and lose them if you cancel\n\nhere’s what I do to fix this: \n\n1. Connect Wispr to your coding agent via MCP/plugin\n\n2. Set up a meeting",
+      "replies": 5,
+      "reposts": 1,
+      "likes": 8
+    }
+  ]
+}
