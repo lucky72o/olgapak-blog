@@ -2,7 +2,7 @@
 slug: how-to-take-notes-on-ipad
 target_keyword: how to take notes on ipad
 created: 2026-08-19 03:03
-last_updated: 2026-08-19 04:33
+last_updated: 2026-08-31 14:53
 current_stage: complete
 current_owner: blog-post-workflow
 status: complete
@@ -180,10 +180,10 @@ Mechanical grep of draft markers + fill action-items template. One checkbox per 
 Editor presents Gate 2 banner (the only human gate; plan approval is an automated Stage 1c.5 review). On approve, runs the finalize sequence (adapter-specific, per `adapters/publish/<adapter>.md`): moves/publishes the draft to `{content_dir}/<slug>.md` (or the WordPress equivalent); creates the asset folder; archives `{drafts_dir}/<slug>/` → `{drafts_dir}/_archive/<slug>/`.
 
 - [x] Gate 2 presented — console-gated: the console dashboard IS the banner surface (PR #17 diff + WP draft preview https://olgapak.com/wp-admin/post.php?post=2193&action=edit). No CronCreate monitor was created and no typed-input block was taken, per console-contract.md §Gate 2 under the console.
-- [ ] Human approved
+- [x] Human approved — console Gate 2 approval recorded in `approval.json` (operator, mode `now`, 2026-08-31T13:50:13Z); PR #17 merged to `main` at 2026-08-31T13:50:23Z
 - [x] draft staged to `content/blog/how-to-take-notes-on-ipad.md` (commit ec0aca2) AND to its WordPress equivalent, draft post 2193 — `status: draft`, never published by the workflow
-- [ ] asset folder created at `{assets_dir}/<slug>/` (with images.md as README.md)
-- [ ] `{drafts_dir}/<slug>/` archived to `{drafts_dir}/_archive/<slug>/`
+- [x] asset folder created at `blog-ops/assets/how-to-take-notes-on-ipad/` (5 rendered PNGs; `images.md` copied in as `README.md`; the `.staged-by-blog-workflow` ownership sentinel removed at finalize)
+- [x] `blog-ops/drafts/how-to-take-notes-on-ipad/` archived to `blog-ops/drafts/_archive/how-to-take-notes-on-ipad/`
 
 **End state:** `status=complete`, `current_stage=complete`. Post lives in `{content_dir}` (or the configured WordPress site); the human works through archived `action-items.md` before publishing per the configured adapter.
 
@@ -211,6 +211,7 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 - Plan review verdict: request_revisions (iteration 1), external-link count 7->5 + body H2s 8->7, 2026-08-19 03:29
 - Plan review verdict: approve (iteration 2, ceiling), all fixes confirmed landed, 2026-08-19 03:31
 - Gate 2 opened: 2026-08-19 04:33 (console-gated; awaiting operator approval via the console dashboard, which writes approval.json)
+- Gate 2 approved: 2026-08-31 14:50 (console browser Approve -> approval.json; the console then merged PR #17 out-of-band at 14:50:23 BST, so this resume ran the already-merged-with-approval finalize path: bookkeeping only, no monitor, no cron, no merge)
 
 ## Stage transition log
 
@@ -248,6 +249,9 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 - current_stage deliberately left at `preview`: staging is not complete until the side effects run, and `preview` + no pr-monitor.json is exactly the state that routes a resume back into Step 14.5.
 - Stage 4b.5 staging SIDE EFFECTS completed (autopilot-cont): 2026-08-19 04:33. WordPress auth probe passed on its single attempt. 5 media uploaded (ids 2188-2192; `featured.png` landed as `featured-5.png`, WordPress's own duplicate-slug renaming, recorded by id + sha256, never re-derived from a slug lookup). Gutenberg draft created via the PRIMARY `md-to-gutenberg.py` path with the Kadence TOC block after the intro (no classic-block fallback): WP post id **2193**, `status: draft`, categories [12, 9] (Productivity + EdTech), tags [14, 26, 15, 30], `featured_media` 2188. PR **#17** opened: https://github.com/lucky72o/olgapak-blog/pull/17. `pr-monitor.json` written with `mode: pr`, `status: open`.
 - Gate 2 opened: 2026-08-19 04:33 (console-gated; no CronCreate monitor, no typed-input block, approval requires the console's `approval.json`).
+
+- Finalize completed: 2026-08-31 14:53 (console-merge path). No CronDelete needed (console-gated run never created a monitor cron). Archive already shipped on the branch and reached `main` inside the PR #17 squash; this session set `pr-monitor.json` `status: done`, ticked the three residual Stage 4c items, wrote the asset-folder `README.md`, removed the ownership sentinel, and moved the source draft dir over the archive.
+- WordPress post 2193 remains `status: draft`. Going live is a manual wp-admin step after the Rank Math focus keyword, per action-items.md sections 6-7. The workflow never publishes.
 
 ## Notes
 
