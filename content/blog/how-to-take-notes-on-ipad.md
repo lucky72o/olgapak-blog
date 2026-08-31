@@ -1,6 +1,6 @@
 ---
 title: "How to Take Notes on an iPad: A Setup That Actually Sticks"
-date: 2026-08-19
+date: 2026-08-31
 excerpt: "Taking notes on an iPad only works if the setup does. Here is the app, the gear, and the 5-step routine that survives a real term, plus when paper wins."
 tags:
   - note-taking
