@@ -2,10 +2,10 @@
 slug: screen-free-hobbies
 target_keyword: screen-free hobbies
 created: 2026-09-02 00:07
-last_updated: 2026-09-02 02:00
-current_stage: action_items
+last_updated: 2026-09-02 03:05
+current_stage: complete
 current_owner: blog-post-workflow
-status: active
+status: complete
 gate_pending: none
 # status values: active | paused | complete | abandoned
 # current_stage values: intake | chrome_fetch | serp_select | serp_deep_fetch | reddit_fetch | reddit_select | reddit_deep_fetch | x_fetch | x_select | x_deep_fetch | competitor_check | analyze_research | synthesize_plan | plan_review | outline | draft | review | humanize | resolve_markers | images | generate_images | action_items | preview | finalize | repurpose | complete
@@ -169,9 +169,9 @@ Editor spawns the `image-planner` subagent. Agent reads outline + draft `[IMAGE:
 
 Mechanical grep of draft markers + fill action-items template. One checkbox per [VERIFY:], [EXTERNAL_LINK_NEEDED:], [INTERNAL_LINK_NEEDED:], [IMAGE:] marker, plus pre-filled publish steps.
 
-- [ ] action-items.md written with every section filled
-- [ ] Marker checkbox counts match grep output
-- [ ] Authors-map status confirmed per the publish adapter (`adapters/publish/<adapter>.md` §Action-items sections; e.g. the astro adapter's `authors_map_check` file, if configured)
+- [x] action-items.md written with every section filled
+- [x] Marker checkbox counts match grep output (0 VERIFY / 0 EXTERNAL / 0 INTERNAL / 4 IMAGE)
+- [x] Authors-map status: N/A for the WordPress adapter (no author-map file to reconcile) (`adapters/publish/<adapter>.md` §Action-items sections; e.g. the astro adapter's `authors_map_check` file, if configured)
 
 **Artifacts:** `action-items.md`
 
@@ -179,7 +179,7 @@ Mechanical grep of draft markers + fill action-items template. One checkbox per 
 
 Editor presents Gate 2 banner (the only human gate; plan approval is an automated Stage 1c.5 review). On approve, runs the finalize sequence (adapter-specific, per `adapters/publish/<adapter>.md`): moves/publishes the draft to `{content_dir}/<slug>.md` (or the WordPress equivalent); creates the asset folder; archives `{drafts_dir}/<slug>/` → `{drafts_dir}/_archive/<slug>/`.
 
-- [ ] Gate 2 presented (banner format)
+- [x] Gate 2 presented (console-gated: PR #20 + WP draft 2215 are the review surfaces; the console's Approve button is the gate)
 - [ ] Human approved
 - [ ] draft moved/published to `{content_dir}/<slug>.md` (or the WordPress equivalent)
 - [ ] asset folder created at `{assets_dir}/<slug>/` (with images.md as README.md)
@@ -244,6 +244,11 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 - Stage 4a.5 started: 2026-09-02 01:55 (owner: image-builder)
 - Stage 4a.5 completed: 2026-09-02 02:00, 5 rendered, 0 prompt-pending, 0 screenshot-pending, 0 failed
 - Stage 4b started: 2026-09-02 02:00 (owner: blog-post-workflow)
+- Stage 4b completed: 2026-09-02 02:05, action-items.md written, 0 residual markers
+- Stage 4b.5 staging started: 2026-09-02 02:05
+- Stage 4b.5 FILE LAYOUT completed: 2026-09-02 02:20, committed 7909668 and pushed to origin/blog/screen-free-hobbies. Side effects (PR open / WP draft create / pr-monitor.json) DEFERRED to autopilot-cont per the CONSOLE_VERIFICATION=on handshake.
+- Stage 4b.5 SIDE EFFECTS completed (autopilot-cont): 2026-09-02 03:05. WP auth probe OK (once, not retried); Gutenberg conversion via the primary `md-to-gutenberg.py` path with the Kadence TOC block; 5 media uploaded (ids 2210-2214); WP draft created (post 2215, `status: draft`, category [12], tags [15,34,30], featured_media 2210); `pr-monitor.json` written; PR #20 opened (https://github.com/lucky72o/olgapak-blog/pull/20).
+- Gate 2 opened: 2026-09-02 03:05 (console-gated: no CronCreate monitor, no in-session block; approval requires the console's approval.json).
 
 ## Notes
 
@@ -268,4 +273,8 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
   - inbound link applied by workflow: content/blog/how-to-reduce-screen-time.md
   - inbound link applied by workflow: content/blog/digital-detox-plan.md
   - inbound link applied by workflow: content/blog/how-to-stop-doomscrolling.md
+- **Stage 4b.5 state (2026-09-02 02:20).** `CONSOLE_VERIFICATION=on`, so this run performed the staging FILE LAYOUT only and stopped at `ready_for_verification`. Done: `content/blog/screen-free-hobbies.md` staged, 4 `[IMAGE:]` placeholders resolved to real embeds (all 5 asset files confirmed on disk first), 3 inbound links applied and each verified as a link-only diff, archive snapshot copied to `blog-ops/drafts/_archive/screen-free-hobbies/` in NON-terminal state, commit `7909668` pushed to `origin/blog/screen-free-hobbies`. NOT done, deferred to `autopilot-cont`: `gh pr create`, the WordPress auth probe, the Gutenberg conversion, the media uploads, the WP draft create, and the `pr-monitor.json` write. Resume signal is therefore `current_stage=preview` + staged post present + no `pr-monitor.json`, which routes correctly back into Step 14.5.
+- **`draft: true` is deliberately KEPT in the repo frontmatter.** The `wordpress-rest` adapter defines no `draft_mechanism` frontmatter key (its draft gate is the WordPress post status), and every prior published post in `content/blog/` retains `draft: true`. Do not strip it.
+- **The asset ownership sentinel `.staged-by-blog-workflow` was deliberately NOT deleted, only excluded from `git add`.** The adapter's `rm -f` assumes a separate worktree; here the run executes inside the worktree itself, so deleting it would break the image-builder's ownership guard on any resume. Excluding it achieves the same "never ships" result. (Note: `blog-ops/assets/best-pens-for-note-taking/.staged-by-blog-workflow` DID leak onto main in an earlier post; worth cleaning up separately.)
 - **Trend claims need primary sources.** Fortune's "Gen Z analog hobby boom" line reached us as a tweet, not an article. Any use of it must resolve to the underlying article at Stage 3d and be confirmed to say what is claimed, or be cut.
+- **Stage 4b.5 side effects (autopilot-cont, 2026-09-02 03:05).** Completed everything the file-layout run deferred: WP auth probe (once), Gutenberg conversion (primary `md-to-gutenberg.py` path + Kadence TOC after intro, NOT the classic-block fallback), 5 media uploads with the local `../../blog-ops/assets/...` srcs rewritten to their returned `source_url`s, WP draft post `2215` created `status: draft`, `pr-monitor.json` written, PR #20 opened. Step 6h main-tree cleanup is a deliberate no-op here: the console runs this post inside `.worktrees/blog-screen-free-hobbies`, so the "main tree" and the branch worktree are the same tree, and `rm`ing the staged post would delete it from the branch. The `.staged-by-blog-workflow` sentinel was never committed, so step 6d's intent holds.
