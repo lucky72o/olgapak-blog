@@ -7,7 +7,7 @@
   "base": "main",
   "worktree": ".worktrees/blog-screen-free-hobbies",
   "staging_url": "https://olgapak.com/wp-admin/post.php?post=2215&action=edit",
-  "status": "open",
+  "status": "done",
   "mode": "pr",
   "handled_comment_ids": {
     "issue": [],
