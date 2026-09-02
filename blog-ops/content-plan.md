@@ -28,7 +28,7 @@
 | 17 | bullet-journal-for-beginners | bullet journal for beginners | INFO guide: Bullet Journal for Beginners (setup, ideas & supplies) | | | planned |
 | 18 | ai-study-tools | ai study tools | COMMERCIAL(soft) roundup: 10 Best AI Study Tools for Students in 2026 | | | planned |
 | 19 | gifts-for-students | gifts for students | COMMERCIAL roundup: 20 Best Gifts for Students & Note-Takers (2026) | | | planned |
-| 20 | screen-free-hobbies | screen-free hobbies | INFO listicle: 50 Screen-Free Hobbies to Try This Year | | | planned |
+| 20 | screen-free-hobbies | screen-free hobbies | INFO listicle: 50 Screen-Free Hobbies to Try This Year | | | published |
 | 21 | best-headphones-for-studying | best headphones for studying | COMMERCIAL roundup: Best Noise-Cancelling Headphones for Studying (2026) | | | planned |
 | 22 | rocketbook-review | rocketbook review | REVIEW: Rocketbook — Is the Reusable Notebook Worth It? | | | planned |
 | 23 | aesthetic-stationery | aesthetic stationery | COMMERCIAL roundup: Ultimate Aesthetic Stationery Haul (25 must-haves) | | | planned |
