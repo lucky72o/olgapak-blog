@@ -79,9 +79,9 @@ For the record, Stage 3d did not sit idle. With no markers to chase it verified 
 
 Three rows from the outline. `publish.wordpress.apply_inbound_links_live: true`, but this post is still a WordPress **draft** at Gate 2, so the adapter's `false`/`draft` branch applies: the repo copies are edited at Stage 4b.5 and ship in this PR, and the LIVE WordPress posts need a hand-apply after this post is published (its permalink is stable from the slug either way).
 
-- [ ] `content/blog/how-to-reduce-screen-time.md`, anchor "`screen-free hobbies worth sticking with`" → `/screen-free-hobbies`, in its "Replace, don't just remove" section, beside the existing link to the 75-item filler post. **Strongest fit in the cluster.**
-- [ ] `content/blog/digital-detox-plan.md`, anchor "`screen-free hobbies to fill the gap`" → `/screen-free-hobbies`, where the reset week discusses reclaimed evenings.
-- [ ] `content/blog/how-to-stop-doomscrolling.md`, anchor "`a hobby to put in its place`" → `/screen-free-hobbies`, in the section on replacing the habit rather than resisting it.
+- [x] APPLIED LIVE at Gate 2 finalize (wp id 2181, HTTP 200) — `content/blog/how-to-reduce-screen-time.md`, anchor "`screen-free hobbies worth sticking with`" → `/screen-free-hobbies`, in its "Replace, don't just remove" section, beside the existing link to the 75-item filler post. **Strongest fit in the cluster.**
+- [x] APPLIED LIVE at Gate 2 finalize (wp id 2152, HTTP 200) — `content/blog/digital-detox-plan.md`, anchor "`screen-free hobbies to fill the gap`" → `/screen-free-hobbies`, where the reset week discusses reclaimed evenings.
+- [x] APPLIED LIVE at Gate 2 finalize (wp id 2122, HTTP 200) — `content/blog/how-to-stop-doomscrolling.md`, anchor "`a hobby to put in its place`" → `/screen-free-hobbies`, in the section on replacing the habit rather than resisting it.
 
 Hand-apply each to the live WP post after publishing (auto-sync of prior posts is out of v1 scope):
 
@@ -121,20 +121,20 @@ WordPress has no author-map file to reconcile. Continue to §7.
 - [ ] Open the WordPress draft preview (URL recorded in `pr-monitor.json` as `wp_preview_url` at Stage 4b.5).
 - [ ] Read it once more in the WP admin preview (title, excerpt, featured image already synced by the adapter).
 - [ ] **Focus keyword.** `site-conventions.md` §SEO plugin names **Rank Math**, and records that the focus keyword is **not settable via standard REST**. So this is a manual step: in the WP editor's Rank Math panel, set the focus keyword to exactly `screen-free hobbies` (verbatim, not the title, not a paraphrase). The workflow never attempts this write.
-- [ ] Confirm the category is **Productivity** and the tags are `productivity`, `time management`, `students` (all confirmed-live terms from `blog.md` §Tag taxonomy, no invented tags).
-- [ ] Click **Publish** in WP admin. **This workflow never does that step for you** (`custom-instructions.md` §Publishing: going live is always your manual action).
-- [ ] Merge the review PR so the repo copy matches what went live.
+- [x] Confirmed live via REST on post 2215 (category 12 Productivity; tags 15 productivity, 30 students, 34 time management). Confirm the category is **Productivity** and the tags are `productivity`, `time management`, `students` (all confirmed-live terms from `blog.md` §Tag taxonomy, no invented tags).
+- [x] Published by the operator in WP admin (post 2215, `status: publish`, date 2026-09-02T19:00:50). Click **Publish** in WP admin. **This workflow never does that step for you** (`custom-instructions.md` §Publishing: going live is always your manual action).
+- [x] PR #20 merged on origin at 2026-09-02T19:01:05Z (squash) — the repo copy matches what went live.
 - [ ] After publishing, verify the live post per §8, then hand-apply the three inbound links from §4b.
 
 ## 8. Post-publish (within 24 hours)
 
-- [ ] Verify the live URL: `https://olgapak.com/screen-free-hobbies` (no trailing slash, per `blog.trailing_slash: false`)
+- [x] Verified: HTTP 200, no trailing slash. Live URL: `https://olgapak.com/screen-free-hobbies` (no trailing slash, per `blog.trailing_slash: false`)
 - [ ] Submit URL to Google Search Console → URL Inspection → Request Indexing
 - [ ] Submit URL to Bing IndexNow (via Bing Webmaster Tools or the CLI)
 - [ ] Check featured image Open Graph preview: `https://www.opengraph.xyz/?url=https%3A%2F%2Folgapak.com%2Fscreen-free-hobbies`
 - [ ] Check mobile rendering at a narrow viewport
 - [ ] Validate the JSON-LD FAQ schema (5 questions): `https://search.google.com/test/rich-results?url=https%3A%2F%2Folgapak.com%2Fscreen-free-hobbies`
-- [ ] Update `blog-ops/content-plan.md` row #20 Status from `planned` to `published`, and add the row to `blog-ops/content-calendar-q3-2026.md`. (This is the content-calendar Status column, which is the only thing "mark published" ever means here.)
+- [x] `blog-ops/content-plan.md` row #20 set to `published` (commit 699ecfc on main) and `blog-ops/content-calendar-q3-2026.md` row 20 set to `✅ Published — /screen-free-hobbies` at finalize. NOTE: that calendar's Status-count summary table and its "Published so far" line are stale for the whole quarter (they say 5 while 7 rows are now marked published) — a separate cleanup, not this post's. Update `blog-ops/content-plan.md` row #20 Status from `planned` to `published`, and add the row to `blog-ops/content-calendar-q3-2026.md`. (This is the content-calendar Status column, which is the only thing "mark published" ever means here.)
 
 ## 9. Trigger Phase 5 repurpose (when ready)
 
