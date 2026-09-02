@@ -68,7 +68,7 @@ Before you unlock, take five seconds and ask one question: what do I actually wa
 
 ### 7. Replace, don't just remove
 
-This is the spine of the whole guide. Deleting an app without a replacement simply moves the scroll somewhere else. That is why the most-repeated failure online is deleting Instagram and then scrolling Reddit all day instead. Keep a specific alternative within arm's reach: a paperback or Kindle, an audiobook, a walk, a project you are actually excited about. As one reader put it, "you can't just STOP doomscrolling you have to START projects." Decide on that replacement before you are bored, not in the moment, because a tired brain always reaches for the easiest option. If you need a running list, here are [things to do instead of being on your phone](/things-to-do-instead-of-being-on-your-phone).
+This is the spine of the whole guide. Deleting an app without a replacement simply moves the scroll somewhere else. That is why the most-repeated failure online is deleting Instagram and then scrolling Reddit all day instead. Keep a specific alternative within arm's reach: a paperback or Kindle, an audiobook, a walk, a project you are actually excited about. As one reader put it, "you can't just STOP doomscrolling you have to START projects." Decide on that replacement before you are bored, not in the moment, because a tired brain always reaches for the easiest option. If you need a running list, here are [things to do instead of being on your phone](/things-to-do-instead-of-being-on-your-phone), and if the replacement needs to be bigger than a filler activity, pick [a hobby to put in its place](/screen-free-hobbies) instead.
 
 ### 8. Stand up and move: the 30-second pattern interrupt
 

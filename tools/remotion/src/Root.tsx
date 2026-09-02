@@ -25,6 +25,7 @@ import { HybridWorkflowFlow } from "./HybridWorkflowFlow";
 import { NotesDecisionRule } from "./NotesDecisionRule";
 import { TwoPilesOfScreenTime } from "./TwoPilesOfScreenTime";
 import { InkFamiliesTradeoff } from "./InkFamiliesTradeoff";
+import { CostTierKey } from "./CostTierKey";
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -65,13 +66,18 @@ export const RemotionRoot: React.FC = () => (
     <Still id="SevenDayRampDiagram" component={SevenDayRampDiagram}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="HandwriteOrTypeDecision" component={HandwriteOrTypeDecision}
+      width={CANVAS.width} height={CANVAS.height} />
     <Still id="WhatTheStudyMeasured" component={WhatTheStudyMeasured}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="HybridWorkflowFlow" component={HybridWorkflowFlow}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="NotesDecisionRule" component={NotesDecisionRule}
+      width={CANVAS.width} height={CANVAS.height} />
     <Still id="TwoPilesOfScreenTime" component={TwoPilesOfScreenTime}
+      width={CANVAS.width} height={CANVAS.height} />
     <Still id="InkFamiliesTradeoff" component={InkFamiliesTradeoff}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="CostTierKey" component={CostTierKey}
       width={CANVAS.width} height={CANVAS.height} />
   </>
 );

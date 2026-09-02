@@ -157,7 +157,7 @@ Simple is doing real work in that list. In the same r/nosurf thread, a much more
 
 And the extreme version? One person in r/selfimprovement who spent three months without a smartphone at all ended it by reintroducing one "with strict boundaries and mindful usage." Even the hardest version of this lands on a boundary, not a monastery.
 
-The last piece is where the reclaimed time actually goes. If it goes nowhere in particular, it goes back to the phone, which is why I'd rather you spent ten minutes [planning your week](/how-to-plan-your-week) than another hour on settings.
+The last piece is where the reclaimed time actually goes. If it goes nowhere in particular, it goes back to the phone, which is why I'd rather you spent ten minutes [planning your week](/how-to-plan-your-week) than another hour on settings. If the week after the reset feels emptier than you expected, that's the gap to fill on purpose, and there are [screen-free hobbies to fill the gap](/screen-free-hobbies) with an honest note on what each costs.
 
 ## Does a digital detox actually work? An honest answer
 
