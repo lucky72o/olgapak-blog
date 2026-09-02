@@ -139,7 +139,7 @@ The [Rocketbook](https://www.amazon.com/dp/B0DP3HLY4J) is the clever one. You wr
 
 ### reMarkable Paper Pro (or Kindle Scribe)
 
-If you're genuinely torn between paper and a screen, an e-ink tablet like the [reMarkable Paper Pro](https://www.amazon.com/dp/B0DGBDR2PM) (or Amazon's Kindle Scribe) is the honest middle ground. The writing feels close to real paper, and everything is searchable and syncs across your devices. Best for the reader actually weighing "notebook or iPad?" The trade-offs are real, though: it's a serious investment next to a paper notebook, and some features, like handwriting search, sit behind a subscription. This is a considered purchase, not an impulse buy. Premium price tier: $$$.
+If you're genuinely torn between paper and a screen, an e-ink tablet like the [reMarkable Paper Pro](https://www.amazon.com/dp/B0DGBDR2PM) (or Amazon's Kindle Scribe) is the honest middle ground. The writing feels close to real paper, and everything is searchable and syncs across your devices. Best for the reader actually weighing "notebook or iPad?" (If that is you, I have a full guide to [taking notes on an iPad](/how-to-take-notes-on-ipad), including when paper still wins.) The trade-offs are real, though: it's a serious investment next to a paper notebook, and some features, like handwriting search, sit behind a subscription. This is a considered purchase, not an impulse buy. Premium price tier: $$$.
 
 ## Best premium notebooks for journaling and keeping
 

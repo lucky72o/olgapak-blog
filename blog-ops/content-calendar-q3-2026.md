@@ -77,7 +77,7 @@ _Published so far (5): #1 Cornell (`/cornell-note-taking-method`), #4 Note-Takin
 | 17 | 📋 Planned | Wed Aug 12 | Bullet Journal for Beginners: Setup, Ideas & Supplies | A | INFO | bullet journal for beginners | dotted notebooks, pens, stencils |
 | 18 | 📋 Planned | Fri Aug 14 | 10 Best AI Study Tools for Students in 2026 | D | COMMERCIAL(soft) | ai study tools | (subscriptions; some hardware) |
 | 19 | 📋 Planned | Mon Aug 17 | 20 Best Gifts for Students & Note-Takers (2026) | E | COMMERCIAL | gifts for students | cross-category gift guide |
-| 20 | 📋 Planned | Wed Aug 19 | 50 Screen-Free Hobbies to Try This Year | B | INFO | screen-free hobbies | hobby/craft kits, books |
+| 20 | ✅ Published — /screen-free-hobbies | Wed Aug 19 | 51 Screen-Free Hobbies to Try When Scrolling Gets Old | B | INFO | screen-free hobbies | hobby/craft kits, books |
 | 21 | 📋 Planned | Fri Aug 21 | Best Noise-Cancelling Headphones for Studying & Focus (2026) | F | COMMERCIAL | best headphones for studying | Sony, Bose, Anker |
 | 22 | 📋 Planned | Mon Aug 24 | Rocketbook Review: Is the Reusable Notebook Worth It? | A | REVIEW | rocketbook review | Rocketbook + Pilot FriXion pens |
 | 23 | 📋 Planned | Wed Aug 26 | The Ultimate Aesthetic Stationery Haul: 25 Must-Haves | E | COMMERCIAL | aesthetic stationery | washi tape, mildliners, notebooks |

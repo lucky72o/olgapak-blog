@@ -1,0 +1,56 @@
+{
+  "slug": "screen-free-hobbies",
+  "repo": "lucky72o/olgapak-blog",
+  "pr_number": 20,
+  "pr_url": "https://github.com/lucky72o/olgapak-blog/pull/20",
+  "branch": "blog/screen-free-hobbies",
+  "base": "main",
+  "worktree": ".worktrees/blog-screen-free-hobbies",
+  "staging_url": "https://olgapak.com/wp-admin/post.php?post=2215&action=edit",
+  "status": "done",
+  "mode": "pr",
+  "handled_comment_ids": {
+    "issue": [],
+    "inline": [],
+    "review": []
+  },
+  "created_at": "2026-09-02T01:00:46Z",
+  "last_poll": "",
+  "poll_interval_minutes": 15,
+  "idle_polls": 0,
+  "wp_post_id": 2215,
+  "wp_media_ids": [
+    {
+      "file": "featured.png",
+      "id": 2210,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/featured.png",
+      "sha256": "b1744942c75699feee59612b41c89469b38c2726b798a51f80b5e4a820a79e7b"
+    },
+    {
+      "file": "cost-tier-key.png",
+      "id": 2211,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/cost-tier-key.png",
+      "sha256": "4fa756bdc18b6f56c2a02c9e118fba9739d97a4299d1c20623e2ae1bc3d76478"
+    },
+    {
+      "file": "hands-busy-in-progress.png",
+      "id": 2212,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/hands-busy-in-progress.png",
+      "sha256": "2710b9e35097dd8c47d26bde77a44d0c164f04e2add13996e8bf7653af558f2b"
+    },
+    {
+      "file": "one-hobby-one-slot.png",
+      "id": 2213,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/one-hobby-one-slot.png",
+      "sha256": "6335a3d8300154c572d0980b07e794b7be7872da8dd356860a8242cd492082ed"
+    },
+    {
+      "file": "outdoors-at-dusk.png",
+      "id": 2214,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/outdoors-at-dusk.png",
+      "sha256": "7ae823d4c0709b0e5a652744c886fba8645b2a4e51f5966155d617b83b5911f2"
+    }
+  ],
+  "wp_preview_url": "https://olgapak.com/wp-admin/post.php?post=2215&action=edit",
+  "wp_upload": "ok"
+}
