@@ -1,6 +1,6 @@
 ---
 title: "Bullet Journal for Beginners: You Don't Need Art Skills"
-date: 2026-08-26
+date: 2026-09-05
 excerpt: "You don't need art skills to start a bullet journal. Here's the honest beginner setup: a notebook, a pen, four pages, and what the method is bad at."
 tags:
   - productivity
