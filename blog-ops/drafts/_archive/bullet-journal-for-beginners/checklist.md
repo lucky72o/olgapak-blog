@@ -3,10 +3,10 @@ slug: bullet-journal-for-beginners
 target_keyword: bullet journal for beginners
 created: 2026-08-26 12:30
 last_updated: 2026-08-26 14:35
-current_stage: finalize
+current_stage: complete
 current_owner: blog-post-workflow
-status: active
-gate_pending: gate_2_final
+status: complete
+gate_pending: none
 # status values: active | paused | complete | abandoned
 # current_stage values: intake | chrome_fetch | serp_select | serp_deep_fetch | reddit_fetch | reddit_select | reddit_deep_fetch | x_fetch | x_select | x_deep_fetch | competitor_check | analyze_research | synthesize_plan | plan_review | outline | draft | review | humanize | resolve_markers | images | generate_images | action_items | preview | finalize | repurpose | complete
 # current_owner values: human | blog-post-workflow | blog-researcher | blog-writer | blog-reviewer | blog-humanizer | image-planner | image-builder | plan-reviewer
