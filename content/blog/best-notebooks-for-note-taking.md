@@ -14,7 +14,7 @@ In a year when every productivity app wants to be your "second brain," the most 
 
 I take a lot of notes. Pivoting careers, teaching myself to blog, sketching out AI tools by hand before I ever wrote a line of code: it all started in notebooks. I've also bought (and been quietly let down by) enough of them to know which ones survive a chaotic bag and which fall apart by week three.
 
-If you already have a system, say the [Cornell method](/cornell-note-taking-method), the right ruled notebook makes it far easier to stick with.
+If you already have a system, say the [Cornell method](/cornell-note-taking-method), the right ruled notebook makes it far easier to stick with. And if you're buying one without a job in mind yet, that's usually why it ends up half-used: give it one, even something as simple as [starting a bullet journal in it](/bullet-journal-for-beginners), and the notebook actually gets opened.
 
 This guide ranks 15 notebooks by what you'll actually use them for: school, work, budget, reusable, and premium, with a 60-second paper primer so you can pick with confidence. No hype, just honest trade-offs.
 

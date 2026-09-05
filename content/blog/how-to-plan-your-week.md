@@ -127,7 +127,7 @@ You don't need a new app for this. You need three things you probably already ow
 - One list for your water (the flexible tasks).
 - One home for the plan, so you're not rebuilding it from scratch every week.
 
-That's really it. The tools matter far less than picking a small set and sticking with them.
+That's really it. The tools matter far less than picking a small set and sticking with them. If you'd rather run the whole thing on paper, [starting a bullet journal](/bullet-journal-for-beginners) gives you the same three pieces in one notebook.
 
 The one place a tool earns its keep is admin. Email, messages, and small replies leak across the whole week and quietly eat the slack you fought to protect. So I batch them into a single block and clear it fast. When that block is drafting replies, my free [Email Generator](/ai-tools) turns a one-line prompt into a first draft, so I'm editing instead of staring at a blank page. Contain the admin, and the rest of the plan gets room to breathe.
 

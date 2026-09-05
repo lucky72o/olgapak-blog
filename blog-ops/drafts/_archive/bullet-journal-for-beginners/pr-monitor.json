@@ -1,0 +1,56 @@
+{
+  "slug": "bullet-journal-for-beginners",
+  "repo": "lucky72o/olgapak-blog",
+  "pr_number": 19,
+  "pr_url": "https://github.com/lucky72o/olgapak-blog/pull/19",
+  "branch": "blog/bullet-journal-for-beginners",
+  "base": "main",
+  "worktree": ".worktrees/blog-bullet-journal-for-beginners",
+  "staging_url": "",
+  "status": "open",
+  "mode": "pr",
+  "handled_comment_ids": {
+    "issue": [],
+    "inline": [],
+    "review": []
+  },
+  "created_at": "2026-08-26T13:25:17Z",
+  "last_poll": "",
+  "poll_interval_minutes": 15,
+  "idle_polls": 0,
+  "wp_post_id": 2208,
+  "wp_media_ids": [
+    {
+      "file": "daily-log-page-in-use.png",
+      "id": 2203,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/daily-log-page-in-use.png",
+      "sha256": "ad73ae815103a09997ec3ca5d7cbdf4a893d35866cc0de29b99393945f026728"
+    },
+    {
+      "file": "featured.png",
+      "id": 2204,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/featured-6.png",
+      "sha256": "71fa3a4b68b4ddd8c2d4ff73027d59188e0a8b96598936a7942168050c010d97"
+    },
+    {
+      "file": "four-core-pages-map.png",
+      "id": 2205,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/four-core-pages-map.png",
+      "sha256": "26153e3d6a90ab6fcf5d0b5b1eab7c74335a81ea12dd3dc70671bc4452ea4c1d"
+    },
+    {
+      "file": "notebook-plus-calendar-hybrid.png",
+      "id": 2206,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/notebook-plus-calendar-hybrid.png",
+      "sha256": "351ac80835900c9c5ac2a72bfd79ee565328aebe217b4333bed56b36337140b1"
+    },
+    {
+      "file": "scrolling-spreads-notebook-ignored.png",
+      "id": 2207,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/08/scrolling-spreads-notebook-ignored.png",
+      "sha256": "09822b595fd8c7238e7a95394d19e745492948cdb75f945e9038538823246d5e"
+    }
+  ],
+  "wp_preview_url": "https://olgapak.com/wp-admin/post.php?post=2208&action=edit",
+  "wp_upload": "ok"
+}

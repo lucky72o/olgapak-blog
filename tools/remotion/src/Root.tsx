@@ -25,6 +25,7 @@ import { HybridWorkflowFlow } from "./HybridWorkflowFlow";
 import { NotesDecisionRule } from "./NotesDecisionRule";
 import { TwoPilesOfScreenTime } from "./TwoPilesOfScreenTime";
 import { InkFamiliesTradeoff } from "./InkFamiliesTradeoff";
+import { FourCorePagesMap } from "./FourCorePagesMap";
 import { CostTierKey } from "./CostTierKey";
 
 export const RemotionRoot: React.FC = () => (
@@ -77,6 +78,7 @@ export const RemotionRoot: React.FC = () => (
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="InkFamiliesTradeoff" component={InkFamiliesTradeoff}
       width={CANVAS.width} height={CANVAS.height} />
+    <Still id="FourCorePagesMap" component={FourCorePagesMap}
     <Still id="CostTierKey" component={CostTierKey}
       width={CANVAS.width} height={CANVAS.height} />
   </>
