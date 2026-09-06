@@ -3,7 +3,7 @@ slug: best-highlighters-for-studying
 target_keyword: best highlighters for studying
 created: 2026-09-05 13:14
 last_updated: 2026-09-06T22:29Z
-current_stage: action_items
+current_stage: preview
 current_owner: blog-post-workflow
 status: active
 gate_pending: none
