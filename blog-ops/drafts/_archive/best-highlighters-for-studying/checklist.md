@@ -169,9 +169,9 @@ Editor spawns the `image-planner` subagent. Agent reads outline + draft `[IMAGE:
 
 Mechanical grep of draft markers + fill action-items template. One checkbox per [VERIFY:], [EXTERNAL_LINK_NEEDED:], [INTERNAL_LINK_NEEDED:], [IMAGE:] marker, plus pre-filled publish steps.
 
-- [ ] action-items.md written with every section filled
-- [ ] Marker checkbox counts match grep output
-- [ ] Authors-map status confirmed per the publish adapter (`adapters/publish/<adapter>.md` §Action-items sections; e.g. the astro adapter's `authors_map_check` file, if configured)
+- [x] action-items.md written with every section filled
+- [x] Marker checkbox counts match grep output
+- [x] Authors-map status confirmed per the publish adapter (`adapters/publish/<adapter>.md` §Action-items sections; e.g. the astro adapter's `authors_map_check` file, if configured)
 
 **Artifacts:** `action-items.md`
 
@@ -250,6 +250,17 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 - Stage 4a.5 started: 2026-09-06T22:14Z (owner: image-builder, 5 file-producing slots)
 - Stage 4a.5 completed: 2026-09-06T22:24Z, 5 rendered, 0 prompt-pending, 0 screenshot-pending, 0 failed. Builder also fixed a pre-existing JSX syntax error in tools/remotion/src/Root.tsx (the FourCorePagesMap Still from the bullet-journal post was never closed, which would have broken EVERY remotion render); that fix + the 2 new composition sources ship with this post's PR. The builder's symlinked tools/remotion/node_modules was REMOVED by the editor after rendering: .gitignore's `node_modules/` pattern does not match a symlink, so it showed as untracked and could have been committed as an absolute-path symlink into the main checkout.
 - Stage 4b started: 2026-09-06T22:24Z (owner: blog-post-workflow)
+- Stage 4b completed: 2026-09-06T22:29Z, action-items.md written; markers: 0 VERIFY / 0 EXTERNAL / 0 INTERNAL / 4 IMAGE. §6 is N/A (WordPress has no author map). §7 carries the mandatory manual Rank Math focus-keyword item ("best highlighters for studying", not REST-settable per site-conventions.md §SEO plugin).
+- Stage 4b.5 staging (FILE LAYOUT ONLY) completed: 2026-09-06T22:29Z. CONSOLE_VERIFICATION=on, so per console-contract.md §Verification handshake the PR-open / WP-draft-create / pr-monitor.json write are DEFERRED to autopilot-cont; the commit + push ARE part of the file layout and did run.
+  - cwd is already the post's worktree on branch blog/best-highlighters-for-studying, so astro-git-pr.md §Staging steps 6a-6d collapse: no nested worktree is created, and no main-tree cleanup (step 6h) applies because this tree IS the branch tree.
+  - Slug-collision guard PASSED: content/blog/best-highlighters-for-studying.md does not exist on origin/main (checked after `git fetch origin main`).
+  - Rebase check (step 6b2): branch was exactly at origin/main and `origin/main..HEAD` was empty before the commit, so no rebase was needed and no foreign commits ride along.
+  - 4 [IMAGE:] placeholders resolved to real embeds (all 4 renders exist on disk; zero 'Image pending' notes). Featured cover: featured.png verified present but NOT injected into frontmatter, because the wordpress frontmatter template defines no cover/heroImage field; it attaches as featured_media at the deferred WP media upload.
+  - `draft: true` KEPT in the repo frontmatter, deliberately: for wordpress-rest that line is a documentation-only guard (the WP `status` field does the real gating) and the template's own quality gate requires it present. Matches every existing post in content/blog/.
+  - 3 inbound links applied, all three link-only diffs verified (1 insertion + 1 deletion each): best-pens-for-note-taking, best-notebooks-for-note-taking, cornell-note-taking-method. All three were clean and unlinked before the edit.
+  - Commit 28143ea, 53 files, pushed to origin/blog/best-highlighters-for-studying. Includes the post, 5 assets, this draft's non-terminal archive snapshot, the featured-log rotation entry, the 3 inbound-link edits, and the Remotion sources (2 new compositions + the Root.tsx registration and syntax fix).
+  - Asset ownership sentinel excluded from the commit via a `:!` pathspec rather than deleted, since cwd is both the working tree and the branch tree; tools/remotion/node_modules confirmed absent from the staged set.
+- Stage 4b.5 terminal: `ready_for_verification` emitted; current_stage stays `preview` so the console's autopilot-cont re-enters Step 14.5 for the deferred side effects (PR open, WP draft create, pr-monitor.json).
 
 - <stage> started: <timestamp> (owner: <agent>)
 - <stage> completed: <timestamp>
