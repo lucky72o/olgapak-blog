@@ -2,11 +2,11 @@
 slug: best-highlighters-for-studying
 target_keyword: best highlighters for studying
 created: 2026-09-05 13:14
-last_updated: 2026-09-06T22:29Z
-current_stage: preview
+last_updated: 2026-09-06T22:34Z
+current_stage: finalize
 current_owner: blog-post-workflow
 status: active
-gate_pending: none
+gate_pending: gate_2_final
 # status values: active | paused | complete | abandoned
 # current_stage values: intake | chrome_fetch | serp_select | serp_deep_fetch | reddit_fetch | reddit_select | reddit_deep_fetch | x_fetch | x_select | x_deep_fetch | competitor_check | analyze_research | synthesize_plan | plan_review | outline | draft | review | humanize | resolve_markers | images | generate_images | action_items | preview | finalize | repurpose | complete
 # current_owner values: human | blog-post-workflow | blog-researcher | blog-writer | blog-reviewer | blog-humanizer | image-planner | image-builder | plan-reviewer
@@ -210,7 +210,7 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 - Plan review verdict: request_revisions (iteration 1), fallback hook + fallback title added to plan.md, archived as plan-review-v1.md, 2026-09-05T14:15Z
 - Plan review verdict: approve (iteration 2), minor notes applied, 2026-09-05T14:22Z
 - Plan review verdict: <approve | request_revisions | reject>, <brief note>, <timestamp>
-- Gate 2 opened: ...
+- Gate 2 opened: 2026-09-06T22:34Z (PR #22 + WP draft 2235 both live; awaiting console approval)
 
 ## Stage transition log
 
@@ -261,6 +261,17 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
   - Commit 28143ea, 53 files, pushed to origin/blog/best-highlighters-for-studying. Includes the post, 5 assets, this draft's non-terminal archive snapshot, the featured-log rotation entry, the 3 inbound-link edits, and the Remotion sources (2 new compositions + the Root.tsx registration and syntax fix).
   - Asset ownership sentinel excluded from the commit via a `:!` pathspec rather than deleted, since cwd is both the working tree and the branch tree; tools/remotion/node_modules confirmed absent from the staged set.
 - Stage 4b.5 terminal: `ready_for_verification` emitted; current_stage stays `preview` so the console's autopilot-cont re-enters Step 14.5 for the deferred side effects (PR open, WP draft create, pr-monitor.json).
+
+- Stage 4b.5 staging SIDE EFFECTS completed: 2026-09-06T22:34Z (autopilot-cont, after verification PASS).
+  - WP auth probe: OK (one probe only, never retried) — authenticated as user 1, Olga Pak.
+  - Gutenberg conversion via md-to-gutenberg.py PRIMARY path (no classic-block fallback): 71 wp:paragraph, 23 wp:heading, 5 wp:list + 19 wp:list-item, 4 wp:image, 1 wp:table, plus the Kadence dynamic TOC injected after-intro via --extra-blocks from site-conventions.md §Table of contents. Frontmatter stripped by the script's defensive strip (expected warning).
+  - 5 media uploaded, IDs captured from each upload RESPONSE (never re-derived by slug lookup): featured.png -> 2230 (WordPress uniquified its slug to featured-2.png, exactly the collision the adapter warns about), highlight-first-write-second.png -> 2231, highlighter-tip-shapes-neon-vs-pastel.png -> 2232, study-desk-selective-highlights.png -> 2233, three-colour-highlighting-key.png -> 2234. Each recorded in pr-monitor.json with its sha256 immediately after its own upload.
+  - All 4 in-post local image paths rewritten to their uploaded source_urls; zero local refs left in the block markup.
+  - WP draft CREATED (lookup returned empty AND no stored wp_post_id): post ID 2235, status draft, featured_media 2230, categories [9, 12] = EdTech + Productivity (resolved by name, both already existed), tags [19, 14, 15, 30] = education, note-taking, productivity, students (all exact-name matches, none created), author 1.
+  - PR #22 opened: https://github.com/lucky72o/olgapak-blog/pull/22 (base main, head blog/best-highlighters-for-studying).
+  - pr-monitor.json written with mode=pr, status=open, wp_post_id, wp_media_ids[5], wp_preview_url, wp_upload=ok.
+  - No main-tree cleanup (step 6h): cwd IS the branch tree, as recorded at file layout.
+- Gate 2 opened: 2026-09-06T22:34Z (console-gated: no CronCreate monitor, no blocking prompt; approval arrives as approval.json from the console).
 
 - <stage> started: <timestamp> (owner: <agent>)
 - <stage> completed: <timestamp>

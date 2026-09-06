@@ -1,0 +1,56 @@
+{
+  "slug": "best-highlighters-for-studying",
+  "repo": "lucky72o/olgapak-blog",
+  "pr_number": 22,
+  "pr_url": "https://github.com/lucky72o/olgapak-blog/pull/22",
+  "branch": "blog/best-highlighters-for-studying",
+  "base": "main",
+  "worktree": ".worktrees/blog-best-highlighters-for-studying",
+  "staging_url": "",
+  "status": "open",
+  "mode": "pr",
+  "handled_comment_ids": {
+    "issue": [],
+    "inline": [],
+    "review": []
+  },
+  "created_at": "2026-09-06T22:32:48Z",
+  "last_poll": "",
+  "poll_interval_minutes": 15,
+  "idle_polls": 0,
+  "wp_post_id": 2235,
+  "wp_media_ids": [
+    {
+      "file": "featured.png",
+      "id": 2230,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/featured-2.png",
+      "sha256": "78cc5affcb145617da965d535cea9f084d49f06c160a77c710852d47e9ca1a22"
+    },
+    {
+      "file": "highlight-first-write-second.png",
+      "id": 2231,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/highlight-first-write-second.png",
+      "sha256": "8be4f2d4288987219ed36fce7b74868b9ddc1fbdc61354175f526a234fcd7fef"
+    },
+    {
+      "file": "highlighter-tip-shapes-neon-vs-pastel.png",
+      "id": 2232,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/highlighter-tip-shapes-neon-vs-pastel.png",
+      "sha256": "4799884b6ca3c1bd1ded475678452af62d4391ac7eee3b962a77805739d00d92"
+    },
+    {
+      "file": "study-desk-selective-highlights.png",
+      "id": 2233,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/study-desk-selective-highlights.png",
+      "sha256": "4e44ad108064211e05837094411d1be23998d446f75945f8beaf6a2a0c47bfb2"
+    },
+    {
+      "file": "three-colour-highlighting-key.png",
+      "id": 2234,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/three-colour-highlighting-key.png",
+      "sha256": "fb69fb02736c83193ca43d1b8147e4d043ee29cc626b42e3d99b112239288ed6"
+    }
+  ],
+  "wp_preview_url": "https://olgapak.com/wp-admin/post.php?post=2235&action=edit",
+  "wp_upload": "ok"
+}
