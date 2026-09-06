@@ -27,6 +27,9 @@ import { TwoPilesOfScreenTime } from "./TwoPilesOfScreenTime";
 import { InkFamiliesTradeoff } from "./InkFamiliesTradeoff";
 import { FourCorePagesMap } from "./FourCorePagesMap";
 import { CostTierKey } from "./CostTierKey";
+import { SerpComposition } from "./SerpComposition";
+import { RecallLoop } from "./RecallLoop";
+import { FreeTierTransparency } from "./FreeTierTransparency";
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -79,7 +82,14 @@ export const RemotionRoot: React.FC = () => (
     <Still id="InkFamiliesTradeoff" component={InkFamiliesTradeoff}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="FourCorePagesMap" component={FourCorePagesMap}
+      width={CANVAS.width} height={CANVAS.height} />
     <Still id="CostTierKey" component={CostTierKey}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="SerpComposition" component={SerpComposition}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="RecallLoop" component={RecallLoop}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="FreeTierTransparency" component={FreeTierTransparency}
       width={CANVAS.width} height={CANVAS.height} />
   </>
 );

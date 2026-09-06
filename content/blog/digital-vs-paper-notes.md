@@ -98,6 +98,7 @@ But the list is longer than search:
 
 - **Backup.** A synced note survives a lost bag. A notebook doesn't.
 - **Legibility.** Your typed notes are readable in six months. Mine, handwritten at lecture speed, frequently are not.
+- **Machine-readable.** A digital note can be fed to something else. That is the entire premise of the current crop of [AI study tools](/ai-study-tools), which turn material you already have into questions to test yourself with. A paper page has to be photographed first.
 - **Sharing.** Group projects, meeting actions, and anything a colleague needs tonight.
 - **Space.** No running out of page, no carrying three notebooks around.
 - **Accessibility.** [Handwriting is not an option for everyone](https://www.utsc.utoronto.ca/learningstrategies/digital-vs-paper-notes), and the University of Toronto Scarborough's learning-strategies page names disability-related needs as a legitimate reason to choose typing. That is a real consideration, not a footnote.

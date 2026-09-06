@@ -102,7 +102,7 @@ This is the real bottleneck, and people feel it. As one Reddit user put it, the 
 
 There is a trap on the other side, too. Plenty of people build elaborate systems and then spend more energy maintaining the app than taking the notes. As one Redditor admitted, the upkeep of a complex setup ended up costing more time than the note-taking itself. For busy people, low-effort and consistent beats elaborate and abandoned every single time.
 
-When you have got pages of notes or a long reading to distill, a free tool like the [Text Summarizer](/ai-tools/ai-text-summarizer) can speed up that condense step, turning a wall of text into a short, scannable version you can actually review. Match the tool to the task, the same way you match the method.
+When you have got pages of notes or a long reading to distill, a free tool like the [Text Summarizer](/ai-tools/ai-text-summarizer) can speed up that condense step, turning a wall of text into a short, scannable version you can actually review. There is a whole category of [AI study tools](/ai-study-tools) built for this after step now, and they are worth knowing about once your method is settled. Match the tool to the task, the same way you match the method.
 
 And do not overthink the container. Paper or an app both work. If you love the feel of a physical notebook, a good one is worth it, and I will share my favorites in a dedicated round-up soon. If your container is a tablet, here is [how to take notes on an iPad](/how-to-take-notes-on-ipad) without the setup falling apart by November.
 
