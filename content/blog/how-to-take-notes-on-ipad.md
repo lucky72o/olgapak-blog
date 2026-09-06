@@ -107,6 +107,8 @@ Which methods genuinely gain from a tablet? The ones where the layout is the wor
 - **Mind maps** get an infinite canvas, so you stop running out of room in the bottom right corner.
 - **Cornell** gets that box as a saved template, built once and reused all term.
 
+Being on a tablet also puts the [best AI study tools](/ai-study-tools) one tab away from your notes, which is genuinely useful for the review pass and genuinely distracting during the capture pass.
+
 ### The Review Pass (This Is Where the iPad Earns Its Keep)
 
 You can search handwritten text in Notes, in supported languages. Handwriting search means what it sounds like: you type a word, and the app finds the page where you wrote it by hand, months ago, in your own scrawl. This is the one thing a paper notebook genuinely cannot do, and it is the strongest single argument in this post for going digital.
