@@ -234,7 +234,7 @@ Which one is actually happening on your page, though?
 
 Now the myth. Paper weight, measured in gsm (grams per square metre), is a bad predictor of any of this. The thread that made the point best compared a cheap 70 gsm notebook against a lovely 100 gsm one, and it was the expensive one that bled. As another commenter put it, it has ["absolutely nothing to do with thickness and more to do with coating and overall paper quality and material"](https://www.reddit.com/r/notebooks/comments/1v4agc3/so_paper_thickness_has_nothing_to_do_with_being/).
 
-One more pairing rule, and it's the one that catches people out at revision time: water-based highlighter ink reacts with water-based pen inks, which covers gel, rollerball and fountain pens. That's the whole reason the highlighter-safe picks above earn their spot.
+One more pairing rule, and it's the one that catches people out at revision time: water-based highlighter ink reacts with water-based pen inks, which covers gel, rollerball and fountain pens. That's the whole reason the highlighter-safe picks above earn their spot. If you highlight as much as I do, I ranked [the best highlighters for studying](/best-highlighters-for-studying) by the same rule.
 
 Pick the pen you like, then pick [the notebook you pair it with](/best-notebooks-for-note-taking) to suit it. If a pen you love is bleeding, change the paper before you change the pen.
 
