@@ -60,7 +60,7 @@ Built-in Screen Time limits and one-tap "wait 10 seconds" delay apps genuinely h
 
 ## Layer 2: Catch the trigger (work with your brain, not against it)
 
-Most doomscrolling is not really about the phone. It is a coping reflex for a feeling: boredom, stress, sadness, avoidance. Catch the feeling and you get a small window to redirect before autopilot takes the wheel. "For me it's boredom plus avoidance," one reader wrote. "Once I catch that moment, I can sometimes stop before going full autopilot." The mindset that helps here, borrowed from writer Leo Babauta, is to become a scientist studying your own habits instead of a judge handing down a sentence.
+Most doomscrolling is not really about the phone. It is a coping reflex for a feeling: boredom, stress, sadness, avoidance. Catch the feeling and you get a small window to redirect before autopilot takes the wheel. "For me it's boredom plus avoidance," one reader wrote. "Once I catch that moment, I can sometimes stop before going full autopilot." The mindset that helps here, borrowed from writer Leo Babauta, is to become a scientist studying your own habits instead of a judge handing down a sentence. If you want the wider version of this idea, the one that covers the easy-reward habits beyond the feed, that is what a [dopamine detox](/dopamine-detox) is actually for.
 
 ### 6. Name the feeling before you unlock
 
