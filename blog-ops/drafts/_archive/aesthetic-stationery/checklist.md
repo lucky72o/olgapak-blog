@@ -3,7 +3,7 @@ slug: aesthetic-stationery
 target_keyword: aesthetic stationery
 created: 2026-09-08 11:00
 last_updated: 2026-09-08 11:04
-current_stage: action_items
+current_stage: preview
 current_owner: blog-post-workflow
 status: active
 gate_pending: none
@@ -169,9 +169,9 @@ Editor spawns the `image-planner` subagent. Agent reads outline + draft `[IMAGE:
 
 Mechanical grep of draft markers + fill action-items template. One checkbox per [VERIFY:], [EXTERNAL_LINK_NEEDED:], [INTERNAL_LINK_NEEDED:], [IMAGE:] marker, plus pre-filled publish steps.
 
-- [ ] action-items.md written with every section filled
-- [ ] Marker checkbox counts match grep output
-- [ ] Authors-map status confirmed per the publish adapter (`adapters/publish/<adapter>.md` §Action-items sections; e.g. the astro adapter's `authors_map_check` file, if configured)
+- [x] action-items.md written with every section filled
+- [x] Marker checkbox counts match grep output
+- [x] Authors-map status confirmed per the publish adapter (N/A for wordpress-rest) (`adapters/publish/<adapter>.md` §Action-items sections; e.g. the astro adapter's `authors_map_check` file, if configured)
 
 **Artifacts:** `action-items.md`
 
@@ -263,3 +263,12 @@ Autopilot run under the operator console (CONSOLE_RUN_STATE set, CONSOLE_VERIFIC
 - Stage 4a.5 started: 2026-09-08T11:57Z
 - Stage 4a.5 completed: 2026-09-08T13:47Z, 5 rendered, 0 prompt-pending, 0 screenshot-pending, 0 failed
 - Stage 4b started: 2026-09-08T13:48Z
+- Stage 4b completed: 2026-09-08T13:55Z, action-items.md written
+- Stage 4b.5 staging (FILE LAYOUT ONLY) completed: 2026-09-08T14:05Z
+  - content/blog/aesthetic-stationery.md staged, 4 [IMAGE:] resolved to real embeds (all target files exist), 0 residual markers
+  - featured.png present (WordPress attaches it via media API; the WP frontmatter template has no cover field, so nothing was injected into frontmatter)
+  - `draft: true` intentionally RETAINED: for wordpress-rest it is a documentation-only guard, and the WP post `status` field does the real gating
+  - 3 inbound links applied, each write-ahead recorded, each link-only diff verified, no trailing slash per blog.trailing_slash: false
+  - committed 04af6c1 and pushed to origin/blog/aesthetic-stationery
+  - DEFERRED to autopilot-cont per the CONSOLE_VERIFICATION=on handshake: WP auth probe, media upload, WP draft create, pr-monitor.json, gh pr create. Main-tree cleanup (adapter step 6h) is also deferred, since it must not run before the PR exists.
+- ready_for_verification emitted: 2026-09-08T14:05Z
