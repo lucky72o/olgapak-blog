@@ -255,6 +255,8 @@ Four things I'd want a friend to tell me before I spent anything.
 
 Once the notes exist on paper, the next problem shows up: a term's worth of them, and no time to reread the lot.
 
+And if the pens are only the start and you're kitting out the rest of the desk, here's the [aesthetic stationery worth buying](/aesthetic-stationery), downsides included.
+
 [Try my free AI tools](/ai-tools) to automate the mundane part of that. Type up the messy section, and the Text Summarizer hands back a short, scannable version you can actually revise from, while the Acronym Explainer decodes the shorthand you scribbled at speed and can no longer read.
 
 ## FAQ

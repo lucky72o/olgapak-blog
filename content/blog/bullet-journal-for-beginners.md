@@ -75,7 +75,7 @@ Do you already own a notebook with fifteen pages used and the rest blank? That i
 
 Dotted paper is a preference. Not a requirement. Lined, blank, squared, the back half of an abandoned university notebook, all of it works, because the method is a way of writing rather than a way of drawing.
 
-Now the honest other half, because stationery does matter a little. A notebook you like the feel of genuinely does make you more likely to open it, and that is the only real argument for spending anything at all. If you reach the end of a month and want to upgrade, I've tested [which notebooks are actually worth the money](/best-notebooks-for-note-taking) and [a pen you'll enjoy writing with](/best-pens-for-note-taking). Do that in month two. Not tonight.
+Now the honest other half, because stationery does matter a little. A notebook you like the feel of genuinely does make you more likely to open it, and that is the only real argument for spending anything at all. If you reach the end of a month and want to upgrade, I've tested [which notebooks are actually worth the money](/best-notebooks-for-note-taking), [a pen you'll enjoy writing with](/best-pens-for-note-taking), and the [aesthetic stationery that earns its space](/aesthetic-stationery) rather than sitting in a drawer. Do that in month two. Not tonight.
 
 ## How to set up your bullet journal in one sitting
 
