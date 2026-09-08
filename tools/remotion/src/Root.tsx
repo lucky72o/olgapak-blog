@@ -27,6 +27,8 @@ import { TwoPilesOfScreenTime } from "./TwoPilesOfScreenTime";
 import { InkFamiliesTradeoff } from "./InkFamiliesTradeoff";
 import { FourCorePagesMap } from "./FourCorePagesMap";
 import { CostTierKey } from "./CostTierKey";
+import { FourBoxMeetingNotesTemplate } from "./FourBoxMeetingNotesTemplate";
+import { FiveMinutePostMeetingPass } from "./FiveMinutePostMeetingPass";
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -79,7 +81,12 @@ export const RemotionRoot: React.FC = () => (
     <Still id="InkFamiliesTradeoff" component={InkFamiliesTradeoff}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="FourCorePagesMap" component={FourCorePagesMap}
+      width={CANVAS.width} height={CANVAS.height} />
     <Still id="CostTierKey" component={CostTierKey}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="FourBoxMeetingNotesTemplate" component={FourBoxMeetingNotesTemplate}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="FiveMinutePostMeetingPass" component={FiveMinutePostMeetingPass}
       width={CANVAS.width} height={CANVAS.height} />
   </>
 );
