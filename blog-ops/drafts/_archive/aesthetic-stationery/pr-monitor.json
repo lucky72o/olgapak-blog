@@ -1,0 +1,56 @@
+{
+  "slug": "aesthetic-stationery",
+  "repo": "lucky72o/olgapak-blog",
+  "pr_number": 24,
+  "pr_url": "https://github.com/lucky72o/olgapak-blog/pull/24",
+  "branch": "blog/aesthetic-stationery",
+  "base": "main",
+  "worktree": ".worktrees/blog-aesthetic-stationery",
+  "staging_url": "",
+  "status": "open",
+  "mode": "pr",
+  "handled_comment_ids": {
+    "issue": [],
+    "inline": [],
+    "review": []
+  },
+  "created_at": "2026-09-08T12:54:54Z",
+  "last_poll": "",
+  "poll_interval_minutes": 15,
+  "idle_polls": 0,
+  "wp_post_id": 2247,
+  "wp_media_ids": [
+    {
+      "file": "featured.png",
+      "id": 2242,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/featured-4.png",
+      "sha256": "1adb927babbc1cfc7ace952cef3ee79f410e0a99df775d1318beedd01bb71f02"
+    },
+    {
+      "file": "staged-versus-real-desk.png",
+      "id": 2243,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/staged-versus-real-desk.png",
+      "sha256": "80f456d7e3e21eb1485ae7ba541a88c93f966c237ef711d05205310516b1b633"
+    },
+    {
+      "file": "downsizing-filter-diagram.png",
+      "id": 2244,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/downsizing-filter-diagram.png",
+      "sha256": "ec9fa9d339b9a2ffd2063505d0a8fd3cbdf2ee90281d71c592b90dc537493bf6"
+    },
+    {
+      "file": "pens-highlighters-group.png",
+      "id": 2245,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/pens-highlighters-group.png",
+      "sha256": "ba59161c3445a06aa19312bdfa78d956e1df1caa235450cc043324eb9211d749"
+    },
+    {
+      "file": "notebooks-open-pages.png",
+      "id": 2246,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/notebooks-open-pages.png",
+      "sha256": "fad751db5641a37804633c5409c8c403edee555e6b28691e3dd9ce426e31393d"
+    }
+  ],
+  "wp_preview_url": "https://olgapak.com/wp-admin/post.php?post=2247&action=edit",
+  "wp_upload": "ok"
+}
