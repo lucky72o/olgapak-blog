@@ -2,11 +2,11 @@
 slug: aesthetic-stationery
 target_keyword: aesthetic stationery
 created: 2026-09-08 11:00
-last_updated: 2026-09-08 11:04
-current_stage: preview
+last_updated: 2026-09-08 14:57
+current_stage: finalize
 current_owner: blog-post-workflow
 status: active
-gate_pending: none
+gate_pending: gate_2_final
 # status values: active | paused | complete | abandoned
 # current_stage values: intake | chrome_fetch | serp_select | serp_deep_fetch | reddit_fetch | reddit_select | reddit_deep_fetch | x_fetch | x_select | x_deep_fetch | competitor_check | analyze_research | synthesize_plan | plan_review | outline | draft | review | humanize | resolve_markers | images | generate_images | action_items | preview | finalize | repurpose | complete
 # current_owner values: human | blog-post-workflow | blog-researcher | blog-writer | blog-reviewer | blog-humanizer | image-planner | image-builder | plan-reviewer
@@ -272,3 +272,15 @@ Autopilot run under the operator console (CONSOLE_RUN_STATE set, CONSOLE_VERIFIC
   - committed 04af6c1 and pushed to origin/blog/aesthetic-stationery
   - DEFERRED to autopilot-cont per the CONSOLE_VERIFICATION=on handshake: WP auth probe, media upload, WP draft create, pr-monitor.json, gh pr create. Main-tree cleanup (adapter step 6h) is also deferred, since it must not run before the PR exists.
 - ready_for_verification emitted: 2026-09-08T14:05Z
+- Stage 4b.5 staging SIDE EFFECTS completed (autopilot-cont): 2026-09-08T12:57Z
+  - WP auth probe: OK (users/me 200, user id 1 wpx_admin101)
+  - Gutenberg conversion via md-to-gutenberg.py PRIMARY path (no classic-block fallback): 106 paragraph, 32 heading, 16 list, 4 image blocks + 1 Kadence TOC block (--extra-blocks after-intro, markup from site-conventions.md verbatim)
+  - 5 media uploaded (featured 2242, staged-versus-real-desk 2243, downsizing-filter-diagram 2244, pens-highlighters-group 2245, notebooks-open-pages 2246); featured landed as slug `featured-4` (WP dedup) -- id captured from the upload response, never re-looked-up by slug
+  - all 4 in-post image srcs rewritten from local repo paths to WP source_urls, each wp:image block carries its attachment id; 0 local paths remain in the stored content
+  - WP draft created: post id 2247, status=draft, category Productivity (term 12), tags [25,14,15,30], featured_media 2242, author 1
+  - PR opened: #24 https://github.com/lucky72o/olgapak-blog/pull/24 (base main, head blog/aesthetic-stationery)
+  - pr-monitor.json written (mode: pr, status: open, wp_upload: ok)
+  - adapter step 6h main-tree cleanup: NO-OP, the run staged directly in the worktree; the main checkout never held the post or assets (verified clean)
+  - console-gated Gate 2: NO CronCreate monitor started, nothing published
+- Gate 2 opened: 2026-09-08T12:57Z
+
