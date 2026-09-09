@@ -2,7 +2,7 @@
 slug: best-blue-light-glasses
 target_keyword: best blue light glasses
 created: 2026-09-09 12:46
-last_updated: 2026-09-09 15:26
+last_updated: 2026-09-09 15:44
 current_stage: preview
 current_owner: blog-post-workflow
 status: active
@@ -215,6 +215,7 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 ## Stage transition log
 
 - intake completed: 2026-09-09T12:46 (autopilot, brief written from content-plan row #15)
+- Stage 4b.5 staging FILE LAYOUT completed: 2026-09-09T15:44, post + 5 assets + archive snapshot + 3 inbound-link edits committed and pushed on blog/best-blue-light-glasses (f739035). PR-open, WordPress draft creation and pr-monitor.json are DEFERRED to the autopilot-cont run per the console verification handshake (CONSOLE_VERIFICATION=on); current_stage stays `preview` so that run re-enters Step 14.5.
 - Stage 4b completed: 2026-09-09T15:26, action-items.md written
 - Stage 4b.5 staging started: 2026-09-09T15:26
 - Stage 4a.5 completed: 2026-09-09T15:16, 5 rendered, 0 prompt-pending, 0 screenshot-pending, 0 failed
@@ -285,4 +286,14 @@ Re-lint: 0 em-dashes, 0 residual `[VERIFY:]`/`[EXTERNAL_LINK_NEEDED:]`, 4 `[IMAG
 - inbound link applied by workflow: content/blog/how-to-reduce-screen-time.md
 - inbound link applied by workflow: content/blog/how-to-stop-doomscrolling.md
 - inbound link applied by workflow: content/blog/digital-detox-plan.md
+
+### Stage 4b.5 inbound-link results (2026-09-09)
+
+All three rows passed the ownership grep (link not previously present), the dirty-file guard (`git status --porcelain` clean for each) and the link-only diff verification (each file's `git diff HEAD` is exactly one changed line carrying `(/best-blue-light-glasses)`):
+
+- inbound link applied: content/blog/how-to-reduce-screen-time.md, anchor "the best blue light glasses", extended the evening-grayscale bullet.
+- inbound link applied: content/blog/how-to-stop-doomscrolling.md, anchor "blue light glasses for evening screen use", extended the charge-outside-the-bedroom paragraph.
+- inbound link applied: content/blog/digital-detox-plan.md, anchor "whether blue light glasses are worth buying", extended the Day 3 grayscale smaller-version line.
+
+The live WordPress copies of those three posts still need the same edit by hand (v1 scope limit, `wordpress-rest.md` §Staging step 6) and are recorded in action-items §4b.
 
