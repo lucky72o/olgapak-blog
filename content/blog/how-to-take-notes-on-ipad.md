@@ -113,7 +113,7 @@ You can search handwritten text in Notes, in supported languages. Handwriting se
 
 The habit matters more than the feature, though. After each lecture or reading session, condense the page into a few bullets in your own words. If you cannot, you have just found the part you did not understand, and it is much better to find that now than in an exam.
 
-Condensing does not mean recopying, either. Smart Selection lets you select handwriting with the same gestures you already use on typed text, then paste it into another note as typed text.
+Condensing does not mean recopying, either. Smart Selection lets you select handwriting with the same gestures you already use on typed text, then paste it into another note as typed text. If you want software doing more of that condensing for you, that is the whole point of [an AI note-taking workflow](/ai-note-taking), which layers cleanly on top of the setup in this post.
 
 ## The Gear That Earns Its Place (and the Gear That Doesn't)
 

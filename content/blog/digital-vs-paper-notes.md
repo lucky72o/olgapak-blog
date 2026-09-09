@@ -108,7 +108,7 @@ A commenter in r/PE_Exam, studying for a professional engineering license, made 
 
 That's not a preference. It's a constraint, and constraints beat preferences every time.
 
-There's also a category of note-taking where speed is exactly what you want. In a meeting where you're the one keeping the record, nobody is asking you to deeply encode anything. They're asking for an accurate list of who agreed to what by when, and a keyboard is simply better at that job than your wrist is.
+There's also a category of note-taking where speed is exactly what you want. In a meeting where you're the one keeping the record, nobody is asking you to deeply encode anything. They're asking for an accurate list of who agreed to what by when, and a keyboard is simply better at that job than your wrist is. And if speed is the whole point, there is a third option now: hand the capture to software entirely and keep the thinking for yourself, which is what [AI note-taking](/ai-note-taking) is actually good for.
 
 One more thing worth saying plainly: typing doesn't cancel the learning benefit. It only costs you when it slides into transcription. Type in your own words, or spend a few minutes afterwards turning what you captured into a short summary, and you keep most of what handwriting would have given you.
 
