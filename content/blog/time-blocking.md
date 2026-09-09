@@ -124,7 +124,7 @@ A blown block is not a blown day. The question to ask first is narrow: can what'
 
 Either way, finish by writing down what the derailed task actually took. Week one isn't performance, it's data collection, and those numbers are what make next week's calendar fit. The doubling rule from the step above is the same fix applied in advance.
 
-One more thing eats blocks, and it isn't a phone call. It's the small screen next to your keyboard, so put it in another room before the block starts, because in a fair fight [your phone will win](/how-to-stop-doomscrolling).
+One more thing eats blocks, and it isn't a phone call. It's the small screen next to your keyboard, so put it in another room before the block starts, because in a fair fight [your phone will win](/how-to-stop-doomscrolling). If the surface you block time at is buried, [set your desk up for it](/aesthetic-desk-setup) first; a clear desk and a phone with its own home elsewhere are the conditions a block needs.
 
 There's a second, quieter reason people stop, and it has nothing to do with plans breaking. The ritual gets dull. As u/Impossible-Skirt6023 wrote in [r/productivity](https://www.reddit.com/r/productivity/comments/1uhixbj/how_do_i_mantain_time_blocking/): "I think it's REALLY boring to plan the day using Google Calendar and I'd have to do it against my will." The fix isn't more discipline. It's a smaller ritual: five minutes, same time every evening, three blocks, done.
 

@@ -34,7 +34,7 @@ The real answer to how to stop doomscrolling is not more discipline. It is bette
 
 ## Layer 1: Reshape your environment (make the scroll harder to start)
 
-The highest-leverage change is not willpower, it is friction. Make your phone a little boring and move the feeds a few steps further away, and the scroll gets much harder to start on autopilot. One reader described the trap perfectly: trying to quit while the phone is in your pocket is like being an addict trying to stop drinking, at a bar. Every extra second and every extra tap between you and the feed is quietly working in your favor.
+The highest-leverage change is not willpower, it is friction. Make your phone a little boring and move the feeds a few steps further away, and the scroll gets much harder to start on autopilot. One reader described the trap perfectly: trying to quit while the phone is in your pocket is like being an addict trying to stop drinking, at a bar. Every extra second and every extra tap between you and the feed is quietly working in your favor. The desk you work at is part of that environment too, which is why building an [aesthetic desk setup](/aesthetic-desk-setup) that gives the phone somewhere else to live does more than a rule about checking it less.
 
 ![Grayscale phone with feed apps buried in a folder and messaging apps kept up front](../../blog-ops/assets/how-to-stop-doomscrolling/boring-grayscale-phone.png)
 
