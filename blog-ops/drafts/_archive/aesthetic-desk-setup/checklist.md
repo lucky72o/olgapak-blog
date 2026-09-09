@@ -2,11 +2,11 @@
 slug: aesthetic-desk-setup
 target_keyword: aesthetic desk setup
 created: 2026-09-09 04:03
-last_updated: 2026-09-09 05:33
-current_stage: preview
+last_updated: 2026-09-09 05:38
+current_stage: finalize
 current_owner: blog-post-workflow
 status: active
-gate_pending: none
+gate_pending: gate_2_final
 # status values: active | paused | complete | abandoned
 # current_stage values: intake | chrome_fetch | serp_select | serp_deep_fetch | reddit_fetch | reddit_select | reddit_deep_fetch | x_fetch | x_select | x_deep_fetch | competitor_check | analyze_research | synthesize_plan | plan_review | outline | draft | review | humanize | resolve_markers | images | generate_images | action_items | preview | finalize | repurpose | complete
 # current_owner values: human | blog-post-workflow | blog-researcher | blog-writer | blog-reviewer | blog-humanizer | image-planner | image-builder | plan-reviewer
@@ -214,6 +214,7 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 
 ## Stage transition log
 
+- Stage 4b.5 FILE LAYOUT completed: 2026-09-09 05:34, branch blog/aesthetic-desk-setup committed (2e8b324) and pushed; ready_for_verification emitted, staging side effects (WP draft + PR + pr-monitor.json) deferred to autopilot-cont
 - Stage 4b.5 staging started: 2026-09-09 05:33
 - Stage 4b completed: 2026-09-09 05:33, action-items.md written; markers 0 VERIFY / 0 EXTERNAL_LINK_NEEDED (1 resolved at 3d) / 0 INTERNAL_LINK_NEEDED / 4 IMAGE; §6 N/A for the WordPress adapter
 - Stage 4b started: 2026-09-09 05:30
@@ -311,3 +312,21 @@ the WP-create step. `blog-ops/assets/aesthetic-desk-setup/featured.png` was conf
 before staging continued. `draft: true` is likewise KEPT in frontmatter: for this adapter it is a
 documentation-only guard with nothing to strip toward (the WP `status` field does the real
 gating), and the template's own quality gate requires it present.
+
+
+**Stage 4b.5 staging SIDE EFFECTS completed (autopilot-cont run, 2026-09-09 05:38):** the deferred half of
+staging ran after the console's verification PASS. WP auth probe OK (once, not retried). Gutenberg
+conversion emitted 55 paragraph / 28 list / 16 heading / 4 image blocks plus the Kadence TOC block
+(`--extra-blocks`, position `after-intro`, markup copied verbatim from `site-conventions.md`
+§Table of contents). 5 media uploaded (ids 2260-2264); `featured.png` was minted server-side as
+`featured-7.png`, so its id (2262) was taken from the upload RESPONSE, never a `slug=featured`
+lookup — the exact cross-post collision the adapter warns about. All 4 in-post embeds rewritten
+from local paths to uploaded `source_url`s (0 local refs left). WP draft CREATED as post **2265**,
+`status=draft`, `featured_media=2262`, `categories=[12]` (Productivity, exact name match — never
+"Uncategorized"), `tags=[15,30,34]` (productivity / students / time management, all pre-existing,
+none created), `author=1`. PR **#27** opened against `main`. `pr-monitor.json` written with
+`mode: pr`, `status: open`, `pr_number: 27`, `wp_post_id: 2265`, `wp_upload: ok`.
+
+**Gate 2 is OPEN and console-gated.** No CronCreate monitor was started (console mode), no typed
+input is awaited, and nothing here authorizes a merge or a live publish. The WP post stays `draft`
+until a human clicks Publish in wp-admin; approval requires the console's `approval.json`.

@@ -1,0 +1,56 @@
+{
+  "slug": "aesthetic-desk-setup",
+  "repo": "lucky72o/olgapak-blog",
+  "pr_number": 27,
+  "pr_url": "https://github.com/lucky72o/olgapak-blog/pull/27",
+  "branch": "blog/aesthetic-desk-setup",
+  "base": "main",
+  "worktree": ".worktrees/blog-aesthetic-desk-setup",
+  "staging_url": "https://olgapak.com/wp-admin/post.php?post=2265&action=edit",
+  "status": "open",
+  "mode": "pr",
+  "handled_comment_ids": {
+    "issue": [],
+    "inline": [],
+    "review": []
+  },
+  "created_at": "2026-09-09T04:36:16.399107Z",
+  "last_poll": "",
+  "poll_interval_minutes": 15,
+  "idle_polls": 0,
+  "wp_post_id": 2265,
+  "wp_media_ids": [
+    {
+      "file": "bare-desk-reset.png",
+      "id": 2260,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/bare-desk-reset.png",
+      "sha256": "491aa81f1358e71bdab96da4ce1f02063dd6760b8eb627ee8cff31050b6b39bb"
+    },
+    {
+      "file": "ceiling-light-vs-desk-lamp.png",
+      "id": 2261,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/ceiling-light-vs-desk-lamp.png",
+      "sha256": "acb2aff1dde8ae166e0644ce6748828ac7083858fa68081572e168fbc4828180"
+    },
+    {
+      "file": "featured.png",
+      "id": 2262,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/featured-7.png",
+      "sha256": "ebcce7fcf60342b74ecb4e57bc7a17a08f1f0f6a45feafb91249fc6c27637f0c"
+    },
+    {
+      "file": "finished-desk-plant-personal.png",
+      "id": 2263,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/finished-desk-plant-personal.png",
+      "sha256": "8e0395288d202a63c63cb5e245f647fa5adbcbcb9580dc17ae722f1d9c673f72"
+    },
+    {
+      "file": "under-desk-cable-tray.png",
+      "id": 2264,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/under-desk-cable-tray.png",
+      "sha256": "d0dafd29b5c3b6578b8e8aa45ac05e755b91a5dacaacb6cc3a3883129423c381"
+    }
+  ],
+  "wp_preview_url": "https://olgapak.com/wp-admin/post.php?post=2265&action=edit",
+  "wp_upload": "ok"
+}

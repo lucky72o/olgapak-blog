@@ -105,7 +105,7 @@ After any REST update to a post that is open in the WP editor, the editor shows 
 
 ## 7. Publish
 
-- [ ] Open the WordPress draft preview. **Note:** this run was staged under the console's verification handshake (`CONSOLE_VERIFICATION=on`), so the WordPress draft and the review PR are created by the follow-on `autopilot-cont` run, not by this one. The preview URL lands in `blog-ops/drafts/aesthetic-desk-setup/pr-monitor.json` as `wp_preview_url` once that runs.
+- [ ] Open the WordPress draft preview: **https://olgapak.com/wp-admin/post.php?post=2265&action=edit** (WP post **2265**, `status=draft`). Review PR: **https://github.com/lucky72o/olgapak-blog/pull/27**
 - [ ] Read it once more in the WP admin preview (title, excerpt, featured image already synced by the adapter).
 - [ ] **Focus keyword (manual, required).** `blog-ops/profile/site-conventions.md` §SEO plugin names **Rank Math**, and records that the focus keyword is **not settable via the standard REST API**. Set it yourself in the WP editor's Rank Math panel, to exactly: `aesthetic desk setup` (verbatim — not the title, not a paraphrase). The workflow never attempts this write.
 - [ ] Confirm the post's category is **Productivity** (resolved at staging from `brief.md`; WP term id 12).
