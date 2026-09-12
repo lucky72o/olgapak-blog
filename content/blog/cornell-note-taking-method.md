@@ -63,7 +63,7 @@ Here they are in order:
 4. **Reflect.** Add your own reactions: how this connects to last week, where you disagree, what still feels fuzzy. This is the step that makes the notes yours.
 5. **Review.** Reread the page and your summary regularly, in short passes, so the material doesn't leak away before the exam or the follow-up meeting.
 
-Notice how much of the value lands *after* the room empties. Recording is maybe a third of the method. The other four steps are where a passive page turns into recall you can lean on, and they take minutes, not hours.
+Notice how much of the value lands *after* the room empties. Recording is maybe a third of the method. The other four steps are where a passive page turns into recall you can lean on, and they take minutes, not hours. That split is also why [AI note-taking](/ai-note-taking) helps more than it threatens: software can carry the Record step, and the four that actually build recall still have to be yours.
 
 ## A filled-in Cornell page: a worked example
 

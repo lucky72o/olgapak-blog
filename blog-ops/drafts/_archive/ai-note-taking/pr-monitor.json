@@ -1,0 +1,56 @@
+{
+  "slug": "ai-note-taking",
+  "repo": "lucky72o/olgapak-blog",
+  "pr_number": 28,
+  "pr_url": "https://github.com/lucky72o/olgapak-blog/pull/28",
+  "branch": "blog/ai-note-taking",
+  "base": "main",
+  "worktree": ".worktrees/blog-ai-note-taking",
+  "staging_url": "",
+  "status": "open",
+  "mode": "pr",
+  "handled_comment_ids": {
+    "issue": [],
+    "inline": [],
+    "review": []
+  },
+  "created_at": "2026-09-09T09:03:36Z",
+  "last_poll": "",
+  "poll_interval_minutes": 15,
+  "idle_polls": 0,
+  "wp_post_id": 2271,
+  "wp_media_ids": [
+    {
+      "file": "ai-handles-you-handle.png",
+      "id": 2266,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/ai-handles-you-handle.png",
+      "sha256": "b5a2598ee6ecdef6474b3d492468cb15968d2a8bc26f7979ff4e85c1f7e39bcb"
+    },
+    {
+      "file": "ask-before-recording.png",
+      "id": 2267,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/ask-before-recording.png",
+      "sha256": "8eaf806ce3b378579acb2d57d1bca2eb2acca14faa25aa30bb7a0bc7d9b8758b"
+    },
+    {
+      "file": "capture-situations.png",
+      "id": 2268,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/capture-situations.png",
+      "sha256": "972f3ec30b13b07148c40e1dd67d362cb7fba1bd4bb77718f2c705c973e2b80d"
+    },
+    {
+      "file": "featured.png",
+      "id": 2269,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/featured-8.png",
+      "sha256": "1b7a0f9edaedfa7fac697e51cc3e276d3398dd3c503e829c4ccd34aa556cfe7a"
+    },
+    {
+      "file": "five-step-workflow.png",
+      "id": 2270,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/five-step-workflow.png",
+      "sha256": "c4df5e9450a7103f8b8b7616e43c2d2a09569fa48e0ffc8f5dfceff53184b4a9"
+    }
+  ],
+  "wp_preview_url": "https://olgapak.com/wp-admin/post.php?post=2271&action=edit",
+  "wp_upload": "ok"
+}
