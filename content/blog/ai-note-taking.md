@@ -1,6 +1,6 @@
 ---
 title: "AI Note-Taking: A 5-Step Workflow That Actually Sticks"
-date: 2026-09-09
+date: 2026-09-12
 excerpt: "AI can transcribe and summarize your notes, but it shouldn't do your thinking. Here's the 5-step AI note-taking workflow I use, and where it breaks."
 tags:
   - ai
