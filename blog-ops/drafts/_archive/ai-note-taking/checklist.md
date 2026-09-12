@@ -2,10 +2,10 @@
 slug: ai-note-taking
 target_keyword: ai note taking
 created: 2026-09-09 07:38
-last_updated: 2026-09-09 09:56
-current_stage: action_items
+last_updated: 2026-09-09 10:05
+current_stage: complete
 current_owner: blog-post-workflow
-status: active
+status: complete
 gate_pending: none
 # status values: active | paused | complete | abandoned
 # current_stage values: intake | chrome_fetch | serp_select | serp_deep_fetch | reddit_fetch | reddit_select | reddit_deep_fetch | x_fetch | x_select | x_deep_fetch | competitor_check | analyze_research | synthesize_plan | plan_review | outline | draft | review | humanize | resolve_markers | images | generate_images | action_items | preview | finalize | repurpose | complete
@@ -169,9 +169,9 @@ Editor spawns the `image-planner` subagent. Agent reads outline + draft `[IMAGE:
 
 Mechanical grep of draft markers + fill action-items template. One checkbox per [VERIFY:], [EXTERNAL_LINK_NEEDED:], [INTERNAL_LINK_NEEDED:], [IMAGE:] marker, plus pre-filled publish steps.
 
-- [ ] action-items.md written with every section filled
-- [ ] Marker checkbox counts match grep output
-- [ ] Authors-map status confirmed per the publish adapter (`adapters/publish/<adapter>.md` §Action-items sections; e.g. the astro adapter's `authors_map_check` file, if configured)
+- [x] action-items.md written with every section filled
+- [x] Marker checkbox counts match grep output
+- [x] Authors-map status confirmed per the publish adapter (`adapters/publish/<adapter>.md` §Action-items sections; e.g. the astro adapter's `authors_map_check` file, if configured)
 
 **Artifacts:** `action-items.md`
 
@@ -245,6 +245,10 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 - Stage 4a.5 started: 2026-09-09 09:11 (owner: image-builder)
 - Stage 4a.5 completed: 2026-09-09 09:55, 5 rendered / 0 prompt-pending / 0 screenshot-pending / 0 failed; all 5 expected file-producing filenames present in blog-ops/assets/ai-note-taking/ with the .staged-by-blog-workflow sentinel. Featured slot is ai-prompt and file-producing, and featured.png exists, so the featured-slot completion gate passes. Two new Remotion sources (AiHandlesYouHandle.tsx, FiveStepWorkflow.tsx) plus the Root.tsx registration must ship on the PR branch.
 - Stage 4b started: 2026-09-09 09:56 (owner: blog-post-workflow)
+- Stage 4b completed: 2026-09-09 10:02, action-items.md written; markers 0 VERIFY / 0 EXTERNAL_LINK_NEEDED / 0 INTERNAL_LINK_NEEDED / 4 IMAGE. Authors-map check N/A (wordpress-rest has no author map).
+- Stage 4b.5 staging (FILE LAYOUT ONLY) completed: 2026-09-09 10:12. CONSOLE_VERIFICATION=on, so the staging SIDE EFFECTS are deliberately deferred to `autopilot-cont`: no PR opened, no WordPress draft created, no pr-monitor.json written, and the WordPress auth probe was NOT run (it belongs with the draft creation, and probing early risks a pointless lockout).
+- Stage 4b.5 staging SIDE EFFECTS completed (autopilot-cont): 2026-09-09 10:05. WordPress auth probe ran once and passed. Markdown converted to native Gutenberg blocks via md-to-gutenberg.py (no classic-block fallback), with the Kadence dynamic TOC injected after the intro per site-conventions.md. 5 media uploaded (featured.png landed as featured-8.png on the server, so its id/source_url were taken from the upload response, never a slug lookup); all 4 in-post embeds repointed at their uploaded source_url. WordPress draft created: post 2271 (status draft, categories [12 Productivity, 9 EdTech], tags [17, 20, 14, 30], featured_media 2269). PR #28 opened: https://github.com/lucky72o/olgapak-blog/pull/28. pr-monitor.json written with mode=pr, status=open, wp_upload=ok.
+- Gate 2 opened (console-gated): 2026-09-09 10:05. No CronCreate monitor started and no typed input awaited: CONSOLE_RUN_STATE is set, so approval is the console's browser Approve action writing approval.json. The workflow does NOT merge the PR and does NOT send WordPress status=publish.
 
 - <stage> started: <timestamp> (owner: <agent>)
 - <stage> completed: <timestamp>
@@ -338,4 +342,73 @@ matching `\(/ai-note-taking/?\)`, so none was user-authored.
 - inbound link applied by workflow: content/blog/digital-vs-paper-notes.md
 - inbound link applied by workflow: content/blog/how-to-take-notes-on-ipad.md
 - inbound link applied by workflow: content/blog/cornell-note-taking-method.md
+
+## Stage 4b.5 staging record (file layout)
+
+Run cwd IS the post's worktree (`.worktrees/blog-ai-note-taking`, branch `blog/ai-note-taking`), so
+the adapter's main-tree-to-worktree copy dance collapses: the artifacts were staged directly on the
+branch. `git log origin/main..HEAD` was empty before this run's commit, so the branch came off
+`origin/main` cleanly and needed no rebase. Slug-collision guard passed
+(`git cat-file -e origin/main:content/blog/ai-note-taking.md` found nothing).
+
+What shipped in commit `d3db106`, pushed to `origin/blog/ai-note-taking`:
+- `content/blog/ai-note-taking.md` (draft-v2 copied over; all 4 `[IMAGE:]` placeholders replaced with
+  real embeds pointing at files that exist; alt text taken verbatim from `images.md`). `draft: true`
+  is KEPT in frontmatter: for `wordpress-rest` that line is documentation-only, and every published
+  post in `content/blog/` carries it.
+- `blog-ops/assets/ai-note-taking/` (5 PNGs). The `.staged-by-blog-workflow` sentinel was
+  deliberately NOT committed (unstaged after `git add`) and NOT deleted from disk, so the asset-dir
+  ownership guard still holds for any resume.
+- `blog-ops/drafts/_archive/ai-note-taking/` (early NON-TERMINAL completeness snapshot for reviewers;
+  finalize re-syncs it to terminal state).
+- `blog-ops/featured-log/2026-09-09-ai-note-taking.md` (this post's rotation entry only).
+- `tools/remotion/src/AiHandlesYouHandle.tsx`, `FiveStepWorkflow.tsx`, and the `Root.tsx`
+  registration diff.
+- The four inbound-link edits (see below).
+
+### Visual backstop caught a real defect (adapter §Staging step 3b)
+
+All five renders were read. Four were clean. **`ai-handles-you-handle.png` contradicted
+`five-step-workflow.png`**: its left column read `Capture / Transcribe / Tidy up / Find it again`
+under the heading "AI HANDLES", while the workflow diagram in the very next section labels step 1
+`Capture` and step 4 `Organize` as `YOU`. Two diagrams in one post cannot put the same word on
+opposite sides of the same argument. Fixed at source, not papered over: the left column now reads
+`Turn speech into text / Draft a first summary / Make it searchable` (3 vs 3, symmetrical, no
+collision with any step name), `AiHandlesYouHandle.tsx` was edited and the slot re-rendered at
+`--scale=2`, and the draft's `[IMAGE:]` text, the staged embed's alt text, and `images.md`'s concept,
+copy-strings and alt text were all updated to match.
+
+Render note for future runs: `tools/remotion/` has no `node_modules` inside a worktree (they live in
+the main checkout), so `npx remotion` fails there with "could not determine executable to run". The
+re-render worked by symlinking the main checkout's `node_modules` into the worktree's
+`tools/remotion/`, running `./node_modules/.bin/remotion still ...`, then removing the symlink.
+
+### Inbound links applied (all four, link-only diffs verified)
+
+Each target was verified clean (`git status --porcelain` empty) and free of any pre-existing
+`\(/ai-note-taking/?\)` link before editing; the write-ahead record above was written first. Each
+edit EXTENDS an existing sentence rather than bolting on a "see also" line, and each file's
+`git diff HEAD` is exactly one hunk, one line removed and the same line re-added with the link, which
+is the Link-only diff verification passing. All four are therefore admitted and shipped in the commit.
+
+- `content/blog/note-taking-methods.md` , §"The Step Most People Skip", extends the Text Summarizer
+  paragraph: "here is my workflow for [using AI to take notes](/ai-note-taking)."
+- `content/blog/digital-vs-paper-notes.md` , §"Where digital notes genuinely win", extends the
+  speed-of-capture paragraph: "which is what [AI note-taking](/ai-note-taking) is actually good for."
+- `content/blog/how-to-take-notes-on-ipad.md` , §"Step 4: Take the Notes, Then Actually Review Them",
+  extends the condensing paragraph: "[an AI note-taking workflow](/ai-note-taking)."
+- `content/blog/cornell-note-taking-method.md` , §"How to take Cornell notes: the 5 R's", extends the
+  after-the-room-empties paragraph: "[AI note-taking](/ai-note-taking) helps more than it threatens."
+
+Because `publish.wordpress.apply_inbound_links_live: true`, these become live REST edits once this
+post is published; until then they are repo-only. `action-items.md` §4b carries the fallback
+hand-apply commands.
+
+### Deliberately NOT done in this run (deferred to `autopilot-cont`)
+
+Per `references/console-contract.md` §Verification handshake, the commit and push ARE part of staging
+file layout and were performed; the PR-open, the WordPress draft creation, and the `pr-monitor.json`
+write are the deferred SIDE EFFECTS. The WordPress auth probe is deferred with them, since the
+adapter runs it at most once per run immediately before the upload/create sequence and a needless
+early probe risks tripping the host's login-attempt limiter for no benefit.
 
