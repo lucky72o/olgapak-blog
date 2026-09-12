@@ -1,0 +1,81 @@
+{
+  "rank": 1,
+  "url": "https://x.com/rowancheung/status/2095538308436914307",
+  "author": "Rowan Cheung",
+  "handle": "rowancheung",
+  "text": "AI enhanced journaling is changing my life\n\nI've been running a Wispr Flow + Claude Cowork workflow that turns rambles into structured data and action items\n\nSuper simple setup:\n\n1. After meetings/events (or whenever I have a big idea), I open my phone and ramble everything into an Apple note using Wispr Flow, completely unstructured\n\n2. The only goal is getting it out of my head before I forget and turning those nuggets into data\n\n3. Those Apple notes sync to my Mac automatically, where a scheduled Claude task runs at night\n\n4. It reads every voice note I dumped while I sleep, no copying or p",
+  "topReplies": [
+    {
+      "url": "https://x.com/Blum_OG/status/2095538623563317702",
+      "author": "Blum",
+      "handle": "Blum_OG",
+      "text": "Your keyboard is about to file for unemployment",
+      "likes": 2
+    },
+    {
+      "url": "https://x.com/HeyGurisaroy/status/2095539775872901432",
+      "author": "Guri Saroy",
+      "handle": "HeyGurisaroy",
+      "text": "How do you put a Wispr Flow in the automation?",
+      "likes": 1
+    },
+    {
+      "url": "https://x.com/leov/status/2095829951077306471",
+      "author": "leovoloshin",
+      "handle": "leov",
+      "text": "Why not just record the meeting?",
+      "likes": 1
+    },
+    {
+      "url": "https://x.com/ethanbholland/status/2096640524929077586",
+      "author": "Ethan B. Holland",
+      "handle": "ethanbholland",
+      "text": "I don't know why Anthropic does not have a better microphone TTS tool.  OpenAI's is essentially flawless.  No need for Wispr Flow.  In fact, my assumption was this was a paid post for Wispr, because it seems like a temporary SaaS layer.  I agree 100% with the premise of this",
+      "likes": 0
+    },
+    {
+      "url": "https://x.com/TexTexington/status/2095539108735041573",
+      "author": "Barry \"Manifold\" Wanha #smokefleet #NAFO",
+      "handle": "TexTexington",
+      "text": "So, Jarvis?  Now you just need the suit.",
+      "likes": 0
+    },
+    {
+      "url": "https://x.com/liam_turner_ai/status/2096817822689357863",
+      "author": "Liam Turner",
+      "handle": "liam_turner_ai",
+      "text": "This is what an AI second brain should look like.",
+      "likes": 0
+    },
+    {
+      "url": "https://x.com/franciski/status/2095564701946053073",
+      "author": "Christian Francis",
+      "handle": "franciski",
+      "text": "the voice part is doing more work than it looks. people say things out loud they’d never type. writing makes you edit yourself.\n\nthe ceiling is you only capture what you thought to mention. the stuff you don’t know you know only comes out if a system asks.",
+      "likes": 1
+    },
+    {
+      "url": "https://x.com/MRowean/status/2096402318790889474",
+      "author": "Matthew Rowean",
+      "handle": "MRowean",
+      "text": "Two weeks into Wispr, I spent hours months ago trying to figure out how to put the action button of just a normal Apple Record into a place that Claude can pick it up. \n\nPutting it in Notes is better because it gets around all the privacy issues that Voice Notes had. \n\nits the",
+      "likes": 0
+    },
+    {
+      "url": "https://x.com/sam_starkman/status/2095602711081132492",
+      "author": "Sam Starkman",
+      "handle": "sam_starkman",
+      "text": "I do something similar. Do you have any shortcuts that let you quickly access Wispr Flow on your phone? I feel like reducing the time to start dictating is important for getting ideas down",
+      "likes": 2
+    },
+    {
+      "url": "https://x.com/lukso_g/status/2095762614798164016",
+      "author": "BuddyK 🆙️",
+      "handle": "lukso_g",
+      "text": "Love it. I was doing similar so i quickly whipped up \nhttps://\nmy2brain.app to do exactly that, nothing more.\n\nI speak to it, ramble after a meetomg or dump an idea then it sorts it onto my boards. The recap is then super handy for quarterly/annual reviews.\n\nHas been a game",
+      "likes": 2
+    }
+  ],
+  "fetchedAt": "2026-09-09T07:47:05.126Z",
+  "fetchStatus": "ok"
+}

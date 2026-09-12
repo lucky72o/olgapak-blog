@@ -28,6 +28,8 @@ import { InkFamiliesTradeoff } from "./InkFamiliesTradeoff";
 import { FourCorePagesMap } from "./FourCorePagesMap";
 import { CostTierKey } from "./CostTierKey";
 import { PomodoroCycleDiagram } from "./PomodoroCycleDiagram";
+import { AiHandlesYouHandle } from "./AiHandlesYouHandle";
+import { FiveStepWorkflow } from "./FiveStepWorkflow";
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -84,6 +86,10 @@ export const RemotionRoot: React.FC = () => (
     <Still id="FourCorePagesMap" component={FourCorePagesMap}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="CostTierKey" component={CostTierKey}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="AiHandlesYouHandle" component={AiHandlesYouHandle}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="FiveStepWorkflow" component={FiveStepWorkflow}
       width={CANVAS.width} height={CANVAS.height} />
   </>
 );
