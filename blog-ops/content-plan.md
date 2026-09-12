@@ -18,7 +18,7 @@
 | 7 | mind-mapping-note-taking-method | mind mapping note taking | INFO guide: Mind Mapping Note-Taking Method | | | published |
 | 8 | digital-detox-plan | digital detox plan | INFO guide: Digital Detox (7-day screen-time reset plan) | | | published |
 | 9 | best-pens-for-note-taking | best pens for note taking | COMMERCIAL roundup: 12 best pens (Pilot G2, Uni-ball, Muji, Sakura) | | | published |
-| 10 | ai-note-taking | ai note taking | INFO guide: How to Use AI to Take Better Notes (tools & workflow) | | | planned |
+| 10 | ai-note-taking | ai note taking | INFO guide: How to Use AI to Take Better Notes (tools & workflow) | | | published |
 | 11 | charting-method-note-taking | charting method note taking | INFO guide: The Charting Method of Note-Taking Explained | | | published |
 | 12 | how-to-reduce-screen-time | how to reduce screen time | PILLAR guide: How to Reduce Screen Time (complete guide) | | | published |
 | 13 | best-highlighters-for-studying | best highlighters for studying | COMMERCIAL roundup: Best Highlighters for Studying (Zebra Mildliner, Stabilo, Tombow) | | | planned |
