@@ -2,7 +2,7 @@
 slug: ai-note-taking
 target_keyword: ai note taking
 created: 2026-09-09 07:38
-last_updated: 2026-09-09 10:05
+last_updated: 2026-09-12 21:55
 current_stage: complete
 current_owner: blog-post-workflow
 status: complete
@@ -249,6 +249,7 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 - Stage 4b.5 staging (FILE LAYOUT ONLY) completed: 2026-09-09 10:12. CONSOLE_VERIFICATION=on, so the staging SIDE EFFECTS are deliberately deferred to `autopilot-cont`: no PR opened, no WordPress draft created, no pr-monitor.json written, and the WordPress auth probe was NOT run (it belongs with the draft creation, and probing early risks a pointless lockout).
 - Stage 4b.5 staging SIDE EFFECTS completed (autopilot-cont): 2026-09-09 10:05. WordPress auth probe ran once and passed. Markdown converted to native Gutenberg blocks via md-to-gutenberg.py (no classic-block fallback), with the Kadence dynamic TOC injected after the intro per site-conventions.md. 5 media uploaded (featured.png landed as featured-8.png on the server, so its id/source_url were taken from the upload response, never a slug lookup); all 4 in-post embeds repointed at their uploaded source_url. WordPress draft created: post 2271 (status draft, categories [12 Productivity, 9 EdTech], tags [17, 20, 14, 30], featured_media 2269). PR #28 opened: https://github.com/lucky72o/olgapak-blog/pull/28. pr-monitor.json written with mode=pr, status=open, wp_upload=ok.
 - Gate 2 opened (console-gated): 2026-09-09 10:05. No CronCreate monitor started and no typed input awaited: CONSOLE_RUN_STATE is set, so approval is the console's browser Approve action writing approval.json. The workflow does NOT merge the PR and does NOT send WordPress status=publish.
+- Gate 2 approved (console, approval.json): 2026-09-12 21:46 UTC. PR #28 merged by console 21:47 UTC. Finalize completed: 2026-09-12 (console-merge route, live inbound links applied to 4 posts, archive landed on main).
 
 - <stage> started: <timestamp> (owner: <agent>)
 - <stage> completed: <timestamp>
@@ -412,3 +413,18 @@ write are the deferred SIDE EFFECTS. The WordPress auth probe is deferred with t
 adapter runs it at most once per run immediately before the upload/create sequence and a needless
 early probe risks tripping the host's login-attempt limiter for no benefit.
 
+
+## Console-merge finalize (resume ai-note-taking, 2026-09-12)
+
+Routed via Step 2: `finalize` + `gate_2_final`, `pr-monitor.json` mode `pr` status `open`, PR #28 already MERGED (2026-09-12T21:47:08Z), `approval.json` present (operator, 2026-09-12T21:46:58Z). No monitor cron existed (console-gated), so CronDelete is a no-op.
+
+wordpress-rest §On Gate 2 approval step 1: `GET posts/2271` returned `status: publish` (published 2026-09-12T19:47:25, https://olgapak.com/ai-note-taking). Live post is authoritative, final draft re-sync SKIPPED.
+
+### Live inbound-link write-ahead record
+
+Written BEFORE the REST edits. Idempotency grep `href="(https://olgapak\.com)?/ai-note-taking/?"` found 0 matches in each target's `content.raw`. Each insertion mirrors the sentence Stage 4b.5 wrote into the repo markdown, appended to the same paragraph, absolute URL, no trailing slash.
+
+- live inbound link applied: note-taking-methods (wp id 2102) -> this post, anchor "using AI to take notes" in The Step Most People Skip, Text Summarizer paragraph; before: "...the same way you match the method.</p>"; after: "...the same way you match the method. If you want to go further and let software handle the transcribing and first-pass summarizing...". POST 200, re-read shows exactly 1 match.
+- live inbound link applied: digital-vs-paper-notes (wp id 2187) -> this post, anchor "AI note-taking" in Where digital notes genuinely win, speed-of-capture paragraph; before: "...a keyboard is simply better at that job than your wrist is.</p>"; after: "...than your wrist is. And if speed is the whole point, there is a third option now: hand the capture to software...". POST 200, re-read shows exactly 1 match.
+- live inbound link applied: how-to-take-notes-on-ipad (wp id 2193) -> this post, anchor "an AI note-taking workflow" in Step 4, condensing paragraph; before: "...then paste it into another note as typed text.</p>"; after: "...as typed text. If you want software doing more of that condensing for you, that is the whole point of...". POST 200, re-read shows exactly 1 match.
+- live inbound link applied: cornell-note-taking-method (wp id 2075) -> this post, anchor "AI note-taking" in the 5 R's, after-the-room-empties paragraph; before: "...and they take minutes, not hours.</p>"; after: "...not hours. That split is also why <a href=\"https://olgapak.com/ai-note-taking\">AI note-taking</a> helps more...". POST 200, re-read shows exactly 1 match.
