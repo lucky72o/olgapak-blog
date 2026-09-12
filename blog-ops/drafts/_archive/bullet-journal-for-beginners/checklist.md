@@ -2,7 +2,7 @@
 slug: bullet-journal-for-beginners
 target_keyword: bullet journal for beginners
 created: 2026-08-26 12:30
-last_updated: 2026-08-26 14:35
+last_updated: 2026-09-05 13:16
 current_stage: complete
 current_owner: blog-post-workflow
 status: complete
@@ -179,11 +179,11 @@ Mechanical grep of draft markers + fill action-items template. One checkbox per 
 
 Editor presents Gate 2 banner (the only human gate; plan approval is an automated Stage 1c.5 review). On approve, runs the finalize sequence (adapter-specific, per `adapters/publish/<adapter>.md`): moves/publishes the draft to `{content_dir}/<slug>.md` (or the WordPress equivalent); creates the asset folder; archives `{drafts_dir}/<slug>/` → `{drafts_dir}/_archive/<slug>/`.
 
-- [ ] Gate 2 presented (banner format)
-- [ ] Human approved
-- [ ] draft moved/published to `{content_dir}/<slug>.md` (or the WordPress equivalent)
-- [ ] asset folder created at `{assets_dir}/<slug>/` (with images.md as README.md)
-- [ ] `{drafts_dir}/<slug>/` archived to `{drafts_dir}/_archive/<slug>/`
+- [x] Gate 2 presented (banner format)
+- [x] Human approved
+- [x] draft moved/published to `{content_dir}/<slug>.md` (or the WordPress equivalent)
+- [x] asset folder created at `{assets_dir}/<slug>/` (with images.md as README.md)
+- [x] `{drafts_dir}/<slug>/` archived to `{drafts_dir}/_archive/<slug>/`
 
 **End state:** `status=complete`, `current_stage=complete`. Post lives in `{content_dir}` (or the configured WordPress site); the human works through archived `action-items.md` before publishing per the configured adapter.
 
@@ -210,12 +210,15 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 - Plan review opened: 2026-08-26 12:55
 - Plan review verdict: request_revisions (iteration 1), 6 concrete items, chiefly that the 15.9M-views stat DID have a citable URL in the raw SERP capture; all 6 applied, prior review archived as plan-review-v1.md, 2026-08-26 12:58
 - Plan review verdict: approve (iteration 2, the cap), all six revisions verified against the raw data, 2026-08-26 13:03
-- Gate 2 opened: ...
+- Gate 2 opened: 2026-08-26 14:35 (console-gated: operator dashboard, no CronCreate monitor)
+- Gate 2 approved: 2026-09-05 12:10 UTC (console approval.json, approved_by operator, mode now); PR #19 merged by the console 2026-09-05T12:11:08Z; WP post 2208 published from wp-admin 2026-09-05 12:10
+- Finalize completed: 2026-09-05 13:16 (console-merge finalize via `resume`; live inbound-link pass applied to 3 posts; archive re-synced; worktree left in place)
 
 ## Stage transition log
 
 - intake completed: 2026-08-26 12:30 (autopilot file-intake from content-plan.md row 17)
 - Stage 1b research analysis completed: 2026-08-26 12:48 (serp + reddit + x)
+- Stage 4c finalize completed: 2026-09-05 13:16. Console-merge path (PR #19 already MERGED, approval.json present, no cron to delete). WP post 2208 read back as publish, so the final content re-sync was skipped; live inbound links applied to how-to-plan-your-week (2132), best-notebooks-for-note-taking (2092), digital-vs-paper-notes (2187). Archive re-synced to _archive/ with terminal checklist + pr-monitor status done; assets README.md written; finalize commit landed on main by cherry-pick (the PR branch is already merged).
 - Stage 4b.5 SIDE EFFECTS completed: 2026-08-26 14:35 (autopilot-cont, after verification PASS). PR #19 opened (https://github.com/lucky72o/olgapak-blog/pull/19); WordPress draft 2208 created with 5 media uploaded, featured_media 2204, category Productivity (12), tags 15/36/33/30; pr-monitor.json written. Gate 2 is console-gated: no CronCreate monitor started.
 - Stage 4b.5 staging FILE LAYOUT completed: 2026-08-26 14:26, branch blog/bullet-journal-for-beginners pushed (commit 6054124). Side effects (PR open, WP draft create, pr-monitor.json) DEFERRED to autopilot-cont per the console verification handshake (CONSOLE_VERIFICATION=on)
 - Stage 4b.5 staging started: 2026-08-26 14:20 (owner: blog-post-workflow)
@@ -404,3 +407,16 @@ writer pass. Editor applied two by hand:
   `informational_pillar` if the live results are broad beginner pillars rather than step guides.
 - Affiliate policy: any tagged Amazon link in the supplies section makes the standing
   disclosure paragraph mandatory at the end of the intro.
+
+### Gate 2 finalize: live inbound-link pass (2026-09-05 13:14)
+
+Console-merge finalize (PR #19 already MERGED at 2026-09-05T12:11:08Z, approval.json present). WP post 2208 read back as `status: publish` (live at https://olgapak.com/bullet-journal-for-beginners), so the final content re-sync was SKIPPED (live post authoritative) and, per `publish.wordpress.apply_inbound_links_live: true`, the live inbound-link pass runs. Idempotency check (`href="(https://olgapak\.com)?/bullet-journal-for-beginners/?"`) found 0 existing links in all three targets.
+
+- live inbound link planned: how-to-plan-your-week (wp id 2132) -> this post
+- live inbound link planned: best-notebooks-for-note-taking (wp id 2092) -> this post
+- live inbound link planned: digital-vs-paper-notes (wp id 2187) -> this post
+- live inbound link applied: how-to-plan-your-week (wp id 2132) -> this post, anchor "starting a bullet journal" in the tools-wrap-up paragraph ("That's really it. The tools matter far less..."); before: "...The tools matter far less than picking a small set and sticking with them.</p>"; after: "...sticking with them. If you'd rather run the whole thing on paper, <a href="https://olgapak.com/bullet-journal-for-beginners">starting a bullet journal</a> gives you the same three pieces in one notebook.</p>" (POST HTTP 200, re-read: 1 link, status publish)
+- live inbound link applied: best-notebooks-for-note-taking (wp id 2092) -> this post, anchor "starting a bullet journal in it" in the intro paragraph after the Cornell-method sentence; before: "...the right ruled notebook makes it far easier to stick with.</p>"; after: "...far easier to stick with. And if you're buying one without a job in mind yet, that's usually why it ends up half-used: give it one, even something as simple as <a href="https://olgapak.com/bullet-journal-for-beginners">starting a bullet journal in it</a>, and the notebook actually gets opened.</p>" (POST HTTP 200, re-read: 1 link, status publish)
+- live inbound link applied: digital-vs-paper-notes (wp id 2187) -> this post, anchor "a paper planning system like a bullet journal" in the where-paper-wins paragraph ("Paper also can't autocomplete..."); before: "...ten minutes before a seminar. It just opens.</p>"; after: "...It just opens. That's also why <a href="https://olgapak.com/bullet-journal-for-beginners">a paper planning system like a bullet journal</a> survives a week that goes sideways: there's nothing to re-sync, only a page to turn.</p>" (POST HTTP 200, re-read: 1 link, status publish)
+
+All three rows of the outline's "Inbound internal links" table are now live; the action-items §4b hand-apply items are done by the workflow.

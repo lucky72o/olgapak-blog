@@ -29,6 +29,8 @@ import { FourCorePagesMap } from "./FourCorePagesMap";
 import { CostTierKey } from "./CostTierKey";
 import { ThreeColourHighlightingKey } from "./ThreeColourHighlightingKey";
 import { HighlighterTipShapes } from "./HighlighterTipShapes";
+import { AiHandlesYouHandle } from "./AiHandlesYouHandle";
+import { FiveStepWorkflow } from "./FiveStepWorkflow";
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -87,6 +89,9 @@ export const RemotionRoot: React.FC = () => (
     <Still id="ThreeColourHighlightingKey" component={ThreeColourHighlightingKey}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="HighlighterTipShapes" component={HighlighterTipShapes}
+    <Still id="AiHandlesYouHandle" component={AiHandlesYouHandle}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="FiveStepWorkflow" component={FiveStepWorkflow}
       width={CANVAS.width} height={CANVAS.height} />
   </>
 );
