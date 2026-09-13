@@ -1,6 +1,6 @@
 ---
 title: "Dopamine Detox: What It Is and How to Actually Do It Right"
-date: 2026-09-07
+date: 2026-09-13
 excerpt: "Dopamine detox isn't what TikTok says it is. Here's what actually helps, and a version you'll finish, from the clinician who coined the term."
 tags:
   - productivity
