@@ -2,7 +2,7 @@
 slug: dopamine-detox
 target_keyword: dopamine detox
 created: 2026-09-07 03:41
-last_updated: 2026-09-07 06:07
+last_updated: 2026-09-13 12:05
 current_stage: complete
 current_owner: blog-post-workflow
 status: complete
@@ -334,3 +334,14 @@ State left for `autopilot-cont`: `current_stage=preview` with the staged post pr
 **Known limitation to raise at retro (not a blocker).** The `wp:image` blocks carry no `"id"` attribute, because the adapter's step 4 specifies a plain source_url substring substitution and nothing more. Without the attachment id WordPress will not emit a responsive `srcset`, so mobile readers get the full-size PNG (1.8-2.8 MB each). This affects every wordpress-rest post, not just this one.
 
 - Stage 4b.5 completed: 2026-09-07T05:08Z, PR #23 opened (https://github.com/lucky72o/olgapak-blog/pull/23), WP draft 2241 created
+
+**Console-merge finalize (resume session, 2026-09-13).** Route: `finalize` + `gate_2_final`, `mode: pr`, monitor `status: open`, PR #23 MERGED at 2026-09-13T12:02:33Z, `approval.json` present (operator, 2026-09-13T12:02:22Z). No monitor cron existed, so there was nothing to `CronDelete`. WP post 2241 status read by stored ID: `publish` (published 2026-09-13T12:01:42). External-publish path: final content sync SKIPPED, because the live post is authoritative. `apply_inbound_links_live: true`, so the live inbound-link pass runs.
+
+Live inbound-link write-ahead (recorded before any POST; idempotency grep `href="(https://olgapak\.com)?/dopamine-detox/?"` found 0 matches in all three at 2026-09-13):
+- live inbound link applied: digital-detox-plan (wp id 2152) -> this post, anchor "dopamine detox" in "What a digital detox plan actually is (and why cold turkey backfires)"; before: "...deleting every app on a Sunday night and hoping the feeling holds."; after: "...hoping the feeling holds. It is also not the same thing as a dopamine detox, which is about the easy-reward habits underneath...". POST 200, re-read: 1 canonical link, status publish.
+- live inbound link applied: how-to-stop-doomscrolling (wp id 2122) -> this post, anchor "dopamine detox" in "Layer 2: Catch the trigger"; before: "...instead of a judge handing down a sentence."; after: "...a judge handing down a sentence. If you want the wider version of this idea, the one that covers the easy-reward habits beyond the feed, that is what a dopamine detox is actually for.". POST 200, re-read: 1 canonical link, status publish.
+- live inbound link applied: how-to-reduce-screen-time (wp id 2181) -> this post, anchor "dopamine detox" in "Not all screen time is the problem"; before: "Before you change anything, split your hours into two piles."; after: "...two piles. That same split, useful screen use on one side and the compulsive kind on the other, is what drives a dopamine detox too.". POST 200, re-read: 1 canonical link, status publish.
+
+Asset folder: `README.md` added (verbatim copy of images.md); `.staged-by-blog-workflow` sentinel removed. Archive re-synced from the source dir and set terminal.
+
+- Gate 2 approved: 2026-09-13T12:02Z (console, approval.json), Finalize completed: 2026-09-13T12:05Z (console-merge path, PR #23 already merged)
