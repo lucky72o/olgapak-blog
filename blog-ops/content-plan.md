@@ -36,7 +36,7 @@
 | 25 | how-to-take-notes-in-meetings | how to take notes in meetings | INFO guide: How to Take Better Notes in Meetings (templates + tips) | | | planned |
 | 26 | pomodoro-technique | pomodoro technique | INFO/COMMERCIAL guide: Pomodoro Technique (how it works + best timers) | | | planned |
 | 27 | best-washi-tape | best washi tape | COMMERCIAL roundup: Best Washi Tape Sets for Journaling & Notes (2026) | | | planned |
-| 28 | dopamine-detox | dopamine detox | INFO guide: Dopamine Detox (what it is and how to do it right) | | | planned |
+| 28 | dopamine-detox | dopamine detox | INFO guide: Dopamine Detox (what it is and how to do it right) | | | published |
 | 29 | best-alarm-clock-to-replace-phone | best alarm clock to replace phone | COMMERCIAL roundup: Best Alarm Clocks to Replace Your Phone (2026) | | | planned |
 | 30 | aesthetic-desk-setup | aesthetic desk setup | COMMERCIAL guide: How to Make Your Desk Aesthetic (setup ideas & products) | | | planned |
 | 31 | productive-morning-routine | productive morning routine | INFO guide: How to Build a Productive Morning Routine | | | planned |
