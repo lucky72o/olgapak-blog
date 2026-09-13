@@ -29,6 +29,7 @@ import { FourCorePagesMap } from "./FourCorePagesMap";
 import { CostTierKey } from "./CostTierKey";
 import { FourBoxMeetingNotesTemplate } from "./FourBoxMeetingNotesTemplate";
 import { FiveMinutePostMeetingPass } from "./FiveMinutePostMeetingPass";
+import { GraduatedCadenceSteps } from "./GraduatedCadenceSteps";
 import { AiHandlesYouHandle } from "./AiHandlesYouHandle";
 import { FiveStepWorkflow } from "./FiveStepWorkflow";
 
@@ -89,6 +90,7 @@ export const RemotionRoot: React.FC = () => (
     <Still id="FourBoxMeetingNotesTemplate" component={FourBoxMeetingNotesTemplate}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="FiveMinutePostMeetingPass" component={FiveMinutePostMeetingPass}
+    <Still id="GraduatedCadenceSteps" component={GraduatedCadenceSteps}
     <Still id="AiHandlesYouHandle" component={AiHandlesYouHandle}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="FiveStepWorkflow" component={FiveStepWorkflow}

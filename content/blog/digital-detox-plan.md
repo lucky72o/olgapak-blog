@@ -21,7 +21,7 @@ This guide covers the baseline to take before day 1, the seven daily steps, what
 
 ## What a digital detox plan actually is (and why cold turkey backfires)
 
-A digital detox plan is a short, structured reduction in screen use with a defined start, a defined end, and one change at a time. That last part is the whole trick. It is not deleting every app on a Sunday night and hoping the feeling holds.
+A digital detox plan is a short, structured reduction in screen use with a defined start, a defined end, and one change at a time. That last part is the whole trick. It is not deleting every app on a Sunday night and hoping the feeling holds. It is also not the same thing as a [dopamine detox](/dopamine-detox), which is about the easy-reward habits underneath, some of which are not screens at all.
 
 Am I overreacting about my own phone? Probably not, and neither are you. A review of 109 studies covering 97,748 people found [about 37.1% of people worldwide show problematic smartphone use](https://pmc.ncbi.nlm.nih.gov/articles/PMC11871965/). That's a description of how common this is. It isn't a diagnosis, and it isn't a verdict on your character.
 
