@@ -21,7 +21,7 @@ Below I cover how to tell your useful hours from the leaked ones, the ten-minute
 
 ## Not all screen time is the problem
 
-Before you change anything, split your hours into two piles.
+Before you change anything, split your hours into two piles. That same split, useful screen use on one side and the compulsive kind on the other, is what drives a [dopamine detox](/dopamine-detox) too.
 
 ![Two panels splitting screen time into hours you would choose again and hours that leaked](../../blog-ops/assets/how-to-reduce-screen-time/two-piles-of-screen-time.png)
 
