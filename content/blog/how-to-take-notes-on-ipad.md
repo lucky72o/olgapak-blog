@@ -125,7 +125,7 @@ So what actually earns a place in the bag?
 
 Here is the whole list, in descending order of how much it matters:
 
-- **An Apple Pencil**, worth it if you handwrite regularly and not before. Compatibility is model-specific and shifts with every new iPad, so check [which Apple Pencil works with your iPad](https://www.apple.com/apple-pencil/) rather than trusting a chart in a blog post.
+- **An Apple Pencil**, worth it if you handwrite regularly and not before. Compatibility is model-specific and shifts with every new iPad, so check [which Apple Pencil works with your iPad](https://www.apple.com/apple-pencil/) rather than trusting a chart in a blog post. If it's a present, my guide to [gifts for students](/gifts-for-students) covers the stylus picks and the compatibility check to do first.
 - **A cheaper stylus**, which covers the same ground for most people. [The Logitech Crayon](https://www.amazon.com/dp/B0BSBQWDSG) uses Apple Pencil technology and does everything note-taking asks of it.
 - **[A paper-feel screen protector](https://paperlike.com/products/paperlike-for-ipad)**, a matte film you stick over the screen to add a little friction.
 - **A case, a stand, a keyboard**, all genuinely optional. A keyboard turns the iPad into a small laptop, which is a different tool and a different decision.
