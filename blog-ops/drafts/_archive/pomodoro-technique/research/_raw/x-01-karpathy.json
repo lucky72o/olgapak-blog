@@ -1,0 +1,71 @@
+{
+  "rank": 1,
+  "url": "https://x.com/karpathy/status/1427022225954070528",
+  "author": "Andrej Karpathy",
+  "handle": "karpathy",
+  "text": "Pomodoro technique \nhttps://\nen.wikipedia.org/wiki/Pomodoro_\nTechnique\n… simple idea: break up time/work into discrete committed chunks of 25min, has some nice benefits wrt psychology and analysis.",
+  "topReplies": [
+    {
+      "author": "Aleksa Gordić (水平问题)",
+      "handle": "gordic_aleksa",
+      "text": "The only time I found it useful is when I was doing something that I don't enjoy that much. \n\nBut that may be only me I dunno.",
+      "likes": 3
+    },
+    {
+      "author": "DrKnowItAll",
+      "handle": "DrKnowItAll16",
+      "text": "Excellent idea",
+      "likes": 1
+    },
+    {
+      "author": "Cristian Garcia",
+      "handle": "cgarciae88",
+      "text": "Sometimes do 45 - 15",
+      "likes": 0
+    },
+    {
+      "author": "ʞɔɐɾ ɯɐ ı",
+      "handle": "justachelloveck",
+      "text": "I have a 30 min hour glass for this purpose. When I turn it I’m not allowed to take any kinda of break until the sand is out. Usualy@by that time I’m lost in the problem and just keep going",
+      "likes": 5
+    },
+    {
+      "author": "Dusty Greene",
+      "handle": "RustyRoad",
+      "text": "Will this still work if mine is just a regular POME and not a pomodoro? 😆😉",
+      "likes": 2
+    },
+    {
+      "author": "Jack",
+      "handle": "LecJackS",
+      "text": "Yes! Life changer for me.\n\nFirst heard of it on Dr Barbara Oakley course on \"Learning how to learn\" about 10 years ago.\n\nStill my default way to organize study and work sessions.\n\nFor timing and statistics I use \nhttps://\npomodoro-tracker.com",
+      "likes": 4
+    },
+    {
+      "author": "carlos",
+      "handle": "calufa",
+      "text": "Personally, I think it is good when you are in a leader / management role and need to deal with reports, Pomodoro helps you remember that you actually have a team. For the head-down moments, \"he's-wired\", not so much.",
+      "likes": 2
+    },
+    {
+      "author": "Michael Rigoni",
+      "handle": "michael_rigoni",
+      "text": "@karpathy\n tell us more about your perspective on the psychological and analytical benefits",
+      "likes": 3
+    },
+    {
+      "author": "Vikram Shukla",
+      "handle": "vshukla",
+      "text": "In high school and college I could sit down for hours, laser focused mainly due to competition. As I grow older and more distracted (self-inflicted and otherwise), I have found that 30 mins is sweet spot for me, occasionally can push it to 45 mins.",
+      "likes": 1
+    },
+    {
+      "author": "Marin Vlastelica 🤖🎸",
+      "handle": "vlastelicap",
+      "text": "There seems to be something unnatural about breaking deep focus especially when working on a big problem. I think unfortunately some problems require continuous > 25 min commitment to be solved efficiently, ie are not breakable in 25 min chunks.",
+      "likes": 2
+    }
+  ],
+  "fetchedAt": "2026-09-08T18:49:58.120Z",
+  "fetchStatus": "ok"
+}
