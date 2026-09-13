@@ -2,10 +2,10 @@
 slug: dopamine-detox
 target_keyword: dopamine detox
 created: 2026-09-07 03:41
-last_updated: 2026-09-07 06:40
-current_stage: preview
+last_updated: 2026-09-07 06:07
+current_stage: complete
 current_owner: blog-post-workflow
-status: active
+status: complete
 gate_pending: none
 # status values: active | paused | complete | abandoned
 # current_stage values: intake | chrome_fetch | serp_select | serp_deep_fetch | reddit_fetch | reddit_select | reddit_deep_fetch | x_fetch | x_select | x_deep_fetch | competitor_check | analyze_research | synthesize_plan | plan_review | outline | draft | review | humanize | resolve_markers | images | generate_images | action_items | preview | finalize | repurpose | complete
@@ -299,3 +299,38 @@ Editor reviewed all five renders visually: on-brand warm palette, exact title on
 - `content/blog/how-to-stop-doomscrolling.md`, anchor `dopamine detox` -> `/dopamine-detox`, in the section "Layer 2: Catch the trigger (work with your brain, not against it)". Dirty-file guard: clean at 2026-09-07T06:45Z, 0 pre-existing `/dopamine-detox` links.
 - `content/blog/how-to-reduce-screen-time.md`, anchor `dopamine detox` -> `/dopamine-detox`, in the section "Not all screen time is the problem". Dirty-file guard: clean at 2026-09-07T06:45Z, 0 pre-existing `/dopamine-detox` links.
 
+**Stage 4b.5 staging: FILE LAYOUT ONLY, side effects deferred.** `CONSOLE_VERIFICATION=on`, so per `references/console-contract.md` §Verification handshake this run performs the staging file layout and the branch commit+push, and does NOT perform the deferred side effects: no `gh pr create`, no WordPress draft create, no media upload, no `pr-monitor.json`. The WordPress auth probe was deliberately NOT run either, because the adapter allows it at most once per run and `autopilot-cont` needs it for the create; running it twice risks the login-attempt lockout the adapter warns about.
+
+Done in this run:
+- Collision guard passed: no `content/blog/dopamine-detox.md` on `origin/main` after fetch.
+- Staged `content/blog/dopamine-detox.md`. All 4 `[IMAGE:]` placeholders resolved to real embeds (order verified against the images.md filenames, every target confirmed present on disk), so no build-safe pending notes were needed. 0 markers of any kind remain.
+- `draft: true` kept in frontmatter. For the wordpress-rest adapter that line is documentation-only (the WP `status` field is the real gate), and every published post on this blog carries it.
+- Inbound links applied to all 3 target posts, one anchor each. Dirty-file guard: all three were clean with 0 pre-existing `/dopamine-detox` links. Link-only diff verified: exactly 1 changed line per file.
+- Early non-terminal archive snapshot written to `blog-ops/drafts/_archive/dopamine-detox/` for PR completeness; file set verified identical to the live drafts dir. Re-synced to terminal state at finalize.
+- Asset dir ships the 5 PNGs only. The codex `.json` provenance sidecars and the `.staged-by-blog-workflow` sentinel stay local and untracked, matching every prior post's asset dir on `main`.
+- Committed and pushed `blog/dopamine-detox` (26aea29), 49 files.
+
+State left for `autopilot-cont`: `current_stage=preview` with the staged post present and no `pr-monitor.json`, which is exactly the resume row that re-enters Step 14.5 for the side effects.
+
+**Gate 2 review notes, collected across the run:**
+1. Headless assumptions to confirm: category `Productivity`, author `olga`, and enabling both Reddit and X research were editor judgments from files, not human answers (`brief.md` §Autopilot assumptions).
+2. The plan's "7-day reset" section was restructured at outline time to avoid colliding with the published `digital-detox-plan` post (`outline.md` §Open questions item 1).
+3. The NYT external link is paywalled; a reader without a subscription sees only the lede. Kept because it is the primary source Harvard Health cites for the Sepah quote.
+4. Sepah's credential is contested across sources; the post says "clinician" deliberately (`facts.md` §Contested).
+5. Image 3 (the cadence diagram) sits close to H2 3's comparison table, which also mentions the cadence. The planner kept it and justified it; worth a glance in the preview.
+6. Before publishing: set the Rank Math focus keyword to `dopamine detox` in wp-admin. It is not settable via REST, so the workflow cannot do it.
+
+**Stage 4b.5 side effects (autopilot-cont run, 2026-09-07T05:08Z).** Verification PASSED, so this run performed the deferred side effects the fresh run held back.
+
+- WordPress auth probe: OK (run exactly once, user id 1 / Olga Pak).
+- Gutenberg conversion: PRIMARY path (`md-to-gutenberg.py`), not the classic-block fallback. Emitted 45 paragraph, 17 heading, 4 image, 2 list (6 list-item), 1 table blocks + the Kadence dynamic TOC via `--extra-blocks` (position after-intro), extracted verbatim from `site-conventions.md` §Table of contents.
+- Media uploaded: 5 files, ids 2236-2240. WordPress uniquified the featured attachment slug to `featured-3.png`; the id was captured from the upload response (never re-derived from a `slug=` lookup), so no cross-post collision. Every local path substituted for its `source_url`; 0 local paths remain in the posted body.
+- WP draft created: post **2241**, status `draft`, slug `dopamine-detox`, `featured_media` 2236, category Productivity (term 12), tags productivity/students/time management (15/30/34), author 1. Slug lookup returned empty first, so this was a genuine first create.
+- Round-trip verified against `?context=edit`: status draft, TOC block present, 4 image blocks all pointing at uploaded URLs.
+- PR **#23** opened: https://github.com/lucky72o/olgapak-blog/pull/23
+- `pr-monitor.json` written with `mode: pr`, `status: open`, `wp_upload: ok`.
+- Console-gated Gate 2: no CronCreate monitor started, per `console-contract.md` §Gate 2 under the console.
+
+**Known limitation to raise at retro (not a blocker).** The `wp:image` blocks carry no `"id"` attribute, because the adapter's step 4 specifies a plain source_url substring substitution and nothing more. Without the attachment id WordPress will not emit a responsive `srcset`, so mobile readers get the full-size PNG (1.8-2.8 MB each). This affects every wordpress-rest post, not just this one.
+
+- Stage 4b.5 completed: 2026-09-07T05:08Z, PR #23 opened (https://github.com/lucky72o/olgapak-blog/pull/23), WP draft 2241 created
