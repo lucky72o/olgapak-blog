@@ -27,6 +27,7 @@ import { TwoPilesOfScreenTime } from "./TwoPilesOfScreenTime";
 import { InkFamiliesTradeoff } from "./InkFamiliesTradeoff";
 import { FourCorePagesMap } from "./FourCorePagesMap";
 import { CostTierKey } from "./CostTierKey";
+import { ClearVsAmberLenses } from "./ClearVsAmberLenses";
 import { GraduatedCadenceSteps } from "./GraduatedCadenceSteps";
 import { AiHandlesYouHandle } from "./AiHandlesYouHandle";
 import { FiveStepWorkflow } from "./FiveStepWorkflow";
@@ -85,6 +86,7 @@ export const RemotionRoot: React.FC = () => (
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="CostTierKey" component={CostTierKey}
       width={CANVAS.width} height={CANVAS.height} />
+    <Still id="ClearVsAmberLenses" component={ClearVsAmberLenses}
     <Still id="GraduatedCadenceSteps" component={GraduatedCadenceSteps}
     <Still id="AiHandlesYouHandle" component={AiHandlesYouHandle}
       width={CANVAS.width} height={CANVAS.height} />

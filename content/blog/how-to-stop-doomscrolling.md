@@ -48,7 +48,7 @@ Turn on grayscale mode so the whole screen drains to black and white, and switch
 
 ### 3. Charge your phone outside the bedroom
 
-The worst scrolling happens in bed, first thing and last thing. Charge your phone in another room and let it live there overnight. It matters more than it sounds: [in-bed use of social media is linked to insomnia and daytime sleepiness](https://doi.org/10.1016/j.sleh.2017.12.004), so the bedtime scroll costs you twice, first the lost hour, then the worse sleep. Between the blue light and the mental buzz of a feed, a screen-free bedroom is one of the highest-return changes on this whole list. Get a cheap alarm clock so your phone has no excuse to sit on the nightstand.
+The worst scrolling happens in bed, first thing and last thing. Charge your phone in another room and let it live there overnight. It matters more than it sounds: [in-bed use of social media is linked to insomnia and daytime sleepiness](https://doi.org/10.1016/j.sleh.2017.12.004), so the bedtime scroll costs you twice, first the lost hour, then the worse sleep. Between the blue light and the mental buzz of a feed, a screen-free bedroom is one of the highest-return changes on this whole list, and a far better bet than buying [blue light glasses for evening screen use](/best-blue-light-glasses). Get a cheap alarm clock so your phone has no excuse to sit on the nightstand.
 
 ### 4. Keep messaging, cut the feeds (you don't have to deactivate)
 

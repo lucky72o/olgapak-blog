@@ -1,0 +1,147 @@
+{
+  "rank": 3,
+  "url": "https://www.reddit.com/r/sleephackers/comments/12ci2fp/i_just_finished_testing_30_pairs_of_blueblocking/",
+  "title": "I just finished testing 30 pairs of blue-blocking glasses! Here’s what I found…",
+  "h1": "I just finished testing 30 pairs of blue-blocking glasses! Here’s what I found…",
+  "subreddit": "sleephackers",
+  "score": 1191,
+  "numComments": 402,
+  "createdUtc": 1680696184,
+  "wordCount": 581,
+  "bodyText": "As many of you are probably aware, most blue-blocking glasses “claim” to block X amount of blue/green light without backing that up with any kind of data.\n\nSince I have a spectrometer, I figured I’d go ahead and test them all myself!\n\n[**Here's the link to the database!**](https://optimizeyourbiology.com/blue-blocker-database)\n\n30+ different lenses have been tested so far with more to come!\n\n**Here’s what’s inside:**\n\n# Circadian Light Reduction\n\nCircadian Light is a metric derived through an advanced algorithm developed by the [**LHRC**](https://docs.light-health.org/cscalc/inner-workings/cs-model) which simply looks at a light source’s overall spectrum and how that is likely to interact with the human body.\n\nWhat this does is weights the light that falls within the **melanopically sensitive** range, and gives it a score based on how much lux is present in that range.\n\n# Before and After Spectrum\n\nEach pair of glasses was tested against a test spectrum so that a reduction in wavelengths could be seen across the entire visible spectrum.\n\nThis will allow you to see what a particular lens actually blocks and what it doesn't.\n\n# Lux Reduction\n\nLux is simply a measurement of how much light exists within the spectral sensitivity window of the human eye.\n\nIn other words, how **bright** a light source is.\n\nSome glasses block **more** lux and **less** circadian light than others. And some go the other way.\n\nIf you’re looking to maximize melatonin production, but still want to see as well as possible, look for a pair with low lux reduction and high circadian light reduction.\n\nThe higher the lux reduction, the worse everything is going to look, but this may be helpful in bright environments or for those with sensitive visual receptors.\n\n# Fit and Style Matters!\n\nThis *should* be common sense, but wraparound-style glasses prevent **significantly** more unfiltered light from entering the eye than regular-style glasses do.\n\nI carved out a foam mannequin head and put my spectrometer in there to simulate how much light made it to the human eye with different kinds of glasses on.\n\n[I’m very proud of him, his name is Henry.](https://preview.redd.it/ixy6whqxs1sa1.jpg?width=1060&amp;format=pjpg&amp;auto=webp&amp;s=0cafe004747c5011207dc0aea707aec87ff3b407)\n\nHere is our reference light:\n\nhttps://preview.redd.it/sp4330got1sa1.jpg?width=663&amp;format=pjpg&amp;auto=webp&amp;s=4751e20765b64562254ccb130569f2b152dc0a05\n\nAnd here is how much of that light makes it through the lenses from the wrap-around glasses above:\n\n[These particular lenses don't block all of the blue light.](https://preview.redd.it/176p7jbtt1sa1.jpg?width=663&amp;format=pjpg&amp;auto=webp&amp;s=cfe0cd3df610bd0b5b76b734ee8e847448194473)\n\nBut what happens when we move the head around a light source so that light can get in through the sides?\n\n[Due to the style of these glasses, there really isn't much room for light to penetrate through the sides.](https://preview.redd.it/37l2dizyt1sa1.jpg?width=1060&amp;format=pjpg&amp;auto=webp&amp;s=0b2f9cc9b8a1ec1f3981467295deb17ac76324f8)\n\nBelow is a reading taken from a light source directly overhead, as you can see there's really no difference:\n\nhttps://preview.redd.it/cnxr9f9st1sa1.jpg?width=663&amp;format=pjpg&amp;auto=webp&amp;s=a02e5067cd786b0083d60ad5daf84e1f3bf193fb\n\nHow about if we test a more typical pair of glasses?\n\n[Here's Henry wearing a more typical style of glasses.](https://preview.redd.it/3qg7mvx8u1sa1.jpg?width=1060&amp;format=pjpg&amp;auto=webp&amp;s=18e102af459eab112cd8e33fceb54c62ded57aa8)\n\nHere's how much light these lenses block:\n\nhttps://preview.redd.it/mq34hv8du1sa1.jpg?width=663&amp;format=pjpg&amp;auto=webp&amp;s=ffb7deefa1d71f66298a86fec8cc7084920292be\n\nBut what happens when we move the light source around the head at various angles?\n\n[As you can see, this style leaves large gaps for unfiltered light to reach the eye.](https://preview.redd.it/ayzw5k1iu1sa1.jpg?width=1060&amp;format=pjpg&amp;auto=webp&amp;s=f7488468913ff27d031534e44ce083d5cecc892a)\n\nWhat we see is a massive amount of light that the lenses themselves can technically block can make it to the eye with a style like this:\n\nhttps://i.redd.it/soq22b7ou1sa1.gif\n\nSo compared to the reference light, these glasses still mitigate short-wavelength blue and green light. But that doesn't mean they block the light they're advertised to in the end.\n\n**Hopefully, this helps you make better decisions about which blue blockers you use!**\n\nIf you'd like help picking a pair, see our [**Best Blue Blocking Glasses post!**](https://optimizeyourbiology.com/best-blue-blocking-glasses)",
+  "topComments": [
+    {
+      "author": "No_Sun2514",
+      "score": 38,
+      "body": " this is pretty damn informative, thanks for all this. my dad and I literally just went for lens shopping yesterday, wished we saw it then. but well ill keep this in mind when im buying my own, cus thankfully the guys there didnt have a frame i liked.\nwent over to check some over on amazon and [solaris prospek](https://google.com/share.google?q=jjb7PT54QNvdRR4t1) looks good, i think i saw it reviewed on yt once too, tho ill have to recheck. would really appreciate a test for these! they seem to have great reviews so im keen on getting em"
+    },
+    {
+      "author": "bobpage2",
+      "score": 27,
+      "body": "Quality post right here! Thank you"
+    },
+    {
+      "author": "TY-Miss-Granger",
+      "score": 15,
+      "body": "This was very helpful!\n\nI ordered my glasses from Amazon and made a donation to your site to say thanks :)"
+    },
+    {
+      "author": "incredulitor",
+      "score": 11,
+      "body": "This is awesome!  Love seeing test data, and this is beautifully presented.  Funny that the cheap ones are also some of the most effective.  Thank you!"
+    },
+    {
+      "author": "No-Entrepreneur4413",
+      "score": 6,
+      "body": "What’s the best blue light glasses for when I want to watch a movie or play video games in the evening and not have the experience be ruined by bad colors? I still want to block as much blue light as possible without hampering the experience if you know what I mean, so what % is best? Awesome testing by the way, I plan on buying multiple glasses for different purposes."
+    },
+    {
+      "author": "Dream-wrangler",
+      "score": 6,
+      "body": "Dang, some of the coolest people are on reddit! Nice work. Thank you"
+    },
+    {
+      "author": "JamesMc-4",
+      "score": 5,
+      "body": "As someone who is very research-heavy when buying anything and, especially when it comes to health, can never find what ACTUALLY matters and find hard-backed data....thank you. You saved my hours and hours of pulling my hair out. Making a donation too friend, its the least I could do. Let me know how else I can support you.\n\nI'll probably buy some for my girlfriend and my Mom too now :)!"
+    },
+    {
+      "author": "GilShumblin",
+      "score": 6,
+      "body": "This is such an exquisite resource. I spent 45 minutes searching for something of this quality, consideration, care, and rigor. Thank you so much OP. I will be sharing this resource with people I love. Just wow. You got any other projects along these lines that you've contributed to the citizen science world you'd be willing to share?"
+    },
+    {
+      "author": "tinypancake89",
+      "score": 5,
+      "body": "This is the type of research the world needs!"
+    },
+    {
+      "author": "lmanindahizl",
+      "score": 3,
+      "body": "Awesome thank you! Does Henry have any data from a whoop or something like that? Curious how Henry is sleeping"
+    },
+    {
+      "author": "SlipOk7680",
+      "score": 3,
+      "body": "Such an amazing post. You should turn it into a YouTube video. It would help and reach so many  people! Thanks to you and Henry for all of your hard work. Yall rock !!!"
+    },
+    {
+      "author": "sinuswaves",
+      "score": 2,
+      "body": "Good stuff! Cool website too"
+    },
+    {
+      "author": "AManAmongTheRuins",
+      "score": 2,
+      "body": "Why i can't save the post? Great info anyway!"
+    },
+    {
+      "author": "ConeCandy",
+      "score": 2,
+      "body": "Are there any other full red ones that work over glasses? You only have one fit over option that is amber."
+    },
+    {
+      "author": "Afro-Pope",
+      "score": 2,
+      "body": "Howdy! Old post, I know, but I am looking for a set of blue-blocker glasses just to prevent eye strain/fatigue from working at the computer. I don't have insomnia or anything like that, fortunately, but the big red glasses are aesthetically a non-starter in a client-facing office.\n\nDo you have any opinions on lenses like those offered by Gunnar Optiks and similar companies that are only slightly tinted, looking functionally like \"normal\" glasses, while still blocking a small amount of blue light? I have a pair that I have found to be useful for eye strain/fatigue, but I bought them almost a decade ago and figured I'd see if any advances had been made before just buying another pair - especially because they've gotten so much more expensive!\n\nThanks!"
+    },
+    {
+      "author": "[deleted]",
+      "score": 2,
+      "body": "Thank you so much! Super helpful for a noobie in this subject like me!"
+    },
+    {
+      "author": "Katzenpower",
+      "score": 2,
+      "body": "You are amazing man!!!!  \nDoes anyone know which brands are available in Europe too? I'm willing to pay the money for hq but it's so hard to find here"
+    },
+    {
+      "author": "donaldyoung26",
+      "score": 2,
+      "body": "Thank you! I really appreciate all the work!"
+    },
+    {
+      "author": "_UN7",
+      "score": 2,
+      "body": "incredible post"
+    },
+    {
+      "author": "RMC17",
+      "score": 2,
+      "body": "hi, thank you for much for this information. What is the brand/type of the second glasses you tested?"
+    },
+    {
+      "author": "BlublockerWenj",
+      "score": 2,
+      "body": "Great Article!"
+    },
+    {
+      "author": "[deleted]",
+      "score": 2,
+      "body": "[removed]"
+    },
+    {
+      "author": "siksik6",
+      "score": 2,
+      "body": "Amazing post! \n\nI struggle with sensitivity from loads of electronic screens, and there is so much crud out there when picking something like this. \n\n  \nThank you!"
+    },
+    {
+      "author": "daytraderz",
+      "score": 2,
+      "body": "Hey OP! Question - I do not fully understand your data/research here but am very thankful for it!! What pair would you recommend for someone who works often until midnight/1am on computers and wants the lowest impact on their sleep quality/schedule after shutting down the computer?"
+    },
+    {
+      "author": "Low_Setting_8587",
+      "score": 2,
+      "body": "Thank you for Your good work!"
+    },
+    {
+      "author": "Loose_Manager8318",
+      "score": 2,
+      "body": "Amazingly helpful post! Thank you so much."
+    }
+  ],
+  "fetchedAt": "2026-09-09T11:50:14.555Z",
+  "fetchStatus": "ok",
+  "note": "fetched via same-origin .json (SERP rank 3 result is a Reddit thread)"
+}
