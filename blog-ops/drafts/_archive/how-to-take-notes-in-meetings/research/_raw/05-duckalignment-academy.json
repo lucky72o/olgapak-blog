@@ -1,0 +1,161 @@
+{
+  "rank": 5,
+  "url": "https://duckalignment.academy/meeting-notes/",
+  "title": "How to take notes at meetings - Duck Alignment Academy",
+  "metaDescription": "When there's no chatbot to record meeting notes, you have to do it yourself. This post shares tips for before, during, and after the meeting.",
+  "h1": "How to take notes at meetings",
+  "h2s": [
+    "Before the meeting",
+    "During the meeting",
+    "After the meeting",
+    "Share",
+    "Related Posts",
+    "About This Site",
+    "2026 trends",
+    "Maintainer's Guide to Hackfests",
+    "Get the book",
+    "Newsletter",
+    "Upcoming talks",
+    "Latest posts"
+  ],
+  "h3s": [
+    "Share this:",
+    "Like this:",
+    "Related",
+    "Cancelling meetings isn’t a magical fix",
+    "Strategic use of bikeshedding",
+    "Why does this meeting exist?",
+    "How to take meeting notes",
+    "There is no good time for a meeting, only the time you pick",
+    "Using WhenIsGood to schedule meetings",
+    "Leave a Reply"
+  ],
+  "wordCount": 1143,
+  "bodyText": "Skip to content\n\nProgram management for open source projects\n\nHome\nAbout\nSpeaking\nResources\nProgram Management for Open Source Projects\n \nMaintainer’s Guide to Hackfests\n \nNewsletter\n \nAI policy resources\n \nMetrics resources\n \nWriting advice\n \nOther resources\nTalks\nContact me!\nSearch Toggle\nHome  >  Posts\nHow to take notes at meetings\n\n \nPUBLISHED DATE\n2024-04-05\n\n \nLAST MODIFIED DATE\n2024-04-05\n\n \nAUTHOR\nBEN COTTON\n\n COMMENTS: 0\n\nIn chapter 6 of Program Management for Open Source Projects, I talk about running useful meetings. I extol the virtues of tools like Debian’s MeetBot for taking notes in online meetings. But what if your meeting is on a video call or in person? Most projects — if they have meetings at all — hold text-based meetings, but video and in-person meetings have higher bandwidth that help with more in-depth discussions. You don’t need them for routine business, but for debating strategy, policy, and the like, the more human connection help.\n\nBefore the meeting\n\nTaking good notes during the meeting starts before the meeting. Do as much prep work as you can, including putting the agenda in the file you’ll use to take the notes. This saves you from having to type out stuff that you knew ahead of time. This includes collecting links you know you’ll need (including to documents, issues, et cetera).\n\nYou also need to decide who is taking notes. Since you’re reading this post, there’s a good chance it’s you. But if you’re the one leading the meeting, it should not be you. It’s very difficult to facilitate discussion and take notes on that discussion at the same time. But there’s another matter to consider: are you the only note taker or will there be notes-by-committee?\n\nI’m not keen on having multiple people take notes at the same time, but a different note taker for each section can be a good way to spread the load. In that case, you need to assign each person a section and make sure you share your notes document (if it’s in an online tool like Etherpad or Google Docs) with them.\n\nHere’s another factor to consider ahead of time: how will you note confidential information (if at all)? In some contexts, you’ll end up discussing confidential information that shouldn’t go into the public readout. How will you make clear — in the conversation and in the notes — what’s confidential? In Fedora Council meetings, we called confidential information “red text”, even though we ended up recording it in cornflower blue for better accessibility. You might also choose not to record any notes on confidential discussion. That’s the best way to prevent accidentally disclosing it. But the notes may be valuable for later discussions, so there’s some value in recording that information.\n\nDuring the meeting\n\nMost of the work happens during the meeting. Taking concise-but-understandable notes is a skill you hone with practice. Remember you’re there to summarize key points, not to transcribe the meeting word-for-word. But when people talk faster than you can keep up, ask for a pause. If everyone agrees, you can record the meeting so that you can return to difficult to capture spots later. But in my experience, if you’re summarizing, there’s no need to return to the tape.\n\nFor status-type meetings, I often take notes in an outline format. The first level is the topic, then I indent for sub-topics, points on those topics, etc. Each time someone else starts talking, it’s a new line. For discussion and debate meetings, I write paragraphs for each person’s thoughts or interjections. Each new line of thought is a new paragraph.\n\nIn both cases, I make sure to indicate who is the person saying the idea. (If you forget someone’s name, ask them.) The format of the notes don’t matter. You won’t share those publicly, in most cases. The important thing is to record the information so that the later readouts are well-informed.\n\nI’m also a fan of keeping a separate document for tracking minutes. These are different from notes and focus on concise detail about topic changes, proposals, and votes. I purposely keep that to myself to make the doc cleaner to work with (although I share it with everyone later, as you’ll see below).\n\nAfter the meeting\n\nOnce the meeting is over, you need to make the notes presentable. This includes writing up minutes to record decisions. You’ll want to publish these in a long-term archive of some type. If the meeting was more toward the strategy or policy side, you should write a narrative readout as well. This explains what decisions were made, the reasoning behind them, and the hoped effect. Of course, if any action items came from the meeting, record those in the place you usually record action items.\n\nThis post’s featured photo by Christina @ wocintechchat.com on Unsplash\n\nShare this:\n Mastodon Facebook Email LinkedInMore\nLike this:\nRelated\n\nHow to take meeting notes\n2023-06-21\nIn \"Posts\"\n\nCancelling meetings isn’t a magical fix\n2024-04-17\nIn \"Posts\"\n\nWhy does this meeting exist?\n2023-01-12\nIn \"Posts\"\n\nCategories:Posts\n\nTags:meetings\n\nBen Cotton\n\nFacebook\nLinkedin\nRSS Feed\n\nBen is the Open Source Community Lead at Kusari. He formerly led open source messaging at Docker and was the Fedora Program Manager for five years. Ben is the author of Program Management for Open Source Projects. Ben is an OpenSSF Ambassador and frequent conference speaker. His personal website is Funnel Fiasco.\n\nShare\nShare on Twitter\nSave to Hatena Bookmark\nShare on LINE\nShare on Facebook\nSave to Pocket\nSubscribe on Feedly\nRelated Posts\nPosts\nCancelling meetings isn’t a magical fix\nPosts\nStrategic use of bikeshedding\nPosts\nWhy does this meeting exist?\nPosts\nHow to take meeting notes\nPosts\nThere is no good time for a meeting, only the time you pick\nResources\nUsing WhenIsGood to schedule meetings\nLeave a Reply\n\nPREV POST\n\n“Field of Dreams” is not a strategy for community growth\n\nNEXT POST\n\nAvoiding hero work pays off in the long run\n\nAbout This Site\n\nLearn how to get your ducks in a row, your cats herded, or any other animal metaphor you can think of.\n\n2026 trends\nRead my 2026 open source trends predictions.\nMaintainer's Guide to Hackfests\n\nDownload it for free as a PDF or epub.\n\nGet the book\n\nEbooks available from The Pragmatic Bookshelf. Print available from Bookshop and Amazon.\n\nNewsletter\n\nSubscribe to the free monthly newsletter to keep up on the latest news, events, and updates.\n\nUpcoming talks\n\nWant to book me for your project or company? See the Speaking page for details.\n\nLatest posts\nMaintainer’s Guide to Hackfests\n2026-09-02\nRemoving inactive maintainers\n2026-08-26\nThe J curve, or: it gets worse before it gets better\n2026-08-19\nBe prepared for big feelings when you take something away\n2026-08-12\n\nExcept where noted, all content © Ben Cotton and provided under the CC BY-SA 4.0 license except where noted. Logo design by alexlexi.\n\nColdbox WordPress theme by mirucon.\n\nFacebook\nLinkedin\nRSS Feed",
+  "externalLinks": [
+    {
+      "href": "http://duckalignmentacademy.hosted.phplist.com/lists/?p=subscribe&id=1",
+      "text": "Newsletter",
+      "rel": ""
+    },
+    {
+      "href": "https://pragprog.com/titles/bcosp/program-management-for-open-source-projects/",
+      "text": "Program Management for Open Source Projects",
+      "rel": ""
+    },
+    {
+      "href": "https://wiki.debian.org/MeetBot",
+      "text": "MeetBot",
+      "rel": ""
+    },
+    {
+      "href": "https://unsplash.com/fr/@wocintechchat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+      "text": "Christina @ wocintechchat.com",
+      "rel": ""
+    },
+    {
+      "href": "https://unsplash.com/photos/faEfWCdOKIg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
+      "text": "Unsplash",
+      "rel": ""
+    },
+    {
+      "href": "https://www.facebook.com/funnelfiasco/",
+      "text": "Facebook",
+      "rel": ""
+    },
+    {
+      "href": "https://www.linkedin.com/in/bcotton/",
+      "text": "Linkedin",
+      "rel": ""
+    },
+    {
+      "href": "https://kusari.dev/",
+      "text": "Kusari",
+      "rel": ""
+    },
+    {
+      "href": "https://pragprog.com/titles/bcosp/program-management-for-open-source-projects/",
+      "text": "Program Management for Open Source Projects",
+      "rel": ""
+    },
+    {
+      "href": "https://funnelfiasco.com/",
+      "text": "Funnel Fiasco",
+      "rel": ""
+    },
+    {
+      "href": "https://akismet.com/privacy/",
+      "text": "Learn how your comment data is processed.",
+      "rel": "nofollow noopener"
+    },
+    {
+      "href": "https://github.com/Duck-Alignment-Academy/hackfest-guide/releases/latest/download/hackfest-guide.pdf",
+      "text": "PDF",
+      "rel": ""
+    },
+    {
+      "href": "https://github.com/Duck-Alignment-Academy/hackfest-guide/releases/latest/download/hackfest-guide.epub",
+      "text": "epub",
+      "rel": ""
+    },
+    {
+      "href": "https://pragprog.com/titles/bcosp/",
+      "text": "",
+      "rel": ""
+    },
+    {
+      "href": "https://pragprog.com/titles/bcosp/",
+      "text": "The Pragmatic Bookshelf",
+      "rel": ""
+    },
+    {
+      "href": "https://bookshop.org/a/2696//9781680509243",
+      "text": "Bookshop",
+      "rel": ""
+    },
+    {
+      "href": "https://www.amazon.com/Program-Management-Open-Source-Projects/dp/1680509241/",
+      "text": "Amazon",
+      "rel": ""
+    },
+    {
+      "href": "http://duckalignmentacademy.hosted.phplist.com/lists/?p=subscribe&id=1",
+      "text": "Subscribe",
+      "rel": ""
+    },
+    {
+      "href": "https://creativecommons.org/licenses/by-sa/4.0/https://creativecommons.org/licenses/by-sa/4.0/",
+      "text": "CC BY-SA 4.0 license except where noted",
+      "rel": ""
+    },
+    {
+      "href": "https://www.fiverr.com/alexlexi",
+      "text": "alexlexi",
+      "rel": ""
+    },
+    {
+      "href": "https://coldbox.miruc.co/",
+      "text": "Coldbox WordPress theme",
+      "rel": ""
+    },
+    {
+      "href": "https://www.facebook.com/funnelfiasco/",
+      "text": "Facebook",
+      "rel": ""
+    },
+    {
+      "href": "https://www.linkedin.com/in/bcotton/",
+      "text": "Linkedin",
+      "rel": ""
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "https://duckalignment.academy/meeting-notes/#respond",
+      "text": "Cancel reply",
+      "rel": "nofollow"
+    }
+  ],
+  "fetchedAt": "2026-09-08T14:23:20.576Z",
+  "fetchStatus": "ok"
+}
