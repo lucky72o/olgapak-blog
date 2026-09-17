@@ -2,10 +2,10 @@
 slug: pomodoro-technique
 target_keyword: pomodoro technique
 created: 2026-09-08 19:40
-last_updated: 2026-09-08 23:30
-current_stage: preview
+last_updated: 2026-09-08 23:39
+current_stage: complete
 current_owner: blog-post-workflow
-status: active
+status: complete
 gate_pending: none
 # status values: active | paused | complete | abandoned
 # current_stage values: intake | chrome_fetch | serp_select | serp_deep_fetch | reddit_fetch | reddit_select | reddit_deep_fetch | x_fetch | x_select | x_deep_fetch | competitor_check | analyze_research | synthesize_plan | plan_review | outline | draft | review | humanize | resolve_markers | images | generate_images | action_items | preview | finalize | repurpose | complete
@@ -224,6 +224,8 @@ Gate decisions, one line each.
 - plan_review completed: 2026-09-08 20:16, verdict approve after 1 revision pass, advancing to Stage 2 (outline)
 - outline completed: 2026-09-08 22:43, auto-progressing to Stage 3a (no human gate). 7 H2s + CTA + 5-question FAQ, roll-up 2,150 body words vs plan target 1,800-2,200, 4 internal links, 3 inbound links, 4 citation sources + 5 tagged Amazon links, 1 featured + 4 in-post image slots
 - Stage 3a started: 2026-09-08 22:43
+- Stage 4b.5 staging side effects completed (autopilot-cont): 2026-09-08 23:39, PR #26 opened (https://github.com/lucky72o/olgapak-blog/pull/26), WordPress draft 2259 created (status: draft), 5 media uploaded (2254-2258), category Productivity (12), tags [15,34,30,32]. current_stage -> finalize, gate_pending -> gate_2_final.
+
 
 ## Notes
 
@@ -251,3 +253,28 @@ Written BEFORE each edit, per `adapters/publish/astro-git-pr.md` §Staging step 
 - inbound link applied by workflow: content/blog/time-blocking.md (2026-09-08 23:32)
 - inbound link applied by workflow: content/blog/how-to-stop-doomscrolling.md (2026-09-08 23:32)
 - inbound link applied by workflow: content/blog/how-to-plan-your-week.md (2026-09-08 23:32)
+
+### Stage 4b.5 staging record (file layout only)
+
+- Slug-collision guard: `content/blog/pomodoro-technique.md` does not exist on `origin/main`. Clear.
+- Branch base: `blog/pomodoro-technique` was identical to `origin/main` (2071a1a) before the commit, so no rebase was needed.
+- Post staged to `content/blog/pomodoro-technique.md`; all 4 `[IMAGE:]` placeholders resolved to real embeds (every target file verified present on disk relative to `content/blog/`), 0 "Image pending" notes.
+- Featured cover: N/A as a frontmatter field. The WordPress frontmatter template defines no `cover`/`heroImage` key; `featured.png` ships as `featured_media` via media upload at `autopilot-cont`. File verified present.
+- Draft mechanism: `draft: true` retained deliberately. For `wordpress-rest` it is documentation-only (the WP `status` field does the real gating), and every already-published post in `content/blog/` still carries it.
+- Visual backstop: all 5 rendered images inspected. No overlaps, clipping, stray glyphs or contrast failures. One cosmetic note recorded, not blocking: the fourth timer in `pomodoro-timers-lineup.png` reads a little more apple than tomato.
+- Inbound links: 3 of 3 applied. Each file was clean (`git status --porcelain` empty) and carried no pre-existing `/pomodoro-technique` link, so step 5c applied (write-ahead record, then edit). All three passed the Link-only diff verification at admission (1 line removed, 1 added, the added line carrying `(/pomodoro-technique)`), so all three were admitted to `<edited inbound posts>` and are in the commit.
+- Also committed for PR completeness: the Remotion composition source `tools/remotion/src/PomodoroCycleDiagram.tsx` + the `Root.tsx` registration diff, this post's rotation entry `blog-ops/featured-log/2026-09-08-pomodoro-technique.md`, a `README.md` copy of `images.md` in the asset dir, and an early NON-TERMINAL snapshot of the draft dir at `blog-ops/drafts/_archive/pomodoro-technique/` (its `checklist.md` still reads `current_stage: preview`, and it is re-synced to terminal state at finalize).
+- The asset ownership sentinel `.staged-by-blog-workflow` was explicitly unstaged and never ships.
+- Main-tree cleanup (astro step 6h) NOT performed: no PR exists yet, and the console needs the staged files on the branch to verify.
+- Final staged-post lint: 2,701 words, 0 em/en-dashes, 0 residual markers, 5 Amazon links all carrying `?tag=op01e-20` (and no untagged Amazon URL), affiliate disclosure present as the last intro paragraph, 0 links to any of the 15 captured SERP URLs, FAQ last.
+
+### Stage 4b.5 staging SIDE EFFECTS (autopilot-cont, after verification PASS)
+
+- Verification: PASS (build check PASS; vision skipped, no WP draft existed yet at verification time).
+- WordPress auth probe: ran ONCE, OK (user id 1, Olga Pak).
+- Gutenberg conversion: native `md-to-gutenberg.py` path (NOT the classic-block fallback), with the Kadence TOC block inserted `after-intro` via `--extra-blocks` from `site-conventions.md` §Table of contents.
+- Media upload: 5/5 uploaded, ids + source_urls captured from each POST response (never re-derived from a slug lookup). WordPress renamed the featured attachment's slug to `featured-6` — the recorded id 2254 is the authoritative reference, exactly the case the adapter's warning covers.
+- WP draft: looked up first (`?slug=pomodoro-technique`, both `draft` and `any`, both empty) and no stored `wp_post_id`, so created once. Post id 2259, `status: draft`, featured_media 2254, categories [12] (Productivity, never "Uncategorized"), tags [15,34,30,32], author 1.
+- Inbound links: LOCAL repo copies already applied and committed at file-layout time. LIVE WordPress application is deferred to `## On Gate 2 approval` per the adapter (`apply_inbound_links_live: true` acts once this post's WP status is `publish`).
+- PR: #26 opened against `main` from `blog/pomodoro-technique`. `pr-monitor.json` written with `mode: pr`, `status: open`, plus `wp_post_id` / `wp_media_ids[]` / `wp_preview_url` / `wp_upload: ok`.
+- Gate 2 remains a human stop: no CronCreate monitor (console-gated), no merge, no `status=publish`. Rank Math focus keyword ("pomodoro technique") is still a pre-publish human action in wp-admin.
