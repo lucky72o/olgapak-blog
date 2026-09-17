@@ -1,0 +1,460 @@
+{
+  "rank": 8,
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12532815/",
+  "title": "Assessing the efficacy of the Pomodoro technique in enhancing anatomy lesson retention during study sessions: a scoping review - PMC",
+  "metaDescription": "The Pomodoro Technique (PT) is a time-management method that splits work into focused intervals punctuated by brief breaks. It aims to boost productivity and counteract mental fatigue. While PT has shown positive effects on cognitive performance in ...",
+  "h1": "Assessing the efficacy of the Pomodoro technique in enhancing anatomy lesson retention during study sessions: a scoping review",
+  "h2s": [
+    "PERMALINK",
+    "Abstract",
+    "Introduction",
+    "Materials and methods",
+    "Results",
+    "Discussion",
+    "Conclusions",
+    "Supplementary Information",
+    "Authors’ contributions",
+    "Funding",
+    "Data availability",
+    "Declarations",
+    "Footnotes",
+    "References",
+    "Associated Data",
+    "ACTIONS",
+    "PERMALINK",
+    "RESOURCES",
+    "ON THIS PAGE",
+    "",
+    ""
+  ],
+  "h3s": [
+    "Eren Ogut",
+    "Background",
+    "Methods",
+    "Results",
+    "Conclusions",
+    "Supplementary Information",
+    "Theoretical basis and conceptual framework for the use of the PT",
+    "Study design",
+    "Information sources",
+    "Search strategy",
+    "Eligibility criteria",
+    "Inclusion/Exclusion criteria",
+    "Study selection",
+    "Data extraction",
+    "Synthesis approach",
+    "Assessment of reporting quality",
+    "Certainty of evidence",
+    "Overview of the literature",
+    "Study selection and characteristics",
+    "Key findings from included studies",
+    "Thematic synthesis",
+    "Identified gaps and future directions",
+    "Statistical analyses",
+    "Mechanism",
+    "Anatomy learning",
+    "Strategies",
+    "Limitations",
+    "Ethics approval and consent to participate",
+    "Consent for publication",
+    "Competing interests",
+    "Supplementary Materials",
+    "Data Availability Statement",
+    "Similar articles",
+    "Cited by other articles",
+    "Links to NCBI Databases"
+  ],
+  "wordCount": 7562,
+  "bodyText": "Skip to main content\n\nAn official website of the United States government\n\nHere's how you know\nSearch\nLog in\n\nPrimary site navigation\n\nSearch PMC Full-Text Archive\nSearch in PMC\nJournal List \nUser Guide\nAs a library, NLM provides access to scientific literature. Inclusion in an NLM database does not imply endorsement of, or agreement with, the contents by NLM or the National Institutes of Health.\nLearn more: PMC Disclaimer | PMC Copyright Notice\nBMC Med Educ. 2025 Oct 17;25:1440. doi: 10.1186/s12909-025-08001-0\nAssessing the efficacy of the Pomodoro technique in enhancing anatomy lesson retention during study sessions: a scoping review\nEren Ogut 1,✉\nAuthor information\nArticle notes\nCopyright and License information\nPMCID: PMC12532815  PMID: 41107936\nAbstract\nBackground\n\nThe Pomodoro Technique (PT) is a time-management method that splits work into focused intervals punctuated by brief breaks. It aims to boost productivity and counteract mental fatigue. While PT has shown positive effects on cognitive performance in various domains, its application in anatomy education, which demands substantial cognitive effort, remains unexplored. This scoping review aimed to map the existing PT literature and evaluate its relevance to anatomy learning.\n\nMethods\n\nA comprehensive search was conducted across six databases (PubMed, Web of Science, Scopus, ERIC, MEDLINE, and Google Scholar) until May 2023, yielding 6,499 records. After removing duplicates and screening the abstracts, 135 full-text articles were reviewed. Thirty-two studies (total N = 5,270; range 25–300; median = 87) met the inclusion criteria, consisting of three randomized controlled trials (RCTs), five quasi-experimental designs, 24 observational/comparative studies, and studies involving digital/AI-enhanced Pomodoro applications.\n\nResults\n\nAcross three RCTs (n = 87), structured Pomodoro intervals (24 min work/6 min break; 12 min work/3 min break) led to approximately 20% lower fatigue, a 0.5-point improvement in distractibility, and a 0.4-point increase in motivation compared to self-paced break schedules. The five quasi-experimental studies (N = 50–200) reported 15–25% increases in self-rated focus and roughly 20% reductions in fatigue. Digital/AI tools enhanced student engagement by 10–18%, with perceived learning efficiency improving by approximately 12% (β = 0.32, p < 0.01). Notably, 88% of all studies showed positive outcomes and 57% utilized validated psychometric measures. However, none have directly focused on the use of PT in anatomy courses.\n\nConclusions\n\nTime-structured Pomodoro interventions consistently improved focus, reduced mental fatigue, and enhanced sustained task performance, outperforming self‑paced breaks. These benefits are supported by the micro-break literature, cognitive load theory, and metacognitive reinforcement principles. Further research is needed to assess long-term efficacy in anatomy education, ideally through mixed-method studies embedded in anatomy curricula.\n\nSupplementary Information\n\nThe online version contains supplementary material available at 10.1186/s12909-025-08001-0.\n\nKeywords: Anatomy, Medical students, Memorization, Pomodoro technique, Anatomy education, Learning outcomes\n\nIntroduction\n\nFrancesco Cirillo, CEO of XPLabs in Germany, developed the Pomodoro Technique (PT) in the late 1980s. PT is a widely used time management strategy that enhances productivity and focus by breaking work into 25-minute intervals, known as ‘Pomodoros’, followed by short breaks. The name derives from the tomato-shaped kitchen timer used by Cirillo to implement this technique [1–4]. Initially applied in software development, PT has gained broader application in various educational settings, including medical and health sciences education, owing to its emphasis on sustained attention and task segmentation [5, 6]. In the context of medical education, particularly anatomy learning, PT holds significant promise. Anatomy is a cognitively demanding subject that requires intense memorization, spatial reasoning, and time-intensive study [7]. PT offers a structured and distraction-reducing framework that may help students manage their cognitive load, improve their concentration, and enhance their long-term retention [8]. Studies suggest that segmenting study sessions into focused time intervals with built-in breaks improves knowledge acquisition and student engagement, especially when dealing with voluminous and detail-heavy content, such as anatomical terminology and dissection procedures [6–9]. Moreover, the shift toward home-based and self-directed learning during the COVID-19 pandemic increased the importance of self-regulation strategies such as PT. In one experimental study, medical students trained in PT significantly outperformed those using fixed study schedules in terms of test performance and self-reported focus level [6]. Given that anatomy learning often involves prolonged solitary study sessions, incorporating PT can foster sustained attention, reduce mental fatigue, and improve time-on-task factors that are crucial for academic success in this subject [6–8]. The primary aim was to map the existing literature, identify the scope and characteristics of studies involving the PT, and explore its relevance and potential application in anatomy education. While PT has been explored across various disciplines, this study emphasizes its application in anatomical learning, addressing both its practical benefits and potential challenges.\n\nTheoretical basis and conceptual framework for the use of the PT\n\nThe application of PT in anatomy education is supported by several educational theories and cognitive frameworks. Fundamentally, PT aligns with Cognitive Load Theory, which posits that learners can only process a limited amount of information in their working memory at a time. By segmenting study sessions into short, focused intervals (typically 25 min) followed by brief breaks, PT helps manage intrinsic and extraneous cognitive loads, allowing for more efficient information encoding and consolidation [10].​ Additionally, PT is grounded in Self-Regulated Learning (SRL) theory, which emphasizes the importance of planning, goal setting, self-monitoring, and reflection in academic success. The structured nature of PT encourages learners to develop metacognitive awareness and autonomy over their learning process, which is especially beneficial in demanding fields like anatomy that require prolonged engagement and strategic study planning [11].​ The technique also draws on the principles of Behavioral Psychology, particularly the concept of reinforcement. The alternating cycle of work and rest serves as a built-in reward system, enhancing motivation and task persistence by preventing burnout and mental fatigue [12].​ From a motivational perspective, Time-on-Task Theory and Distributed Practice Theory also provide strong justifications for PT. These frameworks support the idea that frequent, spaced, and active engagement with material over time leads to superior learning outcomes compared to massed or prolonged unbroken study sessions, a finding consistently supported by research in anatomy education [13]. ​PT is theoretically grounded at the intersection of cognitive psychology, educational theory and behavioral science. Its structured approach to time management not only promotes focused attention and retention but also cultivates self-regulatory habits and mental resilience [14]. These attributes make PT especially suitable for anatomy learning, where students must navigate large volumes of complex material within limited time frames. Therefore, this study aimed to explore how PT can be applied to optimize learning efficiency, engagement, and cognitive outcomes in anatomical education.\n\nMaterials and methods\nStudy design\n\nThis study employed a scoping review methodology to map the existing literature on PT in educational contexts, with a particular focus on its potential relevance and application in anatomy education. This review followed the Preferred Reporting Items for Systematic Reviews and Meta-Analyses extension for Scoping Reviews (PRISMA-ScR) guidelines. A formal meta-analysis was not performed because of heterogeneity in study designs, participant populations, and outcome measures.\n\nInformation sources\n\nA comprehensive literature search was conducted in six major databases: PubMed, Web of Science, Scopus, ERIC, MEDLINE, and Google Scholar. The search included studies published in English until May 2023. These databases were selected to ensure wide disciplinary coverage, including medicine, education, and cognitive sciences.\n\nSearch strategy\n\nThe search strategy included the keywords and MeSH terms “Pomodoro Technique” OR “pomodoro technique.” Initially, additional terms such as “anatomy learning,” “medical education,” and “anatomy education” were incorporated to specifically target studies on anatomy education. However, no studies explicitly addressing PT in anatomy education have been found. Therefore, broader search terms were used. The search yielded 6,499 articles. After removing duplicates and non-scholarly content, 1,075 unique articles remained. These articles were then screened based on clearly defined inclusion/exclusion criteria, resulting in 135 full-text articles for detailed analyses. The detailed selection process is illustrated in the PRISMA-ScR flow diagram (Fig. 1).\n\nFig. 1.\n\nOpen in a new tab\n\nThe figure depicts the Consort Diagram for the scoping review, which illustrates the utilization of sources in accordance with PRISMA-ScR\n\nEligibility criteria\n\nStudies were included if they explored PT within educational or cognitive contexts, particularly those that focused on attention, self-regulation, time management, or productivity. Due to the lack of direct research in anatomy education, studies from related STEM fields were included when they addressed cognitive loads similar to those in anatomy. The review encompassed original research, review articles, theoretical papers, and peer-reviewed chapters. Non-peer-reviewed, non-relevant literature, posters, editorials, and conference proceedings were excluded. Peer-reviewed studies were prioritized in the analysis and synthesis of findings, while non-peer-reviewed sources were used primarily for background and illustrative examples, not for drawing empirical conclusions (Table 1).\n\nTable 1.\n\nPrevious studies on Pomodoro technique (PT)\n\nStudy\tFocus of Study\tKey Findings\nBiwer et al., 2023 [15]\tEffectiveness of PT in self-regulation during online learning\tImproved learning outcomes with self-regulated breaks and reduced distractions\nGiesbrecht, 2015 [16] \tTime management and productivity through PT\tEffective for maintaining focus and productivity\nGobbo et al, 2008 [7]\tPT as a strategy in Extreme Programming\tInitial use in Extreme Programming, adopted later for various purposes\nSantiago et al, 2023] [17]\tEffectiveness of PT in genetics learning\tPT better than lectures for comprehensive understanding\nIsmail et al, 2022 [18]\tPT in ZOOM-based classrooms and learning engagement\tIncreased motivation, engagement, and time management\nRafliyanto et al, 2023 [19]\tTime management and concentration improvement through PT\tPT helps maintain concentration and manage distractions\nBiwer et al., 2021 [20]\tSelf-regulation strategies during online learning\tHigher academic achievement with self-regulation strategies\nRuensuk, 2016 [21]\tPT reducing interruptions in agile software development\tEnhanced productivity and work quality by reducing interruptions\nSeufert, 2018 [22]\tSelf-regulation and cognitive load balance\tBalance between cognitive load and self-regulation is crucial\nŠmite et al, 2010 [23]\tAI tools enhancing learning outcomes with PT\tAI tools with PT increase retention and mastery\nAwano, 2020 [24]\tPT with 2D games for motivation and stress reduction\tCombining PT with games reduces stress and increases motivation\nUsman, 2020 [25]\tPT managing multitasking behaviors\tHelps in managing multitasking and focus\nPaulus et al., 2021 [26]\tImpact of standing breaks on cognitive conditions\tImproved physical, mental, and cognitive conditions with breaks\nChen et al, 2018 [27]\tWorking memory and spacing effect\tImportance of considering working memory for instructional design\nEitel et al, 2020 [28]\tSelf-regulated learning and self-management strategies\tSelf-management strategies can optimize learning\nCurrent study,2025\tThe short-term outcomes of implementing PT in anatomical learning\tPT has been found to be effective in enhancing learning outcomes when applied to anatomy\nOpen in a new tab\nInclusion/Exclusion criteria\n\nStudies were included if they involved PT in educational or cognitive contexts, focusing on self-regulation, productivity, time management, or attention. Articles relevant to PT and its application in education, productivity, cognitive focus, or self-regulation were included, and the inclusion of studies was not restricted by the delivery method or technological platform through which PT was applied. Studies that implemented PT using computer-based tools, such as web applications, digital timers, or e-learning platforms, as well as those integrating artificial intelligence (AI), such as intelligent tutoring systems, chatbots, or adaptive learning technologies, were included. The exclusion criteria comprised conference proceedings, posters, and editorials. Studies with a low participant count (n < 5) and those lacking sufficient methodological details were also excluded.\n\nStudy selection\n\nThe study selection process was conducted in two stages. The first stage involved a preliminary screening of titles and abstracts to identify potentially relevant studies for inclusion. In the second stage, the full texts of the shortlisted articles were thoroughly reviewed to assess their eligibility. Both stages of the selection process were independently performed by the primary author, reflecting the flexible yet methodologically sound framework of this scoping review. Most included studies demonstrated moderate to high methodological quality, though some lacked detailed descriptions of sampling methods or statistical analyses. Studies that reported positive outcomes were more frequently encountered, suggesting potential publication bias. However, as this was a scoping review and not a quantitative meta-analysis, formal assessments of publication bias (funnel plots) were not performed.\n\nData extraction\n\nData were extracted using a standardized form. The recorded information included author(s), year of publication, country, study type, population characteristics, PT implementation context (self-regulation, AI integration), and reported outcomes (focus, performance, engagement, and fatigue).\n\nSynthesis approach\n\nThe extracted data were analyzed descriptively and thematically. The studies were grouped by context (medical, STEM, general education), technological platform, and outcome domains. A thematic synthesis was used to identify the recurring patterns, challenges, and research gaps. No quantitative synthesis or inferential analysis was performed, in accordance with the scoping review methodology.\n\nAssessment of reporting quality\n\nAlthough a formal risk of bias assessment is not mandatory in scoping reviews, an adapted quality appraisal was conducted using relevant elements from the Joanna Briggs Institute (JBI) tools. The criteria included clarity of objectives, methodological transparency, and relevance of outcomes. Following study selection, we conducted a descriptive quality appraisal of all references based on three adapted JBI domains (Table 2). It contains clarity of objectives, methodological transparency and outcome relevance. Empirical studies, reviews, and meta-analyses uniformly met all criteria, whereas books, commentaries, and encyclopedia entries typically lacked methodological transparency and had limited or non-applicable outcome relevance. The latter sources were not used for evidence synthesis but served to provide a wide background, reflecting commonly accepted knowledge in the literature and guiding conceptual understanding.\n\nTable 2.\n\nMechanisms of learning, memory, and cognitive control during learning with PT\n\nMechanism\tDescription\tKey Brain Areas Involved\tKey References\nMental Effort\tThe concept involves cognitive engagement that affects multiple brain areas during learning processes.\tPrefrontal cortex, anterior cingulate gyrus\tShenhav et al., 2017 [29]; Lepage et al., 2000 [30]; Jueptner et al., 1997 [31]\nCrossmodal Processing\tProcesses involving multiple senses and corresponding specific brain regions.\tSuperior temporal sulcus, inferior parietal sulcus, frontal cortex, insular cortex, claustrum\tCalvert, 2001 [32]\nDopamine Release and Cognitive Control\tDopamine enhances memory and cognitive control, regulates motivation, and affects behavior based on dopamine levels.\tPrefrontal cortex, dopaminergic pathways\tCools, 2016 [33]; Ogut, 2022a [34]; Seufert, 2018 [22]\nTime Management and Task Switching\tStrategies for breaking tasks into intervals and taking breaks to regulate dopamine levels and enhance cognitive control and task-switching abilities.\tPrefrontal cortex, executive function networks\tCools, 2016 [33]; Eitel et al., 2020 [28]; Chen et al., 2018 [27]\nMolecular Mechanisms in Learning\tInvolves kinases, neuronal connections, and peptide-based materials in the synaptic transmission and information storage.\tVarious synapses, synaptic zones\tLisman, 1985 [35]; Bocharova et al., 2012 [36]; Song et al., 2020 [37]\nMemory Consolidation\tGradual integration of new memories into long-term storage through synaptic and system-level changes.\tNMDA receptors, various brain circuits\tMcGaugh, 2000 [38]; Dudai et al., 2015 [39]; Shimizu et al., 2000 [40]\nSynaptic and System-Level Consolidation\tStrengthening synaptic connections for memory storage and modifying neural networks for adaptive retrieval.\tSynapses, neural networks\tSquire et al., 2015 [41]; Dudai, 2004 [42]; Ogut et al., 2022 [43]\nOpen in a new tab\nCertainty of evidence\n\nOwing to the exploratory nature of the review and variability across studies, the overall certainty of the evidence was moderate to low. Most studies were observational or conceptual, limiting their generalizability. Nonetheless, the recurring positive trends associated with PT suggest a promising foundation for future research on anatomy education.\n\nResults\nOverview of the literature\n\nThe review identified a growing interest in the use of the PT across educational and cognitive domains. Although studies directly targeting anatomy education were not found, several investigations have explored PT’s effects of PT on learning efficiency, attention, and time management in analogous high-cognitive-load educational contexts. PT has been frequently associated with increased focus, reduced fatigue, and enhanced academic engagement, with notable studies explicitly utilizing PT techniques [2, 6, 15, 17–19].\n\nStudy selection and characteristics\n\nOf the 6,499 initial search results, 1,075 articles remained after duplicates and non-relevant sources were excluded. Subsequently, 135 full-text articles were screened in detail, of which 32 studies met the inclusion criteria specifically relating to PT. These 32 studies were consolidated into 25 unique reports, as depicted in the updated PRISMA-ScR flow diagram (Fig. 1). Specifically, the included articles comprised original empirical studies (n = 8), studies explicitly focusing on web- or AI-based PT tools (n = 5), theoretical frameworks (n = 2), and additional conceptual analyses and book chapters (n = 10). Studies explicitly employing PT were systematically mapped and categorized, with their key characteristics summarized in Table 1.\n\nKey findings from included studies\n\nMost studies reported favorable perceptions of PT among learners. The commonly identified benefits included enhanced task focus, improved time management, and reduced cog",
+  "externalLinks": [
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/",
+      "text": "",
+      "rel": ""
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/myncbi/",
+      "text": "Dashboard",
+      "rel": ""
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/myncbi/collections/bibliography/",
+      "text": "Publications",
+      "rel": ""
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/account/settings/",
+      "text": "Account settings",
+      "rel": ""
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/myncbi/",
+      "text": "Dashboard",
+      "rel": ""
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/myncbi/collections/bibliography/",
+      "text": "Publications",
+      "rel": ""
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/account/settings/",
+      "text": "Account settings",
+      "rel": ""
+    },
+    {
+      "href": "https://doi.org/10.1186/s12909-025-08001-0",
+      "text": "",
+      "rel": "noreferrer noopener"
+    },
+    {
+      "href": "https://doi.org/10.1186/s12909-025-08001-0",
+      "text": "10.1186/s12909-025-08001-0",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/?term=%22BMC%20Med%20Educ%22[jour]",
+      "text": "Search in PubMed",
+      "rel": ""
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/nlmcatalog?term=%22BMC%20Med%20Educ%22[Title%20Abbreviation]",
+      "text": "View in NLM Catalog",
+      "rel": ""
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/?term=%22Ogut%20E%22[Author]",
+      "text": "Eren Ogut",
+      "rel": ""
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/?term=%22Ogut%20E%22[Author]",
+      "text": "Eren Ogut",
+      "rel": ""
+    },
+    {
+      "href": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "text": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/41107936/",
+      "text": "41107936",
+      "rel": ""
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&p=PMC3&id=12532815_12909_2025_8001_Fig1_HTML.jpg",
+      "text": "",
+      "rel": ""
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&p=PMC3&id=12532815_12909_2025_8001_Fig2_HTML.jpg",
+      "text": "",
+      "rel": ""
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&p=PMC3&id=12532815_12909_2025_8001_Fig3_HTML.jpg",
+      "text": "",
+      "rel": ""
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&p=PMC3&id=12532815_12909_2025_8001_Fig4_HTML.jpg",
+      "text": "",
+      "rel": ""
+    },
+    {
+      "href": "https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&p=PMC3&id=12532815_12909_2025_8001_Fig5_HTML.jpg",
+      "text": "",
+      "rel": ""
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?Burton%20LD.%20Can%20a%20tomato%20increase%20your%20productivity?%20J%20Res%20Christ%20Educ.%202016;25(2):95%E2%80%936.",
+      "text": "Google Scholar",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?Carter%20C.%20The%20unofficial%20beginner%E2%80%99s%20guide%20to%20instantly%20double%20your%20productivity%20for%20life.%20Procrastination,%20Time%20Management:%20Kindle%20Edition;%202015.",
+      "text": "Google Scholar",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?Iyengar%20KP,%20Vaishya%20R,%20Botchu%20R.%20Can%20we%20apply%20Pomodoro%20technique%20in%20academic%20publishing?%20Apollo%20Med.%202023;21(2):176%E2%80%937.",
+      "text": "Google Scholar",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?Gobbo%20F,%20Vaccari%20M.%20The%20Pomodoro%20technique%20for%20sustainable%20Pace%20in%20extreme%20programming%20teams.%20Agile%20processes%20in%20software%20engineering%20and%20extreme%20programming:%202008//%202008.%20Berlin,%20Heidelberg:%20Springer%20Berlin%20Heidelberg;%202008.%20pp.%20180%E2%80%934.",
+      "text": "Google Scholar",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?Ogut%20E,%20Yildirim%20F,%20Senol%20Y.%20Do%20learning%20styles%20affect%20study%20duration%20and%20academic%20success?%20Eur%20J%20Anat.%202017;21:235%E2%80%9340.",
+      "text": "Google Scholar",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://doi.org/10.3389/fpsyg.2017.01346",
+      "text": "DOI",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/28848467/",
+      "text": "PubMed",
+      "rel": ""
+    },
+    {
+      "href": "https://doi.org/10.1007/s10459-023-10274-3",
+      "text": "DOI",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/37615780/",
+      "text": "PubMed",
+      "rel": ""
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?Trumble%20E,%20Lodge%20J,%20Mandrusiak%20A,%20Forbes%20R.%20Systematic%20review%20of%20distributed%20practice%20and%20retrieval%20practice%20in%20health%20professions%20education.%20Adv%20Health%20Sci%20Education:%20Theory%20Pract.%202024;29(2):689%E2%80%93714.",
+      "text": "Google Scholar",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://doi.org/10.1037/0033-2909.132.3.354",
+      "text": "DOI",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/16719566/",
+      "text": "PubMed",
+      "rel": ""
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?Cepeda%20NJ,%20Pashler%20H,%20Vul%20E,%20Wixted%20JT,%20Rohrer%20D.%20Distributed%20practice%20in%20verbal%20recall%20tasks:%20A%20review%20and%20quantitative%20synthesis.%20Psychol%20Bull.%202006;132(3):354%E2%80%9380.",
+      "text": "Google Scholar",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://doi.org/10.3389/fnhum.2013.00589",
+      "text": "DOI",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/24093012/",
+      "text": "PubMed",
+      "rel": ""
+    },
+    {
+      "href": "https://doi.org/10.1111/bjep.12593",
+      "text": "DOI",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/36859717/",
+      "text": "PubMed",
+      "rel": ""
+    },
+    {
+      "href": "https://digitalcommons.unomaha.edu/nbdcwhitepapers/19",
+      "text": "https://digitalcommons.unomaha.edu/nbdcwhitepapers/19",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?Santiago%20C,%20Gurat%20M.%20Effect%20of%20Pomodoro%20technique%20on%20student%20Mendelian%20genetics%20concept%20mastery%20during%20synchronous%20remote%20learning.%20Int%20Res%20J%20Manage%20IT%20Social%20Sci.%202023;10(4):233%E2%80%9343.",
+      "text": "Google Scholar",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?Ismail%20NM,%20Putri%20Z,%20Noviyanti%20A.%20Pomodoro%20technique%20analysis%20in%20Zoom-Based%20classrooms.%20JEELS%20(Journal%20Engl%20Educ%20Linguistics%20Studies).%202022;9(1):75%E2%80%9396.",
+      "text": "Google Scholar",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?Rafliyanto%20M,%20Mukhlis%20F.%20Optimizing%20learning:%20applying%20the%20Pomodoro%20technique%20in%20Islamic%20education.%20el-Tarbawi.%202023;16(1):153%E2%80%9376.",
+      "text": "Google Scholar",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://doi.org/10.3389/fpsyg.2021.642593",
+      "text": "DOI",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/33967903/",
+      "text": "PubMed",
+      "rel": ""
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?Seufert%20T.%20The%20interplay%20between%20self-regulation%20in%20learning%20and%20cognitive%20load.%20Educ%20Res%20Rev-Neth.%202018;24:116%E2%80%9329.",
+      "text": "Google Scholar",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://gracefan.me/assets/CSCE445-Final%20Report.pdf",
+      "text": "https://gracefan.me/assets/CSCE445-Final%20Report.pdf",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://eprints.lancs.ac.uk/id/eprint/153513/",
+      "text": "https://eprints.lancs.ac.uk/id/eprint/153513/",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?Usman%20S.%20Using%20the%20Pomodoro%20Technique%C2%AEto%20help%20undergraduate%20students%20better%20manage%20technology-based%20multitasking%20during%20independent%20study:%20A%20design-based%20research%20investigation%20(PhD%20thesis).%20Lancaster,%20United%20Kingdom:%20Lancaster%20University;%202020.%20https://eprints.lancs.ac.uk/id/eprint/153513/.",
+      "text": "Google Scholar",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://doi.org/10.3390/ijerph18084204",
+      "text": "DOI",
+      "rel": "noopener noreferrer"
+    },
+    {
+      "href": "https://pubmed.ncbi.nlm.nih.gov/33921094/",
+      "text": "PubMed",
+      "rel": ""
+    },
+    {
+      "href": "https://scholar.google.com/scholar_lookup?Chen%20OH,%20Castro-Alonso%20JC,%20Paas%20F,%20Sweller%20J.%20Extending%20cognitive%20load%20theory%20to%20incorporate%20working%20memory%20resource%20depletion:%20evidence%20from%20the%20spacing%20effect.%20EDUCATIONAL%20Psychol%20Rev.%202018;30(2):483%E2%80%93501.",
+      "text": "Google Scholar",
+      "rel": "noopener noreferrer"
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/",
+      "text": "",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/journals/",
+      "text": "Journal List",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/about/userguide/",
+      "text": "User Guide",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/about/disclaimer/",
+      "text": "PMC Disclaimer",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/about/copyright/",
+      "text": "PMC Copyright Notice",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/about/copyright/",
+      "text": "PMC Copyright notice",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/instance/12532815/bin/12909_2025_8001_MOESM1_ESM.docx",
+      "text": "Supplementary Material 1.",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/instance/12532815/bin/12909_2025_8001_MOESM2_ESM.docx",
+      "text": "Supplementary Material 2.",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5550677/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11078833/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3782739/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8103204/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8071424/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC26693/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC397705/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7677316/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4526749/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12018515/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9062982/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC311312/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8554937/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1964553/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8021520/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11987277/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4808571/",
+      "text": "PMC free article",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/instance/12532815/bin/12909_2025_8001_MOESM1_ESM.docx",
+      "text": "Supplementary Material 1.",
+      "rel": ""
+    },
+    {
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/instance/12532815/bin/12909_2025_8001_MOESM2_ESM.docx",
+      "text": "Supplementary Material 2.",
+      "rel": ""
+    }
+  ],
+  "fetchedAt": "2026-09-08T18:45:17.511Z",
+  "fetchStatus": "ok"
+}

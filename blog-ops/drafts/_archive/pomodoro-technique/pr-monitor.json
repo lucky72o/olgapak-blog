@@ -1,0 +1,56 @@
+{
+  "slug": "pomodoro-technique",
+  "repo": "lucky72o/olgapak-blog",
+  "pr_number": 26,
+  "pr_url": "https://github.com/lucky72o/olgapak-blog/pull/26",
+  "branch": "blog/pomodoro-technique",
+  "base": "main",
+  "worktree": ".worktrees/blog-pomodoro-technique",
+  "staging_url": "",
+  "status": "open",
+  "mode": "pr",
+  "handled_comment_ids": {
+    "issue": [],
+    "inline": [],
+    "review": []
+  },
+  "created_at": "2026-09-08T22:37:39Z",
+  "last_poll": "",
+  "poll_interval_minutes": 15,
+  "idle_polls": 0,
+  "wp_post_id": 2259,
+  "wp_media_ids": [
+    {
+      "file": "featured.png",
+      "id": 2254,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/featured-6.png",
+      "sha256": "8e4ff32f3799ad69f35d3f71c1b66a92b17d9a2195037997798f482933911cde"
+    },
+    {
+      "file": "pomodoro-cycle-diagram.png",
+      "id": 2255,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/pomodoro-cycle-diagram.png",
+      "sha256": "731e972f2869f656dedcfb79ee2494a79bd7ce32ccb26b83134aad6ee343108c"
+    },
+    {
+      "file": "pomodoro-desk-session.png",
+      "id": 2256,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/pomodoro-desk-session.png",
+      "sha256": "15bb669b8a15140f043f3331a64ee143939c4de2dcfabd63f4b82f2a651b96ef"
+    },
+    {
+      "file": "pomodoro-timer-ignored.png",
+      "id": 2257,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/pomodoro-timer-ignored.png",
+      "sha256": "9f37fe64ec88eb6d9b9f0319e810d0189a9000790baba2b9dba57a429653246e"
+    },
+    {
+      "file": "pomodoro-timers-lineup.png",
+      "id": 2258,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/pomodoro-timers-lineup.png",
+      "sha256": "739cfa6a3dddb3088bdba08b8c6f3576560a3dadc6cecd791ee214bc9ccab7e3"
+    }
+  ],
+  "wp_preview_url": "https://olgapak.com/wp-admin/post.php?post=2259&action=edit",
+  "wp_upload": "ok"
+}
