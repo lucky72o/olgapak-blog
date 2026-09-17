@@ -134,7 +134,7 @@ Both keep the proportions honest so you don't have to redraw the columns every t
 
 And about that summary row, the step everyone skips because it's genuinely the hardest: you don't have to draft it from a blank stare. Paste your page's notes into my free [Text Summarizer](https://olgapak.com/ai-tools) to get a rough two-to-three-sentence draft, then tighten it in your own words so the thinking stays yours. It lowers the friction on the exact step the research says matters most.
 
-Cornell isn't the only way to lay out a page, and it plays well with its siblings. If you want the pages to look good enough to reread, here's [how to make your notes look good](/how-to-make-aesthetic-notes-complete-step-by-step-guide), and if your Cornell summaries are really meeting recaps in disguise, my guide to [writing a meeting summary](/how-to-write-a-meeting-summary) picks up where the summary bar leaves off.
+Cornell isn't the only way to lay out a page, and it plays well with its siblings. If you want the pages to look good enough to reread, here's [how to make your notes look good](/how-to-make-aesthetic-notes-complete-step-by-step-guide), and if your Cornell summaries are really meeting recaps in disguise, my guide to [writing a meeting summary](/how-to-write-a-meeting-summary) picks up where the summary bar leaves off. The layout itself travels, too: [adapting this for meetings](/how-to-take-notes-in-meetings) swaps the three boxes for four that suit a room full of decisions.
 
 ## Try the free tools that draft your summary for you
 

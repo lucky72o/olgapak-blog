@@ -108,7 +108,7 @@ And do not overthink the container. Paper or an app both work. If you love the f
 
 ## Pick One and Try It This Week
 
-You do not need the perfect system. You need to pick the method that fits your next lecture, meeting, or reading, and then actually do the condensing afterward. That is the whole game.
+You do not need the perfect system. You need to pick the method that fits your next lecture, meeting, or reading, and then actually do the condensing afterward. That is the whole game. If the next one is a work meeting rather than a class, the job changes shape enough to be worth its own guide: here is [how to take notes in meetings](/how-to-take-notes-in-meetings), where capturing decisions matters more than capturing content.
 
 The method also quietly decides your kit. Fast linear notes and a tightly ruled chart ask completely different things of a tip, so it's worth knowing [which pens work best for note taking](/best-pens-for-note-taking) before your next lecture.
 
