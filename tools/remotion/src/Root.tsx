@@ -31,6 +31,7 @@ import { PomodoroCycleDiagram } from "./PomodoroCycleDiagram";
 import { GraduatedCadenceSteps } from "./GraduatedCadenceSteps";
 import { AiHandlesYouHandle } from "./AiHandlesYouHandle";
 import { FiveStepWorkflow } from "./FiveStepWorkflow";
+import { PaperOrScreenGiftDecision } from "./PaperOrScreenGiftDecision";
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -89,9 +90,12 @@ export const RemotionRoot: React.FC = () => (
     <Still id="CostTierKey" component={CostTierKey}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="GraduatedCadenceSteps" component={GraduatedCadenceSteps}
+      width={CANVAS.width} height={CANVAS.height} />
     <Still id="AiHandlesYouHandle" component={AiHandlesYouHandle}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="FiveStepWorkflow" component={FiveStepWorkflow}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="PaperOrScreenGiftDecision" component={PaperOrScreenGiftDecision}
       width={CANVAS.width} height={CANVAS.height} />
   </>
 );
