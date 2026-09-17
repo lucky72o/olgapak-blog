@@ -82,7 +82,7 @@ The durable fix is a day where the phone is not the default. When your morning a
 
 ### 9. Protect a phone-free first hour
 
-How you start the day sets its tone, so keep the first hour screen-free: no scroll before you are up, dressed, and moving. The trick is to fill that hour with intention rather than leave a vacuum, which is where [timeboxing your day](/what-is-timeboxing) helps. You give the morning a plan, so the phone is not the easiest thing to reach for. One reader found that charging the phone in another room "breaks the morning scroll, which sets the tone for the whole day."
+How you start the day sets its tone, so keep the first hour screen-free: no scroll before you are up, dressed, and moving. The trick is to fill that hour with intention rather than leave a vacuum, which is where [timeboxing your day](/what-is-timeboxing) helps, and where [timed focus sessions](/pomodoro-technique) give you a first task small enough to actually start. You give the morning a plan, so the phone is not the easiest thing to reach for. One reader found that charging the phone in another room "breaks the morning scroll, which sets the tone for the whole day."
 
 ### 10. Trade your phone alarm and clock for real ones
 
