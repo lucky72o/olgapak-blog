@@ -1,6 +1,6 @@
 ---
 title: "Pomodoro Technique: How It Works and When to Break It"
-date: 2026-09-08
+date: 2026-09-17
 excerpt: "The Pomodoro Technique in plain English: how the 25/5 cycle works, what the research really shows, when to break the rule, and the timers worth buying."
 tags:
   - productivity
