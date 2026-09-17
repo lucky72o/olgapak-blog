@@ -2,7 +2,7 @@
 slug: pomodoro-technique
 target_keyword: pomodoro technique
 created: 2026-09-08 19:40
-last_updated: 2026-09-08 23:39
+last_updated: 2026-09-17 09:32
 current_stage: complete
 current_owner: blog-post-workflow
 status: complete
@@ -278,3 +278,10 @@ Written BEFORE each edit, per `adapters/publish/astro-git-pr.md` §Staging step 
 - Inbound links: LOCAL repo copies already applied and committed at file-layout time. LIVE WordPress application is deferred to `## On Gate 2 approval` per the adapter (`apply_inbound_links_live: true` acts once this post's WP status is `publish`).
 - PR: #26 opened against `main` from `blog/pomodoro-technique`. `pr-monitor.json` written with `mode: pr`, `status: open`, plus `wp_post_id` / `wp_media_ids[]` / `wp_preview_url` / `wp_upload: ok`.
 - Gate 2 remains a human stop: no CronCreate monitor (console-gated), no merge, no `status=publish`. Rank Math focus keyword ("pomodoro technique") is still a pre-publish human action in wp-admin.
+
+### Live inbound links (Gate 2 finalize, console-merge path, 2026-09-17)
+- live inbound link applied: time-blocking (wp id 2144) -> this post, anchor "the Pomodoro Technique" in §"Who time blocking doesn't suit"; before: "Both mean changing what you're structuring. And when blocks keep collapsing"; after: "Both mean changing what you're structuring. If your day is too interrupt-driven ... <a href=\"https://olgapak.com/pomodoro-technique\">the Pomodoro Technique</a> works from the other end" (POST 200, re-read confirms 1 match)
+- live inbound link applied: how-to-stop-doomscrolling (wp id 2122) -> this post, anchor "timed focus sessions" in §"Layer 3: Rebuild your routine"; before: "timeboxing your day</a> helps. You give the morning a plan"; after: "timeboxing your day</a> helps, and where <a href=\"https://olgapak.com/pomodoro-technique\">timed focus sessions</a> give you a first task" (POST 200, re-read confirms 1 match)
+- live inbound link applied: how-to-plan-your-week (wp id 2132) -> this post, anchor "a Pomodoro timer" in §"Tools that make weekly planning easier"; before: "the same three pieces in one notebook.</p>"; after: "the same three pieces in one notebook, and if the problem is executing the plan ... <a href=\"https://olgapak.com/pomodoro-technique\">a Pomodoro timer</a> is the cheapest thing that helps.</p>" (POST 200, re-read confirms 1 match)
+
+- Gate 2 approved: 2026-09-17 08:30 (console approval.json), PR #26 merged 08:31 by console; Finalize completed: 2026-09-17 09:32 (console-merge path, WP post 2259 already publish, 3/3 live inbound links applied)
