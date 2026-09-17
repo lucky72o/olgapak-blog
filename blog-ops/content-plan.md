@@ -34,7 +34,7 @@
 | 23 | aesthetic-stationery | aesthetic stationery | COMMERCIAL roundup: Ultimate Aesthetic Stationery Haul (25 must-haves) | | | planned |
 | 24 | best-daily-planners | best daily planners | COMMERCIAL roundup: Best Daily Planners for Productivity (2026) | | | planned |
 | 25 | how-to-take-notes-in-meetings | how to take notes in meetings | INFO guide: How to Take Better Notes in Meetings (templates + tips) | | | planned |
-| 26 | pomodoro-technique | pomodoro technique | INFO/COMMERCIAL guide: Pomodoro Technique (how it works + best timers) | | | planned |
+| 26 | pomodoro-technique | pomodoro technique | INFO/COMMERCIAL guide: Pomodoro Technique (how it works + best timers) | | | published |
 | 27 | best-washi-tape | best washi tape | COMMERCIAL roundup: Best Washi Tape Sets for Journaling & Notes (2026) | | | planned |
 | 28 | dopamine-detox | dopamine detox | INFO guide: Dopamine Detox (what it is and how to do it right) | | | published |
 | 29 | best-alarm-clock-to-replace-phone | best alarm clock to replace phone | COMMERCIAL roundup: Best Alarm Clocks to Replace Your Phone (2026) | | | planned |

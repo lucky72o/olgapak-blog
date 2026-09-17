@@ -29,12 +29,15 @@ import { FourCorePagesMap } from "./FourCorePagesMap";
 import { CostTierKey } from "./CostTierKey";
 import { ThreeColourHighlightingKey } from "./ThreeColourHighlightingKey";
 import { HighlighterTipShapes } from "./HighlighterTipShapes";
+import { PomodoroCycleDiagram } from "./PomodoroCycleDiagram";
 import { GraduatedCadenceSteps } from "./GraduatedCadenceSteps";
 import { AiHandlesYouHandle } from "./AiHandlesYouHandle";
 import { FiveStepWorkflow } from "./FiveStepWorkflow";
 
 export const RemotionRoot: React.FC = () => (
   <>
+    <Still id="PomodoroCycleDiagram" component={PomodoroCycleDiagram}
+      width={CANVAS.width} height={CANVAS.height} />
     <Still id="DoomscrollLoopDiagram" component={DoomscrollLoopDiagram}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="SampleDiagram" component={SampleDiagram}

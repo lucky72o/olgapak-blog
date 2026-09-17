@@ -1,0 +1,119 @@
+{
+  "query": "pomodoro technique",
+  "searchedAt": "2026-09-08T18:43:21.186971Z",
+  "serpFeatures": [
+    "ai_overview",
+    "people_also_ask",
+    "videos",
+    "images",
+    "short_videos",
+    "discussions_and_forums"
+  ],
+  "captureNote": "Google page 1 returned only 6 ORGANIC results for this query (the SERP is dominated by an AI Overview, People-also-ask, an Images pack, a Videos pack, Short videos, and a Discussions-and-forums block). Ranks 7-15 below are page-2 organic results (start=10), captured to give the deep fetch enough genuine articles. num=20 is ignored by Google, so page 2 was fetched separately.",
+  "keywordMetrics": {
+    "source": "Surfer SEO browser extension overlay on the live SERP",
+    "monthlySearchVolumeUS": 60500,
+    "cpcUsd": 2.04
+  },
+  "peopleAlsoAsk": [
+    "Is Pomodoro good for ADHD?",
+    "What are the disadvantages of Pomodoro?",
+    "Which is better, 25/5 or 50/10 Pomodoro?",
+    "What are the 5 steps in the Pomodoro Technique?"
+  ],
+  "aiOverviewHeadings": [
+    "How It Works",
+    "Why It Helps",
+    "Where It Falls Short",
+    "How to Adapt It for ADHD"
+  ],
+  "relatedSearches": [
+    "Pomodoro Technique book",
+    "Pomodoro Technique for students",
+    "Why is it called Pomodoro Technique",
+    "Pomodoro Technique PDF",
+    "Pomodoro Technique benefits",
+    "Pomodoro Technique timer",
+    "Pomodoro Technique article"
+  ],
+  "discussionsAndForums": [
+    "https://www.reddit.com/r/adhdwomen/comments/12p9qva/does_the_pomodoro_technique_work_for_you/"
+  ],
+  "topResults": [
+    {
+      "rank": 1,
+      "url": "https://en.wikipedia.org/wiki/Pomodoro_Technique",
+      "title": "Pomodoro Technique"
+    },
+    {
+      "rank": 2,
+      "url": "https://www.todoist.com/productivity-methods/pomodoro-technique",
+      "title": "The Pomodoro Technique - Why it works & how to do it"
+    },
+    {
+      "rank": 3,
+      "url": "https://www.pomodorotechnique.com/",
+      "title": "Pomodoro(R) Technique - Time Management Method"
+    },
+    {
+      "rank": 4,
+      "url": "https://www.bcu.ac.uk/exams-and-revision/time-management-tips/pomodoro-technique",
+      "title": "The Pomodoro technique for focus - Exams and Revision"
+    },
+    {
+      "rank": 5,
+      "url": "https://pomofocus.io/",
+      "title": "Pomodoro Timer"
+    },
+    {
+      "rank": 6,
+      "url": "https://www.edpsyched.co.uk/blog/pomodoro-technique-overcome-procrastination",
+      "title": "Using the Pomodoro Technique to Overcome Procrastination"
+    },
+    {
+      "rank": 7,
+      "url": "https://www.verywellmind.com/pomodoro-technique-history-steps-benefits-and-drawbacks-6892111",
+      "title": "Pomodoro Technique: History, Steps, Benefits, and Drawbacks"
+    },
+    {
+      "rank": 8,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12532815/",
+      "title": "Assessing the efficacy of the Pomodoro technique ... - PMC"
+    },
+    {
+      "rank": 9,
+      "url": "https://hannahbrenchercreative.com/pomodorotechnique/",
+      "title": "The Pomodoro Technique Explained: My #1 Productivity ..."
+    },
+    {
+      "rank": 10,
+      "url": "https://www.asundergrad.pitt.edu/study-lab/study-skills-tools-resources/pomodoro-technique",
+      "title": "Pomodoro Technique | Dietrich School of Arts & Sciences (Pitt)"
+    },
+    {
+      "rank": 11,
+      "url": "https://www.reddit.com/r/GetStudying/comments/co2zvh/the_truth_about_the_pomodoro_technique/",
+      "title": "The TRUTH About the Pomodoro Technique : r/GetStudying"
+    },
+    {
+      "rank": 12,
+      "url": "https://libguides.usc.edu/uscstudycafe/pomodoro",
+      "title": "What is Pomodoro? Why Use It? - USC Study Cafe"
+    },
+    {
+      "rank": 13,
+      "url": "https://kaplan.co.uk/blog/learning/pomodoro-technique",
+      "title": "What is the Pomodoro Technique? - Learning"
+    },
+    {
+      "rank": 14,
+      "url": "https://pomodoro-tracker.com/",
+      "title": "The Pomodoro Tracker - A useful tool for time management"
+    },
+    {
+      "rank": 15,
+      "url": "https://www.nytimes.com/2020/06/23/magazine/pomodoro-technique.html",
+      "title": "This Time-Management Trick Changed My Whole ..."
+    }
+  ]
+}
