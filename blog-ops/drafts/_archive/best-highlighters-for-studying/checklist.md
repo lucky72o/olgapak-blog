@@ -2,7 +2,7 @@
 slug: best-highlighters-for-studying
 target_keyword: best highlighters for studying
 created: 2026-09-05 13:14
-last_updated: 2026-09-06T22:34Z
+last_updated: 2026-09-25T20:23Z
 current_stage: complete
 current_owner: blog-post-workflow
 status: complete
@@ -179,11 +179,11 @@ Mechanical grep of draft markers + fill action-items template. One checkbox per 
 
 Editor presents Gate 2 banner (the only human gate; plan approval is an automated Stage 1c.5 review). On approve, runs the finalize sequence (adapter-specific, per `adapters/publish/<adapter>.md`): moves/publishes the draft to `{content_dir}/<slug>.md` (or the WordPress equivalent); creates the asset folder; archives `{drafts_dir}/<slug>/` → `{drafts_dir}/_archive/<slug>/`.
 
-- [ ] Gate 2 presented (banner format)
-- [ ] Human approved
-- [ ] draft moved/published to `{content_dir}/<slug>.md` (or the WordPress equivalent)
-- [ ] asset folder created at `{assets_dir}/<slug>/` (with images.md as README.md)
-- [ ] `{drafts_dir}/<slug>/` archived to `{drafts_dir}/_archive/<slug>/`
+- [x] Gate 2 presented (banner format)
+- [x] Human approved
+- [x] draft moved/published to `{content_dir}/<slug>.md` (or the WordPress equivalent)
+- [x] asset folder created at `{assets_dir}/<slug>/` (with images.md as README.md)
+- [x] `{drafts_dir}/<slug>/` archived to `{drafts_dir}/_archive/<slug>/`
 
 **End state:** `status=complete`, `current_stage=complete`. Post lives in `{content_dir}` (or the configured WordPress site); the human works through archived `action-items.md` before publishing per the configured adapter.
 
@@ -211,6 +211,7 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 - Plan review verdict: approve (iteration 2), minor notes applied, 2026-09-05T14:22Z
 - Plan review verdict: <approve | request_revisions | reject>, <brief note>, <timestamp>
 - Gate 2 opened: 2026-09-06T22:34Z (PR #22 + WP draft 2235 both live; awaiting console approval)
+- Gate 2 approved: 2026-09-25T20:19Z (console approval.json, operator; PR #22 merged 2026-09-25T20:19:41Z, WP post 2235 published externally)
 
 ## Stage transition log
 
@@ -273,8 +274,7 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
   - No main-tree cleanup (step 6h): cwd IS the branch tree, as recorded at file layout.
 - Gate 2 opened: 2026-09-06T22:34Z (console-gated: no CronCreate monitor, no blocking prompt; approval arrives as approval.json from the console).
 
-- <stage> started: <timestamp> (owner: <agent>)
-- <stage> completed: <timestamp>
+- Gate 2 approved: 2026-09-25T20:19Z, Finalize completed: 2026-09-25T20:23Z (console-merge finalize: 3 live inbound links applied, archive re-synced, worktree left in place)
 
 ## Notes
 
@@ -293,3 +293,14 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
   - inbound link applied by workflow: content/blog/best-pens-for-note-taking.md
   - inbound link applied by workflow: content/blog/best-notebooks-for-note-taking.md
   - inbound link applied by workflow: content/blog/cornell-note-taking-method.md
+
+- Console-merge finalize (2026-09-25T20:22Z): PR #22 already MERGED, approval.json present, WP post 2235 already `publish` (external-publish detected), so the final content sync was skipped per wordpress-rest.md §On Gate 2 approval step 1. `apply_inbound_links_live: true`, so the live inbound-link pass runs (step 2). Write-ahead, recorded BEFORE each edit:
+  - live inbound link planned: best-pens-for-note-taking (wp id 2174) -> this post
+  - live inbound link planned: best-notebooks-for-note-taking (wp id 2092) -> this post
+  - live inbound link planned: cornell-note-taking-method (wp id 2075) -> this post
+  - Note: the live notebooks and Cornell posts do not contain the best-pens link sentence the outline planned to extend (live copies diverge from the repo markdown), so the anchor sentence was adapted and placed in the same section: notebooks §"How to choose", end of the paper-weight paragraph; Cornell §"The Cornell page layout", the "Keep the cue column empty" setup bullet.
+  - live inbound link applied: best-pens-for-note-taking (wp id 2174) -> this post, anchor "the best highlighters for studying" in §"Your paper matters as much as your pen" (end of the "One more pairing rule" paragraph); before: "...the whole reason the highlighter-safe picks above earn their spot."; after: "...earn their spot. If you highlight as much as I do, I ranked the best highlighters for studying by the same rule."
+  - live inbound link applied: best-notebooks-for-note-taking (wp id 2092) -> this post, anchor "the best highlighters for studying" in §"How to choose a notebook for note-taking" (end of the paper-weight paragraph); before: "...not so heavy the notebook turns into a brick. Thicker isn't automatically better."; after: "...Thicker isn't automatically better. Highlighters are the other half of the equation, and the best highlighters for studying are ranked partly on how they behave on thin paper."
+  - live inbound link applied: cornell-note-taking-method (wp id 2075) -> this post, anchor "the best highlighters for studying" in §"The Cornell page layout" ("Keep the cue column empty" setup bullet); before: "...You fill it in afterward, when you actually have a spare thought to think."; after: "...a spare thought to think. A fixed colour key helps too; the best highlighters for studying covers one that maps onto the cue column."
+  - All three POSTs returned HTTP 200; re-read with context=edit confirmed exactly one quote-anchored match per post. Action-items §4b hand-apply rows are therefore done.
+  - Git side: archive re-synced in the worktree and committed on blog/best-highlighters-for-studying (dead branch, PR merged), then the finalize commit cherry-picked onto origin/main via a temp detached worktree. Worktree left in place for the human to delete.
