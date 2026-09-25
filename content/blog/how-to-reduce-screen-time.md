@@ -62,7 +62,7 @@ Start with the checklist. Each of these is one action, and I've given you the re
 
 - Turn off notifications for anything that isn't a person. A badge from an app is someone else deciding when your attention starts.
 - Take the social apps off your home screen. If you have to search for an app by name, you've already had the half-second you needed to notice you didn't mean to open it.
-- Schedule grayscale for the evening. The color is part of what makes a feed feel rewarding, so draining it takes the shine off around the hour you need it gone.
+- Schedule grayscale for the evening. The color is part of what makes a feed feel rewarding, so draining it takes the shine off around the hour you need it gone. It also costs nothing, which is more than I can say for [the best blue light glasses](/best-blue-light-glasses), where the evidence is thinner than the marketing.
 - Turn on Do Not Disturb, or a Sleep and Downtime schedule. It decides your cut-off once, in daylight, instead of asking you to decide it at midnight.
 - Put your charger somewhere that isn't your bedside table. The phone you have to stand up to reach is a different phone.
 
