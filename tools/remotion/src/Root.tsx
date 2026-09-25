@@ -28,6 +28,8 @@ import { InkFamiliesTradeoff } from "./InkFamiliesTradeoff";
 import { FourCorePagesMap } from "./FourCorePagesMap";
 import { CostTierKey } from "./CostTierKey";
 import { DownsizingFilterDiagram } from "./DownsizingFilterDiagram";
+import { ThreeColourHighlightingKey } from "./ThreeColourHighlightingKey";
+import { HighlighterTipShapes } from "./HighlighterTipShapes";
 import { PomodoroCycleDiagram } from "./PomodoroCycleDiagram";
 import { GraduatedCadenceSteps } from "./GraduatedCadenceSteps";
 import { AiHandlesYouHandle } from "./AiHandlesYouHandle";
@@ -90,6 +92,9 @@ export const RemotionRoot: React.FC = () => (
     <Still id="CostTierKey" component={CostTierKey}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="DownsizingFilterDiagram" component={DownsizingFilterDiagram}
+    <Still id="ThreeColourHighlightingKey" component={ThreeColourHighlightingKey}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="HighlighterTipShapes" component={HighlighterTipShapes}
     <Still id="GraduatedCadenceSteps" component={GraduatedCadenceSteps}
     <Still id="AiHandlesYouHandle" component={AiHandlesYouHandle}
       width={CANVAS.width} height={CANVAS.height} />
