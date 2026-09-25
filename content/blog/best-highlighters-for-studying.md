@@ -1,6 +1,6 @@
 ---
 title: "11 Best Highlighters for Studying in 2026 (by Study Job)"
-date: 2026-09-05
+date: 2026-09-25
 excerpt: "The 11 best highlighters for studying, picked by study job: textbooks that don't bleed, colour-coded notes, pastel sets, erasable picks and budget packs."
 tags:
   - students
