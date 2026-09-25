@@ -27,6 +27,8 @@ import { TwoPilesOfScreenTime } from "./TwoPilesOfScreenTime";
 import { InkFamiliesTradeoff } from "./InkFamiliesTradeoff";
 import { FourCorePagesMap } from "./FourCorePagesMap";
 import { CostTierKey } from "./CostTierKey";
+import { FourBoxMeetingNotesTemplate } from "./FourBoxMeetingNotesTemplate";
+import { FiveMinutePostMeetingPass } from "./FiveMinutePostMeetingPass";
 import { ThreeColourHighlightingKey } from "./ThreeColourHighlightingKey";
 import { HighlighterTipShapes } from "./HighlighterTipShapes";
 import { PomodoroCycleDiagram } from "./PomodoroCycleDiagram";
@@ -90,6 +92,9 @@ export const RemotionRoot: React.FC = () => (
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="CostTierKey" component={CostTierKey}
       width={CANVAS.width} height={CANVAS.height} />
+    <Still id="FourBoxMeetingNotesTemplate" component={FourBoxMeetingNotesTemplate}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="FiveMinutePostMeetingPass" component={FiveMinutePostMeetingPass}
     <Still id="ThreeColourHighlightingKey" component={ThreeColourHighlightingKey}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="HighlighterTipShapes" component={HighlighterTipShapes}
