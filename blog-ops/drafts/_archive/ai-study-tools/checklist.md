@@ -2,10 +2,10 @@
 slug: ai-study-tools
 target_keyword: ai study tools
 created: 2026-09-06 13:30
-last_updated: 2026-09-06 16:35
-current_stage: preview
+last_updated: 2026-09-06 15:21
+current_stage: complete
 current_owner: blog-post-workflow
-status: active
+status: complete
 gate_pending: none
 # status values: active | paused | complete | abandoned
 # current_stage values: intake | chrome_fetch | serp_select | serp_deep_fetch | reddit_fetch | reddit_select | reddit_deep_fetch | x_fetch | x_select | x_deep_fetch | competitor_check | analyze_research | synthesize_plan | plan_review | outline | draft | review | humanize | resolve_markers | images | generate_images | action_items | preview | finalize | repurpose | complete
@@ -240,6 +240,8 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 - Stage 4b started: 2026-09-06T16:15 (owner: blog-post-workflow)
 - Stage 4b completed: 2026-09-06T16:30, action-items.md written
 - Stage 4b.5 staging started: 2026-09-06T16:30
+- Stage 4b.5 completed: 2026-09-06T15:21, PR #21 opened (https://github.com/lucky72o/olgapak-blog/pull/21); WordPress draft #2229 created (status=draft), 5 media uploaded, pr-monitor.json written
+- Gate 2 opened: 2026-09-06T15:21 (console-gated; no CronCreate monitor, approval comes from the console's approval.json)
 - Stage 1.5b X completed: 2026-09-06T13:45, Top tab off-topic -> re-pulled Latest + 2 adjacent queries; 5 posts fetched. One selected post (@aresotik) was dropped mid-fetch as a disclosed Paid partnership and its reserve promoted.
 - Stage 1.5c competitor freshness re-check: SKIPPED (modules.competitors false)
 - Stage 1b started: 2026-09-06T13:45, sources=serp,reddit,x
@@ -316,3 +318,15 @@ Done in this pass:
 - The asset ownership sentinel `.staged-by-blog-workflow` was deliberately NOT staged (the commit adds `blog-ops/assets/ai-study-tools/*.png` explicitly rather than the directory), so it never ships but stays on disk. That preserves the Stage 4a.5 ownership guard for any re-render, which a plain `rm` would have destroyed.
 - Non-terminal archive snapshot copied to `blog-ops/drafts/_archive/ai-study-tools/` for PR completeness. Its `checklist.md` still carries live, non-terminal values by design; finalize re-syncs it. The LOCAL `mv` that actually retires the source directory has NOT happened and must not until Gate 2.
 
+### Stage 4b.5 staging, SIDE EFFECTS (autopilot-cont pass)
+
+Run `autopilot-cont ai-study-tools` after the console's verification PASS. This pass performed only the deferred side effects; no content file was re-written.
+
+- WordPress auth probe: PASSED, run exactly once (`GET /wp-json/wp/v2/users/me` -> id 1, `wpx_admin101`). Never retried.
+- Gutenberg conversion via `md-to-gutenberg.py` (PRIMARY path, not the classic-block fallback): 73 `wp:paragraph`, 22 `wp:heading`, 4 `wp:image`, `wp:list`/`wp:list-item`, plus the Kadence TOC passed through `--extra-blocks` at `after-intro`, extracted verbatim from `site-conventions.md` §Table of contents via the scoped awk + `jq --rawfile`. The converter's "stripping frontmatter defensively" warning is expected in this adapter's normal flow.
+- Media uploaded, 5 files, every id captured from its own POST /media response (never re-derived from a `slug=` lookup): featured.png -> 2224, serp-composition.png -> 2225, recall-loop.png -> 2226, free-tier-transparency.png -> 2227, closed-laptop.png -> 2228. Note WordPress renamed the featured attachment's slug to `featured-1.png` because earlier posts already own `featured`; this is exactly the collision the adapter warns about and the response-captured id is what makes it harmless.
+- All 4 in-post `<img src>` values rewritten from the local relative path to the uploaded `source_url`. Zero local `blog-ops/assets` references remain in the posted body.
+- Lookup-before-create ran: `GET /posts?slug=ai-study-tools` returned `[]` and no `wp_post_id` was stored, so a create (not an update) was correct. WordPress draft **2229** created, `status=draft`, `featured_media=2224`, `categories=[9]` (EdTech, resolved by name per brief.md §Category, never "Uncategorized"), `tags=[20,30,19,17]` (all four already existed; none created), `author=1`.
+- PR #21 opened against `main` from `blog/ai-study-tools`. No rebase was needed; the collision guard was re-run and passed.
+- `pr-monitor.json` written with the PR fields and the adapter's `wp_post_id` / `wp_media_ids[]` (each with its sha256) / `wp_preview_url` / `wp_upload: ok`.
+- NOT done, and correct not to be: no cron monitor (console-gated Gate 2), no merge, no `status=publish`, no local `mv` to `_archive/`. The archive snapshot in the PR is still the non-terminal staging-time copy; finalize re-syncs it.

@@ -1,0 +1,56 @@
+{
+  "slug": "ai-study-tools",
+  "repo": "lucky72o/olgapak-blog",
+  "pr_number": 21,
+  "pr_url": "https://github.com/lucky72o/olgapak-blog/pull/21",
+  "branch": "blog/ai-study-tools",
+  "base": "main",
+  "worktree": ".worktrees/blog-ai-study-tools",
+  "staging_url": "",
+  "status": "open",
+  "mode": "pr",
+  "handled_comment_ids": {
+    "issue": [],
+    "inline": [],
+    "review": []
+  },
+  "created_at": "2026-09-06T14:19:12Z",
+  "last_poll": "",
+  "poll_interval_minutes": 15,
+  "idle_polls": 0,
+  "wp_post_id": 2229,
+  "wp_media_ids": [
+    {
+      "file": "featured.png",
+      "id": 2224,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/featured-1.png",
+      "sha256": "f3f1c226f20b4f20946bc87d04d7ed0b7ad12e14d10977f67f6a7ed55b3a0d48"
+    },
+    {
+      "file": "serp-composition.png",
+      "id": 2225,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/serp-composition.png",
+      "sha256": "a8ff264803574a27ed45fa0a31687891491b76aa21cab1ff56cc2eee57226e31"
+    },
+    {
+      "file": "recall-loop.png",
+      "id": 2226,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/recall-loop.png",
+      "sha256": "c7c3ee470c90f54062b8dca625d49695e696b81fd9c4adbf6976779d43245f59"
+    },
+    {
+      "file": "free-tier-transparency.png",
+      "id": 2227,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/free-tier-transparency.png",
+      "sha256": "965e147ed80a46c89efb927e4de79657033444c81774d8ce4fa3eb5f542f089f"
+    },
+    {
+      "file": "closed-laptop.png",
+      "id": 2228,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/closed-laptop.png",
+      "sha256": "bdb90f017a062177081bb535d655475fceee24c2cc34aba8088039eb20742230"
+    }
+  ],
+  "wp_preview_url": "https://olgapak.com/wp-admin/post.php?post=2229&action=edit",
+  "wp_upload": "ok"
+}
