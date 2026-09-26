@@ -1,6 +1,6 @@
 ---
 title: "9 Best AI Study Tools for Students in 2026, Ranked"
-date: 2026-09-06
+date: 2026-09-26
 excerpt: 'Most "best AI study tools" lists are written by the tools themselves. Here are 9 picks students really use, what each free tier gives you, and when to skip AI.'
 tags:
   - ai tools
