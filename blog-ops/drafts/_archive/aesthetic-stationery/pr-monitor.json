@@ -7,7 +7,7 @@
   "base": "main",
   "worktree": ".worktrees/blog-aesthetic-stationery",
   "staging_url": "",
-  "status": "open",
+  "status": "done",
   "mode": "pr",
   "handled_comment_ids": {
     "issue": [],
@@ -15,7 +15,7 @@
     "review": []
   },
   "created_at": "2026-09-08T12:54:54Z",
-  "last_poll": "",
+  "last_poll": "2026-09-27T19:00Z",
   "poll_interval_minutes": 15,
   "idle_polls": 0,
   "wp_post_id": 2247,

@@ -71,9 +71,9 @@ Three markers, all closed by the editor at Stage 3d. Audit log:
 
 Applied automatically at Stage 4b.5 to the repo markdown. Per the `wordpress-rest` adapter §4b branch: **this post is still `draft`, so an edit to the repo markdown does not by itself reach the live site.** Each row below must be hand-applied to the live WP post in wp-admin (or via the prefilled REST commands) at publish time.
 
-- [ ] `content/blog/best-notebooks-for-note-taking.md`, anchor "`aesthetic stationery`" → `/aesthetic-stationery`, in the passage about choosing a notebook you will actually want to open. Applied to the repo file; hand-apply to the live WP post.
-- [ ] `content/blog/best-pens-for-note-taking.md`, anchor "`aesthetic stationery worth buying`" → `/aesthetic-stationery`, near the closing / related-reading sentence. Applied to the repo file; hand-apply to the live WP post.
-- [ ] `content/blog/bullet-journal-for-beginners.md`, anchor "`aesthetic stationery that earns its space`" → `/aesthetic-stationery`, in the supplies section. Applied to the repo file; hand-apply to the live WP post.
+- [x] `content/blog/best-notebooks-for-note-taking.md`, anchor "`aesthetic stationery`" → `/aesthetic-stationery`, in the passage about choosing a notebook you will actually want to open. Applied to the repo file AND to the live WP post at finalize 2026-09-27T19:00Z (verified by re-read, one link).
+- [x] `content/blog/best-pens-for-note-taking.md`, anchor "`aesthetic stationery worth buying`" → `/aesthetic-stationery`, near the closing / related-reading sentence. Applied to the repo file AND to the live WP post at finalize 2026-09-27T19:00Z (verified by re-read, one link).
+- [x] `content/blog/bullet-journal-for-beginners.md`, anchor "`aesthetic stationery that earns its space`" → `/aesthetic-stationery`, in the supplies section. Applied to the repo file AND to the live WP post at finalize 2026-09-27T19:00Z (verified by re-read, one link).
 
 Prefilled commands for each (substitute `<existing-slug>`, `<id>`, `<anchor>`):
 ```bash
