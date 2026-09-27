@@ -31,7 +31,7 @@
 | 20 | screen-free-hobbies | screen-free hobbies | INFO listicle: 50 Screen-Free Hobbies to Try This Year | | | published |
 | 21 | best-headphones-for-studying | best headphones for studying | COMMERCIAL roundup: Best Noise-Cancelling Headphones for Studying (2026) | | | planned |
 | 22 | rocketbook-review | rocketbook review | REVIEW: Rocketbook — Is the Reusable Notebook Worth It? | | | planned |
-| 23 | aesthetic-stationery | aesthetic stationery | COMMERCIAL roundup: Ultimate Aesthetic Stationery Haul (25 must-haves) | | | planned |
+| 23 | aesthetic-stationery | aesthetic stationery | COMMERCIAL roundup: Ultimate Aesthetic Stationery Haul (25 must-haves) | | | published |
 | 24 | best-daily-planners | best daily planners | COMMERCIAL roundup: Best Daily Planners for Productivity (2026) | | | planned |
 | 25 | how-to-take-notes-in-meetings | how to take notes in meetings | INFO guide: How to Take Better Notes in Meetings (templates + tips) | | | planned |
 | 26 | pomodoro-technique | pomodoro technique | INFO/COMMERCIAL guide: Pomodoro Technique (how it works + best timers) | | | published |
