@@ -1,6 +1,6 @@
 ---
 title: "Aesthetic Stationery: 17 Best Picks That Earn Their Space"
-date: 2026-09-08
+date: 2026-09-27
 excerpt: "Aesthetic stationery that survives daily use, not just the photo. 17 picks by category, each with the honest downside, so you buy less and use more."
 tags:
   - aesthetic notes
