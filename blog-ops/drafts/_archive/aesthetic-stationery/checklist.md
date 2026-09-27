@@ -2,7 +2,7 @@
 slug: aesthetic-stationery
 target_keyword: aesthetic stationery
 created: 2026-09-08 11:00
-last_updated: 2026-09-08 14:57
+last_updated: 2026-09-27T19:00Z
 current_stage: complete
 current_owner: blog-post-workflow
 status: complete
@@ -283,4 +283,22 @@ Autopilot run under the operator console (CONSOLE_RUN_STATE set, CONSOLE_VERIFIC
   - adapter step 6h main-tree cleanup: NO-OP, the run staged directly in the worktree; the main checkout never held the post or assets (verified clean)
   - console-gated Gate 2: NO CronCreate monitor started, nothing published
 - Gate 2 opened: 2026-09-08T12:57Z
+- Gate 2 approved: 2026-09-27T18:57Z (console approval.json, operator, mode now); PR #24 merged by console 2026-09-27T18:57:44Z; WP post 2247 status=publish 2026-09-27T18:56:57 (live: https://olgapak.com/aesthetic-stationery)
+- Finalize completed: 2026-09-27T19:00Z (console-merge route: no cron to delete; WP content sync SKIPPED because the live post is authoritative; 3 live inbound links applied, see LIVE INBOUND LINK PASS above; archive set terminal and landed on main by cherry-pick)
 
+
+LIVE INBOUND LINK PASS (console-merge finalize, wordpress-rest apply_inbound_links_live: true, 2026-09-27T18:59Z):
+- live inbound link planned: best-notebooks-for-note-taking (wp id 2092) -> this post
+- live inbound link applied: best-notebooks-for-note-taking (wp id 2092) -> this post, anchor "aesthetic stationery" in H2 'Best premium notebooks for journaling and keeping', keepers paragraph; HTTP 200, link count after re-read: 1; before: "ng a beautiful notebook cover to cover; ask anyone who's done it.</p>"; after: "ng a beautiful notebook cover to cover; ask anyone who's done it. If that's the pull, it's worth being picky about which <a href="https://olgapak.com/aesthetic-stationery">aesthetic stationery</a> you"
+- live inbound link planned: best-pens-for-note-taking (wp id 2174) -> this post
+- live inbound link applied: best-pens-for-note-taking (wp id 2174) -> this post, anchor "aesthetic stationery worth buying" in end of H2 'Turn the notes into something you can revise from', new paragraph before FAQ; HTTP 200, link count after re-read: 1; before: "he shorthand you scribbled at speed and can no longer read.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="w"; after: "he shorthand you scribbled at speed and can no longer read.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>And if the pens are only the start and you're kitting out the rest of the desk, here's"
+- live inbound link planned: bullet-journal-for-beginners (wp id 2208) -> this post
+- live inbound link applied: bullet-journal-for-beginners (wp id 2208) -> this post, anchor "aesthetic stationery that earns its space" in supplies section, 'stationery does matter a little' paragraph; HTTP 200, link count after re-read: 1; before: "href="/best-notebooks-for-note-taking">which notebooks are actually worth the money</a> and <a href="/best-pens-for-not"; after: "href="/best-notebooks-for-note-taking">which notebooks are actually worth the money</a>, <a href="/best-pens-for-note-taking">a pen you'll enjoy writing with</a>, and the <a href="https://olgapak.com"
