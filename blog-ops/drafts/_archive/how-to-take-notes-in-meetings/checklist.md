@@ -2,10 +2,10 @@
 slug: how-to-take-notes-in-meetings
 target_keyword: how to take notes in meetings
 created: 2026-09-08 15:21
-last_updated: 2026-09-08 15:24
-current_stage: preview
+last_updated: 2026-09-08 15:48
+current_stage: complete
 current_owner: blog-post-workflow
-status: active
+status: complete
 gate_pending: none
 # status values: active | paused | complete | abandoned
 # current_stage values: intake | chrome_fetch | serp_select | serp_deep_fetch | reddit_fetch | reddit_select | reddit_deep_fetch | x_fetch | x_select | x_deep_fetch | competitor_check | analyze_research | synthesize_plan | plan_review | outline | draft | review | humanize | resolve_markers | images | generate_images | action_items | preview | finalize | repurpose | complete
@@ -179,7 +179,7 @@ Mechanical grep of draft markers + fill action-items template. One checkbox per 
 
 Editor presents Gate 2 banner (the only human gate; plan approval is an automated Stage 1c.5 review). On approve, runs the finalize sequence (adapter-specific, per `adapters/publish/<adapter>.md`): moves/publishes the draft to `{content_dir}/<slug>.md` (or the WordPress equivalent); creates the asset folder; archives `{drafts_dir}/<slug>/` → `{drafts_dir}/_archive/<slug>/`.
 
-- [ ] Gate 2 presented (banner format)
+- [x] Gate 2 presented (banner format) , console-gated: the operator approves in the console dashboard, no in-session prompt
 - [ ] Human approved
 - [ ] draft moved/published to `{content_dir}/<slug>.md` (or the WordPress equivalent)
 - [ ] asset folder created at `{assets_dir}/<slug>/` (with images.md as README.md)
@@ -209,12 +209,15 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 
 - Plan review opened: 2026-09-08T15:40:37
 - Plan review verdict: approve (iteration 1), all 7 rubric criteria pass; one non-blocking note: recommended title is 49 chars, one short of the 50-60 rule, 2026-09-08T15:45:39
-- Gate 2 opened: ...
+- Gate 2 opened: 2026-09-08T15:48:27 (console-gated; no CronCreate monitor, the console owns the approval gate)
 
 ## Stage transition log
 
 <append one line per stage transition>
 
+- Stage 4b.5 SIDE EFFECTS completed (autopilot-cont): 2026-09-08T15:48:27, WP draft 2253 created (5 media uploaded, category Productivity id 12, 4 tags, featured_media 2248), PR #25 opened (https://github.com/lucky72o/olgapak-blog/pull/25), pr-monitor.json written; current_stage -> finalize, gate_pending -> gate_2_final
+
+- Stage 4b.5 FILE LAYOUT completed: 2026-09-08T16:44:07, committed 5a2ba70 and pushed to origin/blog/how-to-take-notes-in-meetings. Side effects (PR open, WP draft create, pr-monitor.json) DEFERRED to autopilot-cont per the CONSOLE_VERIFICATION=on handshake; current_stage stays `preview` so the resume route re-enters Step 14.5.
 - Stage 4b.5 staging started: 2026-09-08T16:42:11
 - Stage 4b completed: 2026-09-08T16:42:11, 0 VERIFY / 0 EXTERNAL_LINK_NEEDED / 0 INTERNAL_LINK_NEEDED / 4 IMAGE markers
 - Stage 4b started: 2026-09-08T16:40:49
@@ -242,6 +245,31 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 - <stage> completed: <timestamp>
 
 ## Notes
+
+### Stage 4b.5 staging record (file layout only)
+
+Ran under `CONSOLE_VERIFICATION=on`, so this pass did the FILE LAYOUT and stopped short of the
+staging side effects. Done here:
+- `content/blog/how-to-take-notes-in-meetings.md` written from `draft-v1.md`.
+- All 4 `[IMAGE:]` placeholders replaced with real Markdown embeds; every target file confirmed
+  present on disk, so no slot needed the build-safe "Image pending" note.
+- `draft: true` stripped.
+- Featured image verified present (`featured.png`). The wordpress frontmatter template defines
+  NO cover/heroImage field by design, so nothing was injected into frontmatter; the featured
+  image ships as `featured_media` from the media upload at autopilot-cont.
+- 3 inbound links applied to existing posts, each extending an existing sentence rather than
+  bolting on a "see also". All three passed the link-only diff verification (1 hunk, 1 line
+  removed, 1 line added, our link and nothing else).
+- Asset `README.md` written from images.md; the `.staged-by-blog-workflow` sentinel deliberately
+  left unstaged so it never ships.
+- Non-terminal archive snapshot copied to `blog-ops/drafts/_archive/how-to-take-notes-in-meetings/`
+  for reviewer completeness, including `research/_raw/` in full. Its `checklist.md` is the
+  pre-staging copy and is NOT terminal; finalize re-syncs it.
+- Committed `5a2ba70`, pushed to `origin/blog/how-to-take-notes-in-meetings`.
+
+DEFERRED to `autopilot-cont` (the staging side effects): the WordPress auth probe, the Gutenberg
+conversion, the media uploads, the WP draft create, `gh pr create`, and the `pr-monitor.json`
+write. No WordPress call of any kind was made in this run.
 
 ### Inbound-link ownership records (write-ahead, Stage 4b.5 step 5c)
 

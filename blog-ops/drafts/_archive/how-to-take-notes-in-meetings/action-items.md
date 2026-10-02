@@ -99,7 +99,7 @@ WordPress has no author-map file to reconcile.
 
 ## 7. Publish
 
-- [ ] Open the WordPress draft preview: `<wp_preview_url, filled at Stage 4b.5>`
+- [ ] Open the WordPress draft preview: https://olgapak.com/wp-admin/post.php?post=2253&action=edit
 - [ ] Read it once more in the WP admin preview (title, excerpt, featured image already synced by the adapter)
 - [ ] **Focus keyword.** `blog-ops/profile/site-conventions.md` §SEO plugin names **Rank Math**, and records that the focus keyword is **not settable via standard REST**. So set it yourself in the WP editor's Rank Math meta box, to exactly: `how to take notes in meetings` (verbatim, not the title, not a paraphrase). This workflow never attempts that write
 - [ ] Click **Publish** in WP admin. This workflow never does that step for you

@@ -1,0 +1,56 @@
+{
+  "slug": "how-to-take-notes-in-meetings",
+  "repo": "lucky72o/olgapak-blog",
+  "pr_number": 25,
+  "pr_url": "https://github.com/lucky72o/olgapak-blog/pull/25",
+  "branch": "blog/how-to-take-notes-in-meetings",
+  "base": "main",
+  "worktree": ".worktrees/blog-how-to-take-notes-in-meetings",
+  "staging_url": "",
+  "status": "open",
+  "mode": "pr",
+  "handled_comment_ids": {
+    "issue": [],
+    "inline": [],
+    "review": []
+  },
+  "created_at": "2026-09-08T15:48:09Z",
+  "last_poll": "",
+  "poll_interval_minutes": 15,
+  "idle_polls": 0,
+  "wp_post_id": 2253,
+  "wp_media_ids": [
+    {
+      "file": "featured.png",
+      "id": 2248,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/featured-5.png",
+      "sha256": "e30cd675b3541a5e02b9b0996c234c5d5ef6a6fe29f63d029067e37aa263c708"
+    },
+    {
+      "file": "five-minute-post-meeting-pass.png",
+      "id": 2249,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/five-minute-post-meeting-pass.png",
+      "sha256": "e1fbc2fea8a928de2144c89f89c81c83abef5263eb37b85b821ba2d828c90e75"
+    },
+    {
+      "file": "four-box-meeting-notes-template.png",
+      "id": 2250,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/four-box-meeting-notes-template.png",
+      "sha256": "3801225e16ba2fcddedab3ded6c071f7e2bd7dd50d75c2d62d9771b677293765"
+    },
+    {
+      "file": "transcription-trap.png",
+      "id": 2251,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/transcription-trap.png",
+      "sha256": "7e441a4c10feeefbc7dfe952860000426d9ad7941d85c32786d4cf6acf8e3f1e"
+    },
+    {
+      "file": "write-less-listen-more.png",
+      "id": 2252,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/write-less-listen-more.png",
+      "sha256": "47ce28eaf65d704a91421c286dbe4fae0ffd4438a256e4a9a00d21e1194d5296"
+    }
+  ],
+  "wp_preview_url": "https://olgapak.com/wp-admin/post.php?post=2253&action=edit",
+  "wp_upload": "ok"
+}
