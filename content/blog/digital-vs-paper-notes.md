@@ -120,7 +120,7 @@ It's slow. That's the feature. A page can't keep up with a lecturer, so it force
 
 A page also can't show you a notification. If you take notes on a laptop or a tablet, you're taking them on [the same device that pings you every few minutes](/how-to-stop-doomscrolling), and a review indexed by the National Library of Medicine notes that [technology can support learning but creates challenges when it is not used intentionally](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4812780/). Intentionally is doing a lot of work in that sentence.
 
-That semester of switching taught me the same thing without the citation. My typed lecture notes were fuller than my handwritten ones and I remembered less of what was in them, partly because a browser tab is always one keystroke away and no lecture is ever quite as gripping as whatever is inside it.
+That semester of switching taught me the same thing without the citation. My typed lecture notes were fuller than my handwritten ones and I remembered less of what was in them, partly because a browser tab is always one keystroke away and no lecture is ever quite as gripping as whatever is inside it. The same trade-off shows up at work, where an open laptop is both the fastest way to capture and the reason you missed the last two minutes; I worked through that specific case in [taking notes in meetings](/how-to-take-notes-in-meetings).
 
 Paper also can't autocomplete, sync-conflict, run out of battery, or need an app update ten minutes before a seminar. It just opens. That's also why [a paper planning system like a bullet journal](/bullet-journal-for-beginners) survives a week that goes sideways: there's nothing to re-sync, only a page to turn.
 
