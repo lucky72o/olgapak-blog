@@ -1,6 +1,6 @@
 ---
 title: "How to Take Notes in Meetings (Template + 5-Minute Habit)"
-date: 2026-09-08
+date: 2026-10-02
 excerpt: "Struggling to keep up in meetings? Here is the template and the five-minute habit that turn messy notes into decisions and action items you will reuse."
 tags:
   - productivity
