@@ -29,6 +29,7 @@ import { FourCorePagesMap } from "./FourCorePagesMap";
 import { CostTierKey } from "./CostTierKey";
 import { FourBoxMeetingNotesTemplate } from "./FourBoxMeetingNotesTemplate";
 import { FiveMinutePostMeetingPass } from "./FiveMinutePostMeetingPass";
+import { DownsizingFilterDiagram } from "./DownsizingFilterDiagram";
 import { ThreeColourHighlightingKey } from "./ThreeColourHighlightingKey";
 import { HighlighterTipShapes } from "./HighlighterTipShapes";
 import { PomodoroCycleDiagram } from "./PomodoroCycleDiagram";
@@ -95,6 +96,7 @@ export const RemotionRoot: React.FC = () => (
     <Still id="FourBoxMeetingNotesTemplate" component={FourBoxMeetingNotesTemplate}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="FiveMinutePostMeetingPass" component={FiveMinutePostMeetingPass}
+    <Still id="DownsizingFilterDiagram" component={DownsizingFilterDiagram}
     <Still id="ThreeColourHighlightingKey" component={ThreeColourHighlightingKey}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="HighlighterTipShapes" component={HighlighterTipShapes}

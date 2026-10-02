@@ -143,7 +143,7 @@ If you're genuinely torn between paper and a screen, an e-ink tablet like the [r
 
 ## Best premium notebooks for journaling and keeping
 
-Finally, the keepers: the notebooks you'll finish and actually want to shelve. This is where paper stops being a tool and starts being a small pleasure, and where the [aesthetic notes](/how-to-make-aesthetic-notes-complete-step-by-step-guide) crowd and journalers find their people. There's real joy in filling a beautiful notebook cover to cover; ask anyone who's done it.
+Finally, the keepers: the notebooks you'll finish and actually want to shelve. This is where paper stops being a tool and starts being a small pleasure, and where the [aesthetic notes](/how-to-make-aesthetic-notes-complete-step-by-step-guide) crowd and journalers find their people. There's real joy in filling a beautiful notebook cover to cover; ask anyone who's done it. If that's the pull, it's worth being picky about which [aesthetic stationery](/aesthetic-stationery) you actually keep.
 
 ![A shelf of finished, well-loved notebooks with worn spines and ribbon bookmarks](../../blog-ops/assets/best-notebooks-for-note-taking/finished-notebooks-shelf.png)
 
