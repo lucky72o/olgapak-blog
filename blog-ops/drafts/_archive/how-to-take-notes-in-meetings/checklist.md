@@ -2,7 +2,7 @@
 slug: how-to-take-notes-in-meetings
 target_keyword: how to take notes in meetings
 created: 2026-09-08 15:21
-last_updated: 2026-09-08 15:48
+last_updated: 2026-10-02 11:26
 current_stage: complete
 current_owner: blog-post-workflow
 status: complete
@@ -243,6 +243,7 @@ Triggered separately from the main workflow via `/repurpose-blog-post <slug>`. P
 
 - <stage> started: <timestamp> (owner: <agent>)
 - <stage> completed: <timestamp>
+- Gate 2 approved (console, approval.json 2026-10-02T10:24:11Z), PR #25 merged 2026-10-02T10:24:31Z; Finalize completed: 2026-10-02 11:26
 
 ## Notes
 
@@ -369,3 +370,10 @@ URL that fails Stage 3d gets its claim CUT, not softened.
 - CTA heading "Hand off the part you keep skipping" is the writer's own; the outline specified the angle but no heading text.
 
 <anything the editor wants to flag for future stages or the human, e.g., "competitor X changed pricing on <date>, verify before publish">
+
+### Live inbound links (wordpress-rest §On Gate 2 approval step 2, console-merge finalize 2026-10-02)
+
+WP post 2253 confirmed `status: publish` at finalize, so the live pass runs (`apply_inbound_links_live: true`). Write-ahead:
+- live inbound link applied: note-taking-methods (wp id 2102) -> this post, anchor "how to take notes in meetings" in the closing paragraph; before: "...do the condensing afterward. That is the whole game."; after: "...That is the whole game. If the next one is a work meeting rather than a class, ... here is <a>how to take notes in meetings</a>, where capturing decisions matters more than capturing content." HTTP 200, 1 match on re-read.
+- live inbound link applied: cornell-note-taking-method (wp id 2075) -> this post, anchor "adapting this for meetings" in the siblings paragraph; before: "...picks up where the summary bar leaves off."; after: "...leaves off. The layout itself travels, too: <a>adapting this for meetings</a> swaps the three boxes for four that suit a room full of decisions." HTTP 200, 1 match on re-read.
+- live inbound link applied: digital-vs-paper-notes (wp id 2187) -> this post, anchor "taking notes in meetings" in the typing-vs-handwriting paragraph; before: "...as gripping as whatever is inside it."; after: "...whatever is inside it. The same trade-off shows up at work, ... I worked through that specific case in <a>taking notes in meetings</a>." HTTP 200, 1 match on re-read.
