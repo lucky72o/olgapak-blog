@@ -169,7 +169,7 @@ Still deciding? Map yourself to a pick:
 - **Want to go paperless-ish?** Rocketbook, or an e-ink tablet if the budget allows.
 - **Want a keeper you'll be proud of?** Life Noble Note, Midori MD, or a Leuchtturm1917.
 
-And the rule under all of it: the best notebook is the one you'll actually open every day. A pristine premium notebook you're scared to "ruin" is worse than a cheap one you happily fill.
+And the rule under all of it: the best notebook is the one you'll actually open every day. A pristine premium notebook you're scared to "ruin" is worse than a cheap one you happily fill. Buying one as a present? My list of [gifts for students](/gifts-for-students) pairs a notebook with the pens, highlighters, and focus gear that make it get used.
 
 ## Turn a full notebook into something you'll use
 

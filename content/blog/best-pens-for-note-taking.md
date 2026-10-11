@@ -204,7 +204,7 @@ It's the erasable pick from the planner-community roundup in my research set, an
 
 ## Which pen for which kind of note-taking
 
-The picks above, sorted by what you're actually doing with them.
+The picks above, sorted by what you're actually doing with them. If you're buying pens as a present, the Jetstream multipack also made my list of [gift ideas for students](/gifts-for-students).
 
 | What you're doing | Pick | Why |
 |---|---|---|
