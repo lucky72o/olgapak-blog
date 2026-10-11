@@ -2,10 +2,10 @@
 slug: gifts-for-students
 target_keyword: gifts for students
 created: 2026-09-13 12:27
-last_updated: 2026-09-13 13:55
-current_stage: preview
+last_updated: 2026-09-13 14:02
+current_stage: complete
 current_owner: blog-post-workflow
-status: active
+status: complete
 gate_pending: none
 # status values: active | paused | complete | abandoned
 # current_stage values: intake | chrome_fetch | serp_select | serp_deep_fetch | reddit_fetch | reddit_select | reddit_deep_fetch | x_fetch | x_select | x_deep_fetch | competitor_check | analyze_research | synthesize_plan | plan_review | outline | draft | review | humanize | resolve_markers | images | generate_images | action_items | preview | finalize | repurpose | complete
@@ -234,6 +234,10 @@ Not run: `modules.repurpose` is false in config.
 - Stage 4b started: 2026-09-13T13:55:00Z
 - Stage 4b completed: 2026-09-13T13:55:00Z, action-items.md written (§1 5 images, §2 2 resolved VERIFY, §3 none, §4 0 internal-link markers, §4b 3 inbound rows, §5 US-availability + band + Root.tsx checks, §6 N/A WP, §7 WP publish incl. Rank Math focus keyword 'gifts for students'); 0 angle-bracket placeholders outside code fences; §6 authors-map: N/A for wordpress-rest
 - Stage 4b.5 staging started: 2026-09-13T13:55:00Z (CONSOLE_VERIFICATION=on: file layout + commit + push only; no PR, no WP draft, no pr-monitor.json)
+- Stage 4b.5 file layout committed + pushed: 2026-09-13T13:57:03Z, commit 7524eac on blog/gifts-for-students (pushed with -u). Autopilot run emitted ready_for_verification and exited; current_stage stays `preview` so autopilot-cont resumes at Step 14.5 (PR open + WP draft) after console verification.
+- Stage 4b.5 side effects (autopilot-cont) started: 2026-09-13T14:02:15Z, verification PASS (verification-result.json ok)
+- Stage 4b.5 completed: 2026-09-13T14:02:15Z, PR #30 opened (https://github.com/lucky72o/olgapak-blog/pull/30), WP draft 2292 created
+- Gate 2 opened: 2026-09-13T14:02:15Z (console-gated; no CronCreate monitor)
 
 ## Notes
 
@@ -278,3 +282,12 @@ Not run: `modules.repurpose` is false in config.
   - inbound link applied by workflow: /Users/slav/work/olgapak-blog/.worktrees/blog-gifts-for-students/content/blog/how-to-take-notes-on-ipad.md
 - Stage 4b.5 inbound links admitted 2026-09-13T13:56:59Z: all 3 files passed the Link-only diff verification (single hunk, one modified line each, the added line carries `(/gifts-for-students)`): best-notebooks-for-note-taking.md (anchor "gifts for students"), best-pens-for-note-taking.md (anchor "gift ideas for students"), how-to-take-notes-on-ipad.md (anchor "gifts for students"). All 3 ship in this post's commit.
 - Stage 4b.5 file layout 2026-09-13T13:56:59Z: content/blog/gifts-for-students.md staged from draft-v2.md (4 [IMAGE:] -> 4 embeds to existing files, 0 pending notes, `draft: true` kept per WP precedent, no slug collision on origin/main, featured.png present); Gutenberg conversion -> blog-ops/drafts/gifts-for-students/gifts-for-students.html (exit 0; 29 headings, 4 images, 1 table, 17 lists, Kadence TOC inserted, frontmatter stripped); non-terminal archive snapshot copied to blog-ops/drafts/_archive/gifts-for-students/. CONSOLE_VERIFICATION=on: no gh pr create, no WP auth probe, no WP draft, no pr-monitor.json in this run (autopilot-cont performs those after verification).
+- **Stage 4b.5 side effects (autopilot-cont run, 2026-09-13T14:02:15Z).** Verification PASSED, so this run performed the side effects the fresh run held back.
+  - WP auth probe: run once, HTTP 200.
+  - Gutenberg markup regenerated from `content/blog/gifts-for-students.md` with the Kadence TOC extra block (byte-identical to the staged HTML); 1 TOC, 4 wp:image blocks.
+  - Media uploaded: 5 files, ids 2287-2291, captured from each upload response. WordPress uniquified the featured attachment to `featured-10.png`. Every local image path substituted for its `source_url`; 0 local paths in the posted body.
+  - WP draft created: post **2292**, status `draft`, slug `gifts-for-students`, `featured_media` 2287, categories Productivity + EdTech (12, 9), tags students/note-taking/productivity (30/14/15), author 1. The slug lookup (all statuses) returned empty first, so this was a genuine first create.
+  - PR #30 opened against main (branch already pushed at 7524eac, contains origin/main 3c637b1, no slug collision on origin/main). `pr-monitor.json` written with `mode: pr`.
+  - Inbound links: repo-side edits ship in the PR. The live WordPress application is deferred to finalize, after the post is published (`apply_inbound_links_live: true`, same as dopamine-detox), because linking live posts to a draft URL would 404.
+  - Main-tree cleanup (adapter step 6h) skipped: the console staged directly in this worktree, so the staged post and assets are the committed branch copies, not main-tree leftovers.
+  - Console-gated Gate 2: no CronCreate monitor. The WP draft stays `draft`; publishing is a human wp-admin action after `approval.json`.
