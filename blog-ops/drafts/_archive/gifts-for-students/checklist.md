@@ -2,7 +2,7 @@
 slug: gifts-for-students
 target_keyword: gifts for students
 created: 2026-09-13 12:27
-last_updated: 2026-09-13 14:02
+last_updated: 2026-10-11 12:54
 current_stage: complete
 current_owner: blog-post-workflow
 status: complete
@@ -238,6 +238,7 @@ Not run: `modules.repurpose` is false in config.
 - Stage 4b.5 side effects (autopilot-cont) started: 2026-09-13T14:02:15Z, verification PASS (verification-result.json ok)
 - Stage 4b.5 completed: 2026-09-13T14:02:15Z, PR #30 opened (https://github.com/lucky72o/olgapak-blog/pull/30), WP draft 2292 created
 - Gate 2 opened: 2026-09-13T14:02:15Z (console-gated; no CronCreate monitor)
+- Gate 2 approved: 2026-10-11T11:51:38Z (console approval.json; PR #30 merged 11:51:48Z), Finalize completed: 2026-10-11T11:54:23Z (console-merge finalize, live inbound links applied to 3 posts)
 
 ## Notes
 
@@ -291,3 +292,11 @@ Not run: `modules.repurpose` is false in config.
   - Inbound links: repo-side edits ship in the PR. The live WordPress application is deferred to finalize, after the post is published (`apply_inbound_links_live: true`, same as dopamine-detox), because linking live posts to a draft URL would 404.
   - Main-tree cleanup (adapter step 6h) skipped: the console staged directly in this worktree, so the staged post and assets are the committed branch copies, not main-tree leftovers.
   - Console-gated Gate 2: no CronCreate monitor. The WP draft stays `draft`; publishing is a human wp-admin action after `approval.json`.
+- Console-merge finalize 2026-10-11 (PR #30 merged 2026-10-11T11:51:48Z, approval.json present, WP post 2292 status publish, so final content sync SKIPPED per wordpress-rest §On Gate 2 approval step 1). Live inbound links, write-ahead 2026-10-11T11:53:34Z:
+  - live inbound link planned: best-notebooks-for-note-taking (wp id 2092) -> this post
+  - live inbound link planned: best-pens-for-note-taking (wp id 2174) -> this post
+  - live inbound link planned: how-to-take-notes-on-ipad (wp id 2193) -> this post
+  - live inbound link applied: best-notebooks-for-note-taking (wp id 2092) -> this post, anchor "gifts for students" in §"How to pick the right notebook for you"; before: "...is worse than a cheap one you happily fill.</p>"; after: "...is worse than a cheap one you happily fill. Buying one as a present? My list of <a href=\"https://olgapak.com/gifts-for-students\">gifts for students</a> pairs a notebook with..."
+  - live inbound link applied: best-pens-for-note-taking (wp id 2174) -> this post, anchor "gift ideas for students" in §"Which pen for which kind of note-taking"; before: "...sorted by what you're actually doing with them.</p>"; after: "...sorted by what you're actually doing with them. If you're buying pens as a present, the Jetstream multipack also made my list of <a href=\"https://olgapak.com/gifts-for-students\">gift ideas for students</a>.</p>"
+  - live inbound link applied: how-to-take-notes-on-ipad (wp id 2193) -> this post, anchor "gifts for students" in §"The Gear That Earns Its Place", Apple Pencil bullet; before: "...rather than trusting a chart in a blog post.</li>"; after: "...rather than trusting a chart in a blog post. If it's a present, my guide to <a href=\"https://olgapak.com/gifts-for-students\">gifts for students</a> covers the stylus picks..."
+  - All three re-read with context=edit: exactly one href match each, all still `publish`. Sentences mirror the Stage 4b.5 repo markdown verbatim.
