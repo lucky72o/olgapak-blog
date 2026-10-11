@@ -1,6 +1,6 @@
 ---
 title: "Best Gifts for Students: 15 Picks They'll Actually Use"
-date: 2026-09-13
+date: 2026-10-11
 excerpt: "Stuck on gifts for students? 15 picks for note-taking, focus, and planning that students actually use, sorted by need with a budget band, plus what to skip."
 tags:
   - students
