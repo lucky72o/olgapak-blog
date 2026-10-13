@@ -47,4 +47,3 @@ console:
     build_check: true
     vision: auto                 # on | off | auto (auto = run when a preview is reachable, else skip loudly)
   max_limit_resumes: 3
-  chain: [retro, repurpose]      # repurpose entry ignored unless modules.repurpose
