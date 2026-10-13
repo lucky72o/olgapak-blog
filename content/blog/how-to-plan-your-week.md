@@ -157,4 +157,4 @@ Don't scrap it, and don't wait until next Sunday to start over. Run a five-minut
 
 ### Is planning every day worth it, or is it just productivity theater?
 
-Plan the week for direction, then do light daily check-ins rather than rebuilding everything each morning. Planning tips into "theater" only when the system becomes the work instead of serving it. A messy plan you actually follow beats a beautiful one you never open, so keep it small enough to stick with.
+Plan the week for direction, then do light daily check-ins, a few minutes inside [a short morning routine](/productive-morning-routine), rather than rebuilding everything each morning. Planning tips into "theater" only when the system becomes the work instead of serving it. A messy plan you actually follow beats a beautiful one you never open, so keep it small enough to stick with.

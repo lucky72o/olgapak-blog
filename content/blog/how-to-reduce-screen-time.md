@@ -101,7 +101,7 @@ Four habits, same rule as before, one action and one reason each:
 - Keep the phone further than arm's reach while you're working. One person on X listed this among the changes that got their own daily total under 90 minutes, and the mechanism is embarrassingly simple: a phone you'd have to stand up for interrupts you far less than one you can reach without looking.
 - Give your leisure phone time its own slot instead of letting it fill every gap. Scrolling isn't the problem here, unscheduled scrolling is, and [giving it a block on the calendar](/time-blocking) turns it from a leak into a plan.
 - Don't take the phone to the table or the bathroom. Both are short, both are automatic, and both are where a two-minute check turns into twenty without any decision being made.
-- Charge it outside the bedroom overnight. This is the one I'd start with, because the payoff (a first hour that starts with you rather than a feed) shows up the very next morning.
+- Charge it outside the bedroom overnight. This is the one I'd start with, because the payoff (a first hour that starts with you rather than a feed, the backbone of any good [morning routine](/productive-morning-routine)) shows up the very next morning.
 
 Which one of those four would actually change your week? Pick that one. Not all four.
 
