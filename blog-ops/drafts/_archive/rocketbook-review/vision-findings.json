@@ -1,0 +1,4 @@
+[
+  {"image": "rocketbook-pens-per-semester.png", "severity": "warn", "issue": "The row totals \"5  pens\" and \"4  pens\" render in a monospace font with a visibly double-width gap between the number and the word, which clashes with the sans-serif labels."},
+  {"image": "rocketbook-care-dos-donts.png", "severity": "warn", "issue": "The care items are small and sit in a narrow middle band, leaving roughly the top 40 percent and bottom third of the frame as empty wall and desk, so the do/don't icons read small in the post."}
+]

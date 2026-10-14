@@ -37,6 +37,7 @@ import { GraduatedCadenceSteps } from "./GraduatedCadenceSteps";
 import { AiHandlesYouHandle } from "./AiHandlesYouHandle";
 import { FiveStepWorkflow } from "./FiveStepWorkflow";
 import { PaperOrScreenGiftDecision } from "./PaperOrScreenGiftDecision";
+import { C_rocketbook_review__rocketbook_pens_per_semester } from "./rocketbook-review--rocketbook-pens-per-semester";
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -97,10 +98,13 @@ export const RemotionRoot: React.FC = () => (
     <Still id="FourBoxMeetingNotesTemplate" component={FourBoxMeetingNotesTemplate}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="FiveMinutePostMeetingPass" component={FiveMinutePostMeetingPass}
+      width={CANVAS.width} height={CANVAS.height} />
     <Still id="DownsizingFilterDiagram" component={DownsizingFilterDiagram}
+      width={CANVAS.width} height={CANVAS.height} />
     <Still id="ThreeColourHighlightingKey" component={ThreeColourHighlightingKey}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="HighlighterTipShapes" component={HighlighterTipShapes}
+      width={CANVAS.width} height={CANVAS.height} />
     <Still id="GraduatedCadenceSteps" component={GraduatedCadenceSteps}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="AiHandlesYouHandle" component={AiHandlesYouHandle}
@@ -108,6 +112,8 @@ export const RemotionRoot: React.FC = () => (
     <Still id="FiveStepWorkflow" component={FiveStepWorkflow}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="PaperOrScreenGiftDecision" component={PaperOrScreenGiftDecision}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="rocketbook-review--rocketbook-pens-per-semester" component={C_rocketbook_review__rocketbook_pens_per_semester}
       width={CANVAS.width} height={CANVAS.height} />
   </>
 );
