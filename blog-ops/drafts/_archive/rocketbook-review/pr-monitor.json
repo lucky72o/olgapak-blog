@@ -1,0 +1,33 @@
+{
+  "slug": "rocketbook-review",
+  "wp_media_ids": [
+    {
+      "file": "featured.png",
+      "id": 2318,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/10/featured-1.png",
+      "sha256": "0c14858505bf3b8248303c27187544c90f18dc3c69380b38cb2d27309c1f0b06"
+    },
+    {
+      "file": "rocketbook-write-scan-wipe.png",
+      "id": 2319,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/10/rocketbook-write-scan-wipe.png",
+      "sha256": "730e5e27ac5a954546c496d8fb655dfb1906d24079abdb15e9e5629c0921ca6e"
+    },
+    {
+      "file": "rocketbook-care-dos-donts.png",
+      "id": 2320,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/10/rocketbook-care-dos-donts.png",
+      "sha256": "4dfd2950fbe9cb4651f45dd9d47f89e05be3f20f9ba9daf02cf8df663f203353"
+    },
+    {
+      "file": "rocketbook-pens-per-semester.png",
+      "id": 2321,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/10/rocketbook-pens-per-semester.png",
+      "sha256": "823506a4c6acc9d615c90b1c8fc62dc4e220d289bf5c5285cdeb17479cbf9729"
+    }
+  ],
+  "wp_upload": "ok",
+  "wp_post_id": 2322,
+  "wp_link": "https://olgapak.com/?p=2322",
+  "wp_preview_url": "https://olgapak.com/?p=2322&preview=true"
+}

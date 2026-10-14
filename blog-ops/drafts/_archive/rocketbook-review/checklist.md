@@ -2,7 +2,7 @@
 slug: rocketbook-review
 target_keyword: rocketbook review
 created: 2026-10-14 13:10
-last_updated: 2026-10-14 14:05
+last_updated: 2026-10-14 14:07
 current_stage: preview
 current_owner: blog-post-workflow
 status: active
@@ -80,7 +80,7 @@ Machine-readable state in the frontmatter above. Human-readable progress below. 
 - [x] action-items.md written
 
 ## Stage 4b.5: Staging
-- [ ] post staged on branch (PR deferred to autopilot-cont under verification)
+- [x] post staged on branch (PR deferred to autopilot-cont under verification)
 
 ## Stage 4c: Gate 2 + Finalize
 - [ ] Gate 2 (console-gated)
@@ -118,6 +118,7 @@ Machine-readable state in the frontmatter above. Human-readable progress below. 
 - Stage 4b started: 2026-10-14 14:05
 - Stage 4b completed: 2026-10-14 14:05, 30 action items
 - Stage 4b.5 staging started: 2026-10-14 14:05
+- Stage 4b.5 file layout staged: 2026-10-14 14:07, commit 62b05e5 pushed to origin/blog/rocketbook-review; PR + WP draft deferred to autopilot-cont (CONSOLE_VERIFICATION=on); ready_for_verification emitted
 
 ## Notes
 
