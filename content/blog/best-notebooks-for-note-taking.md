@@ -69,7 +69,7 @@ After paper, the rest is quick. Ruling is personal: most classroom notebooks use
 
 ## Best all-purpose notebooks for everyday note-taking
 
-These are the do-everything picks: one notebook, any kind of note, no fuss. If you want a single answer to "which one should I buy?", start here.
+These are the do-everything picks: one notebook, any kind of note, no fuss. If you want a single answer to "which one should I buy?", start here. It also helps to give the notebook a permanent spot rather than a pile, which is one of the decisions in my [desk setup](/aesthetic-desk-setup) guide.
 
 ![Two everyday notebooks on a desk beside a pen and a coffee mug, ready for note-taking](../../blog-ops/assets/best-notebooks-for-note-taking/everyday-notebooks-desk.png)
 
