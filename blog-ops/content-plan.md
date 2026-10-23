@@ -22,7 +22,7 @@
 | 12 | how-to-reduce-screen-time | how to reduce screen time | PILLAR guide: How to Reduce Screen Time (complete guide) |  | published |
 | 13 | best-highlighters-for-studying | best highlighters for studying | COMMERCIAL roundup: Best Highlighters for Studying (Zebra Mildliner, Stabilo, Tombow) |  | published |
 | 14 | digital-vs-paper-notes | digital vs paper notes | COMPARE: Digital vs Paper Notes (which is better for memory?) |  | published |
-| 15 | best-blue-light-glasses | best blue light glasses | COMMERCIAL roundup: Best Blue Light Glasses for Students (2026) |  | planned |
+| 15 | best-blue-light-glasses | best blue light glasses | COMMERCIAL roundup: Best Blue Light Glasses for Students (2026) |  | published |
 | 16 | how-to-take-notes-on-ipad | how to take notes on ipad | INFO/COMMERCIAL guide: How to Take Notes on an iPad (apps, gear & setup) |  | published |
 | 17 | bullet-journal-for-beginners | bullet journal for beginners | INFO guide: Bullet Journal for Beginners (setup, ideas & supplies) |  | published |
 | 18 | ai-study-tools | ai study tools | COMMERCIAL(soft) roundup: 10 Best AI Study Tools for Students in 2026 |  | planned |
