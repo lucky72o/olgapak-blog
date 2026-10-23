@@ -2,10 +2,10 @@
 slug: best-blue-light-glasses
 target_keyword: best blue light glasses
 created: 2026-09-09 12:46
-last_updated: 2026-09-09 15:44
-current_stage: preview
+last_updated: 2026-09-09 16:24
+current_stage: complete
 current_owner: blog-post-workflow
-status: active
+status: complete
 gate_pending: none
 # status values: active | paused | complete | abandoned
 # current_stage values: intake | chrome_fetch | serp_select | serp_deep_fetch | reddit_fetch | reddit_select | reddit_deep_fetch | x_fetch | x_select | x_deep_fetch | competitor_check | analyze_research | synthesize_plan | plan_review | outline | draft | review | humanize | resolve_markers | images | generate_images | action_items | preview | finalize | repurpose | complete
@@ -297,3 +297,18 @@ All three rows passed the ownership grep (link not previously present), the dirt
 
 The live WordPress copies of those three posts still need the same edit by hand (v1 scope limit, `wordpress-rest.md` §Staging step 6) and are recorded in action-items §4b.
 
+
+### Stage 4b.5 staging side effects (autopilot-cont, 2026-09-09 16:24)
+
+File layout was already staged, committed and pushed by the fresh autopilot run; verification passed (`verification-result.json: {"ok":true}`). This run performed only the deferred side effects, per the console verification handshake:
+
+- WordPress auth probe: OK (single attempt, not retried).
+- Gutenberg conversion: native blocks (93 paragraph, 22 heading, 22 list, 4 image, 2 table) + the Kadence dynamic TOC block from `site-conventions.md` §Table of contents, injected `after-intro`. The classic-block fallback was NOT used.
+- Media: 5 files uploaded, IDs captured from each upload response (featured landed as `featured-9.png`, WordPress's duplicate-slug rename; the ID 2273 came from the upload response, never a slug re-lookup). All four in-post `[IMAGE:]` embeds rewritten from local paths to `source_url`s; zero local refs remain in the posted body.
+- WordPress draft created: post **2277**, status `draft`, category Productivity (12), tags productivity/students/education (15/30/19), featured_media 2273. Lookup-before-create returned empty, so this was a first create.
+- PR opened: **#29** — https://github.com/lucky72o/olgapak-blog/pull/29
+- `pr-monitor.json` written with `mode: pr`, `status: open`, `wp_post_id`, `wp_media_ids[]` (with sha256 per file), `wp_preview_url`, `wp_upload: ok`.
+- Main-tree cleanup (astro-git-pr §Staging 6h): no-op. The post and assets never landed in the main checkout (staging ran directly in the worktree) and the main tree is clean.
+- Gate 2 is console-gated: no CronCreate monitor was started, and nothing here approves, merges or publishes anything.
+
+Stage 4b.5 completed: 2026-09-09 16:24, PR #29 opened, WP draft 2277 created.
