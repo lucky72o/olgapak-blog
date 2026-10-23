@@ -18,6 +18,8 @@ import { HeartMindMap } from "./HeartMindMap";
 import { MindMapNodeGoodVsBad } from "./MindMapNodeGoodVsBad";
 import { WeekGridTimeboxing } from "./WeekGridTimeboxing";
 import { PackedVsBufferedDay } from "./PackedVsBufferedDay";
+import { C_productive_morning_routine__morning_routine_7_steps_flow } from "./productive-morning-routine--morning-routine-7-steps-flow";
+import { C_productive_morning_routine__sample_morning_routines_timeline } from "./productive-morning-routine--sample-morning-routines-timeline";
 import { SevenDayRampDiagram } from "./SevenDayRampDiagram";
 import { HandwriteOrTypeDecision } from "./HandwriteOrTypeDecision";
 import { WhatTheStudyMeasured } from "./WhatTheStudyMeasured";
@@ -99,10 +101,13 @@ export const RemotionRoot: React.FC = () => (
     <Still id="FourBoxMeetingNotesTemplate" component={FourBoxMeetingNotesTemplate}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="FiveMinutePostMeetingPass" component={FiveMinutePostMeetingPass}
+      width={CANVAS.width} height={CANVAS.height} />
     <Still id="DownsizingFilterDiagram" component={DownsizingFilterDiagram}
+      width={CANVAS.width} height={CANVAS.height} />
     <Still id="ThreeColourHighlightingKey" component={ThreeColourHighlightingKey}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="HighlighterTipShapes" component={HighlighterTipShapes}
+      width={CANVAS.width} height={CANVAS.height} />
     <Still id="GraduatedCadenceSteps" component={GraduatedCadenceSteps}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="AiHandlesYouHandle" component={AiHandlesYouHandle}
@@ -110,6 +115,10 @@ export const RemotionRoot: React.FC = () => (
     <Still id="FiveStepWorkflow" component={FiveStepWorkflow}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="PaperOrScreenGiftDecision" component={PaperOrScreenGiftDecision}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="productive-morning-routine--morning-routine-7-steps-flow" component={C_productive_morning_routine__morning_routine_7_steps_flow}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="productive-morning-routine--sample-morning-routines-timeline" component={C_productive_morning_routine__sample_morning_routines_timeline}
       width={CANVAS.width} height={CANVAS.height} />
   </>
 );
