@@ -103,7 +103,7 @@ The [Rocketbook Core](https://www.amazon.com/dp/B0DP3HLY4J?tag=op01e-20) is a re
 
 - **Best for:** handwriters who still want a digital copy
 - **Budget:** Mid-range
-- **Skip it if:** they love keeping a filled notebook as a keepsake, or they won't switch pens (it only wipes clean with a Pilot FriXion or BIC Illusion erasable gel pen, so notes in a regular ballpoint like the Jetstream won't come off)
+- **Skip it if:** they love keeping a filled notebook as a keepsake, or they won't switch pens (it only wipes clean with a Pilot FriXion or BIC Illusion erasable gel pen, so notes in a regular ballpoint like the Jetstream won't come off). Not sure it suits them? [Read my Rocketbook review](/rocketbook-review) first.
 
 ### Pentel GraphGear 1000 Mechanical Pencil (0.5 mm)
 
