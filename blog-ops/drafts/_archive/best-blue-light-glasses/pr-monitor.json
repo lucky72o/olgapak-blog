@@ -7,7 +7,7 @@
   "base": "main",
   "worktree": ".worktrees/blog-best-blue-light-glasses",
   "staging_url": "",
-  "status": "open",
+  "status": "done",
   "mode": "pr",
   "handled_comment_ids": {
     "issue": [],
@@ -52,5 +52,6 @@
     }
   ],
   "wp_preview_url": "https://olgapak.com/wp-admin/post.php?post=2277&action=edit",
-  "wp_upload": "ok"
+  "wp_upload": "ok",
+  "wp_link": "https://olgapak.com/best-blue-light-glasses"
 }

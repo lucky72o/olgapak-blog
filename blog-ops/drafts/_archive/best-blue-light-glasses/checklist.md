@@ -2,7 +2,7 @@
 slug: best-blue-light-glasses
 target_keyword: best blue light glasses
 created: 2026-09-09 12:46
-last_updated: 2026-09-09 16:24
+last_updated: 2026-10-23 13:45
 current_stage: complete
 current_owner: blog-post-workflow
 status: complete
@@ -312,3 +312,10 @@ File layout was already staged, committed and pushed by the fresh autopilot run;
 - Gate 2 is console-gated: no CronCreate monitor was started, and nothing here approves, merges or publishes anything.
 
 Stage 4b.5 completed: 2026-09-09 16:24, PR #29 opened, WP draft 2277 created.
+
+### Console-merge finalize, live inbound links (2026-10-23)
+
+- live inbound link applied: how-to-reduce-screen-time (wp id 2181) -> this post, anchor "the best blue light glasses" in the evening-grayscale list item; before: "...draining it takes the shine off around the hour you need it gone.</li>"; after: "...the hour you need it gone. It also costs nothing, which is more than I can say for <a href=\"https://olgapak.com/best-blue-light-glasses\">the best blue light glasses</a>, where the evidence is thinner than the marketing.</li>"
+- live inbound link applied: how-to-stop-doomscrolling (wp id 2122) -> this post, anchor "blue light glasses for evening screen use" in the charge-outside-the-bedroom paragraph; before: "...one of the highest-return changes on this whole list. Get a cheap"; after: "...on this whole list, and a far better bet than buying <a href=\"https://olgapak.com/best-blue-light-glasses\">blue light glasses for evening screen use</a>. Get a cheap"
+- live inbound link applied: digital-detox-plan (wp id 2152) -> this post, anchor "whether blue light glasses are worth buying" in the Day 3 grayscale smaller-version line; before: "<p>Smaller version: schedule grayscale for evenings only.</p>"; after: "...evenings only. If you have been eyeing a hardware fix instead, I looked at <a href=\"https://olgapak.com/best-blue-light-glasses\">whether blue light glasses are worth buying</a> and the honest answer is that this setting does more.</p>"
+- Console-merge finalize: PR #29 merged by the console 2026-10-23T12:33:45Z (approval.json 2026-10-23T12:33:19Z); WordPress post 2277 live at https://olgapak.com/best-blue-light-glasses. Gate 2 approved: 2026-10-23T12:33Z, Finalize completed: 2026-10-23T13:45.
