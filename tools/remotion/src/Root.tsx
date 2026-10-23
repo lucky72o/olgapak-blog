@@ -27,6 +27,7 @@ import { TwoPilesOfScreenTime } from "./TwoPilesOfScreenTime";
 import { InkFamiliesTradeoff } from "./InkFamiliesTradeoff";
 import { FourCorePagesMap } from "./FourCorePagesMap";
 import { CostTierKey } from "./CostTierKey";
+import { ClearVsAmberLenses } from "./ClearVsAmberLenses";
 import { FourBoxMeetingNotesTemplate } from "./FourBoxMeetingNotesTemplate";
 import { FiveMinutePostMeetingPass } from "./FiveMinutePostMeetingPass";
 import { DownsizingFilterDiagram } from "./DownsizingFilterDiagram";
@@ -94,6 +95,7 @@ export const RemotionRoot: React.FC = () => (
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="CostTierKey" component={CostTierKey}
       width={CANVAS.width} height={CANVAS.height} />
+    <Still id="ClearVsAmberLenses" component={ClearVsAmberLenses}
     <Still id="FourBoxMeetingNotesTemplate" component={FourBoxMeetingNotesTemplate}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="FiveMinutePostMeetingPass" component={FiveMinutePostMeetingPass}

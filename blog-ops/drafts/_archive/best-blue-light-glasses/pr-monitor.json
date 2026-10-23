@@ -1,0 +1,56 @@
+{
+  "slug": "best-blue-light-glasses",
+  "repo": "lucky72o/olgapak-blog",
+  "pr_number": 29,
+  "pr_url": "https://github.com/lucky72o/olgapak-blog/pull/29",
+  "branch": "blog/best-blue-light-glasses",
+  "base": "main",
+  "worktree": ".worktrees/blog-best-blue-light-glasses",
+  "staging_url": "",
+  "status": "open",
+  "mode": "pr",
+  "handled_comment_ids": {
+    "issue": [],
+    "inline": [],
+    "review": []
+  },
+  "created_at": "2026-09-09T13:22:33Z",
+  "last_poll": "",
+  "poll_interval_minutes": 15,
+  "idle_polls": 0,
+  "wp_post_id": 2277,
+  "wp_media_ids": [
+    {
+      "file": "clear-vs-amber-lenses.png",
+      "id": 2272,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/clear-vs-amber-lenses.png",
+      "sha256": "6c640b74e842574a34f824a835caae2a3b3cec3614338e645a2d65e0663a828e"
+    },
+    {
+      "file": "featured.png",
+      "id": 2273,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/featured-9.png",
+      "sha256": "a99ba86631b402628d9069fa17466e2fa22c9c3e0786e3755e7749718d07a144"
+    },
+    {
+      "file": "frame-styles-flatlay.png",
+      "id": 2274,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/frame-styles-flatlay.png",
+      "sha256": "d218ff8cf6e009623782e3a44fe0e63b05432420e43aaf9f518a825844a0f4bc"
+    },
+    {
+      "file": "honest-verdict-tired-eyes.png",
+      "id": 2275,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/honest-verdict-tired-eyes.png",
+      "sha256": "83d25a9b422a43725edf46cbe06caf8261a473e7015b2f20e93219ec703d2aea"
+    },
+    {
+      "file": "twenty-twenty-twenty-habit.png",
+      "id": 2276,
+      "source_url": "https://olgapak.com/wp-content/uploads/2026/09/twenty-twenty-twenty-habit.png",
+      "sha256": "3aa0cb5b860d1e9aa655b857f99685269f9b4ec3ba8ec0e4583b3cc3dcabf561"
+    }
+  ],
+  "wp_preview_url": "https://olgapak.com/wp-admin/post.php?post=2277&action=edit",
+  "wp_upload": "ok"
+}

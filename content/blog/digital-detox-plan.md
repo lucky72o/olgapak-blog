@@ -87,7 +87,7 @@ Now the warning, because this is the day people spend money instead of changing 
 
 A capable phone stays capable. What changes the outcome is the configuration and the habit.
 
-Smaller version: schedule grayscale for evenings only.
+Smaller version: schedule grayscale for evenings only. If you have been eyeing a hardware fix instead, I looked at [whether blue light glasses are worth buying](/best-blue-light-glasses) and the honest answer is that this setting does more.
 
 ### Day 4: One phone-free block, with something waiting in it
 
