@@ -1,6 +1,6 @@
 ---
 title: "Best Blue Light Glasses for Students: 9 Honest Picks"
-date: 2026-09-09
+date: 2026-10-23
 excerpt: "Do blue light glasses actually work? Here's the honest evidence, plus 9 pairs worth buying for comfort, screen glare and late-night study."
 tags:
   - productivity
