@@ -143,7 +143,7 @@ If you're genuinely torn between paper and a screen, an e-ink tablet like the [r
 
 ## Best premium notebooks for journaling and keeping
 
-Finally, the keepers: the notebooks you'll finish and actually want to shelve. This is where paper stops being a tool and starts being a small pleasure, and where the [aesthetic notes](/how-to-make-aesthetic-notes-complete-step-by-step-guide) crowd and journalers find their people. There's real joy in filling a beautiful notebook cover to cover; ask anyone who's done it.
+Finally, the keepers: the notebooks you'll finish and actually want to shelve. This is where paper stops being a tool and starts being a small pleasure, and where the [aesthetic notes](/how-to-make-aesthetic-notes-complete-step-by-step-guide) crowd and journalers find their people. There's real joy in filling a beautiful notebook cover to cover; ask anyone who's done it. If that's the pull, it's worth being picky about which [aesthetic stationery](/aesthetic-stationery) you actually keep.
 
 ![A shelf of finished, well-loved notebooks with worn spines and ribbon bookmarks](../../blog-ops/assets/best-notebooks-for-note-taking/finished-notebooks-shelf.png)
 
@@ -169,7 +169,7 @@ Still deciding? Map yourself to a pick:
 - **Want to go paperless-ish?** Rocketbook, or an e-ink tablet if the budget allows.
 - **Want a keeper you'll be proud of?** Life Noble Note, Midori MD, or a Leuchtturm1917.
 
-And the rule under all of it: the best notebook is the one you'll actually open every day. A pristine premium notebook you're scared to "ruin" is worse than a cheap one you happily fill.
+And the rule under all of it: the best notebook is the one you'll actually open every day. A pristine premium notebook you're scared to "ruin" is worse than a cheap one you happily fill. Buying one as a present? My list of [gifts for students](/gifts-for-students) pairs a notebook with the pens, highlighters, and focus gear that make it get used.
 
 ## Turn a full notebook into something you'll use
 

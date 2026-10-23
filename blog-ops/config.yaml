@@ -30,7 +30,7 @@ publish:
     frontmatter_template: adapters/publish/frontmatter/wordpress.md
     base_url: https://olgapak.com
     username: wpx_admin101
-    app_password_env: WP_APP_PASSWORD
+    app_password_keychain: pilcrino-wp-olga-pak
     default_status: draft
     apply_inbound_links_live: true   # apply planned inbound links to LIVE posts via REST once this post is published (matches prior manual practice; set false to leave them as hand-apply action items)
 
@@ -47,4 +47,3 @@ console:
     build_check: true
     vision: auto                 # on | off | auto (auto = run when a preview is reachable, else skip loudly)
   max_limit_resumes: 3
-  chain: [retro, repurpose]      # repurpose entry ignored unless modules.repurpose

@@ -204,7 +204,7 @@ It's the erasable pick from the planner-community roundup in my research set, an
 
 ## Which pen for which kind of note-taking
 
-The picks above, sorted by what you're actually doing with them.
+The picks above, sorted by what you're actually doing with them. If you're buying pens as a present, the Jetstream multipack also made my list of [gift ideas for students](/gifts-for-students).
 
 | What you're doing | Pick | Why |
 |---|---|---|
@@ -254,6 +254,8 @@ Four things I'd want a friend to tell me before I spent anything.
 ## Turn the notes into something you can revise from
 
 Once the notes exist on paper, the next problem shows up: a term's worth of them, and no time to reread the lot.
+
+And if the pens are only the start and you're kitting out the rest of the desk, here's the [aesthetic stationery worth buying](/aesthetic-stationery), downsides included.
 
 [Try my free AI tools](/ai-tools) to automate the mundane part of that. Type up the messy section, and the Text Summarizer hands back a short, scannable version you can actually revise from, while the Acronym Explainer decodes the shorthand you scribbled at speed and can no longer read.
 

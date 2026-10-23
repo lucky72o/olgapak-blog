@@ -28,12 +28,16 @@ import { InkFamiliesTradeoff } from "./InkFamiliesTradeoff";
 import { FourCorePagesMap } from "./FourCorePagesMap";
 import { CostTierKey } from "./CostTierKey";
 import { ClearVsAmberLenses } from "./ClearVsAmberLenses";
+import { FourBoxMeetingNotesTemplate } from "./FourBoxMeetingNotesTemplate";
+import { FiveMinutePostMeetingPass } from "./FiveMinutePostMeetingPass";
+import { DownsizingFilterDiagram } from "./DownsizingFilterDiagram";
 import { ThreeColourHighlightingKey } from "./ThreeColourHighlightingKey";
 import { HighlighterTipShapes } from "./HighlighterTipShapes";
 import { PomodoroCycleDiagram } from "./PomodoroCycleDiagram";
 import { GraduatedCadenceSteps } from "./GraduatedCadenceSteps";
 import { AiHandlesYouHandle } from "./AiHandlesYouHandle";
 import { FiveStepWorkflow } from "./FiveStepWorkflow";
+import { PaperOrScreenGiftDecision } from "./PaperOrScreenGiftDecision";
 
 export const RemotionRoot: React.FC = () => (
   <>
@@ -92,13 +96,20 @@ export const RemotionRoot: React.FC = () => (
     <Still id="CostTierKey" component={CostTierKey}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="ClearVsAmberLenses" component={ClearVsAmberLenses}
+    <Still id="FourBoxMeetingNotesTemplate" component={FourBoxMeetingNotesTemplate}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="FiveMinutePostMeetingPass" component={FiveMinutePostMeetingPass}
+    <Still id="DownsizingFilterDiagram" component={DownsizingFilterDiagram}
     <Still id="ThreeColourHighlightingKey" component={ThreeColourHighlightingKey}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="HighlighterTipShapes" component={HighlighterTipShapes}
     <Still id="GraduatedCadenceSteps" component={GraduatedCadenceSteps}
+      width={CANVAS.width} height={CANVAS.height} />
     <Still id="AiHandlesYouHandle" component={AiHandlesYouHandle}
       width={CANVAS.width} height={CANVAS.height} />
     <Still id="FiveStepWorkflow" component={FiveStepWorkflow}
+      width={CANVAS.width} height={CANVAS.height} />
+    <Still id="PaperOrScreenGiftDecision" component={PaperOrScreenGiftDecision}
       width={CANVAS.width} height={CANVAS.height} />
   </>
 );

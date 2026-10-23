@@ -1,0 +1,87 @@
+{
+  "query": "meeting notes note-taking",
+  "searchUrl": "https://x.com/search?q=meeting%20notes%20note-taking&f=top",
+  "searchedAt": "2026-09-08T14:27:11.054Z",
+  "results": [
+    {
+      "rank": 1,
+      "url": "https://x.com/onlyonepsalm/status/2092309012549169638",
+      "author": "Psalm",
+      "handle": "onlyonepsalm",
+      "text": "I’ve been building a meeting note-taking app.\n\nYou take your own notes while AI listens in the background, then helps you catch what you missed or misunderstood.\n\nI’ve been obsessing over the UX and it’s finally starting to feel like a real product.\n\nHere’s a little preview 👀",
+      "replies": 10,
+      "reposts": 13,
+      "likes": 216
+    },
+    {
+      "rank": 2,
+      "url": "https://x.com/AliMirza2k/status/2097290738757423435",
+      "author": "ali mirza",
+      "handle": "AliMirza2k",
+      "text": "i stopped taking notes manually—ai does everything for me now - use eurekamind 2.0 to capture everything in meetings - use notegpt to turn anything into visual notes comment “notes” to get the link",
+      "replies": 0,
+      "reposts": 0,
+      "likes": 0
+    },
+    {
+      "rank": 3,
+      "url": "https://x.com/DrPengSHEN/status/2096437717320278027",
+      "author": "Peng 沈鹏",
+      "handle": "DrPengSHEN",
+      "text": "Quick confession 🙋‍♂️ I haven't taken a single meeting note in 3 months.\nNot because I stopped caring.\nI just noticed something — while I was busy writing down what you said 30 seconds ago, I was missing what you're saying right now .\nFor me, note-taking was never really listening.",
+      "replies": 13,
+      "reposts": 12,
+      "likes": 146
+    },
+    {
+      "rank": 4,
+      "url": "https://x.com/kabirnagral/status/2094652022914203656",
+      "author": "Kabir Nagral",
+      "handle": "kabirnagral",
+      "text": "Why has nobody solved for in-person meeting note-taking?\n\nIf someone has, I'm ready to buy",
+      "replies": 208,
+      "reposts": 10,
+      "likes": 259
+    },
+    {
+      "rank": 6,
+      "url": "https://x.com/SdkSaddik/status/2097218379958653359",
+      "author": "SDK",
+      "handle": "SdkSaddik",
+      "text": "How many meetings end with everyone saying, “Wait, what were the action items again?”\n\n\n@MeetNote\n  is built around that exact problem.\n\nWhat caught my attention is that it doesn’t need a meeting bot sitting inside your call.\n\nInstead, MeetNote runs privately on your Mac or Windows",
+      "replies": 2,
+      "reposts": 1,
+      "likes": 11
+    },
+    {
+      "rank": 7,
+      "url": "https://x.com/alex_prompter/status/2095485721784303925",
+      "author": "Alex Prompter",
+      "handle": "alex_prompter",
+      "text": "Gemini 3.8 just made manual admin work pointless.\n\nIt reads photos, PDFs, invoices and receipts for less than a cent per task.\n\nHere are 10 prompts to automate the back-office work you're still doing by hand:",
+      "replies": 4,
+      "reposts": 14,
+      "likes": 105
+    },
+    {
+      "rank": 8,
+      "url": "https://x.com/alex_prompter/status/2095485793364254748",
+      "author": "Alex Prompter",
+      "handle": "alex_prompter",
+      "text": "6. Supplier price check\n\n\"You are my procurement analyst. I'll upload my last supplier invoice. For every line item, search current market pricing and show me: what I paid, the going rate, and the difference as a percentage. Rank by how much I'm overpaying in real money per year.",
+      "replies": 4,
+      "reposts": 0,
+      "likes": 7
+    },
+    {
+      "rank": 9,
+      "url": "https://x.com/alex_prompter/status/2095485805192220946",
+      "author": "Alex Prompter",
+      "handle": "alex_prompter",
+      "text": "7. Meeting notes to actions\n\n\"You are my chief of staff. I'll paste raw meeting notes or a transcript. Extract every commitment made, who owns it, and the deadline. Separate mine from other people's. Flag anything agreed without an owner. Then draft the follow-up email confirming",
+      "replies": 1,
+      "reposts": 0,
+      "likes": 6
+    }
+  ]
+}
