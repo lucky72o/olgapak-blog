@@ -135,7 +135,7 @@ Now the eco and digital options, honestly. Plenty of people swear that one analo
 
 ### Rocketbook (Core / Fusion)
 
-The [Rocketbook](https://www.amazon.com/dp/B0DP3HLY4J) is the clever one. You write with a Pilot FriXion pen, scan each page with the free app (it fires your notes off to Google Drive, Slack, Trello, or OneNote), then wipe the whole thing clean with a damp cloth and start over. Best for students and pros who digitize everything and hate wasting paper. The trade-off: you're committed to the app and FriXion pens, the paper feels a little slick under the pen, and you only get so many pages before a wipe. Mid price tier: $$.
+The [Rocketbook](https://www.amazon.com/dp/B0DP3HLY4J) is the clever one. You write with a Pilot FriXion pen, scan each page with the free app (it fires your notes off to Google Drive, Slack, Trello, or OneNote), then wipe the whole thing clean with a damp cloth and start over. Best for students and pros who digitize everything and hate wasting paper. The trade-off: you're committed to the app and FriXion pens, the paper feels a little slick under the pen, and you only get so many pages before a wipe. Mid price tier: $$. Before you buy, read [my full Rocketbook review](/rocketbook-review) for which model fits you and what owners report after months of wiping.
 
 ### reMarkable Paper Pro (or Kindle Scribe)
 

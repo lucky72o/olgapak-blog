@@ -196,7 +196,7 @@ Muji's appeal here is what it leaves out: a plain barrel, a line that doesn't ge
 
 **Best for:** planners, colour-coding, and anything you fully expect to change your mind about.
 
-It's the erasable pick from the planner-community roundup in my research set, and for a weekly layout that gets rearranged twice before Wednesday, being able to lift a line cleanly is worth more than a perfect writing feel.
+It's the erasable pick from the planner-community roundup in my research set, and for a weekly layout that gets rearranged twice before Wednesday, being able to lift a line cleanly is worth more than a perfect writing feel. It's also the pen a reusable notebook needs; my [Rocketbook review](/rocketbook-review) covers how fast you'll go through them.
 
 **The catch:** erasable ink is erasable. That is the feature and the flaw, and it means this is not the pen for anything that has to survive as a permanent record.
 
