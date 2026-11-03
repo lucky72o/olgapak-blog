@@ -1,6 +1,6 @@
 ---
 title: "Rocketbook Review (2026): Great Notebook, Optional App"
-date: 2026-10-14
+date: 2026-11-03
 excerpt: "An honest Rocketbook review: what works, what wears out, how fast FriXion pens run out, and which model (Core, Fusion, Mini, Flip) suits which note-taker."
 tags:
   - note-taking
