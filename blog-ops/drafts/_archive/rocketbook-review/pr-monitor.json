@@ -28,7 +28,7 @@
   ],
   "wp_upload": "ok",
   "wp_post_id": 2322,
-  "wp_link": "https://olgapak.com/?p=2322",
+  "wp_link": "https://olgapak.com/rocketbook-review",
   "wp_preview_url": "https://olgapak.com/?p=2322&preview=true",
   "repo": "lucky72o/olgapak-blog",
   "pr_number": 32,
@@ -37,7 +37,7 @@
   "base": "main",
   "worktree": ".worktrees/blog-rocketbook-review",
   "staging_url": "",
-  "status": "open",
+  "status": "done",
   "mode": "pr",
   "handled_comment_ids": {
     "issue": [],
