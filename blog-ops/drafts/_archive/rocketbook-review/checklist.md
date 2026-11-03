@@ -2,10 +2,10 @@
 slug: rocketbook-review
 target_keyword: rocketbook review
 created: 2026-10-14 13:10
-last_updated: 2026-10-14 14:07
-current_stage: preview
+last_updated: 2026-10-14 14:11
+current_stage: complete
 current_owner: blog-post-workflow
-status: active
+status: complete
 gate_pending: none
 # status values: active | paused | complete | abandoned
 # current_stage values: intake | chrome_fetch | serp_select | serp_deep_fetch | reddit_fetch | reddit_select | reddit_deep_fetch | x_fetch | x_select | x_deep_fetch | competitor_check | analyze_research | synthesize_plan | plan_review | outline | draft | review | humanize | resolve_markers | images | generate_images | action_items | preview | finalize | repurpose | complete
@@ -81,6 +81,7 @@ Machine-readable state in the frontmatter above. Human-readable progress below. 
 
 ## Stage 4b.5: Staging
 - [x] post staged on branch (PR deferred to autopilot-cont under verification)
+- [x] WordPress draft created (post 2322, 4 media uploaded) and PR #32 opened (autopilot-cont)
 
 ## Stage 4c: Gate 2 + Finalize
 - [ ] Gate 2 (console-gated)
@@ -119,6 +120,7 @@ Machine-readable state in the frontmatter above. Human-readable progress below. 
 - Stage 4b completed: 2026-10-14 14:05, 30 action items
 - Stage 4b.5 staging started: 2026-10-14 14:05
 - Stage 4b.5 file layout staged: 2026-10-14 14:07, commit 62b05e5 pushed to origin/blog/rocketbook-review; PR + WP draft deferred to autopilot-cont (CONSOLE_VERIFICATION=on); ready_for_verification emitted
+- Stage 4b.5 completed: 2026-10-14 14:11, WordPress draft 2322 created (Gutenberg + Kadence TOC, categories Productivity/EdTech, tags 14/30/15), PR #32 opened (https://github.com/lucky72o/olgapak-blog/pull/32)
 
 ## Notes
 
