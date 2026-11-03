@@ -2,7 +2,7 @@
 slug: rocketbook-review
 target_keyword: rocketbook review
 created: 2026-10-14 13:10
-last_updated: 2026-10-14 14:11
+last_updated: 2026-11-03 22:30
 current_stage: complete
 current_owner: blog-post-workflow
 status: complete
@@ -142,3 +142,7 @@ Machine-readable state in the frontmatter above. Human-readable progress below. 
 - inbound link applied by workflow: content/blog/best-notebooks-for-note-taking.md
 - inbound link applied by workflow: content/blog/gifts-for-students.md
 - inbound link applied by workflow: content/blog/best-pens-for-note-taking.md
+- live inbound link applied: best-notebooks-for-note-taking (wp id 2092) -> this post, anchor "my full Rocketbook review" in "### Rocketbook (Core / Fusion)" paragraph; before: "...before a wipe. Mid price tier: $$.</p>"; after: "...Mid price tier: $$. Before you buy, read <a href=\"https://olgapak.com/rocketbook-review\">my full Rocketbook review</a> for which model fits you..."
+- live inbound link applied: gifts-for-students (wp id 2292) -> this post, anchor "Read my Rocketbook review" in "### Rocketbook Core Reusable Notebook" Skip it if line; before: "...like the Jetstream won't come off)</li>"; after: "...won't come off). Not sure it suits them? <a href=\"https://olgapak.com/rocketbook-review\">Read my Rocketbook review</a> first.</li>"
+- live inbound link applied: best-pens-for-note-taking (wp id 2174) -> this post, anchor "Rocketbook review" in "### Pilot FriXion" section; before: "...worth more than a perfect writing feel.</p>"; after: "...writing feel. It's also the pen a reusable notebook needs; my <a href=\"https://olgapak.com/rocketbook-review\">Rocketbook review</a> covers how fast you'll go through them.</p>"
+- Console approved + merged PR #32: 2026-11-03T22:13Z (approval.json). Gate 2 approved: 2026-11-03 22:12, Finalize completed: 2026-11-03 22:30 (console-merge entry; WP post 2322 live at https://olgapak.com/rocketbook-review)
