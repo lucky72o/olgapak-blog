@@ -29,7 +29,7 @@
 | 19 | gifts-for-students | gifts for students | COMMERCIAL roundup: 20 Best Gifts for Students & Note-Takers (2026) |  | published |
 | 20 | screen-free-hobbies | screen-free hobbies | INFO listicle: 50 Screen-Free Hobbies to Try This Year |  | published |
 | 21 | best-headphones-for-studying | best headphones for studying | COMMERCIAL roundup: Best Noise-Cancelling Headphones for Studying (2026) |  | planned |
-| 22 | rocketbook-review | rocketbook review | REVIEW: Rocketbook — Is the Reusable Notebook Worth It? |  | planned |
+| 22 | rocketbook-review | rocketbook review | REVIEW: Rocketbook — Is the Reusable Notebook Worth It? |  | published |
 | 23 | aesthetic-stationery | aesthetic stationery | COMMERCIAL roundup: Ultimate Aesthetic Stationery Haul (25 must-haves) |  | published |
 | 24 | best-daily-planners | best daily planners | COMMERCIAL roundup: Best Daily Planners for Productivity (2026) |  | planned |
 | 25 | how-to-take-notes-in-meetings | how to take notes in meetings | INFO guide: How to Take Better Notes in Meetings (templates + tips) |  | published |
